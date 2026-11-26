@@ -303,7 +303,7 @@ drawFilters();show(location.hash.slice(1));
 (async()=>{
   try{
     const [r1,r2]=await Promise.all([fetch("data/entries.json",{cache:"no-cache"}),fetch("data/meta.json",{cache:"no-cache"}).catch(()=>null)]);
-    entries=r1.ok?await r1.json():[];
+    entries=r1.ok?await r1.json():[];try{const r3=await fetch("data/ext.json",{cache:"no-cache"});if(r3.ok){const ids=new Set(entries.map(x=>x.id));entries=entries.concat((await r3.json()).filter(x=>!ids.has(x.id)));}}catch(_){}
     meta=r2&&r2.ok?await r2.json():null;
   }catch(err){entries=[];$("#results").innerHTML='<p class="skeleton">資料讀取失敗，請確認網路後重新整理。</p>';}
   db=true;drawMeta();renderResults();if(!$("#v-list").hidden)renderList();
