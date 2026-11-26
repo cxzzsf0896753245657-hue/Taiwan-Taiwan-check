@@ -121,6 +121,79 @@ textarea{min-height:130px;resize:vertical}
 .skeleton{color:var(--mut);padding:30px 0}
 @media(max-width:600px){.brand{font-size:32px}.ev{grid-template-columns:1fr}.q button{padding:0 14px}}
 @media(prefers-reduced-motion:no-preference){.card{animation:in .25s ease-out both}@keyframes in{from{opacity:0;transform:translateY(6px)}}}
+
+/* ===== APP LAYOUT (mobile-first) ===== */
+:root{--bar:62px;--hh:56px}
+html{scroll-padding-top:calc(var(--hh) + 70px)}
+body{padding-bottom:calc(var(--bar) + env(safe-area-inset-bottom) + 12px);-webkit-tap-highlight-color:transparent}
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-top:0;padding:calc(env(safe-area-inset-top) + 12px) 16px 8px;max-width:none;margin:0;box-shadow:0 1px 0 var(--line)}
+header::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--red)}
+.top{align-items:center;flex-wrap:nowrap;max-width:960px;margin:0 auto}
+.brand{font-size:24px;flex:none}
+.meta{font-size:12px;line-height:1.4}
+.top .meta{text-align:end}
+nav.tabbar{position:fixed;inset:auto 0 0 0;z-index:30;margin:0;display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:0;border-top:1px solid var(--line);background:var(--bg);padding:0 max(env(safe-area-inset-left),0px) env(safe-area-inset-bottom);overflow:visible}
+nav.tabbar button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:var(--bar);padding:6px 2px;font-size:12px;font-weight:700;border:0;margin:0;color:var(--mut);background:none}
+nav.tabbar svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+nav.tabbar button[aria-selected=true]{color:var(--red)}
+main{max-width:960px;padding:0 16px 24px}
+.view{padding-top:4px}
+.q{position:sticky;top:var(--hh);z-index:10;margin:10px 0 6px;border:2px solid var(--ink);border-radius:14px;overflow:hidden;background:var(--bg)}
+.q input{font-size:18px;padding:12px 14px;min-height:52px}
+.q button{font-size:17px;padding:0 18px}
+.q .scanbtn{background:none;color:var(--ink);border-inline-start:1px solid var(--line);display:flex;align-items:center;padding:0 12px}
+.q .scanbtn svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2}
+.hint{display:flex;align-items:center;gap:4px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -16px 6px;padding:0 16px;white-space:nowrap}
+.hint::-webkit-scrollbar,.chips::-webkit-scrollbar{display:none}
+.hint button{flex:none}
+.hint .ftog{margin-inline-start:auto;border:1.5px solid var(--line);border-radius:999px;padding:4px 12px;min-height:34px}
+.hint .ftog[aria-expanded=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.filters[hidden]{display:none}
+.chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:4px -16px;padding:0 16px}
+.chip{flex:none;border-radius:999px}
+.count{margin:16px 0 4px}
+.verdict{font-size:22px;margin:12px 0 4px}
+.card{animation:none!important;border:1px solid var(--line);border-top:4px solid var(--ink);border-radius:14px;padding:14px 14px 12px;margin-top:12px;content-visibility:auto;contain-intrinsic-size:auto 420px}
+.card h3{font-size:22px}
+.summary{margin:4px 0 8px}
+.ev{grid-template-columns:1fr;gap:0}
+.ev .d{font-size:15px;display:flex;gap:8px;align-items:baseline}
+.ev .d small{display:inline;font-size:13px}
+.ev p{overflow-wrap:anywhere}
+.src a{overflow-wrap:anywhere}
+.evmore summary,.brands summary{cursor:pointer;font-weight:700;font-size:14px;min-height:40px;display:flex;align-items:center;color:var(--ink)}
+.brands{margin:10px 0 4px;padding:10px 12px;background:var(--soft);border-radius:10px}
+.brands b{font-size:14px}
+.brands .bl{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.brands .bl button{font:inherit;font-size:14px;background:var(--bg);border:1px solid var(--line);border-radius:999px;color:var(--ink);padding:4px 10px;min-height:34px;cursor:pointer}
+.brands .bl button small{color:var(--mut);margin-inline-start:4px}
+.brands .src{font-size:13px}
+.hitwhy{display:inline-block;margin-top:4px;font-size:13px;font-weight:700;color:var(--red)}
+.foot{gap:8px}
+.sentinel{width:100%;margin:16px 0}
+.grp{border-top:3px solid var(--ink);margin-top:18px}
+.grp ul{columns:1}
+.grp li{min-height:48px}
+.drop{border-width:2px;border-radius:14px;padding:16px}
+.dh{font-size:22px}
+.qh{font-size:18px}
+.prose h2{font-size:20px}
+/* scan */
+.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.sbtn{font:inherit;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;min-height:118px;padding:12px 8px;border:2px solid var(--ink);border-radius:14px;background:var(--bg);color:var(--ink);font-weight:900;cursor:pointer}
+.sbtn svg{width:34px;height:34px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.sbtn small{font-weight:400;font-size:12px;color:var(--mut);line-height:1.35}
+.sbtn.main{background:var(--ink);color:var(--bg)}.sbtn.main small{color:inherit;opacity:.75}
+.scanbox{position:relative;border-radius:14px;overflow:hidden;background:#000;margin:12px 0}
+.scanbox[hidden]{display:none}
+.scanbox video{display:block;width:100%;max-height:60vh;object-fit:cover}
+.scanbox .aim{position:absolute;inset:22% 12%;border:3px solid var(--red);border-radius:12px;box-shadow:0 0 0 2000px rgba(0,0,0,.35);pointer-events:none}
+.scanbox .btn{position:absolute;right:10px;bottom:10px;min-height:40px;padding:6px 14px}
+.sinfo{padding:12px 14px;background:var(--soft);border-radius:12px;margin:10px 0;font-size:15px}
+.sinfo code{font-family:Archivo,monospace;font-weight:800;font-size:17px;overflow-wrap:anywhere}
+.sinfo .btns{margin-top:8px}
+@media(min-width:760px){.grp ul{columns:2 260px}.ev{grid-template-columns:6.5em minmax(0,1fr);gap:4px 16px}.ev .d{display:block;font-size:19px}.ev .d small{display:block}.brand{font-size:28px}}
+@media(max-width:380px){.sgrid{grid-template-columns:1fr 1fr}.sgrid .sbtn.main{grid-column:1/-1;min-height:96px}}
 </style>
 </head>
 <body>
@@ -129,28 +202,39 @@ textarea{min-height:130px;resize:vertical}
     <h1 class="brand">避雷<b>查</b></h1>
     <div class="meta" id="meta">資料載入中…</div>
   </div>
-  <nav role="tablist" aria-label="功能">
-    <button role="tab" data-v="search" aria-selected="true">查詢</button>
-    <button role="tab" data-v="list" aria-selected="false">全部清單</button>
-    <button role="tab" data-v="add" aria-selected="false">新增紀錄</button>
-    <button role="tab" data-v="about" aria-selected="false">資料原則</button>
-  </nav>
 </header>
 <main>
   <section class="view" id="v-search">
-    <form class="q" id="qf" role="search" style="display:flex;max-width:none;margin-top:26px">
+    <form class="q" id="qf" role="search" style="display:flex;max-width:none">
       <input id="q" type="search" placeholder="輸入產品、公司、人名…" aria-label="查詢名稱" autocomplete="off">
-      <button type="submit">查</button>
+      <button type="button" class="scanbtn" data-go="scan" aria-label="掃描條碼或拍照"><svg viewBox="0 0 24 24"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M7 9v6M10 9v6M13 9v6M17 9v6"/></svg></button><button type="submit">查</button>
     </form>
-    <p class="hint">試試：<button type="button" data-try="味全">味全</button><button type="button" data-try="泰山">泰山</button><button type="button" data-try="小紅書">小紅書</button><button type="button" data-try="柯文哲">柯文哲</button><button type="button" data-try="苦茶油">苦茶油</button></p>
+    <p class="hint">試試：<button type="button" data-try="味全">味全</button><button type="button" data-try="泰山">泰山</button><button type="button" data-try="小紅書">小紅書</button><button type="button" data-try="柯文哲">柯文哲</button><button type="button" data-try="苦茶油">苦茶油</button><button type="button" data-try="林鳳營">林鳳營</button><button type="button" class="ftog" id="ftog" aria-expanded="false" aria-controls="filters">篩選</button></p>
+    <div class="filters" id="filters" hidden>
     <div class="chips" id="fcat" aria-label="分類篩選"></div>
     <div class="chips" id="ftag" aria-label="議題篩選"></div>
     <div class="chips" id="fparty" aria-label="政黨篩選"></div>
+    </div>
     <div id="results"><p class="skeleton">正在讀取資料庫…</p></div>
   </section>
 
+  <section class="view" id="v-scan" hidden>
+    <h2 class="dh" style="margin-top:12px">掃描產品</h2>
+    <p class="meta">掃商品條碼或 QR code，或拍下包裝上的品牌、製造商，馬上查有沒有問題案件。</p>
+    <div class="scanbox" id="scanbox" hidden><video id="s-video" playsinline muted></video><div class="aim"></div><button type="button" class="btn alt" id="s-stop">停止</button></div>
+    <div class="sgrid">
+      <button type="button" class="sbtn main" id="s-live"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M7 9v6M10 9v6M13 9v6M17 9v6"/></svg>即時掃描<small>相機對準條碼或 QR code</small></button>
+      <label class="sbtn" for="s-cam"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>拍照<small>拍條碼、QR 或包裝</small></label>
+      <label class="sbtn" for="s-pic"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-9 9"/></svg>相簿／截圖<small>選已有的照片</small></label>
+    </div>
+    <input type="file" id="s-cam" accept="image/*" capture="environment" hidden>
+    <input type="file" id="s-pic" accept="image/*" hidden>
+    <form class="q" id="s-codef" style="display:flex;max-width:none;position:static;margin-top:4px"><input id="s-code" inputmode="search" placeholder="或輸入條碼數字、品牌名稱" aria-label="條碼或品牌"><button type="submit">查</button></form>
+    <div id="s-out" aria-live="polite"></div>
+  </section>
+
   <section class="view" id="v-list" hidden>
-    <div class="legend" id="legend"></div>
+    <details class="evmore" style="margin-top:10px"><summary>狀態標籤說明</summary><div class="legend" id="legend"></div></details>
     <div id="groups"></div>
   </section>
 
@@ -179,10 +263,13 @@ textarea{min-height:130px;resize:vertical}
     <p>網站：<a href="https://cxzzsf0896753245657-hue.github.io/Taiwan-Taiwan-check/">GitHub Pages</a>；Android APP 從 <a href="https://github.com/cxzzsf0896753245657-hue/Taiwan-Taiwan-check/releases/latest">GitHub Releases</a> 下載一次即可，APP 直接讀取線上網站，內容與功能更新都會自動套用，不需要重新安裝。iPhone 可用 Safari 開啟網站後「加入主畫面」。資料與原始碼：<a href="https://github.com/cxzzsf0896753245657-hue/Taiwan-Taiwan-check">GitHub</a>。</p>
     <h2>自動更新</h2>
     <p>每週由排程任務搜尋食藥署公告、檢調起訴、法院判決、性騷擾與性別歧視裁罰等新事件，更新既有案件進度並新增對象；使用者送出的網址、截圖與更正每 6 小時自動處理一次。最上方會顯示上次自動更新時間。</p>
+    <h2>帳號方案</h2>
+    <p>公開網站與 Android APP 由 GitHub 提供，跟 Claude 帳號方案無關，免費也能一直使用。本頁（Claude 版）在免費帳號也能開啟、查詢；貼截圖或內文的 AI 建檔會用到開啟者自己的 Claude 用量。定期自動更新與網址佇列需要付費方案的排程任務，回到免費帳號後會暫停，此時請改貼截圖或內文。</p>
     <h2>更正</h2>
     <p>任何紀錄如有錯誤或後續進度（例如改判、撤銷處分），在該卡片按「補充／更正」貼上網址或截圖即可，系統會自動查證並更正。更正不會刪除原始內容：原本的文字與來源仍顯示在卡片上（標示「原始紀錄」），每次修改前的完整資料都保存在「修訂紀錄」。本站為資訊整理，非法律意見。</p>
   </section>
 </main>
+<nav class="tabbar" role="tablist" aria-label="功能"><button role="tab" data-v="search" aria-selected="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>查詢</span></button><button role="tab" data-v="scan" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M7 9v6M10 9v6M13 9v6M17 9v6"/></svg><span>掃描</span></button><button role="tab" data-v="list" aria-selected="false"><svg viewBox="0 0 24 24"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></svg><span>清單</span></button><button role="tab" data-v="add" aria-selected="false"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg><span>新增</span></button><button role="tab" data-v="about" aria-selected="false"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span>說明</span></button></nav>
 <script>
 {
 const CATS=["食品/產品","企業/品牌","App/科技","企業人物","民意代表","政治人物","藝人/公眾人物","組織/政黨","其他"];
@@ -195,13 +282,19 @@ const $=s=>document.querySelector(s);
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const norm=s=>String(s||"").toLowerCase().replace(/臺/g,"台").replace(/[\s·・\-_.,，、。()（）「」『』]/g,"");
 const safeUrl=u=>/^https:\/\//.test(String(u||""))?String(u):"";
-let EXT=[],dbEntries=[],dbLoaded=false;const mergeE=()=>{const ids=new Set(dbEntries.map(e=>e.id));entries=dbEntries.concat(EXT.filter(e=>!ids.has(e.id)));};
+let EXT=[],dbEntries=[],dbLoaded=false,dataVer=0,listVer=-1;const mergeE=()=>{const ids=new Set(dbEntries.map(e=>e.id));entries=dbEntries.concat(EXT.filter(e=>!ids.has(e.id)));dataVer++;};
+let BRANDS={};fetchJSON("data/brands.json").then(b=>{BRANDS=b&&typeof b==="object"&&!Array.isArray(b)?b:{};dataVer++;if(entries.length){renderResults();}}).catch(()=>{});
+function fetchJSON(u){return fetch(u,{cache:"no-cache"}).then(r=>r.ok?r.json():null);}
 let entries=[],meta=null,db=null,canWrite=true,fCat="",fTag="",fParty="";
 
 /* tabs */
-const views=["search","list","add","about"];
-function show(v){if(!views.includes(v))v="search";for(const b of document.querySelectorAll("nav button"))b.setAttribute("aria-selected",b.dataset.v===v);for(const x of views)$("#v-"+x).hidden=x!==v;if(v==="list")renderList();}
-document.querySelector("nav").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;const v=b.dataset.v;if(location.hash!=="#"+v)location.hash=v==="search"?"":v;show(v);});
+const views=["search","scan","list","add","about"];
+let curView="";
+function show(v){if(!views.includes(v))v="search";if(v!=="scan")stopLive();if(v===curView)return;curView=v;for(const b of document.querySelectorAll("nav.tabbar button"))b.setAttribute("aria-selected",b.dataset.v===v);for(const x of views)$("#v-"+x).hidden=x!==v;if(v==="list")renderList();scrollTo({top:0});}
+function go(v){const h=v==="search"?"":"#"+v;if(location.hash!==h)window.history.replaceState(null,"",h||location.pathname+location.search);show(v);}
+document.querySelector("nav.tabbar").addEventListener("click",e=>{const b=e.target.closest("button");if(b)go(b.dataset.v);});
+$("#ftog").addEventListener("click",()=>{const f=$("#filters"),o=f.hidden;f.hidden=!o;$("#ftog").setAttribute("aria-expanded",o);});
+const setHH=()=>document.documentElement.style.setProperty("--hh",document.querySelector("header").offsetHeight+"px");setHH();addEventListener("resize",setHH);
 addEventListener("hashchange",()=>show(location.hash.slice(1)));
 
 /* filters */
@@ -213,56 +306,161 @@ function worst(e){let m=null;const all=(e.events||[]).slice().sort((a,b)=>String
 function hay(e){return [e.name,...(e.aliases||[])].map(norm);}
 function search(q){
   const n=norm(q);let pool=entries.filter(e=>(!fCat||e.category===fCat)&&(!fTag||(e.tags||[]).includes(fTag))&&(!fParty||partiesOf(e).includes(fParty)));
-  if(!n)return{direct:pool.slice().sort((a,b)=>String(b.updated||"").localeCompare(String(a.updated||""))),related:[],text:[]};
-  const direct=[],related=[],text=[];
+  if(!n)return{direct:pool.slice().sort((a,b)=>String(b.updated||"").localeCompare(String(a.updated||""))),brand:[],related:[],text:[]};
+  const direct=[],brand=[],related=[],text=[];
   for(const e of pool){
-    const h=hay(e);
+    const h=hay(e);let bh=null;
     if(h.some(x=>x.includes(n)||(n.length>=2&&n.includes(x)&&x.length>=2)))direct.push(e);
+    else if((bh=(BRANDS[e.id]||[]).find(b=>{const x=norm(b.name);return x.includes(n)||(n.length>=2&&x.length>=2&&n.includes(x));})))brand.push([e,bh]);
     else if((e.related||[]).some(r=>norm(r).includes(n)||(n.length>=2&&norm(r).length>=2&&n.includes(norm(r)))))related.push(e);
     else if(norm([e.summary,...(e.events||[]).map(v=>v.text)].join(" ")).includes(n))text.push(e);
   }
-  return{direct,related,text};
+  return{direct,brand,related,text};
 }
 function srcList(list){return '<ul class="src">'+(list||[]).map(x=>{const u=safeUrl(x.url);const k=KIND[x.kind]?x.kind:"news";return '<li><span class="kind '+(k!=="news"?"gov":"")+'">'+KIND[k]+'</span>'+(u?'<a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(x.pub||"來源")+(x.t?"｜"+esc(x.t):"")+'</a>':esc(x.pub||"")+(x.t?"｜"+esc(x.t):""))+'</li>';}).join("")+'</ul>';}
+function brandBlock(e){const bs=BRANDS[e.id];if(!bs||!bs.length)return "";const srcs=[];const seen=new Set();for(const b of bs)if(b.src&&!seen.has(b.src.url)){seen.add(b.src.url);srcs.push(b.src);}return '<div class="brands"><b>旗下品牌／產品（'+bs.length+'）</b><div class="bl">'+bs.map(b=>'<button type="button" data-q="'+esc(b.name)+'">'+esc(b.name)+(b.kind?'<small>'+esc(b.kind)+'</small>':'')+'</button>').join("")+'</div><details><summary>品牌對照來源（'+srcs.length+'）</summary>'+srcList(srcs)+'</details></div>';}
+function evHTML(e,v){const st=ST[v.status]||ST.report;const d=String(v.date||"");return '<div class="ev"><div class="d num">'+esc(d.slice(0,4)||"—")+'<small>'+esc(d.slice(5)||"")+'</small></div><div><span class="st '+st[1]+'">'+esc(st[0])+'</span>'+(v.tag?' <span class="tag">'+esc(v.tag)+'</span>':"")+(v.case?' <span class="kind">'+esc(v.case)+'</span>':"")+(v.party?' <span class="tag pty">當時：'+esc(v.party)+'</span>':e.party?' <span class="tag pty" title="犯案當時政黨未逐案核實">所屬（未核實當時）：'+esc(e.party)+'</span>':"")+(v.manual?' <span class="kind">手動新增·待查證</span>':"")+(v.retracted?' <span class="kind">已撤回</span>':"")+(v.correction?' <span class="kind gov">已更正</span>':"")+'<p'+(v.retracted||v.correction?' class="orig"':"")+'>'+(v.retracted||v.correction?'<small>原始紀錄：</small>':"")+esc(v.text)+'</p>'+srcList(v.sources)+(v.correction?'<div class="corr"><p><b>更正（'+esc(String(v.correction.date||"").slice(0,10))+'）：</b>'+esc(v.correction.text)+'</p>'+srcList(v.correction.sources)+'</div>':"")+(v.retracted?'<div class="corr"><p><b>撤回原因：</b>'+esc(v.retracted.reason||"")+'</p>'+srcList(v.retracted.sources)+'</div>':"")+'</div></div>';}
 function card(e,why){
   const w=worst(e),s=ST[w];
   const evs=(e.events||[]).slice().sort((a,b)=>String(b.date||"").localeCompare(String(a.date||"")));
   return '<article class="card"><h3>'+esc(e.name)+'</h3>'+
-  '<div class="sub">'+esc(e.category||"")+(partiesOf(e).length?'　政黨（犯案／事件當時）：'+esc(partiesOf(e).join('、')):'')+((e.aliases||[]).length?"　別名："+esc(e.aliases.join("、")):"")+(why?'　· '+esc(why):"")+'</div>'+
+  '<div class="sub">'+esc(e.category||"")+(partiesOf(e).length?'　政黨（犯案／事件當時）：'+esc(partiesOf(e).join('、')):'')+((e.aliases||[]).length?"　別名："+esc(e.aliases.join("、")):"")+'</div>'+(why?'<span class="hitwhy">'+esc(why)+'</span>':"")+
   '<div class="tags"><span class="st '+s[1]+'">'+esc(s[0])+'</span>'+(e.tags||[]).map(t=>'<span class="tag">'+esc(t)+'</span>').join("")+'</div>'+
   (e.summary?'<p class="summary">'+esc(e.summary)+'</p>':"")+
   ((e.related||[]).length?'<div class="rel">關聯：'+e.related.map(r=>'<button type="button" data-q="'+esc(r)+'">'+esc(r)+'</button>').join("")+'</div>':"")+
-  '<div style="margin-top:12px">'+evs.map(v=>{const st=ST[v.status]||ST.report;const d=String(v.date||"");return '<div class="ev"><div class="d num">'+esc(d.slice(0,4)||"—")+'<small>'+esc(d.slice(5)||"")+'</small></div><div><span class="st '+st[1]+'">'+esc(st[0])+'</span>'+(v.tag?' <span class="tag">'+esc(v.tag)+'</span>':"")+(v.case?' <span class="kind">'+esc(v.case)+'</span>':"")+(v.party?' <span class="tag pty">當時：'+esc(v.party)+'</span>':e.party?' <span class="tag pty" title="犯案當時政黨未逐案核實">所屬（未核實當時）：'+esc(e.party)+'</span>':"")+(v.manual?' <span class="kind">手動新增·待查證</span>':"")+(v.retracted?' <span class="kind">已撤回</span>':"")+(v.correction?' <span class="kind gov">已更正</span>':"")+'<p'+(v.retracted||v.correction?' class="orig"':"")+'>'+(v.retracted||v.correction?'<small>原始紀錄：</small>':"")+esc(v.text)+'</p>'+srcList(v.sources)+(v.correction?'<div class="corr"><p><b>更正（'+esc(String(v.correction.date||"").slice(0,10))+'）：</b>'+esc(v.correction.text)+'</p>'+srcList(v.correction.sources)+'</div>':"")+(v.retracted?'<div class="corr"><p><b>撤回原因：</b>'+esc(v.retracted.reason||"")+'</p>'+srcList(v.retracted.sources)+'</div>':"")+'</div></div>';}).join("")+'</div>'+
+  brandBlock(e)+'<div style="margin-top:8px">'+evs.slice(0,3).map(v=>evHTML(e,v)).join("")+(evs.length>3?'<details class="evmore"><summary>展開其餘 '+(evs.length-3)+' 筆事件</summary>'+evs.slice(3).map(v=>evHTML(e,v)).join("")+'</details>':"")+'</div>'+
   '<div class="foot"><span>'+esc({seed:"官方／新聞查證建檔",auto:"自動更新",manual:"使用者新增"}[e.origin]||"")+'</span><span>更新 '+esc(String(e.updated||"").slice(0,10))+'</span><button type="button" data-corr="'+esc(e.id)+'">補充／更正</button><button type="button" data-hist="'+esc(e.id)+'">修訂紀錄</button></div><div class="hist" id="h-'+esc(e.id)+'" hidden></div></article>';
 }
+let RQ=[],RN=0;
+const IO="IntersectionObserver" in window?new IntersectionObserver(es=>{for(const x of es)if(x.isIntersecting){IO.unobserve(x.target);pump();}},{rootMargin:"800px"}):null;
+function pump(){const box=$("#results");const old=box.querySelector(".sentinel");if(old)old.remove();const end=Math.min(RQ.length,RN+12);let h="";for(;RN<end;RN++){const it=RQ[RN];h+=typeof it==="string"?it:card(it[0],it[1]);}box.insertAdjacentHTML("beforeend",h);if(RN<RQ.length){box.insertAdjacentHTML("beforeend",'<button type="button" class="sentinel btn alt">顯示更多（還有 '+RQ.filter((x,i)=>i>=RN&&typeof x!=="string").length+' 筆）</button>');if(IO)IO.observe(box.querySelector(".sentinel"));}}
 function renderResults(){
   const q=$("#q").value.trim(),r=search(q),box=$("#results");
-  if(!entries.length){box.innerHTML='<p class="skeleton">'+(db?"資料庫目前沒有紀錄，可到「新增紀錄」加入第一筆。":"目前無法連上資料庫，請確認已登入後重新開啟。")+'</p>';return;}
-  let h="";
-  if(q){const all=r.direct.length+r.related.length+r.text.length;
-    h+=all?'<p class="verdict">「'+esc(q)+'」有 <span class="num" style="color:var(--red)">'+all+'</span> 筆相關紀錄</p>':'<p class="verdict clear">「'+esc(q)+'」目前沒有收錄紀錄</p><p class="hint">沒有收錄不代表沒有問題。若你有新聞或官方來源，可以<button type="button" data-fix="'+esc(q)+'">新增一筆</button>。</p>';}
-  else h+='<div class="count"><span>最近更新</span><span class="meta">共 '+entries.length+' 個對象</span></div>';
-  h+=r.direct.map(e=>card(e)).join("");
-  if(r.related.length)h+='<div class="count"><span>關聯命中：這些對象與「'+esc(q)+'」有關（母公司、子品牌、上下游或同案）</span></div>'+r.related.map(e=>card(e,"關聯："+esc(q))).join("");
-  if(r.text.length)h+='<div class="count"><span>內文提及</span></div>'+r.text.map(e=>card(e,"內文提及")).join("");
-  box.innerHTML=h;
+  if(!entries.length){box.innerHTML='<p class="skeleton">'+(db?"資料庫目前沒有紀錄，可到「新增」加入第一筆。":"目前無法連上資料庫，請確認已登入後重新開啟。")+'</p>';return;}
+  RQ=[];RN=0;
+  if(q){const all=r.direct.length+r.brand.length+r.related.length+r.text.length;
+    RQ.push(all?'<p class="verdict">「'+esc(q)+'」有 <span class="num" style="color:var(--red)">'+all+'</span> 筆相關紀錄</p>':'<p class="verdict clear">「'+esc(q)+'」目前沒有收錄紀錄</p><p class="hint" style="white-space:normal;flex-wrap:wrap">沒有收錄不代表沒有問題。若你有新聞或官方來源，可以<button type="button" data-fix="'+esc(q)+'">新增一筆</button>。</p>');}
+  else RQ.push('<div class="count"><span>最近更新</span><span class="meta">共 '+entries.length+' 個對象</span></div>');
+  for(const e of r.direct)RQ.push([e]);
+  if(r.brand.length){RQ.push('<div class="count"><span>旗下品牌／產品命中：「'+esc(q)+'」屬於這些公司</span></div>');for(const [e,b] of r.brand)RQ.push([e,"旗下"+(b.kind||"品牌")+"："+b.name]);}
+  if(r.related.length){RQ.push('<div class="count"><span>關聯命中：與「'+esc(q)+'」有關（上下游、同案、相關人）</span></div>');for(const e of r.related)RQ.push([e,"關聯："+q]);}
+  if(r.text.length){RQ.push('<div class="count"><span>內文提及</span></div>');for(const e of r.text)RQ.push([e,"內文提及"]);}
+  box.innerHTML="";pump();
 }
 $("#qf").addEventListener("submit",e=>{e.preventDefault();renderResults();});
 $("#q").addEventListener("input",()=>{clearTimeout(window.__t);window.__t=setTimeout(renderResults,150);});
 document.addEventListener("click",e=>{
+  if(e.target.closest(".sentinel")){pump();return;}
+  const g=e.target.closest("[data-go]");if(g){go(g.dataset.go);return;}
   const t=e.target.closest("[data-try],[data-q],[data-fix],[data-open],[data-corr],[data-hist]");if(!t)return;
-  if(t.dataset.try||t.dataset.q||t.dataset.open){$("#q").value=t.dataset.try||t.dataset.q||t.dataset.open;location.hash="";show("search");renderResults();scrollTo({top:0});}
-  else if(t.dataset.fix!==undefined){setCorr(null);$("#a-name").value=t.dataset.fix;location.hash="add";show("add");$("#in-url").focus();}
-  else if(t.dataset.corr){const e=entries.find(x=>x.id===t.dataset.corr);if(e){setCorr(e);location.hash="add";show("add");$("#in-url").focus();}}
+  if(t.dataset.try||t.dataset.q||t.dataset.open){$("#q").value=t.dataset.try||t.dataset.q||t.dataset.open;go("search");renderResults();scrollTo({top:0});}
+  else if(t.dataset.fix!==undefined){setCorr(null);$("#a-name").value=t.dataset.fix;go("add");$("#in-url").focus();}
+  else if(t.dataset.corr){const e=entries.find(x=>x.id===t.dataset.corr);if(e){setCorr(e);go("add");$("#in-url").focus();}}
   else if(t.dataset.hist){toggleHist(t.dataset.hist);}
 });
 
 /* list */
 function renderList(){
+  if(listVer===dataVer)return;listVer=dataVer;
   $("#legend").innerHTML=Object.values(ST).map(s=>'<span><span class="st '+s[1]+'">'+esc(s[0])+'</span></span>').join("");
   const g={};for(const e of entries)(g[e.category||"其他"]=g[e.category||"其他"]||[]).push(e);
   $("#groups").innerHTML=CATS.filter(c=>g[c]).map(c=>'<section class="grp"><h2><span class="num">'+g[c].length+'</span>'+esc(c)+'</h2><ul>'+g[c].sort((a,b)=>a.name.localeCompare(b.name,"zh-Hant")).map(e=>{const s=ST[worst(e)];return '<li><button type="button" data-open="'+esc(e.name)+'">'+esc(e.name)+(partiesOf(e).length?'<small class="meta">　'+esc(partiesOf(e).join('、'))+'</small>':'')+'</button><span class="st '+s[1]+'">'+esc(s[0])+'</span></li>';}).join("")+'</ul></section>').join("")||'<p class="skeleton">尚無資料</p>';
 }
+
+/* scan: barcode / QR / package photo */
+const BFMT=["qr_code","ean_13","ean_8","upc_a","upc_e","code_128","code_39","itf"];
+let zxP=null,liveStream=null,liveTimer=null,zxReader=null;
+async function detector(){if(!("BarcodeDetector" in window))return null;try{const f=await BarcodeDetector.getSupportedFormats();const use=BFMT.filter(x=>f.includes(x));return use.length?new BarcodeDetector({formats:use}):null;}catch(_){return null;}}
+function loadZX(){if(!zxP)zxP=new Promise((ok,no)=>{const sc=document.createElement("script");sc.src="vendor/zxing.min.js";sc.onload=()=>window.ZXing?ok(window.ZXing):no(new Error("zxing"));sc.onerror=()=>{zxP=null;no(new Error("zxing"));};document.head.append(sc);});return zxP;}
+function zxHints(Z){const h=new Map();h.set(Z.DecodeHintType.TRY_HARDER,true);return h;}
+async function decodeFile(file){
+  let bm=null;try{bm=await createImageBitmap(file);}catch(_){}
+  const d=await detector();
+  if(d&&bm){try{const r=await d.detect(bm);if(r&&r.length)return r[0].rawValue;}catch(_){}}
+  let Z;try{Z=await loadZX();}catch(_){return null;}
+  const url=URL.createObjectURL(file);
+  try{for(const mk of [()=>zxHints(Z),()=>{const h=new Map();h.set(Z.DecodeHintType.PURE_BARCODE,true);return h;}]){try{const res=await new Z.BrowserMultiFormatReader(mk()).decodeFromImageUrl(url);if(res)return res.getText();}catch(_){}}}
+  finally{URL.revokeObjectURL(url);}
+  return null;
+}
+async function toJpeg(file){try{const bm=await createImageBitmap(file);const k=Math.min(1,1600/Math.max(bm.width,bm.height));const c=document.createElement("canvas");c.width=Math.round(bm.width*k);c.height=Math.round(bm.height*k);c.getContext("2d").drawImage(bm,0,0,c.width,c.height);return await new Promise(r=>c.toBlob(b=>r(b||file),"image/jpeg",.85));}catch(_){return file;}}
+async function getSample(){try{if(!window.claude||!claude.use)return null;const sm=await claude.use("sample");if(!sm)return null;const lim=typeof sm.limits==="function"?await sm.limits():{};return lim&&lim.images?sm:null;}catch(_){return null;}}
+function sOut(){return $("#s-out");}
+function sNote(html){const p=document.createElement("div");p.className="sinfo";p.innerHTML=html;sOut().append(p);return p;}
+function findAll(names){const sv=[fCat,fTag,fParty];fCat=fTag=fParty="";const seen=new Map();try{for(const nm of names){const q=String(nm||"").trim();if(q.length<2)continue;const r=search(q);for(const e of r.direct)if(!seen.has(e.id))seen.set(e.id,[e,"名稱符合："+q]);for(const [e,b] of r.brand)if(!seen.has(e.id))seen.set(e.id,[e,"旗下"+(b.kind||"品牌")+"："+b.name]);for(const e of r.related)if(!seen.has(e.id))seen.set(e.id,[e,"關聯："+q]);}}finally{[fCat,fTag,fParty]=sv;}return [...seen.values()];}
+function showHits(names,label,extra){
+  const hits=(extra||[]).concat(findAll(names).filter(([e])=>!(extra||[]).some(([x])=>x.id===e.id)));const box=document.createElement("div");
+  box.innerHTML=hits.length?'<p class="verdict">'+esc(label)+'：找到 <span class="num" style="color:var(--red)">'+hits.length+'</span> 筆相關紀錄</p>'+hits.slice(0,12).map(([e,w])=>card(e,w)).join(""):'<p class="verdict clear">'+esc(label)+'：目前沒有收錄紀錄</p><p class="meta">查了：'+esc(names.filter(Boolean).join("、"))+'。沒有收錄不代表沒有問題。</p>';
+  sOut().append(box);
+}
+function gs1Note(code){const p=code.length===13?code.slice(0,3):code.length===12?"0"+code.slice(0,2):"";if(p==="471")return"台灣 GS1 註冊條碼（代表廠商在台灣申請條碼，不等於產地）";if(/^69\d$/.test(p))return"中國 GS1 註冊條碼（代表廠商在中國申請條碼，不等於產地；請看包裝上的產地與製造商）";if(/^45\d|^49\d/.test(p))return"日本 GS1 註冊條碼";if(/^0\d\d|^1[0-3]\d/.test(p))return"美國／加拿大 GS1 註冊條碼";if(/^880/.test(p))return"韓國 GS1 註冊條碼";if(/^489/.test(p))return"香港 GS1 註冊條碼";return"";}
+async function offLookup(code){try{const ctl=new AbortController();const t=setTimeout(()=>ctl.abort(),8000);const r=await fetch("https://world.openfoodfacts.org/api/v2/product/"+encodeURIComponent(code)+".json?fields=product_name,product_name_zh,brands,brands_tags,manufacturing_places",{signal:ctl.signal});clearTimeout(t);if(!r.ok)return null;const j=await r.json();return j&&j.status===1?j.product:null;}catch(_){return undefined;}}
+async function handleCode(raw,from){
+  const t=String(raw||"").trim();sOut().innerHTML="";if(!t)return;
+  if(/^\d{8}$|^\d{12,14}$/.test(t)){
+    const n=gs1Note(t);sNote('<b>條碼</b> <code>'+esc(t)+'</code>'+(n?'<br><span class="meta">'+esc(n)+'</span>':''));
+    const local=Object.entries(window.BARCODES||{}).find(([k])=>t.startsWith(k));
+    const p=await offLookup(t);const names=[];
+    if(p){const bs=String(p.brands||"").split(/[,，]/).map(x=>x.trim()).filter(Boolean);names.push(...bs,p.product_name_zh,p.product_name);sNote('條碼資料庫：<b>'+esc([p.product_name_zh||p.product_name,bs.join("、")].filter(Boolean).join("｜")||"有資料但沒有品牌")+'</b><br><span class="meta">資料來自 Open Food Facts 開放資料庫，可能不完整或有誤。</span>');}
+    if(local)names.push(local[1]);
+    if(names.filter(Boolean).length){showHits(names,"這個商品");}
+    else{const msg=sNote((p===undefined?"連不上條碼資料庫。":"條碼資料庫查不到這個商品。")+'請拍一張包裝上「品牌／製造商／國內負責廠商」的位置，或在上方直接輸入品牌名稱。');const sm=await getSample();if(sm){const b=document.createElement("div");b.className="btns";b.innerHTML='<label class="btn alt" for="s-cam">拍包裝讓 AI 讀品牌</label>';msg.append(b);}}
+    return;
+  }
+  const url=safeUrl(t)||(/^http:\/\//i.test(t)?t:"");
+  if(url){let host="";try{host=new URL(url).hostname.replace(/^www\./,"");}catch(_){}
+    const p=sNote('<b>QR code 是網址</b><br><span style="overflow-wrap:anywhere">'+esc(url)+'</span>');
+    const b=document.createElement("div");b.className="btns";
+    if(safeUrl(url)){const a=document.createElement("a");a.className="btn alt";a.href=url;a.target="_blank";a.rel="noopener";a.textContent="開啟網址";b.append(a);}
+    const s2=document.createElement("button");s2.type="button";s2.className="btn alt";s2.textContent="把網址送去新增紀錄";s2.onclick=()=>{go("add");const ta=$("#in-url");if(ta){ta.value=url;ta.focus();}};b.append(s2);p.append(b);
+    const words=[host,...host.split(".").filter(x=>x.length>=3&&!/^(com|net|org|gov|edu|www|html?)$/.test(x)),decodeURIComponent(url).replace(/^https?:\/\/[^/]+/,"").split(/[\/?#&=._\-]+/).filter(x=>/[一-鿿]{2,}/.test(x))].flat();
+    const bare=u=>String(u||"").replace(/^https?:\/\/(www\.)?/,"").replace(/[?#].*$/,"").replace(/\/$/,"");const key=bare(url);
+    const srcHits=key?entries.filter(e=>(e.events||[]).some(v=>(v.sources||[]).some(x=>bare(x.url)===key))).map(e=>[e,"這個網址是本紀錄的來源"]):[];
+    showHits(words,"這個網址",srcHits);return;
+  }
+  sNote('<b>讀到的內容</b><br>'+esc(t.slice(0,300)));
+  const parts=[t,...t.split(/[\s,，、|｜\/]+/)].filter(x=>x.length>=2).slice(0,12);
+  showHits(parts,from||"這段文字");
+}
+async function readPackage(file){
+  const sm=await getSample();if(!sm)return false;
+  const note=sNote("正在用 AI 讀包裝上的品牌與製造商…");
+  try{const blob=await toJpeg(file);
+    const prompt="這是一張商品包裝或商品照片。只根據圖中看得到的文字，不要猜。輸出 JSON：{brands:[品牌名稱],product:產品名稱,companies:[製造商、國內負責廠商、進口商、代理商的公司名稱],barcode:圖中條碼下方印的數字（看不清楚留空）}。看不到就留空陣列或空字串。";
+    let v;try{v=await sm.json(prompt,{images:[blob],modelTier:"quick"});}catch(err){if(err&&err.code)throw err;const r=await sm(prompt,{images:[blob]});v=JSON.parse(String(r.text).replace(/^[^{]*/,"").replace(/[^}]*$/,""));}
+    const brands=(v&&Array.isArray(v.brands)?v.brands:[]).map(String),cos=(v&&Array.isArray(v.companies)?v.companies:[]).map(String),prod=v&&v.product?String(v.product):"";
+    note.innerHTML='<b>AI 從照片讀到</b><br>品牌：'+esc(brands.join("、")||"—")+'<br>產品：'+esc(prod||"—")+'<br>廠商：'+esc(cos.join("、")||"—")+'<br><span class="meta">AI 讀圖可能有誤，請對照包裝。</span>';
+    const short=cos.map(c=>c.replace(/(股份)?有限公司|企業|實業|食品|工業|\(.*?\)|（.*?）/g,"").trim());
+    if(brands.length||cos.length||prod)showHits([...brands,...cos,...short,prod],"這個商品");
+    else sNote("照片裡讀不到品牌或廠商名稱，請拍清楚包裝背面的「製造商」欄。");
+    return true;
+  }catch(err){note.textContent=err&&err.code==="rate_limited"?"AI 使用太頻繁，請稍後再試。":"AI 讀圖失敗，請改輸入品牌名稱。";return true;}
+}
+async function handlePhoto(file){
+  if(!file)return;go("scan");sOut().innerHTML="";const st=sNote("正在辨識照片中的條碼／QR code…");
+  const code=await decodeFile(file);
+  if(code){st.remove();await handleCode(code,"照片");return;}
+  st.textContent="照片中沒有找到條碼或 QR code。";
+  if(!(await readPackage(file)))sNote("請拍清楚條碼，或在上方輸入包裝上的品牌、製造商名稱。");
+}
+function stopLive(){clearInterval(liveTimer);liveTimer=null;if(zxReader){try{zxReader.reset();}catch(_){}zxReader=null;}if(liveStream){for(const tr of liveStream.getTracks())tr.stop();liveStream=null;}const sb=$("#scanbox");if(sb)sb.hidden=true;}
+async function startLive(){
+  sOut().innerHTML="";
+  if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia){sNote("這個環境不能直接開相機，請改用「拍照」。");return;}
+  const video=$("#s-video");$("#scanbox").hidden=false;
+  const done=v=>{stopLive();if(navigator.vibrate)navigator.vibrate(60);handleCode(v,"即時掃描");};
+  try{
+    const d=await detector();
+    if(d){liveStream=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:"environment"}},audio:false});video.srcObject=liveStream;await video.play();
+      liveTimer=setInterval(async()=>{if(video.readyState<2)return;try{const r=await d.detect(video);if(r&&r.length)done(r[0].rawValue);}catch(_){}} ,250);}
+    else{const Z=await loadZX();zxReader=new Z.BrowserMultiFormatReader(zxHints(Z));await zxReader.decodeFromConstraints({video:{facingMode:{ideal:"environment"}}},video,(res)=>{if(res)done(res.getText());});liveStream=video.srcObject;}
+  }catch(err){stopLive();sNote(err&&err.name==="NotAllowedError"?"相機權限被拒絕。請允許相機，或改用「拍照」。":"無法開啟相機（"+esc(err&&err.name||"錯誤")+"），請改用「拍照」或「相簿」。");}
+}
+$("#s-live").addEventListener("click",startLive);
+$("#s-stop").addEventListener("click",stopLive);
+for(const id of ["s-cam","s-pic"])$("#"+id).addEventListener("change",e=>{const f=e.target.files&&e.target.files[0];e.target.value="";handlePhoto(f);});
+$("#s-codef").addEventListener("submit",e=>{e.preventDefault();handleCode($("#s-code").value);});
+addEventListener("visibilitychange",()=>{if(document.hidden)stopLive();});
 
 /* GitHub version: reports become issues; history comes from data/history.json */
 const REPO="cxzzsf0896753245657-hue/Taiwan-Taiwan-check";
