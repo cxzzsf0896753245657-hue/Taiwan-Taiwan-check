@@ -146,8 +146,11 @@ main{max-width:960px;padding:0 16px 24px}
 .hint{display:flex;align-items:center;gap:4px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -16px 6px;padding:0 16px;white-space:nowrap}
 .hint::-webkit-scrollbar,.chips::-webkit-scrollbar{display:none}
 .hint button{flex:none}
-.hint .ftog{margin-inline-start:auto;border:1.5px solid var(--line);border-radius:999px;padding:4px 12px;min-height:34px}
-.hint .ftog[aria-expanded=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.hintbar{display:flex;align-items:center;gap:8px;margin:0 -16px 6px 0}
+.hintbar .hint{flex:1;min-width:0;margin:0 0 0 -16px;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}
+.ftog{flex:none;font:inherit;font-size:14px;font-weight:700;display:inline-flex;align-items:center;gap:4px;border:0;border-radius:999px;padding:6px 14px;min-height:38px;margin-right:16px;background:var(--card);color:var(--ink);box-shadow:var(--sh);cursor:pointer;position:relative;overflow:hidden}
+.ftog svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
+.ftog[aria-expanded=true],.ftog.on{background:var(--ink);color:var(--bg)}
 .filters[hidden]{display:none}
 .chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:4px -16px;padding:0 16px}
 .chip{flex:none;border-radius:999px}
@@ -308,7 +311,7 @@ textarea#in-url{border-radius:14px}
       <input id="q" type="search" placeholder="輸入產品、公司、人名…" aria-label="查詢名稱" autocomplete="off">
       <button type="button" class="scanbtn" data-go="scan" aria-label="掃描條碼或拍照"><svg viewBox="0 0 24 24"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M7 9v6M10 9v6M13 9v6M17 9v6"/></svg></button><button type="submit">查</button>
     </form>
-    <p class="hint">試試：<button type="button" data-try="味全">味全</button><button type="button" data-try="泰山">泰山</button><button type="button" data-try="小紅書">小紅書</button><button type="button" data-try="柯文哲">柯文哲</button><button type="button" data-try="苦茶油">苦茶油</button><button type="button" data-try="林鳳營">林鳳營</button><button type="button" class="ftog" id="ftog" aria-expanded="false" aria-controls="filters">篩選</button></p>
+    <div class="hintbar"><p class="hint">試試：<button type="button" data-try="味全">味全</button><button type="button" data-try="泰山">泰山</button><button type="button" data-try="小紅書">小紅書</button><button type="button" data-try="柯文哲">柯文哲</button><button type="button" data-try="苦茶油">苦茶油</button><button type="button" data-try="林鳳營">林鳳營</button></p><button type="button" class="ftog" id="ftog" aria-expanded="false" aria-controls="filters"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>篩選</button></div>
     <div class="filters" id="filters" hidden>
     <div class="flab">分類</div><div class="chips" id="fcat" aria-label="分類篩選"></div>
     <div class="flab">議題</div><div class="chips" id="ftag" aria-label="議題篩選"></div>
@@ -392,7 +395,7 @@ let curView="";
 function show(v){if(/^q=/.test(v))v="search";if(!views.includes(v))v="search";if(v!=="scan")stopLive();if(v===curView)return;curView=v;for(const b of document.querySelectorAll("nav.tabbar button"))b.setAttribute("aria-selected",b.dataset.v===v);for(const x of views)$("#v-"+x).hidden=x!==v;if(v==="list")renderList();scrollTo({top:0});}
 function go(v){const h=v==="search"?"":"#"+v;if(location.hash!==h)window.history.replaceState(null,"",h||location.pathname+location.search);show(v);}
 document.querySelector("nav.tabbar").addEventListener("click",e=>{const b=e.target.closest("button");if(b)go(b.dataset.v);});
-$("#ftog").addEventListener("click",()=>{const f=$("#filters");f.hidden=false;const done=document.createElement("button");done.type="button";done.className="btn";done.style.width="100%";done.textContent="完成";done.onclick=closeSheet;const sh=openSheet("篩選",f,()=>{f.hidden=true;$("#qf").after(f);$("#ftog").setAttribute("aria-expanded","false");$("#ftog").textContent=(fCat||fTag||fParty)?"篩選・"+[fCat,fTag,fParty].filter(Boolean).length:"篩選";});sh.append(done);$("#ftog").setAttribute("aria-expanded","true");});
+$("#ftog").addEventListener("click",()=>{const f=$("#filters");f.hidden=false;const done=document.createElement("button");done.type="button";done.className="btn";done.style.width="100%";done.textContent="完成";done.onclick=closeSheet;const sh=openSheet("篩選",f,()=>{f.hidden=true;$("#qf").after(f);$("#ftog").setAttribute("aria-expanded","false");const nF=[fCat,fTag,fParty].filter(Boolean).length;$("#ftog").lastChild.textContent=nF?"篩選・"+nF:"篩選";$("#ftog").classList.toggle("on",!!nF);});sh.append(done);$("#ftog").setAttribute("aria-expanded","true");});
 const setHH=()=>document.documentElement.style.setProperty("--hh",document.querySelector("header").offsetHeight+"px");setHH();addEventListener("resize",setHH);
 addEventListener("hashchange",()=>{const h=location.hash.slice(1);if(/^q=/.test(h)){try{$("#q").value=decodeURIComponent(h.slice(2));}catch(_){}curView="";show("search");renderResults();}else show(h);});
 
