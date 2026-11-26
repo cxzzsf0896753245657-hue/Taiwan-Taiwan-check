@@ -60,3 +60,7 @@ base64 -w0 bilei.jks   # 複製輸出貼到 ANDROID_KEYSTORE_B64
 - 每筆事件文字結尾註明彙整自哪個網站。
 
 這個檔案與 `entries.json` 分開存放；同步資料庫到 `entries.json` 時不要覆寫 `ext.json`。要更正 ext.json 的紀錄，把整筆搬進資料庫（先寫 history），網頁會優先顯示資料庫版本。
+
+## 私人資料（site/data/private.enc）
+
+`private.enc` 是加密的私人案件資料（PBKDF2-SHA256 31 萬次 + AES-256-GCM）。網站與 APP 在「說明 → 私人資料」輸入密語後，才會在該裝置上解開並合併顯示。密語不在 repo 裡，沒有密語無法讀取內容。
