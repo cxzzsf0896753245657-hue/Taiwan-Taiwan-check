@@ -194,6 +194,105 @@ main{max-width:960px;padding:0 16px 24px}
 .sinfo .btns{margin-top:8px}
 @media(min-width:760px){.grp ul{columns:2 260px}.ev{grid-template-columns:6.5em minmax(0,1fr);gap:4px 16px}.ev .d{display:block;font-size:19px}.ev .d small{display:block}.brand{font-size:28px}}
 @media(max-width:380px){.sgrid{grid-template-columns:1fr 1fr}.sgrid .sbtn.main{grid-column:1/-1;min-height:96px}}
+
+/* ===== SOFT CARD THEME + MOTION (ref: oceanads 動態效果 24) ===== */
+:root{--bg:light-dark(#f3f1ed,#0d0d0d);--card:light-dark(#fff,#1a1a1a);--soft:light-dark(#f3f1ed,#232323);--line:light-dark(#e6e3dd,#2c2c2c);--sh:0 1px 2px rgba(0,0,0,.04),0 6px 20px rgba(0,0,0,.06);--ease:cubic-bezier(.2,.8,.2,1);--spring:cubic-bezier(.34,1.56,.64,1)}
+body{background:var(--bg)}
+header,nav.tabbar{background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px)}
+header{box-shadow:none;border-bottom:1px solid var(--line)}
+.q{border:0;border-radius:999px;background:var(--card);box-shadow:var(--sh)}
+.q:focus-within{box-shadow:0 0 0 2px var(--red),var(--sh)}
+.q input{background:transparent;padding-left:20px}
+.q button[type=submit]{border-radius:999px;margin:5px;padding:0 20px;background:var(--ink);color:var(--bg)}
+.q .scanbtn{border:0}
+.card{background:var(--card);border:0;border-radius:20px;box-shadow:var(--sh);padding:16px}
+.ch{display:flex;gap:12px;align-items:center;position:relative;padding-right:40px}
+.ch h3{font-size:20px;line-height:1.25}
+.ch .sub{margin-top:2px}
+.tile{flex:none;width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-weight:900;font-size:22px;color:#fff;background:#8a8580}
+.t-final,.t-guilty{background:var(--red)}.t-trial{background:#c77700}.t-admin,.t-civil{background:#2b2b2b}.t-clear{background:#2f6b4f}.t-warn,.t-invest,.t-report,.t-affected{background:#8a8580}
+.more{position:absolute;right:-6px;top:-4px;width:44px;height:44px;border:0;background:none;color:var(--mut);font-size:22px;border-radius:999px;cursor:pointer}
+.tags{margin:12px 0 6px}
+.st,.tag,.kind{border-radius:999px}
+.st{padding:3px 10px}.tag{padding:2px 9px}
+.btn{border-radius:999px;position:relative;overflow:hidden}
+.btn.alt{background:var(--card)}
+.chip,.rel button{border-radius:999px}
+.rel button{background:var(--soft)}
+.brands{background:var(--soft);border-radius:14px}
+.ev{border-top:1px solid var(--line)}
+.drop,.sinfo{background:var(--card);border:0;box-shadow:var(--sh);border-radius:20px}
+.sbtn{border:0;background:var(--card);box-shadow:var(--sh);border-radius:20px}
+.sbtn.main{background:var(--ink)}
+.grp{border:0;margin-top:22px;padding:0}
+.grp h2{font-size:17px;margin:0 0 8px 4px}.grp h2 .num{font-size:20px}
+.grp ul{display:grid;gap:8px;columns:auto}
+.grp li{border:0;padding:0;break-inside:auto}
+.grp li .row-btn,.row-btn{font:inherit;width:100%;display:flex;align-items:center;gap:12px;text-align:start;background:var(--card);border:0;border-radius:16px;box-shadow:var(--sh);padding:10px 12px;color:var(--ink);cursor:pointer;position:relative;overflow:hidden}
+.row-btn .tile{width:44px;height:44px;border-radius:12px;font-size:18px}
+.row-btn .rt{flex:1;min-width:0}.row-btn .rt b{display:block;font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row-btn .rt small{display:block;color:var(--mut);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media(min-width:760px){.grp ul{grid-template-columns:1fr 1fr}}
+.legend .st{font-size:12px}
+input,select,textarea{border-radius:12px;background:var(--card);border:1.5px solid var(--line)}
+textarea#in-url{border-radius:14px}
+.hist{border-radius:12px}
+/* ripple */
+.rp{position:absolute;border-radius:50%;pointer-events:none;background:currentColor;opacity:.18;transform:scale(0);animation:rp .55s var(--ease) forwards}
+@keyframes rp{to{transform:scale(1);opacity:0}}
+/* loading button */
+.btn.busy{color:transparent!important;pointer-events:none}
+.btn.busy::after,.btn.ok::after{content:"";position:absolute;inset:0;margin:auto;width:20px;height:20px}
+.btn.busy::after{border:2.5px solid color-mix(in srgb,var(--bg) 40%,transparent);border-top-color:var(--bg);border-radius:50%;animation:spin .7s linear infinite}
+.btn.alt.busy::after{border-color:var(--line);border-top-color:var(--ink)}
+.btn.ok{color:transparent!important}
+.btn.ok::after{width:10px;height:18px;border:solid var(--bg);border-width:0 3px 3px 0;transform:translateY(-2px) rotate(45deg);animation:pop .35s var(--spring)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pop{from{transform:translateY(-2px) rotate(45deg) scale(0)}}
+/* toast */
+.toast{position:fixed;left:50%;bottom:calc(var(--bar) + env(safe-area-inset-bottom) + 14px);z-index:60;transform:translate(-50%,20px);opacity:0;background:var(--ink);color:var(--bg);padding:11px 18px;border-radius:999px;font-size:14px;font-weight:700;max-width:calc(100% - 32px);box-shadow:0 8px 24px rgba(0,0,0,.2);transition:transform .35s var(--spring),opacity .25s;pointer-events:none}
+.toast.on{transform:translate(-50%,0);opacity:1}
+/* bottom sheet */
+.scrim{position:fixed;inset:0;z-index:70;background:rgba(0,0,0,.35);opacity:0;transition:opacity .25s;backdrop-filter:blur(2px)}
+.scrim.on{opacity:1}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:71;max-height:82vh;overflow:auto;background:var(--card);border-radius:22px 22px 0 0;padding:8px 16px calc(16px + env(safe-area-inset-bottom));transform:translateY(105%);transition:transform .42s var(--spring);box-shadow:0 -8px 30px rgba(0,0,0,.15);max-width:720px;margin:0 auto}
+.sheet.on{transform:none}
+.sheet .grab{width:40px;height:5px;border-radius:9px;background:var(--line);margin:4px auto 10px}
+.sheet h4{margin:0 0 8px;font-size:17px}
+.sheet .act{font:inherit;width:100%;display:flex;gap:12px;align-items:center;text-align:start;min-height:52px;padding:0 6px;border:0;border-bottom:1px solid var(--line);background:none;color:var(--ink);font-weight:700;cursor:pointer;position:relative;overflow:hidden}
+.sheet .act:last-child{border-bottom:0}
+.sheet .chips{flex-wrap:wrap;overflow:visible;margin:6px 0 14px;padding:0}
+.flab{font-size:13px;color:var(--mut);font-weight:700;margin-top:6px}
+/* typing indicator + progress */
+.typing{display:inline-flex;gap:4px;vertical-align:middle;margin-left:6px}
+.typing i{width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.35;animation:dot 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes dot{40%{opacity:1;transform:translateY(-3px)}}
+.prog{height:6px;border-radius:9px;background:var(--line);overflow:hidden;margin-top:8px}
+.prog i{display:block;height:100%;width:0;background:var(--red);border-radius:9px;transition:width .3s var(--ease)}
+/* skeleton */
+.sk{background:var(--card);border-radius:20px;box-shadow:var(--sh);padding:16px;margin-top:12px}
+.sk .l{height:14px;border-radius:8px;margin:10px 0;background:linear-gradient(90deg,var(--soft) 25%,var(--line) 50%,var(--soft) 75%);background-size:300% 100%;animation:shimmer 1.3s infinite}
+.sk .t{width:52px;height:52px;border-radius:14px}
+@keyframes shimmer{from{background-position:100% 0}to{background-position:0 0}}
+/* shake */
+.shake{animation:shake .42s}
+@keyframes shake{20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)}}
+/* pull to refresh */
+.ptr{position:fixed;left:50%;top:calc(var(--hh) + 6px);z-index:15;width:38px;height:38px;margin-left:-19px;border-radius:50%;background:var(--card);box-shadow:var(--sh);display:grid;place-items:center;opacity:0;transform:translateY(-30px) scale(.6);pointer-events:none}
+.ptr::after{content:"";width:18px;height:18px;border-radius:50%;border:2.5px solid var(--line);border-top-color:var(--red)}
+.ptr.spin::after{animation:spin .7s linear infinite}
+@media(prefers-reduced-motion:no-preference){
+  .stag{animation:rise .45s var(--ease) both}
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}}
+  .view:not([hidden]){animation:vin .28s var(--ease)}
+  @keyframes vin{from{opacity:0;transform:translateY(8px)}}
+  .card,.row-btn,.sbtn{transition:transform .2s var(--ease)}
+  .card.pressing,.row-btn:active,.sbtn:active{transform:scale(.98)}
+  nav.tabbar button[aria-selected=true] svg{animation:pop2 .4s var(--spring)}
+  @keyframes pop2{from{transform:scale(.7)}}
+}
+@media(prefers-reduced-motion:reduce){.rp,.toast,.sheet,.scrim{transition:none;animation:none}}
 </style>
 </head>
 <body>
@@ -211,11 +310,11 @@ main{max-width:960px;padding:0 16px 24px}
     </form>
     <p class="hint">試試：<button type="button" data-try="味全">味全</button><button type="button" data-try="泰山">泰山</button><button type="button" data-try="小紅書">小紅書</button><button type="button" data-try="柯文哲">柯文哲</button><button type="button" data-try="苦茶油">苦茶油</button><button type="button" data-try="林鳳營">林鳳營</button><button type="button" class="ftog" id="ftog" aria-expanded="false" aria-controls="filters">篩選</button></p>
     <div class="filters" id="filters" hidden>
-    <div class="chips" id="fcat" aria-label="分類篩選"></div>
-    <div class="chips" id="ftag" aria-label="議題篩選"></div>
-    <div class="chips" id="fparty" aria-label="政黨篩選"></div>
+    <div class="flab">分類</div><div class="chips" id="fcat" aria-label="分類篩選"></div>
+    <div class="flab">議題</div><div class="chips" id="ftag" aria-label="議題篩選"></div>
+    <div class="flab">政黨（犯案／事件當時）</div><div class="chips" id="fparty" aria-label="政黨篩選"></div>
     </div>
-    <div id="results"><p class="skeleton">正在讀取資料庫…</p></div>
+    <div id="results"><div class="sk"><div style="display:flex;gap:12px;align-items:center"><div class="l t"></div><div style="flex:1"><div class="l" style="width:55%"></div><div class="l" style="width:35%"></div></div></div><div class="l"></div><div class="l" style="width:80%"></div></div><div class="sk"><div style="display:flex;gap:12px;align-items:center"><div class="l t"></div><div style="flex:1"><div class="l" style="width:55%"></div><div class="l" style="width:35%"></div></div></div><div class="l"></div><div class="l" style="width:80%"></div></div><div class="sk"><div style="display:flex;gap:12px;align-items:center"><div class="l t"></div><div style="flex:1"><div class="l" style="width:55%"></div><div class="l" style="width:35%"></div></div></div><div class="l"></div><div class="l" style="width:80%"></div></div></div>
   </section>
 
   <section class="view" id="v-scan" hidden>
@@ -290,12 +389,12 @@ let entries=[],meta=null,db=null,canWrite=true,fCat="",fTag="",fParty="";
 /* tabs */
 const views=["search","scan","list","add","about"];
 let curView="";
-function show(v){if(!views.includes(v))v="search";if(v!=="scan")stopLive();if(v===curView)return;curView=v;for(const b of document.querySelectorAll("nav.tabbar button"))b.setAttribute("aria-selected",b.dataset.v===v);for(const x of views)$("#v-"+x).hidden=x!==v;if(v==="list")renderList();scrollTo({top:0});}
+function show(v){if(/^q=/.test(v))v="search";if(!views.includes(v))v="search";if(v!=="scan")stopLive();if(v===curView)return;curView=v;for(const b of document.querySelectorAll("nav.tabbar button"))b.setAttribute("aria-selected",b.dataset.v===v);for(const x of views)$("#v-"+x).hidden=x!==v;if(v==="list")renderList();scrollTo({top:0});}
 function go(v){const h=v==="search"?"":"#"+v;if(location.hash!==h)window.history.replaceState(null,"",h||location.pathname+location.search);show(v);}
 document.querySelector("nav.tabbar").addEventListener("click",e=>{const b=e.target.closest("button");if(b)go(b.dataset.v);});
-$("#ftog").addEventListener("click",()=>{const f=$("#filters"),o=f.hidden;f.hidden=!o;$("#ftog").setAttribute("aria-expanded",o);});
+$("#ftog").addEventListener("click",()=>{const f=$("#filters");f.hidden=false;const done=document.createElement("button");done.type="button";done.className="btn";done.style.width="100%";done.textContent="完成";done.onclick=closeSheet;const sh=openSheet("篩選",f,()=>{f.hidden=true;$("#qf").after(f);$("#ftog").setAttribute("aria-expanded","false");$("#ftog").textContent=(fCat||fTag||fParty)?"篩選・"+[fCat,fTag,fParty].filter(Boolean).length:"篩選";});sh.append(done);$("#ftog").setAttribute("aria-expanded","true");});
 const setHH=()=>document.documentElement.style.setProperty("--hh",document.querySelector("header").offsetHeight+"px");setHH();addEventListener("resize",setHH);
-addEventListener("hashchange",()=>show(location.hash.slice(1)));
+addEventListener("hashchange",()=>{const h=location.hash.slice(1);if(/^q=/.test(h)){try{$("#q").value=decodeURIComponent(h.slice(2));}catch(_){}curView="";show("search");renderResults();}else show(h);});
 
 /* filters */
 function chips(el,list,cur,set){el.innerHTML=['<button type="button" class="chip" data-x="" aria-pressed="'+(!cur)+'">全部</button>'].concat(list.map(c=>'<button type="button" class="chip" data-x="'+esc(c)+'" aria-pressed="'+(cur===c)+'">'+esc(c)+'</button>')).join("");el.onclick=e=>{const b=e.target.closest(".chip");if(!b)return;set(b.dataset.x);};}
@@ -323,8 +422,8 @@ function evHTML(e,v){const st=ST[v.status]||ST.report;const d=String(v.date||"")
 function card(e,why){
   const w=worst(e),s=ST[w];
   const evs=(e.events||[]).slice().sort((a,b)=>String(b.date||"").localeCompare(String(a.date||"")));
-  return '<article class="card"><h3>'+esc(e.name)+'</h3>'+
-  '<div class="sub">'+esc(e.category||"")+(partiesOf(e).length?'　政黨（犯案／事件當時）：'+esc(partiesOf(e).join('、')):'')+((e.aliases||[]).length?"　別名："+esc(e.aliases.join("、")):"")+'</div>'+(why?'<span class="hitwhy">'+esc(why)+'</span>':"")+
+  return '<article class="card" data-card="'+esc(e.id)+'"><div class="ch"><span class="tile t-'+w+'" aria-hidden="true">'+esc(String(e.name||"?").trim().charAt(0))+'</span><div><h3>'+esc(e.name)+'</h3>'+
+  '<div class="sub">'+esc(e.category||"")+(partiesOf(e).length?'　政黨（犯案／事件當時）：'+esc(partiesOf(e).join('、')):'')+((e.aliases||[]).length?"　別名："+esc(e.aliases.join("、")):"")+'</div>'+(why?'<span class="hitwhy">'+esc(why)+'</span>':"")+'</div><button type="button" class="more" data-more="'+esc(e.id)+'" aria-label="更多動作">⋯</button></div>'+
   '<div class="tags"><span class="st '+s[1]+'">'+esc(s[0])+'</span>'+(e.tags||[]).map(t=>'<span class="tag">'+esc(t)+'</span>').join("")+'</div>'+
   (e.summary?'<p class="summary">'+esc(e.summary)+'</p>':"")+
   ((e.related||[]).length?'<div class="rel">關聯：'+e.related.map(r=>'<button type="button" data-q="'+esc(r)+'">'+esc(r)+'</button>').join("")+'</div>':"")+
@@ -333,7 +432,7 @@ function card(e,why){
 }
 let RQ=[],RN=0;
 const IO="IntersectionObserver" in window?new IntersectionObserver(es=>{for(const x of es)if(x.isIntersecting){IO.unobserve(x.target);pump();}},{rootMargin:"800px"}):null;
-function pump(){const box=$("#results");const old=box.querySelector(".sentinel");if(old)old.remove();const end=Math.min(RQ.length,RN+12);let h="";for(;RN<end;RN++){const it=RQ[RN];h+=typeof it==="string"?it:card(it[0],it[1]);}box.insertAdjacentHTML("beforeend",h);if(RN<RQ.length){box.insertAdjacentHTML("beforeend",'<button type="button" class="sentinel btn alt">顯示更多（還有 '+RQ.filter((x,i)=>i>=RN&&typeof x!=="string").length+' 筆）</button>');if(IO)IO.observe(box.querySelector(".sentinel"));}}
+function pump(){const box=$("#results");const old=box.querySelector(".sentinel");if(old)old.remove();const end=Math.min(RQ.length,RN+12);let h="";for(;RN<end;RN++){const it=RQ[RN];h+=typeof it==="string"?it:card(it[0],it[1]);}const first=!box.querySelector(".card");box.insertAdjacentHTML("beforeend",h);if(first)[...box.querySelectorAll(".card")].slice(0,8).forEach((c,i)=>{c.classList.add("stag");c.style.animationDelay=(i*45)+"ms";});if(RN<RQ.length){box.insertAdjacentHTML("beforeend",'<button type="button" class="sentinel btn alt">顯示更多（還有 '+RQ.filter((x,i)=>i>=RN&&typeof x!=="string").length+' 筆）</button>');if(IO)IO.observe(box.querySelector(".sentinel"));}}
 function renderResults(){
   const q=$("#q").value.trim(),r=search(q),box=$("#results");
   if(!entries.length){box.innerHTML='<p class="skeleton">'+(db?"資料庫目前沒有紀錄，可到「新增」加入第一筆。":"目前無法連上資料庫，請確認已登入後重新開啟。")+'</p>';return;}
@@ -347,7 +446,7 @@ function renderResults(){
   if(r.text.length){RQ.push('<div class="count"><span>內文提及</span></div>');for(const e of r.text)RQ.push([e,"內文提及"]);}
   box.innerHTML="";pump();
 }
-$("#qf").addEventListener("submit",e=>{e.preventDefault();renderResults();});
+$("#qf").addEventListener("submit",e=>{e.preventDefault();if(!$("#q").value.trim()){shake($("#qf"));return;}renderResults();});
 $("#q").addEventListener("input",()=>{clearTimeout(window.__t);window.__t=setTimeout(renderResults,150);});
 document.addEventListener("click",e=>{
   if(e.target.closest(".sentinel")){pump();return;}
@@ -364,8 +463,45 @@ function renderList(){
   if(listVer===dataVer)return;listVer=dataVer;
   $("#legend").innerHTML=Object.values(ST).map(s=>'<span><span class="st '+s[1]+'">'+esc(s[0])+'</span></span>').join("");
   const g={};for(const e of entries)(g[e.category||"其他"]=g[e.category||"其他"]||[]).push(e);
-  $("#groups").innerHTML=CATS.filter(c=>g[c]).map(c=>'<section class="grp"><h2><span class="num">'+g[c].length+'</span>'+esc(c)+'</h2><ul>'+g[c].sort((a,b)=>a.name.localeCompare(b.name,"zh-Hant")).map(e=>{const s=ST[worst(e)];return '<li><button type="button" data-open="'+esc(e.name)+'">'+esc(e.name)+(partiesOf(e).length?'<small class="meta">　'+esc(partiesOf(e).join('、'))+'</small>':'')+'</button><span class="st '+s[1]+'">'+esc(s[0])+'</span></li>';}).join("")+'</ul></section>').join("")||'<p class="skeleton">尚無資料</p>';
+  $("#groups").innerHTML=CATS.filter(c=>g[c]).map(c=>'<section class="grp"><h2><span class="num">'+g[c].length+'</span>'+esc(c)+'</h2><ul>'+g[c].sort((a,b)=>a.name.localeCompare(b.name,"zh-Hant")).map(e=>{const s=ST[worst(e)];const w2=worst(e);return '<li><button type="button" class="row-btn" data-open="'+esc(e.name)+'"><span class="tile t-'+w2+'" aria-hidden="true">'+esc(String(e.name||"?").trim().charAt(0))+'</span><span class="rt"><b>'+esc(e.name)+'</b><small>'+esc([...(e.tags||[]),...partiesOf(e)].join('・')||e.category||'')+'</small></span><span class="st '+s[1]+'">'+esc(s[0])+'</span></button></li>';}).join("")+'</ul></section>').join("")||'<p class="skeleton">尚無資料</p>';
 }
+
+/* ===== motion & feedback helpers ===== */
+const RM=matchMedia("(prefers-reduced-motion: reduce)");
+function toast(t){let el=document.querySelector(".toast");if(!el){el=document.createElement("div");el.className="toast";el.setAttribute("role","status");document.body.append(el);}el.textContent=t;el.classList.add("on");clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove("on"),2600);}
+function shake(el){if(!el)return;el.classList.remove("shake");void el.offsetWidth;el.classList.add("shake");if(navigator.vibrate)navigator.vibrate(30);}
+async function busy(btn,fn){if(!btn)return fn();btn.classList.add("busy");try{const r=await fn();btn.classList.remove("busy");btn.classList.add("ok");setTimeout(()=>btn.classList.remove("ok"),900);return r;}catch(e){btn.classList.remove("busy");shake(btn);throw e;}}
+function typingHTML(t){return esc(t)+'<span class="typing" aria-hidden="true"><i></i><i></i><i></i></span>';}
+let sheetClose=null;
+function openSheet(title,content,onClose){closeSheet();const sc=document.createElement("div");sc.className="scrim";const sh=document.createElement("div");sh.className="sheet";sh.setAttribute("role","dialog");sh.setAttribute("aria-modal","true");sh.setAttribute("aria-label",title);sh.innerHTML='<div class="grab"></div><h4></h4>';sh.querySelector("h4").textContent=title;if(typeof content==="string")sh.insertAdjacentHTML("beforeend",content);else sh.append(content);document.body.append(sc,sh);requestAnimationFrame(()=>{sc.classList.add("on");sh.classList.add("on");});
+  let y0=null;sh.addEventListener("touchstart",e=>{if(sh.scrollTop<=0)y0=e.touches[0].clientY;},{passive:true});sh.addEventListener("touchmove",e=>{if(y0!==null){const d=e.touches[0].clientY-y0;if(d>0)sh.style.transform="translateY("+d+"px)";}},{passive:true});sh.addEventListener("touchend",e=>{if(y0===null)return;const d=e.changedTouches[0].clientY-y0;y0=null;sh.style.transform="";if(d>90)closeSheet();});
+  sc.addEventListener("click",closeSheet);sheetClose=()=>{sc.classList.remove("on");sh.classList.remove("on");if(onClose)onClose();setTimeout(()=>{sc.remove();sh.remove();},RM.matches?0:380);sheetClose=null;};const f=sh.querySelector("button,a,input");if(f)f.focus({preventScroll:true});return sh;}
+function closeSheet(){if(sheetClose)sheetClose();}
+addEventListener("keydown",e=>{if(e.key==="Escape")closeSheet();});
+/* ripple */
+document.addEventListener("pointerdown",e=>{const b=e.target.closest(".btn,.sbtn,.row-btn,nav.tabbar button,.chip,.rel button,.brands .bl button,.sheet .act,.q button");if(!b||RM.matches)return;const r=b.getBoundingClientRect();const d=Math.max(r.width,r.height)*2.2;const sp=document.createElement("span");sp.className="rp";sp.style.cssText="width:"+d+"px;height:"+d+"px;left:"+(e.clientX-r.left-d/2)+"px;top:"+(e.clientY-r.top-d/2)+"px";if(getComputedStyle(b).position==="static")b.style.position="relative";b.style.overflow="hidden";b.append(sp);setTimeout(()=>sp.remove(),600);},{passive:true});
+/* card actions: ⋯ button or long press (context menu) */
+function cardActions(id){const e=entries.find(x=>x.id===id);if(!e)return;const box=document.createElement("div");
+  const acts=[["分享這筆紀錄",async()=>{const txt=e.name+"："+(e.summary||"")+"（避雷查）";const url="https://cxzzsf0896753245657-hue.github.io/Taiwan-Taiwan-check/#q="+encodeURIComponent(e.name);try{if(navigator.share){await navigator.share({title:e.name,text:txt,url});return;}}catch(_){return;}try{await navigator.clipboard.writeText(txt+" "+url);toast("已複製分享文字");}catch(_){toast("無法複製");}}],
+    ["複製摘要",async()=>{try{await navigator.clipboard.writeText(e.name+"："+(e.summary||""));toast("已複製摘要");}catch(_){toast("無法複製");}}],
+    ["補充／更正",()=>{if(typeof setCorr==="function"){setCorr(e);go("add");}}],
+    ["修訂紀錄",()=>{toggleHist(id);const c=document.querySelector('[data-card="'+CSS.escape(id)+'"]');if(c)c.scrollIntoView({behavior:"smooth",block:"center"});}]];
+  for(const [l,f] of acts){const b=document.createElement("button");b.type="button";b.className="act";b.textContent=l;b.onclick=()=>{closeSheet();f();};box.append(b);}
+  if(navigator.vibrate)navigator.vibrate(12);openSheet(e.name,box);}
+document.addEventListener("click",e=>{const m=e.target.closest("[data-more]");if(m){e.stopPropagation();cardActions(m.dataset.more);}},true);
+let lpT=null,lpEl=null,lpX=0,lpY=0;
+document.addEventListener("pointerdown",e=>{const c=e.target.closest(".card");if(!c||e.target.closest("a,button,summary,input"))return;lpEl=c;lpX=e.clientX;lpY=e.clientY;c.classList.add("pressing");lpT=setTimeout(()=>{c.classList.remove("pressing");lpT=null;cardActions(c.dataset.card);},520);},{passive:true});
+const lpCancel=()=>{clearTimeout(lpT);lpT=null;if(lpEl)lpEl.classList.remove("pressing");lpEl=null;};
+document.addEventListener("pointerup",lpCancel);document.addEventListener("pointercancel",lpCancel);
+document.addEventListener("pointermove",e=>{if(lpEl&&Math.hypot(e.clientX-lpX,e.clientY-lpY)>10)lpCancel();},{passive:true});
+document.addEventListener("contextmenu",e=>{const c=e.target.closest(".card");if(c&&!e.target.closest("a")){e.preventDefault();lpCancel();cardActions(c.dataset.card);}});
+/* pull to refresh */
+(()=>{const ptr=document.createElement("div");ptr.className="ptr";document.body.append(ptr);let y0=null,d=0;
+  addEventListener("touchstart",e=>{y0=(scrollY<=0&&!document.querySelector(".sheet"))?e.touches[0].clientY:null;d=0;},{passive:true});
+  addEventListener("touchmove",e=>{if(y0===null)return;d=Math.max(0,e.touches[0].clientY-y0);const k=Math.min(1,d/110);ptr.style.opacity=k;ptr.style.transform="translateY("+(k*36-30)+"px) rotate("+(d*2)+"deg) scale("+(.6+.4*k)+")";},{passive:true});
+  addEventListener("touchend",async()=>{if(y0===null)return;y0=null;if(d>110){ptr.classList.add("spin");try{await (window.__refresh?window.__refresh():new Promise(r=>{location.reload();r();}));toast("已更新到最新資料");}catch(_){toast("更新失敗");}ptr.classList.remove("spin");}ptr.style.opacity=0;ptr.style.transform="";});})();
+/* deep link #q=名稱 */
+if(/^#q=/.test(location.hash)){try{$("#q").value=decodeURIComponent(location.hash.slice(3));}catch(_){}}
 
 /* scan: barcode / QR / package photo */
 const BFMT=["qr_code","ean_13","ean_8","upc_a","upc_e","code_128","code_39","itf"];
@@ -424,7 +560,7 @@ async function handleCode(raw,from){
 }
 async function readPackage(file){
   const sm=await getSample();if(!sm)return false;
-  const note=sNote("正在用 AI 讀包裝上的品牌與製造商…");
+  const note=sNote(typingHTML("AI 正在讀包裝上的品牌與製造商"));
   try{const blob=await toJpeg(file);
     const prompt="這是一張商品包裝或商品照片。只根據圖中看得到的文字，不要猜。輸出 JSON：{brands:[品牌名稱],product:產品名稱,companies:[製造商、國內負責廠商、進口商、代理商的公司名稱],barcode:圖中條碼下方印的數字（看不清楚留空）}。看不到就留空陣列或空字串。";
     let v;try{v=await sm.json(prompt,{images:[blob],modelTier:"quick"});}catch(err){if(err&&err.code)throw err;const r=await sm(prompt,{images:[blob]});v=JSON.parse(String(r.text).replace(/^[^{]*/,"").replace(/[^}]*$/,""));}
@@ -437,7 +573,7 @@ async function readPackage(file){
   }catch(err){note.textContent=err&&err.code==="rate_limited"?"AI 使用太頻繁，請稍後再試。":"AI 讀圖失敗，請改輸入品牌名稱。";return true;}
 }
 async function handlePhoto(file){
-  if(!file)return;go("scan");sOut().innerHTML="";const st=sNote("正在辨識照片中的條碼／QR code…");
+  if(!file)return;go("scan");sOut().innerHTML="";const st=sNote(typingHTML("正在辨識照片中的條碼／QR code"));
   const code=await decodeFile(file);
   if(code){st.remove();await handleCode(code,"照片");return;}
   st.textContent="照片中沒有找到條碼或 QR code。";
@@ -459,7 +595,7 @@ async function startLive(){
 $("#s-live").addEventListener("click",startLive);
 $("#s-stop").addEventListener("click",stopLive);
 for(const id of ["s-cam","s-pic"])$("#"+id).addEventListener("change",e=>{const f=e.target.files&&e.target.files[0];e.target.value="";handlePhoto(f);});
-$("#s-codef").addEventListener("submit",e=>{e.preventDefault();handleCode($("#s-code").value);});
+$("#s-codef").addEventListener("submit",e=>{e.preventDefault();if(!$("#s-code").value.trim()){shake($("#s-codef"));return;}handleCode($("#s-code").value);});
 addEventListener("visibilitychange",()=>{if(document.hidden)stopLive();});
 
 /* GitHub version: reports become issues; history comes from data/history.json */
@@ -498,14 +634,15 @@ $("#in-go").addEventListener("click",()=>{
 /* data */
 function drawMeta(){const m=$("#meta");const last=meta&&meta.lastAuto?String(meta.lastAuto).slice(0,10):"";m.innerHTML="";m.append((entries.length?"收錄 "+entries.length+" 個對象":"")+(last?"　更新："+last:""));const a=document.createElement("a");a.href="https://github.com/"+REPO+"/releases/latest/download/bilei.apk";a.textContent="　下載 Android APP";a.style.fontWeight="700";if(!/Android/i.test(navigator.userAgent)||window.Capacitor)a.hidden=!/Android/i.test(navigator.userAgent)||!!window.Capacitor;m.append(a);}
 drawFilters();show(location.hash.slice(1));
-(async()=>{
+window.__refresh=async()=>{
   try{
     const [r1,r2]=await Promise.all([fetch("data/entries.json",{cache:"no-cache"}),fetch("data/meta.json",{cache:"no-cache"}).catch(()=>null)]);
     entries=r1.ok?await r1.json():[];try{const r3=await fetch("data/ext.json",{cache:"no-cache"});if(r3.ok){const ids=new Set(entries.map(x=>x.id));entries=entries.concat((await r3.json()).filter(x=>!ids.has(x.id)));}}catch(_){}
     meta=r2&&r2.ok?await r2.json():null;
   }catch(err){entries=[];$("#results").innerHTML='<p class="skeleton">資料讀取失敗，請確認網路後重新整理。</p>';}
-  db=true;drawMeta();renderResults();if(!$("#v-list").hidden)renderList();
-})();
+  db=true;dataVer++;drawMeta();renderResults();if(!$("#v-list").hidden)renderList();
+};
+window.__refresh();
 if("serviceWorker" in navigator&&location.protocol==="https:"){navigator.serviceWorker.register("sw.js").then(reg=>{reg.addEventListener("updatefound",()=>{const w=reg.installing;w&&w.addEventListener("statechange",()=>{if(w.state==="installed"&&navigator.serviceWorker.controller)location.reload();});});}).catch(()=>{});}
 }
 </script>
