@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>避雷查</title>
+<meta name="theme-color" content="#e4002b">
+<meta name="description" content="輸入產品、企業、人名，查食安、犯罪、貪污、涉中、性騷擾等紀錄與來源">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/*
+VOICE: 公共警示，冷靜、就事論事，像衛生局下架公告
+IDEA: 一張張「警示檔案卡」——左側掛大日期，紅色訊號標出狀態
+PICTURE: 頂部巨大的查詢列本身就是主角，結果卡片即時出現
+COLOUR and TYPE: 白底、黑字、訊號紅 #e4002b、一個灰；Archivo 寬體數字 + Noto Sans TC
+LAYOUT: 嚴格左緣、粗頂線、日期懸掛左欄；手機縮成單欄
+*/
+:root{color-scheme:light dark;--bg:light-dark(#fff,#0e0e0e);--ink:light-dark(#111,#f1f1f1);--mut:light-dark(#6b6b6b,#9a9a9a);--line:light-dark(#d9d9d9,#2c2c2c);--soft:light-dark(#f3f3f3,#181818);--red:#e4002b;--amb:light-dark(#b25e00,#ffae4a);--ok:light-dark(#2f6b4f,#7fc9a3)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Noto Sans TC",system-ui,sans-serif;overflow-x:clip}
+a{color:inherit}
+.num{font-family:Archivo,sans-serif;font-variation-settings:"wdth" 112;font-weight:800}
+header{border-top:10px solid var(--red);padding:22px max(5vw,16px) 0;max-width:1240px;margin:0 auto}
+.top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{font-size:40px;font-weight:900;line-height:1.05;letter-spacing:.02em;margin:0}
+.brand b{color:var(--red)}
+.meta{color:var(--mut);font-size:13px}
+nav{display:flex;gap:4px;margin-top:18px;border-bottom:2px solid var(--ink);overflow-x:auto}
+nav button{flex:none;font:inherit;font-weight:700;background:none;border:0;color:var(--mut);padding:10px 14px;min-height:44px;cursor:pointer;border-bottom:4px solid transparent;margin-bottom:-2px}
+nav button[aria-selected=true]{color:var(--ink);border-color:var(--red)}
+main{max-width:1240px;margin:0 auto;padding:0 max(5vw,16px) 64px}
+.view[hidden]{display:none}
+.q{display:flex;gap:0;margin:26px 0 12px;border:3px solid var(--ink)}
+.q input{flex:1;font:inherit;font-size:clamp(20px,3vw,30px);font-weight:700;padding:14px 16px;border:0;background:var(--bg);color:var(--ink);outline:none}
+.q button{font:inherit;font-weight:900;font-size:18px;background:var(--ink);color:var(--bg);border:0;padding:0 22px;cursor:pointer}
+.q:focus-within{border-color:var(--red)}
+.hint{color:var(--mut);font-size:14px;margin:0 0 14px}
+.hint button{font:inherit;background:none;border:0;border-bottom:1px solid var(--mut);color:var(--ink);padding:0 2px;margin:0 3px;cursor:pointer}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.chip{font:inherit;font-size:14px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);padding:6px 12px;min-height:36px;cursor:pointer;border-radius:0}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.count{margin:22px 0 8px;font-weight:700;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:6px}
+.verdict{font-size:clamp(22px,3vw,32px);font-weight:900;line-height:1.2;margin:18px 0 4px}
+.verdict.clear{color:var(--ok)}
+.card{border-top:3px solid var(--ink);padding:18px 0 22px;margin-top:10px}
+.card h3{margin:0;font-size:clamp(24px,3vw,32px);line-height:1.15;font-weight:900}
+.sub{color:var(--mut);font-size:14px;margin-top:4px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.tag{font-size:13px;font-weight:700;padding:2px 8px;border:1.5px solid var(--ink)}
+.tag.pty{background:var(--soft);border-color:var(--mut)}
+.st{font-size:13px;font-weight:700;padding:2px 8px;white-space:nowrap;display:inline-block}
+.s-final{background:var(--red);color:#fff}
+.s-guilty{border:2px solid var(--red);color:var(--red)}
+.s-trial{border:2px solid var(--amb);color:var(--amb)}
+.s-admin{border:2px solid var(--ink)}
+.s-invest{border:2px dashed var(--mut);color:var(--mut)}
+.s-clear{border:2px solid var(--ok);color:var(--ok)}
+.s-affected{border:2px dotted var(--mut);color:var(--mut)}
+.s-report{border:1.5px solid var(--mut);color:var(--mut)}
+.summary{margin:6px 0 10px;max-width:70ch}
+.rel{font-size:14px;color:var(--mut);display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.rel button{font:inherit;font-size:14px;background:var(--soft);border:0;color:var(--ink);padding:4px 10px;min-height:32px;cursor:pointer}
+.ev{display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:4px 18px;padding:12px 0;border-top:1px solid var(--line)}
+.ev .d{font-size:20px;line-height:1.2;color:var(--ink)}
+.ev .d small{display:block;font-family:"Noto Sans TC";font-weight:400;font-size:12px;color:var(--mut)}
+.ev p{margin:6px 0;max-width:70ch}
+.src{list-style:none;padding:0;margin:4px 0 0;font-size:14px}
+.src li{margin:3px 0;display:flex;gap:8px;align-items:baseline}
+.kind{font-size:12px;font-weight:700;padding:0 6px;border:1px solid var(--mut);color:var(--mut);white-space:nowrap}
+.kind.gov{border-color:var(--red);color:var(--red)}
+.foot{font-size:13px;color:var(--mut);margin-top:10px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.foot button{font:inherit;font-size:13px;background:none;border:1px solid var(--line);color:var(--ink);padding:4px 10px;min-height:32px;cursor:pointer}
+.legend{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:13px;color:var(--mut);margin:10px 0}
+.grp{border-top:3px solid var(--ink);margin-top:26px;padding-top:10px}
+.grp h2{margin:0 0 8px;font-size:22px;display:flex;gap:12px;align-items:baseline}
+.grp h2 .num{font-size:28px;color:var(--red)}
+.grp ul{list-style:none;padding:0;margin:0;columns:2 260px;column-gap:28px}
+.grp li{break-inside:avoid;padding:7px 0;border-bottom:1px solid var(--line);display:flex;gap:8px;justify-content:space-between;align-items:center}
+.grp li button{font:inherit;font-weight:700;background:none;border:0;padding:0;color:var(--ink);cursor:pointer;text-align:start}
+form{max-width:760px;margin-top:22px;display:grid;gap:14px}
+label{font-weight:700;display:grid;gap:6px}
+label span{font-weight:400;color:var(--mut);font-size:13px}
+input,select,textarea{font:inherit;font-size:16px;padding:11px 12px;border:2px solid var(--line);background:var(--bg);color:var(--ink);border-radius:0;width:100%}
+textarea{min-height:130px;resize:vertical}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{font:inherit;font-weight:900;padding:12px 20px;min-height:48px;border:2px solid var(--ink);background:var(--ink);color:var(--bg);cursor:pointer}
+.btn.alt{background:var(--bg);color:var(--ink)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.msg{padding:10px 14px;border-inline-start:6px solid var(--red);background:var(--soft);font-size:15px}
+.msg.ok{border-color:var(--ok)}
+.drop{margin-top:22px;max-width:860px;border:3px solid var(--ink);padding:18px;display:grid;gap:12px}
+.drop.over{border-color:var(--red);background:var(--soft)}
+.dh{margin:0;font-size:clamp(22px,3vw,30px);line-height:1.15;font-weight:900}
+.drop textarea{min-height:120px;font-size:17px}
+.thumbs{display:flex;gap:8px;flex-wrap:wrap}.thumbs:empty{display:none}
+.thumbs figure{margin:0;position:relative}.thumbs img{width:96px;height:96px;object-fit:cover;border:2px solid var(--line);display:block}
+.thumbs button{position:absolute;top:2px;right:2px;font:inherit;font-size:12px;background:var(--ink);color:var(--bg);border:0;min-width:28px;min-height:28px;cursor:pointer}
+.qh{margin:30px 0 6px;font-size:20px;border-top:3px solid var(--ink);padding-top:10px;max-width:860px}
+.queue{list-style:none;padding:0;margin:0;max-width:860px}
+.queue li{padding:9px 0;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;font-size:14px}
+.queue .u{overflow-wrap:anywhere;flex:1 1 260px}
+.manual{margin-top:30px;max-width:860px}.manual summary{cursor:pointer;font-weight:700;min-height:44px;display:flex;align-items:center}
+.orig{color:var(--mut)}.orig small{font-size:12px}
+.corr{border-inline-start:4px solid var(--red);padding:2px 0 2px 12px;margin:8px 0}
+.corr p{margin:4px 0}
+.hist{margin-top:10px;background:var(--soft);padding:12px 14px;font-size:14px}
+.hist ol{margin:6px 0 0;padding-inline-start:20px}.hist li{margin:8px 0}
+.hist details{margin-top:4px}.hist pre{white-space:pre-wrap;font-size:13px;margin:6px 0 0}
+.cbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:var(--soft);border-inline-start:6px solid var(--red);padding:10px 14px}
+.cbar[hidden]{display:none}
+.prose{max-width:70ch}
+.prose h2{font-size:24px;margin:28px 0 6px;border-top:3px solid var(--ink);padding-top:12px}
+.banner{margin:16px 0 0;font-size:14px;color:var(--mut)}
+.skeleton{color:var(--mut);padding:30px 0}
+@media(max-width:600px){.brand{font-size:32px}.ev{grid-template-columns:1fr}.q button{padding:0 14px}}
+@media(prefers-reduced-motion:no-preference){.card{animation:in .25s ease-out both}@keyframes in{from{opacity:0;transform:translateY(6px)}}}
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <h1 class="brand">避雷<b>查</b></h1>
+    <div class="meta" id="meta">資料載入中…</div>
+  </div>
+  <nav role="tablist" aria-label="功能">
+    <button role="tab" data-v="search" aria-selected="true">查詢</button>
+    <button role="tab" data-v="list" aria-selected="false">全部清單</button>
+    <button role="tab" data-v="add" aria-selected="false">新增紀錄</button>
+    <button role="tab" data-v="about" aria-selected="false">資料原則</button>
+  </nav>
+</header>
+<main>
+  <section class="view" id="v-search">
+    <form class="q" id="qf" role="search" style="display:flex;max-width:none;margin-top:26px">
+      <input id="q" type="search" placeholder="輸入產品、公司、人名…" aria-label="查詢名稱" autocomplete="off">
+      <button type="submit">查</button>
+    </form>
+    <p class="hint">試試：<button type="button" data-try="味全">味全</button><button type="button" data-try="泰山">泰山</button><button type="button" data-try="小紅書">小紅書</button><button type="button" data-try="柯文哲">柯文哲</button><button type="button" data-try="苦茶油">苦茶油</button></p>
+    <div class="chips" id="fcat" aria-label="分類篩選"></div>
+    <div class="chips" id="ftag" aria-label="議題篩選"></div>
+    <div class="chips" id="fparty" aria-label="政黨篩選"></div>
+    <div id="results"><p class="skeleton">正在讀取資料庫…</p></div>
+  </section>
+
+  <section class="view" id="v-list" hidden>
+    <div class="legend" id="legend"></div>
+    <div id="groups"></div>
+  </section>
+
+  <section class="view" id="v-add" hidden>
+    <div class="drop" id="drop">
+      <div class="cbar" id="cbar" hidden><span id="ctext"></span><button type="button" class="btn alt" id="ccancel" style="min-height:36px;padding:6px 12px">取消更正</button></div>
+      <h2 class="dh">貼網址就能回報，系統自動查證建檔</h2>
+      <label>對象名稱（選填）<input id="a-name" placeholder="例：某公司、某人"></label>
+      <textarea id="in-url" aria-label="新聞網址與說明" placeholder="貼上新聞／公告網址（可多個，換行分隔），也可以補一句說明"></textarea>
+      <div class="btns"><button type="button" class="btn" id="in-go">送出回報</button></div>
+      <p id="in-msg" class="meta" aria-live="polite"></p>
+      <p class="meta">送出會開啟一則 GitHub Issue（需登入 GitHub），排程會讀取網址、查證後自動建檔或更正，原始內容一律保留在修訂紀錄。截圖可直接拖進 Issue 的文字框。</p>
+    </div>
+  </section>
+
+  <section class="view prose" id="v-about" hidden>
+    <h2>收錄什麼</h2>
+    <p>食安事件、司法案件（貪污、性犯罪、詐欺等）、性騷擾（主管機關認定成立或法院判決）、性別歧視（例如勞工局依《性別平等工作法》裁罰的懷孕歧視、法院認定的性別貶抑言行）、涉中爭議（政府調查、國安判決、主管機關處分）、資安與詐騙列管。對象涵蓋產品、品牌、企業、企業負責人、藝人、民意代表、政治人物與組織。</p>
+    <h2>來源標準</h2>
+    <p>優先採用政府機關公告（衛福部、食藥署、內政部、陸委會、地檢署）與法院判決；其次為多家主流媒體一致報導的事實。每一個事件都列出來源與類型（政府／法院／新聞）。</p>
+    <h2>如何閱讀狀態</h2>
+    <p>「判決確定」與「一審有罪」意義不同，未確定的判決仍可能改判；「受影響」代表該業者是被上游波及的下游，不代表其為責任方；「改判無罪」也會保留紀錄，讓你看到完整經過。「涉中」只記錄有政府調查、處分或判決依據的具體行為，不做立場標籤。</p>
+    <h2>網站與 APP</h2>
+    <p>網站：<a href="https://cxzzsf0896753245657-hue.github.io/Taiwan-Taiwan-check/">GitHub Pages</a>；Android APP 從 <a href="https://github.com/cxzzsf0896753245657-hue/Taiwan-Taiwan-check/releases/latest">GitHub Releases</a> 下載一次即可，APP 直接讀取線上網站，內容與功能更新都會自動套用，不需要重新安裝。iPhone 可用 Safari 開啟網站後「加入主畫面」。資料與原始碼：<a href="https://github.com/cxzzsf0896753245657-hue/Taiwan-Taiwan-check">GitHub</a>。</p>
+    <h2>自動更新</h2>
+    <p>每週由排程任務搜尋食藥署公告、檢調起訴、法院判決、性騷擾與性別歧視裁罰等新事件，更新既有案件進度並新增對象；使用者送出的網址、截圖與更正每 6 小時自動處理一次。最上方會顯示上次自動更新時間。</p>
+    <h2>更正</h2>
+    <p>任何紀錄如有錯誤或後續進度（例如改判、撤銷處分），在該卡片按「補充／更正」貼上網址或截圖即可，系統會自動查證並更正。更正不會刪除原始內容：原本的文字與來源仍顯示在卡片上（標示「原始紀錄」），每次修改前的完整資料都保存在「修訂紀錄」。本站為資訊整理，非法律意見。</p>
+  </section>
+</main>
+<script>
+{
+const CATS=["食品/產品","企業/品牌","App/科技","企業人物","民意代表","政治人物","藝人/公眾人物","組織/政黨","其他"];
+const TAGS=["食安","涉中","貪污","犯罪/司法","性犯罪","性騷擾","性別歧視","資安","詐騙","其他"];
+const PARTIES=["國民黨","民進黨","民眾黨","時代力量","無黨籍","其他政黨"];
+const partiesOf=e=>[...new Set([e.party,...(e.events||[]).map(v=>v.party)].filter(Boolean))];
+const ST={final:["判決確定","s-final",6],guilty:["有罪判決未確定","s-guilty",5],trial:["起訴／審理中","s-trial",4],admin:["行政處分","s-admin",3],civil:["民事判賠","s-admin",3],warn:["官方調查／告誡","s-invest",2],invest:["調查中","s-invest",2],report:["媒體報導","s-report",1],affected:["受影響（非責任方）","s-affected",0],clear:["改判無罪／不起訴","s-clear",0]};
+const KIND={gov:"政府",court:"法院",news:"新聞"};
+const $=s=>document.querySelector(s);
+const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const norm=s=>String(s||"").toLowerCase().replace(/臺/g,"台").replace(/[\s·・\-_.,，、。()（）「」『』]/g,"");
+const safeUrl=u=>/^https:\/\//.test(String(u||""))?String(u):"";
+let entries=[],meta=null,db=null,canWrite=true,fCat="",fTag="",fParty="";
+
+/* tabs */
+const views=["search","list","add","about"];
+function show(v){if(!views.includes(v))v="search";for(const b of document.querySelectorAll("nav button"))b.setAttribute("aria-selected",b.dataset.v===v);for(const x of views)$("#v-"+x).hidden=x!==v;if(v==="list")renderList();}
+document.querySelector("nav").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;const v=b.dataset.v;if(location.hash!=="#"+v)location.hash=v==="search"?"":v;show(v);});
+addEventListener("hashchange",()=>show(location.hash.slice(1)));
+
+/* filters */
+function chips(el,list,cur,set){el.innerHTML=['<button type="button" class="chip" data-x="" aria-pressed="'+(!cur)+'">全部</button>'].concat(list.map(c=>'<button type="button" class="chip" data-x="'+esc(c)+'" aria-pressed="'+(cur===c)+'">'+esc(c)+'</button>')).join("");el.onclick=e=>{const b=e.target.closest(".chip");if(!b)return;set(b.dataset.x);};}
+function drawFilters(){chips($("#fparty"),PARTIES,fParty,x=>{fParty=x;drawFilters();renderResults();});$("#fparty").firstChild.textContent="所有政黨";chips($("#fcat"),CATS,fCat,x=>{fCat=x;drawFilters();renderResults();});chips($("#ftag"),TAGS,fTag,x=>{fTag=x;drawFilters();renderResults();});}
+
+/* search */
+function worst(e){let m=null;const all=(e.events||[]).slice().sort((a,b)=>String(a.date||"").localeCompare(String(b.date||"")));const g={};for(const v of all.filter(v=>!v.retracted).map(v=>v.correction&&v.correction.status?Object.assign({},v,{status:v.correction.status}):v))(g[v.case||"_"]=g[v.case||"_"]||[]).push(v);for(const ev of Object.values(g)){let k=-1;ev.forEach((v,i)=>{if(v.status==="clear")k=i;});for(const v of (k>=0?ev.slice(k):ev)){const s=ST[v.status];if(s&&(!m||s[2]>ST[m][2]))m=v.status;}}return m||"report";}
+function hay(e){return [e.name,...(e.aliases||[])].map(norm);}
+function search(q){
+  const n=norm(q);let pool=entries.filter(e=>(!fCat||e.category===fCat)&&(!fTag||(e.tags||[]).includes(fTag))&&(!fParty||partiesOf(e).includes(fParty)));
+  if(!n)return{direct:pool.slice().sort((a,b)=>String(b.updated||"").localeCompare(String(a.updated||""))),related:[],text:[]};
+  const direct=[],related=[],text=[];
+  for(const e of pool){
+    const h=hay(e);
+    if(h.some(x=>x.includes(n)||(n.length>=2&&n.includes(x)&&x.length>=2)))direct.push(e);
+    else if((e.related||[]).some(r=>norm(r).includes(n)||(n.length>=2&&norm(r).length>=2&&n.includes(norm(r)))))related.push(e);
+    else if(norm([e.summary,...(e.events||[]).map(v=>v.text)].join(" ")).includes(n))text.push(e);
+  }
+  return{direct,related,text};
+}
+function srcList(list){return '<ul class="src">'+(list||[]).map(x=>{const u=safeUrl(x.url);const k=KIND[x.kind]?x.kind:"news";return '<li><span class="kind '+(k!=="news"?"gov":"")+'">'+KIND[k]+'</span>'+(u?'<a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(x.pub||"來源")+(x.t?"｜"+esc(x.t):"")+'</a>':esc(x.pub||"")+(x.t?"｜"+esc(x.t):""))+'</li>';}).join("")+'</ul>';}
+function card(e,why){
+  const w=worst(e),s=ST[w];
+  const evs=(e.events||[]).slice().sort((a,b)=>String(b.date||"").localeCompare(String(a.date||"")));
+  return '<article class="card"><h3>'+esc(e.name)+'</h3>'+
+  '<div class="sub">'+esc(e.category||"")+(partiesOf(e).length?'　政黨（犯案／事件當時）：'+esc(partiesOf(e).join('、')):'')+((e.aliases||[]).length?"　別名："+esc(e.aliases.join("、")):"")+(why?'　· '+esc(why):"")+'</div>'+
+  '<div class="tags"><span class="st '+s[1]+'">'+esc(s[0])+'</span>'+(e.tags||[]).map(t=>'<span class="tag">'+esc(t)+'</span>').join("")+'</div>'+
+  (e.summary?'<p class="summary">'+esc(e.summary)+'</p>':"")+
+  ((e.related||[]).length?'<div class="rel">關聯：'+e.related.map(r=>'<button type="button" data-q="'+esc(r)+'">'+esc(r)+'</button>').join("")+'</div>':"")+
+  '<div style="margin-top:12px">'+evs.map(v=>{const st=ST[v.status]||ST.report;const d=String(v.date||"");return '<div class="ev"><div class="d num">'+esc(d.slice(0,4)||"—")+'<small>'+esc(d.slice(5)||"")+'</small></div><div><span class="st '+st[1]+'">'+esc(st[0])+'</span>'+(v.tag?' <span class="tag">'+esc(v.tag)+'</span>':"")+(v.case?' <span class="kind">'+esc(v.case)+'</span>':"")+((v.party||e.party)?' <span class="tag pty">當時：'+esc(v.party||e.party)+'</span>':"")+(v.manual?' <span class="kind">手動新增·待查證</span>':"")+(v.retracted?' <span class="kind">已撤回</span>':"")+(v.correction?' <span class="kind gov">已更正</span>':"")+'<p'+(v.retracted||v.correction?' class="orig"':"")+'>'+(v.retracted||v.correction?'<small>原始紀錄：</small>':"")+esc(v.text)+'</p>'+srcList(v.sources)+(v.correction?'<div class="corr"><p><b>更正（'+esc(String(v.correction.date||"").slice(0,10))+'）：</b>'+esc(v.correction.text)+'</p>'+srcList(v.correction.sources)+'</div>':"")+(v.retracted?'<div class="corr"><p><b>撤回原因：</b>'+esc(v.retracted.reason||"")+'</p>'+srcList(v.retracted.sources)+'</div>':"")+'</div></div>';}).join("")+'</div>'+
+  '<div class="foot"><span>'+esc({seed:"官方／新聞查證建檔",auto:"自動更新",manual:"使用者新增"}[e.origin]||"")+'</span><span>更新 '+esc(String(e.updated||"").slice(0,10))+'</span><button type="button" data-corr="'+esc(e.id)+'">補充／更正</button><button type="button" data-hist="'+esc(e.id)+'">修訂紀錄</button></div><div class="hist" id="h-'+esc(e.id)+'" hidden></div></article>';
+}
+function renderResults(){
+  const q=$("#q").value.trim(),r=search(q),box=$("#results");
+  if(!entries.length){box.innerHTML='<p class="skeleton">'+(db?"資料庫目前沒有紀錄，可到「新增紀錄」加入第一筆。":"目前無法連上資料庫，請確認已登入後重新開啟。")+'</p>';return;}
+  let h="";
+  if(q){const all=r.direct.length+r.related.length+r.text.length;
+    h+=all?'<p class="verdict">「'+esc(q)+'」有 <span class="num" style="color:var(--red)">'+all+'</span> 筆相關紀錄</p>':'<p class="verdict clear">「'+esc(q)+'」目前沒有收錄紀錄</p><p class="hint">沒有收錄不代表沒有問題。若你有新聞或官方來源，可以<button type="button" data-fix="'+esc(q)+'">新增一筆</button>。</p>';}
+  else h+='<div class="count"><span>最近更新</span><span class="meta">共 '+entries.length+' 個對象</span></div>';
+  h+=r.direct.map(e=>card(e)).join("");
+  if(r.related.length)h+='<div class="count"><span>關聯命中：這些對象與「'+esc(q)+'」有關（母公司、子品牌、上下游或同案）</span></div>'+r.related.map(e=>card(e,"關聯："+esc(q))).join("");
+  if(r.text.length)h+='<div class="count"><span>內文提及</span></div>'+r.text.map(e=>card(e,"內文提及")).join("");
+  box.innerHTML=h;
+}
+$("#qf").addEventListener("submit",e=>{e.preventDefault();renderResults();});
+$("#q").addEventListener("input",()=>{clearTimeout(window.__t);window.__t=setTimeout(renderResults,150);});
+document.addEventListener("click",e=>{
+  const t=e.target.closest("[data-try],[data-q],[data-fix],[data-open],[data-corr],[data-hist]");if(!t)return;
+  if(t.dataset.try||t.dataset.q||t.dataset.open){$("#q").value=t.dataset.try||t.dataset.q||t.dataset.open;location.hash="";show("search");renderResults();scrollTo({top:0});}
+  else if(t.dataset.fix!==undefined){setCorr(null);$("#a-name").value=t.dataset.fix;location.hash="add";show("add");$("#in-url").focus();}
+  else if(t.dataset.corr){const e=entries.find(x=>x.id===t.dataset.corr);if(e){setCorr(e);location.hash="add";show("add");$("#in-url").focus();}}
+  else if(t.dataset.hist){toggleHist(t.dataset.hist);}
+});
+
+/* list */
+function renderList(){
+  $("#legend").innerHTML=Object.values(ST).map(s=>'<span><span class="st '+s[1]+'">'+esc(s[0])+'</span></span>').join("");
+  const g={};for(const e of entries)(g[e.category||"其他"]=g[e.category||"其他"]||[]).push(e);
+  $("#groups").innerHTML=CATS.filter(c=>g[c]).map(c=>'<section class="grp"><h2><span class="num">'+g[c].length+'</span>'+esc(c)+'</h2><ul>'+g[c].sort((a,b)=>a.name.localeCompare(b.name,"zh-Hant")).map(e=>{const s=ST[worst(e)];return '<li><button type="button" data-open="'+esc(e.name)+'">'+esc(e.name)+(partiesOf(e).length?'<small class="meta">　'+esc(partiesOf(e).join('、'))+'</small>':'')+'</button><span class="st '+s[1]+'">'+esc(s[0])+'</span></li>';}).join("")+'</ul></section>').join("")||'<p class="skeleton">尚無資料</p>';
+}
+
+/* GitHub version: reports become issues; history comes from data/history.json */
+const REPO="cxzzsf0896753245657-hue/Taiwan-Taiwan-check";
+let history=null,corr=null;
+async function loadHistory(){if(history)return history;try{const r=await fetch("data/history.json",{cache:"no-cache"});history=r.ok?await r.json():[];}catch(_){history=[];}return history;}
+async function toggleHist(id){
+  const box=document.getElementById("h-"+id);if(!box)return;
+  if(!box.hidden){box.hidden=true;return;}
+  box.hidden=false;box.textContent="讀取修訂紀錄…";
+  const list=(await loadHistory()).filter(r=>r.entryId===id).sort((a,b)=>String(b.at).localeCompare(String(a.at)));
+  box.innerHTML="";
+  const h=document.createElement("b");h.textContent=list.length?"修訂紀錄（"+list.length+" 次，修改前的原文都保留）":"尚無修訂：目前內容即原始紀錄";box.append(h);
+  if(list.length){const ol=document.createElement("ol");for(const r of list){const li=document.createElement("li");const p=document.createElement("div");p.textContent=String(r.at||"").slice(0,16).replace("T"," ")+"　"+(r.reason||"")+(r.by?"（"+r.by+"）":"");li.append(p);
+    const d=document.createElement("details");const sm=document.createElement("summary");sm.textContent="查看修改前的原始內容";const pre=document.createElement("pre");
+    if(Array.isArray(r.changes))pre.textContent=r.changes.map(c=>"・"+c.field+"\n　原文："+c.from+"\n　改為："+c.to).join("\n");
+    else{const b=r.before||{};pre.textContent=[(b.name||"")+"｜"+(b.category||""),b.summary||"",...(b.events||[]).map(v=>"・"+(v.date||"")+" "+((ST[v.status]||ST.report)[0])+"："+(v.text||""))].join("\n");}
+    d.append(sm,pre);li.append(d);ol.append(li);}box.append(ol);}
+  const a=document.createElement("a");a.href="https://github.com/"+REPO+"/commits/main/site/data/entries.json";a.target="_blank";a.rel="noopener";a.textContent="完整版本歷史（GitHub）";box.append(document.createElement("br"),a);
+}
+function setCorr(e){corr=e?{id:e.id,name:e.name}:null;$("#cbar").hidden=!corr;$("#ctext").textContent=corr?"更正／補充「"+corr.name+"」：貼上佐證網址，可另外寫一句說明哪裡有誤。":"";$(".dh").textContent=corr?"更正「"+corr.name+"」":"貼網址就能回報，系統自動查證建檔";if(corr)$("#a-name").value=corr.name;}
+$("#ccancel").addEventListener("click",()=>setCorr(null));
+$("#in-go").addEventListener("click",()=>{
+  const raw=$("#in-url").value.trim(),name=$("#a-name").value.trim();
+  const urls=[...new Set(raw.match(/https:\/\/[^\s"'<>，。]+/g)||[])];
+  if(!urls.length&&!(corr&&raw)){$("#in-msg").textContent="請貼上至少一個 https:// 開頭的網址。";return;}
+  const kind=corr?"更正":"新增";
+  const title="【"+kind+"】"+(name||urls[0]||"回報");
+  const body=["type: "+(corr?"correction":"url"),corr?"entryId: "+corr.id:"","name: "+name,"","urls:",...urls.map(u=>"- "+u),"","note:",raw.replace(/https:\/\/[^\s"'<>，。]+/g,"").trim()].filter(x=>x!=="").join("\n");
+  const href="https://github.com/"+REPO+"/issues/new?labels=report&title="+encodeURIComponent(title)+"&body="+encodeURIComponent(body);
+  window.open(href,"_blank","noopener");
+  $("#in-msg").textContent="已開啟 GitHub Issue，送出後排程會自動處理。若沒有跳出新頁，請允許彈出視窗。";
+  const a=document.createElement("a");a.href=href;a.target="_blank";a.rel="noopener";a.textContent="　手動開啟";$("#in-msg").append(a);
+});
+
+/* data */
+function drawMeta(){const m=$("#meta");const last=meta&&meta.lastAuto?String(meta.lastAuto).slice(0,10):"";m.innerHTML="";m.append((entries.length?"收錄 "+entries.length+" 個對象":"")+(last?"　更新："+last:""));const a=document.createElement("a");a.href="https://github.com/"+REPO+"/releases/latest/download/bilei.apk";a.textContent="　下載 Android APP";a.style.fontWeight="700";a.hidden=!!window.Capacitor;m.append(a);}
+drawFilters();show(location.hash.slice(1));
+(async()=>{
+  try{
+    const [r1,r2]=await Promise.all([fetch("data/entries.json",{cache:"no-cache"}),fetch("data/meta.json",{cache:"no-cache"}).catch(()=>null)]);
+    entries=r1.ok?await r1.json():[];
+    meta=r2&&r2.ok?await r2.json():null;
+  }catch(err){entries=[];$("#results").innerHTML='<p class="skeleton">資料讀取失敗，請確認網路後重新整理。</p>';}
+  db=true;drawMeta();renderResults();if(!$("#v-list").hidden)renderList();
+})();
+if("serviceWorker" in navigator&&location.protocol==="https:"){navigator.serviceWorker.register("sw.js").then(reg=>{reg.addEventListener("updatefound",()=>{const w=reg.installing;w&&w.addEventListener("statechange",()=>{if(w.state==="installed"&&navigator.serviceWorker.controller)location.reload();});});}).catch(()=>{});}
+}
+</script>
+</body>
+</html>

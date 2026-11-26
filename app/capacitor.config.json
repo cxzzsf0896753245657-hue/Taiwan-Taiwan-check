@@ -1,0 +1,12 @@
+{
+  "appId": "tw.bilei.check",
+  "appName": "避雷查",
+  "webDir": "www",
+  "server": {
+    "url": "https://cxzzsf0896753245657-hue.github.io/Taiwan-Taiwan-check/",
+    "cleartext": false
+  },
+  "android": {
+    "backgroundColor": "#ffffff"
+  }
+}

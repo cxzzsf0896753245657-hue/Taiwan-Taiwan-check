@@ -1,0 +1,63 @@
+name: 打包 Android APP
+
+# The APK is a thin shell that loads the live website, so content and
+# features update automatically. Rebuild only when the shell itself changes.
+on:
+  push:
+    branches: [main]
+    paths: ["app/**", ".github/workflows/android.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - name: 建立 Android 專案
+        working-directory: app
+        run: |
+          npm install
+          npx cap add android
+          npx cap sync android
+          pip install --quiet pillow
+          python3 set_icons.py
+          sed -i "s/versionCode 1$/versionCode ${{ github.run_number }}/; s/versionName \"1.0\"/versionName \"1.${{ github.run_number }}\"/" android/app/build.gradle
+      - name: 打包 APK
+        working-directory: app/android
+        env:
+          KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE_B64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+        run: |
+          chmod +x gradlew
+          if [ -n "$KEYSTORE_B64" ]; then
+            echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/bilei.jks"
+            ./gradlew assembleRelease --no-daemon \
+              -Pandroid.injected.signing.store.file="$RUNNER_TEMP/bilei.jks" \
+              -Pandroid.injected.signing.store.password="$KEYSTORE_PASSWORD" \
+              -Pandroid.injected.signing.key.alias=bilei \
+              -Pandroid.injected.signing.key.password="$KEYSTORE_PASSWORD"
+            cp app/build/outputs/apk/release/app-release.apk "$GITHUB_WORKSPACE/bilei.apk"
+          else
+            ./gradlew assembleDebug --no-daemon
+            cp app/build/outputs/apk/debug/app-debug.apk "$GITHUB_WORKSPACE/bilei.apk"
+          fi
+      - name: 發佈到 Releases
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: apk-v${{ github.run_number }}
+          name: 避雷查 Android v1.${{ github.run_number }}
+          make_latest: true
+          files: bilei.apk
+          body: |
+            下載 bilei.apk 安裝一次即可。APP 直接載入線上網站，資料與功能更新會自動套用，不需要重新安裝。
+            第一次安裝時，Android 會詢問是否允許「安裝不明來源的應用程式」，請允許後再安裝。

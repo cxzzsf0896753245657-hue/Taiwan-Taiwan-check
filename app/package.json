@@ -1,0 +1,13 @@
+{
+  "name": "bilei-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "避雷查 Android APP：殼層直接載入線上網站，內容與功能自動更新",
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0"
+  }
+}
