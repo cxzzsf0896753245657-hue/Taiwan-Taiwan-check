@@ -3521,5 +3521,386 @@
     ]
    }
   ]
+ },
+ {
+  "id": "e-qinwei",
+  "name": "秦偉",
+  "category": "藝人/公眾人物",
+  "aliases": [],
+  "related": [],
+  "summary": "藝人、主持人。性侵3名女子，合併應執行7年8月確定，服刑中。",
+  "tags": [
+   "性犯罪"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T11:00:00Z",
+  "events": [
+   {
+    "date": "2020-12-10",
+    "case": "性侵案",
+    "tag": "性犯罪",
+    "status": "final",
+    "text": "女造型師案經最高法院駁回上訴，判4年定讞；另有女編劇、女粉絲案，共3案有罪各判4年、2案無罪，2021年2月合併應執行7年8月確定，2020年4月入監；多次申請假釋遭駁回。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "司法院裁判書系統",
+      "t": "最高法院109年度台上字第4488號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPSM%2c109%2c%e5%8f%b0%e4%b8%8a%2c4488%2c20201210%2c1&ot=in",
+      "kind": "court"
+     },
+     {
+      "pub": "中央社",
+      "t": "秦偉性侵造型師案 判刑4年定讞",
+      "url": "https://www.cna.com.tw/news/firstnews/202012105005.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "ETtoday",
+      "t": "秦偉7度申請假釋仍駁回",
+      "url": "https://www.ettoday.net/news/20260518/3167633.htm",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "e-yousheng",
+  "name": "王宥勝",
+  "category": "藝人/公眾人物",
+  "aliases": [
+   "宥勝"
+  ],
+  "related": [],
+  "summary": "藝人，藝名宥勝。強制猥褻前員工，判8月、緩刑5年確定，並向公庫支付200萬元。",
+  "tags": [
+   "性犯罪"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T11:00:00Z",
+  "events": [
+   {
+    "date": "2023-11-08",
+    "case": "強制猥褻案",
+    "tag": "性犯罪",
+    "status": "trial",
+    "text": "2023年6月遭前員工公開指控；台北地檢署依強制猥褻罪起訴。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "宥勝涉對女子強吻摸胸 北檢強制猥褻罪起訴",
+      "url": "https://www.cna.com.tw/news/asoc/202311080048.aspx",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2024-12-31",
+    "case": "強制猥褻案",
+    "tag": "性犯罪",
+    "status": "final",
+    "text": "一審（台北地院112年度侵訴字第106號）判8月；二審駁回上訴、改宣告緩刑5年，須向公庫支付200萬元，無人上訴確定，2025年2月繳清。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "司法院裁判書系統",
+      "t": "臺北地院112年度侵訴字第106號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPDM%2c112%2c%e4%be%b5%e8%a8%b4%2c106%2c20240524%2c2&ot=in",
+      "kind": "court"
+     },
+     {
+      "pub": "司法院裁判書系統",
+      "t": "臺灣高等法院113年度侵上訴字第152號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPHM%2c113%2c%e4%be%b5%e4%b8%8a%e8%a8%b4%2c152%2c20241231%2c1&ot=in",
+      "kind": "court"
+     },
+     {
+      "pub": "中央社",
+      "t": "宥勝猥褻女子案獲判緩刑確定 繳清200萬元",
+      "url": "https://www.cna.com.tw/news/asoc/202502270110.aspx",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "e-zhangzj",
+  "name": "張作驥",
+  "category": "藝人/公眾人物",
+  "aliases": [
+   "電影導演張作驥"
+  ],
+  "related": [],
+  "summary": "電影導演。2013年趁合作女子酒醉強制性交，判3年10月確定，民事判賠200萬元；2017年假釋。",
+  "tags": [
+   "性犯罪"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T11:00:00Z",
+  "events": [
+   {
+    "date": "2015-03-11",
+    "case": "強制性交案",
+    "tag": "性犯罪",
+    "status": "final",
+    "text": "一審（台北地院102年度侵訴字第80號）判3年10月，二審駁回，最高法院104年度台上字第597號駁回上訴定讞；2015年4月入監，2017年8月假釋。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "司法院裁判書系統",
+      "t": "最高法院104年度台上字第597號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPSM%2c104%2c%e5%8f%b0%e4%b8%8a%2c597%2c20150311&ot=in",
+      "kind": "court"
+     },
+     {
+      "pub": "中央社",
+      "t": "被控性侵女編劇 張作驥判刑確定",
+      "url": "https://www.cna.com.tw/news/firstnews/201503115010.aspx",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2015-05-14",
+    "case": "民事賠償",
+    "tag": "性犯罪",
+    "status": "civil",
+    "text": "台北地院103年度訴字第2920號判賠被害人200萬元。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "司法院裁判書系統",
+      "t": "臺北地院103年度訴字第2920號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPDV%2c103%2c%e8%a8%b4%2c2920%2c20150514%2c1&ot=in",
+      "kind": "court"
+     },
+     {
+      "pub": "中央社",
+      "t": "張作驥性侵女編劇 判賠2百萬",
+      "url": "https://www.cna.com.tw/news/asoc/201505140102.aspx",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-gaoqj",
+  "name": "高群荐",
+  "category": "政治人物",
+  "aliases": [
+   "臺北市市場處前副處長"
+  ],
+  "related": [
+   "臺北市市場處"
+  ],
+  "summary": "臺北市市場處前副處長。尾牙利用權勢猥褻女下屬，遭免職，一審判7月（可上訴）。",
+  "tags": [
+   "性犯罪",
+   "性騷擾"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T11:00:00Z",
+  "events": [
+   {
+    "date": "2024-11-21",
+    "case": "利用權勢猥褻案",
+    "tag": "性騷擾",
+    "status": "admin",
+    "text": "市場處認定性騷擾成立，市府核定記兩大過免職。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "三立新聞網",
+      "t": "前北市市場處副處長 仗勢猥褻女職員遭訴",
+      "url": "https://www.mirrormedia.mg/external/amp/setn_1579997",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2026-09-24",
+    "case": "利用權勢猥褻案",
+    "tag": "性犯罪",
+    "status": "guilty",
+    "text": "台北地院113年度侵易字第4號依利用權勢猥褻罪判有期徒刑7月，可上訴。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "司法院裁判書系統",
+      "t": "臺北地院113年度侵易字第4號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPDM%2c113%2c%e4%be%b5%e6%98%93%2c4%2c20260924%2c1&ot=in",
+      "kind": "court"
+     },
+     {
+      "pub": "聯合報",
+      "t": "北市市場處前副處長高群荐判刑7月",
+      "url": "https://udn.com/news/story/7317/9785910",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-lisx",
+  "name": "李勝雄",
+  "category": "政治人物",
+  "aliases": [
+   "南澳鄉長"
+  ],
+  "related": [
+   "宜蘭縣南澳鄉公所",
+   "林志雷"
+  ],
+  "summary": "宜蘭縣南澳鄉鄉長。對女性下屬性騷擾，遭監察院彈劾，懲戒法院罰款25萬元確定。",
+  "tags": [
+   "性騷擾"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T11:00:00Z",
+  "events": [
+   {
+    "date": "2025-05-16",
+    "case": "性騷擾懲戒案",
+    "tag": "性騷擾",
+    "status": "admin",
+    "text": "宜蘭縣府申評會認定性騷擾成立；監察院通過彈劾，移送懲戒法院，並糾正南澳鄉公所。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "監察院",
+      "t": "南澳鄉長李勝雄對所屬員工性騷擾 彈劾案",
+      "url": "https://www.cy.gov.tw/News_Content.aspx?n=124&sms=8912&s=34049",
+      "kind": "gov"
+     }
+    ]
+   },
+   {
+    "date": "2026-03-30",
+    "case": "性騷擾懲戒案",
+    "tag": "性騷擾",
+    "status": "final",
+    "text": "懲戒法院114年度澄字第8號判罰款25萬元，115年度澄上字第2號駁回上訴定讞。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "司法院裁判書系統",
+      "t": "懲戒法院115年度澄上字第2號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPPP%2c115%2c%e6%be%84%e4%b8%8a%2c2%2c20260330%2c1&ot=in",
+      "kind": "court"
+     },
+     {
+      "pub": "中央社",
+      "t": "宜蘭南澳鄉長李勝雄涉性騷 懲戒法院判罰25萬元確定",
+      "url": "https://www.cna.com.tw/news/asoc/202604080039.aspx",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-linzl",
+  "name": "林志雷",
+  "category": "政治人物",
+  "aliases": [
+   "前宜蘭縣原住民事務所所長",
+   "前南澳鄉公所農政課長"
+  ],
+  "related": [
+   "宜蘭縣南澳鄉公所",
+   "李勝雄"
+  ],
+  "summary": "前南澳鄉公所課長、前宜蘭縣原民所所長。強行環抱女同事，強制罪6月確定，性騷擾成立。",
+  "tags": [
+   "性騷擾"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T11:00:00Z",
+  "events": [
+   {
+    "date": "2024-05-27",
+    "case": "性騷擾申訴",
+    "tag": "性騷擾",
+    "status": "admin",
+    "text": "宜蘭縣府申評會決議性騷擾成立、申誡2次；2025年2月被拔除所長職務；台北高等行政法院駁回其撤銷處分之訴。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "自由時報",
+      "t": "拔官！宜蘭原民所長林志雷涉性騷調職",
+      "url": "https://news.ltn.com.tw/news/politics/breakingnews/4961588",
+      "kind": "news"
+     },
+     {
+      "pub": "司法院裁判書系統",
+      "t": "臺北高等行政法院114年度訴字第536號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPBA%2c114%2c%e8%a8%b4%2c536%2c20251218%2c1&ot=in",
+      "kind": "court"
+     }
+    ]
+   },
+   {
+    "date": "2026-04-07",
+    "case": "強制罪",
+    "tag": "性騷擾",
+    "status": "final",
+    "text": "宜蘭地院113年度原侵訴字第5號依強制罪判6月；高等法院114年度原侵上訴字第11號駁回上訴。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "司法院裁判書系統",
+      "t": "宜蘭地院113年度原侵訴字第5號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=ILDM%2c113%2c%e5%8e%9f%e4%be%b5%e8%a8%b4%2c5%2c20250213%2c1&ot=in",
+      "kind": "court"
+     },
+     {
+      "pub": "司法院裁判書系統",
+      "t": "高等法院114年度原侵上訴字第11號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPHM%2c114%2c%e5%8e%9f%e4%be%b5%e4%b8%8a%e8%a8%b4%2c11%2c20260407%2c1&ot=in",
+      "kind": "court"
+     },
+     {
+      "pub": "監察院",
+      "t": "糾正南澳鄉公所",
+      "url": "https://www.cy.gov.tw/News_Content.aspx?n=796&s=34149",
+      "kind": "gov"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-xiecm",
+  "name": "謝春敏",
+  "category": "民意代表",
+  "aliases": [
+   "鵝鑾里長"
+  ],
+  "related": [
+   "屏東縣恆春鎮鵝鑾里"
+  ],
+  "summary": "屏東縣恆春鎮鵝鑾里里長（2026年參選連任）。對3名男童性騷擾，一審判10月（可上訴）。",
+  "tags": [
+   "性騷擾"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T11:00:00Z",
+  "events": [
+   {
+    "date": "2026-09-18",
+    "case": "性騷擾案",
+    "tag": "性騷擾",
+    "status": "guilty",
+    "text": "屏東地院依性騷擾防治法判10月、得易科罰金：2022年至2025年1月間對3名男童13次觸碰，另2名男童未遂；可上訴。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "自由時報",
+      "t": "屏縣里長摸男童遭判刑10月",
+      "url": "https://news.ltn.com.tw/news/Pingtung/breakingnews/5578531",
+      "kind": "news"
+     },
+     {
+      "pub": "聯合報",
+      "t": "屏東里長觸碰3男童13次 法官判刑10月",
+      "url": "https://udn.com/news/story/7321/9763706",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
  }
 ]
