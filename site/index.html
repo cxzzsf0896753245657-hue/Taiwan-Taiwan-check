@@ -174,6 +174,8 @@ textarea{min-height:130px;resize:vertical}
     <h2>如何閱讀狀態</h2>
     <p>「判決確定」與「一審有罪」意義不同，未確定的判決仍可能改判；「受影響」代表該業者是被上游波及的下游，不代表其為責任方；「改判無罪」也會保留紀錄，讓你看到完整經過。「涉中」只記錄有政府調查、處分或判決依據的具體行為，不做立場標籤。</p>
     <h2>網站與 APP</h2>
+    <p>公開網站：<a href="https://cxzzsf0896753245657-hue.github.io/Taiwan-Taiwan-check/" target="_blank" rel="noopener">GitHub Pages</a>；Android APP：<a href="https://github.com/cxzzsf0896753245657-hue/Taiwan-Taiwan-check/releases/latest" target="_blank" rel="noopener">GitHub Releases</a>（安裝一次即可，內容自動更新）。資料每次更新後同步到 GitHub。</p>
+    <h2>網站與 APP</h2>
     <p>網站：<a href="https://cxzzsf0896753245657-hue.github.io/Taiwan-Taiwan-check/">GitHub Pages</a>；Android APP 從 <a href="https://github.com/cxzzsf0896753245657-hue/Taiwan-Taiwan-check/releases/latest">GitHub Releases</a> 下載一次即可，APP 直接讀取線上網站，內容與功能更新都會自動套用，不需要重新安裝。iPhone 可用 Safari 開啟網站後「加入主畫面」。資料與原始碼：<a href="https://github.com/cxzzsf0896753245657-hue/Taiwan-Taiwan-check">GitHub</a>。</p>
     <h2>自動更新</h2>
     <p>每週由排程任務搜尋食藥署公告、檢調起訴、法院判決、性騷擾與性別歧視裁罰等新事件，更新既有案件進度並新增對象；使用者送出的網址、截圖與更正每 6 小時自動處理一次。最上方會顯示上次自動更新時間。</p>
@@ -229,7 +231,7 @@ function card(e,why){
   '<div class="tags"><span class="st '+s[1]+'">'+esc(s[0])+'</span>'+(e.tags||[]).map(t=>'<span class="tag">'+esc(t)+'</span>').join("")+'</div>'+
   (e.summary?'<p class="summary">'+esc(e.summary)+'</p>':"")+
   ((e.related||[]).length?'<div class="rel">關聯：'+e.related.map(r=>'<button type="button" data-q="'+esc(r)+'">'+esc(r)+'</button>').join("")+'</div>':"")+
-  '<div style="margin-top:12px">'+evs.map(v=>{const st=ST[v.status]||ST.report;const d=String(v.date||"");return '<div class="ev"><div class="d num">'+esc(d.slice(0,4)||"—")+'<small>'+esc(d.slice(5)||"")+'</small></div><div><span class="st '+st[1]+'">'+esc(st[0])+'</span>'+(v.tag?' <span class="tag">'+esc(v.tag)+'</span>':"")+(v.case?' <span class="kind">'+esc(v.case)+'</span>':"")+((v.party||e.party)?' <span class="tag pty">當時：'+esc(v.party||e.party)+'</span>':"")+(v.manual?' <span class="kind">手動新增·待查證</span>':"")+(v.retracted?' <span class="kind">已撤回</span>':"")+(v.correction?' <span class="kind gov">已更正</span>':"")+'<p'+(v.retracted||v.correction?' class="orig"':"")+'>'+(v.retracted||v.correction?'<small>原始紀錄：</small>':"")+esc(v.text)+'</p>'+srcList(v.sources)+(v.correction?'<div class="corr"><p><b>更正（'+esc(String(v.correction.date||"").slice(0,10))+'）：</b>'+esc(v.correction.text)+'</p>'+srcList(v.correction.sources)+'</div>':"")+(v.retracted?'<div class="corr"><p><b>撤回原因：</b>'+esc(v.retracted.reason||"")+'</p>'+srcList(v.retracted.sources)+'</div>':"")+'</div></div>';}).join("")+'</div>'+
+  '<div style="margin-top:12px">'+evs.map(v=>{const st=ST[v.status]||ST.report;const d=String(v.date||"");return '<div class="ev"><div class="d num">'+esc(d.slice(0,4)||"—")+'<small>'+esc(d.slice(5)||"")+'</small></div><div><span class="st '+st[1]+'">'+esc(st[0])+'</span>'+(v.tag?' <span class="tag">'+esc(v.tag)+'</span>':"")+(v.case?' <span class="kind">'+esc(v.case)+'</span>':"")+(v.party?' <span class="tag pty">當時：'+esc(v.party)+'</span>':e.party?' <span class="tag pty" title="犯案當時政黨未核實">現屬：'+esc(e.party)+'</span>':"")+(v.manual?' <span class="kind">手動新增·待查證</span>':"")+(v.retracted?' <span class="kind">已撤回</span>':"")+(v.correction?' <span class="kind gov">已更正</span>':"")+'<p'+(v.retracted||v.correction?' class="orig"':"")+'>'+(v.retracted||v.correction?'<small>原始紀錄：</small>':"")+esc(v.text)+'</p>'+srcList(v.sources)+(v.correction?'<div class="corr"><p><b>更正（'+esc(String(v.correction.date||"").slice(0,10))+'）：</b>'+esc(v.correction.text)+'</p>'+srcList(v.correction.sources)+'</div>':"")+(v.retracted?'<div class="corr"><p><b>撤回原因：</b>'+esc(v.retracted.reason||"")+'</p>'+srcList(v.retracted.sources)+'</div>':"")+'</div></div>';}).join("")+'</div>'+
   '<div class="foot"><span>'+esc({seed:"官方／新聞查證建檔",auto:"自動更新",manual:"使用者新增"}[e.origin]||"")+'</span><span>更新 '+esc(String(e.updated||"").slice(0,10))+'</span><button type="button" data-corr="'+esc(e.id)+'">補充／更正</button><button type="button" data-hist="'+esc(e.id)+'">修訂紀錄</button></div><div class="hist" id="h-'+esc(e.id)+'" hidden></div></article>';
 }
 function renderResults(){
@@ -295,7 +297,7 @@ $("#in-go").addEventListener("click",()=>{
 });
 
 /* data */
-function drawMeta(){const m=$("#meta");const last=meta&&meta.lastAuto?String(meta.lastAuto).slice(0,10):"";m.innerHTML="";m.append((entries.length?"收錄 "+entries.length+" 個對象":"")+(last?"　更新："+last:""));const a=document.createElement("a");a.href="https://github.com/"+REPO+"/releases/latest/download/bilei.apk";a.textContent="　下載 Android APP";a.style.fontWeight="700";a.hidden=!!window.Capacitor;m.append(a);}
+function drawMeta(){const m=$("#meta");const last=meta&&meta.lastAuto?String(meta.lastAuto).slice(0,10):"";m.innerHTML="";m.append((entries.length?"收錄 "+entries.length+" 個對象":"")+(last?"　更新："+last:""));const a=document.createElement("a");a.href="https://github.com/"+REPO+"/releases/latest/download/bilei.apk";a.textContent="　下載 Android APP";a.style.fontWeight="700";if(!/Android/i.test(navigator.userAgent)||window.Capacitor)a.hidden=!/Android/i.test(navigator.userAgent)||!!window.Capacitor;m.append(a);}
 drawFilters();show(location.hash.slice(1));
 (async()=>{
   try{

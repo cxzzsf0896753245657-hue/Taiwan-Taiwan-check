@@ -423,5 +423,172 @@
     "to": "朱珍瑤"
    }
   ]
+ },
+ {
+  "id": "h-ext-p-chenyj",
+  "entryId": "p-chenyj",
+  "name": "陳怡君",
+  "at": "2026-11-26T04:55:56Z",
+  "reason": "合併外部彙整網站資料：補上司法院判決連結／新增案件",
+  "by": "auto",
+  "before": {
+   "id": "p-chenyj",
+   "aliases": [],
+   "category": "民意代表",
+   "events": [
+    {
+     "date": "2026-01-12",
+     "party": "民進黨",
+     "sources": [
+      {
+       "kind": "news",
+       "pub": "中央社",
+       "t": "陳怡君涉賄遭判刑 民進黨：廉政會開會最重除名",
+       "url": "https://www.cna.com.tw/news/aipl/202601120183.aspx"
+      }
+     ],
+     "status": "guilty",
+     "tag": "貪污",
+     "text": "士林地院依貪污等罪判應執行7年10月、褫奪公權5年；檢方認為量刑過輕上訴，民進黨送廉政會。"
+    }
+   ],
+   "name": "陳怡君",
+   "origin": "seed",
+   "party": "民進黨",
+   "related": [
+    "台北市議會"
+   ],
+   "summary": "民進黨台北市議員。詐領助理費及收賄，一審判7年10月。",
+   "tags": [
+    "貪污"
+   ],
+   "updated": "2026-11-26T04:26:27Z"
+  },
+  "source": "council2026.taiwangogo.tw / guilty.policy2026.workers.dev"
+ },
+ {
+  "id": "h-ext-p-zhuzy",
+  "entryId": "p-zhuzy",
+  "name": "朱珍瑤",
+  "at": "2026-11-26T04:55:56Z",
+  "reason": "合併外部彙整網站資料：補上司法院判決連結／新增案件",
+  "by": "auto",
+  "before": {
+   "id": "p-zhuzy",
+   "aliases": [],
+   "category": "民意代表",
+   "events": [
+    {
+     "date": "2026-10",
+     "party": "國民黨",
+     "sources": [
+      {
+       "kind": "news",
+       "pub": "民視新聞",
+       "t": "國民黨議員涉貪遭重判8年",
+       "url": "https://www.ftvnews.com.tw/news/detail/2026A16W0245"
+      },
+      {
+       "kind": "news",
+       "pub": "Yahoo新聞",
+       "t": "桃園選情震撼彈",
+       "url": "https://tw.news.yahoo.com/%E5%9C%8B%E6%B0%91%E9%BB%A8%E7%BE%8E%E5%A5%B3%E8%AD%B0%E5%93%A1%E5%87%BA%E4%BA%8B%E4%BA%86-%E6%A1%83%E5%9C%92%E9%81%B8%E6%83%85%E9%9C%87%E6%92%BC%E5%BD%88-%E5%A5%B9-%E7%AB%9F%E6%B6%89%E8%B2%AA%E9%81%AD%E9%87%8D%E5%88%A48%E5%B9%B4-032158081.html"
+      }
+     ],
+     "status": "guilty",
+     "tag": "貪污",
+     "text": "桃園地院依利用職務機會詐取財物罪判8年、褫奪公權5年；其母、妹各判4年6月。"
+    }
+   ],
+   "name": "朱珍瑤",
+   "origin": "seed",
+   "party": "國民黨",
+   "related": [
+    "桃園市議會"
+   ],
+   "summary": "國民黨桃園市議員。以掛名人頭助理詐領助理費17萬餘元，一審判8年。",
+   "tags": [
+    "貪污"
+   ],
+   "updated": "2026-11-26T04:26:27Z"
+  },
+  "source": "council2026.taiwangogo.tw / guilty.policy2026.workers.dev"
+ },
+ {
+  "id": "h-ext-p-gaoha",
+  "entryId": "p-gaoha",
+  "name": "高虹安",
+  "at": "2026-11-26T04:55:56Z",
+  "reason": "合併外部彙整網站資料：補上司法院判決連結／新增案件",
+  "by": "auto",
+  "before": {
+   "id": "p-gaoha",
+   "aliases": [],
+   "category": "政治人物",
+   "events": [
+    {
+     "date": "2024",
+     "party": "民眾黨",
+     "sources": [
+      {
+       "kind": "news",
+       "pub": "中央社",
+       "t": "高虹安助理費案二審",
+       "url": "https://www.cna.com.tw/news/asoc/202512160179.aspx"
+      }
+     ],
+     "status": "guilty",
+     "tag": "貪污",
+     "text": "一審依利用職務機會詐取財物罪判7年4月、褫奪公權4年。"
+    },
+    {
+     "date": "2025-12-16",
+     "party": "民眾黨",
+     "sources": [
+      {
+       "kind": "news",
+       "pub": "中央社",
+       "t": "高虹安二審",
+       "url": "https://www.cna.com.tw/news/asoc/202512160179.aspx"
+      }
+     ],
+     "status": "clear",
+     "tag": "貪污",
+     "text": "高院認定助理費性質為「實質補助，彈性勻用」，貪污部分改判無罪。"
+    },
+    {
+     "case": "偽造文書",
+     "date": "2025-12-16",
+     "party": "民眾黨",
+     "sources": [
+      {
+       "kind": "news",
+       "pub": "台灣英文新聞（中央社）",
+       "t": "高虹安二審改判",
+       "url": "https://taiwannews.com.tw/zh/news/6265702"
+      }
+     ],
+     "status": "guilty",
+     "tag": "犯罪/司法",
+     "text": "向立法院申報不實，依使公務員登載不實罪判6月，得易科罰金；高檢署研議上訴。"
+    }
+   ],
+   "name": "高虹安",
+   "origin": "seed",
+   "party": "民眾黨",
+   "related": [
+    "新竹市政府",
+    "黃惠玟",
+    "陳奐宇",
+    "王郁文"
+   ],
+   "summary": "新竹市長。立委（民眾黨籍）任內助理費案：一審依貪污判7年4月，二審改判貪污無罪、偽造文書判6月。",
+   "tags": [
+    "貪污",
+    "犯罪/司法"
+   ],
+   "updated": "2026-11-26T04:26:27Z"
+  },
+  "source": "council2026.taiwangogo.tw / guilty.policy2026.workers.dev"
  }
 ]
