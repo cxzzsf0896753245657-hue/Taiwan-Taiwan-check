@@ -195,6 +195,7 @@ const $=s=>document.querySelector(s);
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const norm=s=>String(s||"").toLowerCase().replace(/臺/g,"台").replace(/[\s·・\-_.,，、。()（）「」『』]/g,"");
 const safeUrl=u=>/^https:\/\//.test(String(u||""))?String(u):"";
+let EXT=[],dbEntries=[],dbLoaded=false;const mergeE=()=>{const ids=new Set(dbEntries.map(e=>e.id));entries=dbEntries.concat(EXT.filter(e=>!ids.has(e.id)));};
 let entries=[],meta=null,db=null,canWrite=true,fCat="",fTag="",fParty="";
 
 /* tabs */
