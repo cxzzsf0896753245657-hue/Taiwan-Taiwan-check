@@ -362,10 +362,12 @@ body.kb{padding-bottom:12px}
       <div class="cbar" id="cbar" hidden><span id="ctext"></span><button type="button" class="btn alt" id="ccancel" style="min-height:36px;padding:6px 12px">取消更正</button></div>
       <h2 class="dh">貼網址就能回報，系統自動查證建檔</h2>
       <label>對象名稱（選填）<input id="a-name" placeholder="例：某公司、某人"></label>
-      <textarea id="in-url" aria-label="新聞網址與說明" placeholder="貼上新聞／公告網址（可多個，換行分隔），也可以補一句說明"></textarea>
-      <div class="btns"><button type="button" class="btn" id="in-go">送出回報</button></div>
+      <textarea id="in-url" aria-label="新聞網址、內文或截圖文字" placeholder="貼上新聞／公告網址或內文；也可以上傳截圖，手機會自動辨識圖中文字填進這裡"></textarea>
+      <div class="thumbs" id="thumbs"></div>
+      <div class="btns"><label class="btn alt" for="in-shot">上傳截圖</label><input type="file" id="in-shot" accept="image/*" multiple hidden><button type="button" class="btn alt" id="in-local">存到這台裝置</button><button type="button" class="btn" id="in-go">送出回報</button></div>
+      <p id="ocr-msg" class="meta" aria-live="polite"></p>
       <p id="in-msg" class="meta" aria-live="polite"></p>
-      <p class="meta">送出會開啟一則 GitHub Issue（需登入 GitHub），排程會讀取網址、查證後自動建檔或更正，原始內容一律保留在修訂紀錄。截圖可直接拖進 Issue 的文字框。</p>
+      <p class="meta">截圖會在手機上辨識文字（不上傳到任何伺服器，第一次使用需下載約 13MB 辨識資料）。「存到這台裝置」立刻加入你的搜尋結果，標示「本機紀錄·待查證」；「送出回報」會開啟 GitHub Issue（需登入 GitHub），排程查證後建檔或更正，原始內容一律保留在修訂紀錄。</p>
     </div>
   </section>
 
@@ -513,6 +515,7 @@ function cardActions(id){const e=entries.find(x=>x.id===id);if(!e)return;const b
     ["複製摘要",async()=>{try{await navigator.clipboard.writeText(e.name+"："+(e.summary||""));toast("已複製摘要");}catch(_){toast("無法複製");}}],
     ["補充／更正",()=>{if(typeof setCorr==="function"){setCorr(e);go("add");}}],
     ["修訂紀錄",()=>{toggleHist(id);const c=document.querySelector('[data-card="'+CSS.escape(id)+'"]');if(c)c.scrollIntoView({behavior:"smooth",block:"center"});}]];
+  if(e._local&&window.__removeLocal)acts.push(["刪除這筆本機紀錄",()=>window.__removeLocal(id)]);
   for(const [l,f] of acts){const b=document.createElement("button");b.type="button";b.className="act";b.textContent=l;b.onclick=()=>{closeSheet();f();};box.append(b);}
   if(navigator.vibrate)navigator.vibrate(12);openSheet(e.name,box);}
 document.addEventListener("click",e=>{const m=e.target.closest("[data-more]");if(m){e.stopPropagation();cardActions(m.dataset.more);}},true);
@@ -645,13 +648,55 @@ async function toggleHist(id){
 }
 function setCorr(e){corr=e?{id:e.id,name:e.name}:null;$("#cbar").hidden=!corr;$("#ctext").textContent=corr?"更正／補充「"+corr.name+"」：貼上佐證網址，可另外寫一句說明哪裡有誤。":"";$(".dh").textContent=corr?"更正「"+corr.name+"」":"貼網址就能回報，系統自動查證建檔";if(corr)$("#a-name").value=corr.name;}
 $("#ccancel").addEventListener("click",()=>setCorr(null));
+/* screenshots -> on-device OCR (tesseract.js, chi_tra + eng) */
+let ocrW=null,shots=[];
+function loadTess(){return window.Tesseract?Promise.resolve():new Promise((ok,no)=>{const sc=document.createElement("script");sc.src="vendor/tess/tesseract.min.js";sc.onload=ok;sc.onerror=no;document.head.append(sc);});}
+async function getOcr(onp){await loadTess();if(!ocrW)ocrW=await Tesseract.createWorker(["chi_tra","eng"],1,{workerPath:new URL("vendor/tess/worker.min.js",location.href).href,corePath:new URL("vendor/tess/core/",location.href).href,langPath:new URL("vendor/tess/lang",location.href).href,gzip:true,logger:m=>onp&&onp(m)});return ocrW;}
+function ocrMsg(t,p){const m=$("#ocr-msg");m.innerHTML="";m.append(t);if(p!=null){const b=document.createElement("div");b.className="prog";b.innerHTML="<i></i>";m.append(b);b.firstChild.style.width=Math.round(p*100)+"%";}}
+function drawShots(){const box=$("#thumbs");box.innerHTML="";shots.forEach((u,i)=>{const f=document.createElement("figure");const im=document.createElement("img");im.src=u;im.alt="截圖 "+(i+1);f.append(im);box.append(f);});}
+async function addShots(files){
+  const list=[...files].filter(f=>f&&f.type&&f.type.startsWith("image/"));if(!list.length)return;
+  const btn=$("label[for=in-shot]");btn.classList.add("busy");
+  try{
+    for(let i=0;i<list.length;i++){
+      const f=list[i];shots.push(URL.createObjectURL(f));drawShots();
+      ocrMsg("正在辨識第 "+(i+1)+"／"+list.length+" 張截圖…",i/list.length);
+      const w=await getOcr(m=>{if(m.status==="recognizing text")ocrMsg("正在辨識第 "+(i+1)+"／"+list.length+" 張截圖…",(i+m.progress)/list.length);else if(/load|init/.test(m.status||""))ocrMsg("第一次使用，正在下載辨識資料…",m.progress||0);});
+      const {data}=await w.recognize(f);
+      const txt=String(data.text||"").replace(/([一-鿿])\s+(?=[一-鿿])/g,"$1").replace(/\n{3,}/g,"\n\n").trim();
+      const ta=$("#in-url");ta.value=(ta.value.trim()?ta.value.trim()+"\n\n":"")+"【截圖"+(shots.length)+"文字】\n"+(txt||"（沒有辨識到文字）");
+    }
+    ocrMsg("辨識完成，文字已填入上方，請確認後選「存到這台裝置」或「送出回報」。");toast("截圖文字已辨識");
+    if(!$("#a-name").value.trim()){const m=$("#in-url").value.match(/[一-鿿]{2,4}(?=(?:涉|遭|被|判|起訴|議員|立委|公司|企業|食品))/);if(m)$("#a-name").value=m[0];}
+  }catch(err){ocrMsg("辨識失敗："+(err&&err.message||"未知錯誤")+"。可以改用 Claude 版讓 AI 讀圖，或手動輸入。");shake(btn);}
+  finally{btn.classList.remove("busy");}
+}
+$("#in-shot").addEventListener("change",e=>{addShots(e.target.files);e.target.value="";});
+$("#in-url").addEventListener("paste",e=>{const fs=[...(e.clipboardData&&e.clipboardData.files||[])];if(fs.length){e.preventDefault();addShots(fs);}});
+/* local (on-device) records */
+const LKEY="bilei_local";
+const getLocal=()=>{try{return JSON.parse(localStorage.getItem(LKEY)||"[]");}catch(_){return[];}};
+window.__removeLocal=async id=>{localStorage.setItem(LKEY,JSON.stringify(getLocal().filter(x=>x.id!==id)));toast("已刪除本機紀錄");await window.__refresh();};
+$("#in-local").addEventListener("click",async()=>{
+  const raw=$("#in-url").value.trim(),name=$("#a-name").value.trim();
+  if(!name){$("#in-msg").textContent="請先填「對象名稱」，才能存成可搜尋的紀錄。";shake($("#a-name"));return;}
+  if(!raw){$("#in-msg").textContent="請貼上網址、內文或上傳截圖。";shake($("#in-url"));return;}
+  const urls=[...new Set(raw.match(/https:\/\/[^\s"'<>，。]+/g)||[])];
+  const text=raw.replace(/https:\/\/[^\s"'<>，。]+/g,"").replace(/【截圖\d+文字】\n?/g,"").replace(/\s+/g," ").trim().slice(0,600);
+  const now=new Date().toISOString();
+  const e={id:"local-"+Date.now().toString(36),_local:true,name,aliases:[],category:"其他",tags:["其他"],related:[],summary:text.slice(0,120),origin:"manual",updated:now,
+    events:[{date:now.slice(0,10),tag:"其他",status:"report",manual:true,text:text||"（無文字）",sources:urls.length?urls.map(u=>({pub:"使用者提供",url:u,kind:/judicial/.test(u)?"court":/gov\.tw/.test(u)?"gov":"news"})):[{pub:shots.length?"使用者截圖":"使用者提供",t:"本機紀錄，待查證",kind:"news"}]}]};
+  const L=getLocal();L.push(e);localStorage.setItem(LKEY,JSON.stringify(L));
+  $("#in-url").value="";$("#a-name").value="";shots.forEach(u=>URL.revokeObjectURL(u));shots=[];drawShots();ocrMsg("");
+  $("#in-msg").textContent="已存到這台裝置：「"+name+"」，現在搜尋就找得到。";toast("已存到這台裝置");await window.__refresh();
+});
 $("#in-go").addEventListener("click",()=>{
   const raw=$("#in-url").value.trim(),name=$("#a-name").value.trim();
   const urls=[...new Set(raw.match(/https:\/\/[^\s"'<>，。]+/g)||[])];
-  if(!urls.length&&!(corr&&raw)){$("#in-msg").textContent="請貼上至少一個 https:// 開頭的網址。";return;}
+  if(!raw){$("#in-msg").textContent="請貼上網址、內文或上傳截圖。";shake($("#in-url"));return;}
   const kind=corr?"更正":"新增";
   const title="【"+kind+"】"+(name||urls[0]||"回報");
-  const body=["type: "+(corr?"correction":"url"),corr?"entryId: "+corr.id:"","name: "+name,"","urls:",...urls.map(u=>"- "+u),"","note:",raw.replace(/https:\/\/[^\s"'<>，。]+/g,"").trim()].filter(x=>x!=="").join("\n");
+  const body=["type: "+(corr?"correction":"url"),corr?"entryId: "+corr.id:"","name: "+name,"","urls:",...urls.map(u=>"- "+u),"","note:",raw.replace(/https:\/\/[^\s"'<>，。]+/g,"").trim().slice(0,3000)].filter(x=>x!=="").join("\n");
   const href="https://github.com/"+REPO+"/issues/new?labels=report&title="+encodeURIComponent(title)+"&body="+encodeURIComponent(body);
   window.open(href,"_blank","noopener");
   $("#in-msg").textContent="已開啟 GitHub Issue，送出後排程會自動處理。若沒有跳出新頁，請允許彈出視窗。";
@@ -672,6 +717,7 @@ window.__refresh=async()=>{
     const [r1,r2]=await Promise.all([fetch("data/entries.json",{cache:"no-cache"}),fetch("data/meta.json",{cache:"no-cache"}).catch(()=>null)]);
     entries=r1.ok?await r1.json():[];try{const r3=await fetch("data/ext.json",{cache:"no-cache"});if(r3.ok){const ids=new Set(entries.map(x=>x.id));entries=entries.concat((await r3.json()).filter(x=>!ids.has(x.id)));}}catch(_){}
     try{const pk=localStorage.getItem(PKEY);if(pk){const a=await loadPrivate(pk);if(a){const ids=new Set(entries.map(x=>x.id));entries=entries.concat(a.filter(x=>!ids.has(x.id)));}}}catch(_){}
+    try{const L=getLocal();if(L.length)entries=entries.concat(L);}catch(_){}
     meta=r2&&r2.ok?await r2.json():null;
   }catch(err){entries=[];$("#results").innerHTML='<p class="skeleton">資料讀取失敗，請確認網路後重新整理。</p>';}
   db=true;dataVer++;drawMeta();renderResults();if(!$("#v-list").hidden)renderList();
