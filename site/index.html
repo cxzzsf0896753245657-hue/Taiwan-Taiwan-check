@@ -389,6 +389,11 @@ body.kb{padding-bottom:12px}
     <p id="pv-state" class="meta"></p>
     <form id="pv-form" class="q" style="display:flex;max-width:none;position:static"><input id="pv-key" type="password" autocomplete="current-password" placeholder="輸入密語" aria-label="私人資料密語"><button type="submit" id="pv-go" class="btn" style="margin:5px;border-radius:999px">解鎖</button></form>
     <button type="button" id="pv-off" class="btn alt" hidden>鎖上（從這台裝置移除）</button>
+    <h2>AI 讀圖（選用）</h2>
+    <p>填入你自己的 Anthropic API 金鑰後，「新增」上傳的截圖或貼上的內文會由 AI 自動判斷對象、分類、議題與司法狀態並建檔（存在這台裝置，標示待查證）。金鑰只存在這台裝置，直接送到 Anthropic；費用依 API 用量計算（與 Claude 訂閱方案分開）。沒填金鑰時改用手機端文字辨識。</p>
+    <p id="ak-state" class="meta"></p>
+    <form id="ak-form" class="q" style="display:flex;max-width:none;position:static"><input id="ak-key" type="password" autocomplete="off" placeholder="sk-ant-…" aria-label="Anthropic API 金鑰"><button type="submit" id="ak-go" class="btn" style="margin:5px;border-radius:999px">儲存</button></form>
+    <button type="button" id="ak-off" class="btn alt" hidden>移除金鑰</button>
     <h2>帳號方案</h2>
     <p>公開網站與 Android APP 由 GitHub 提供，跟 Claude 帳號方案無關，免費也能一直使用。本頁（Claude 版）在免費帳號也能開啟、查詢；貼截圖或內文的 AI 建檔會用到開啟者自己的 Claude 用量。定期自動更新與網址佇列需要付費方案的排程任務，回到免費帳號後會暫停，此時請改貼截圖或內文。</p>
     <h2>更正</h2>
@@ -656,16 +661,20 @@ function ocrMsg(t,p){const m=$("#ocr-msg");m.innerHTML="";m.append(t);if(p!=null
 function drawShots(){const box=$("#thumbs");box.innerHTML="";shots.forEach((u,i)=>{const f=document.createElement("figure");const im=document.createElement("img");im.src=u;im.alt="截圖 "+(i+1);f.append(im);box.append(f);});}
 async function addShots(files){
   const list=[...files].filter(f=>f&&f.type&&f.type.startsWith("image/"));if(!list.length)return;
-  const btn=$("label[for=in-shot]");btn.classList.add("busy");
+  const btn=$("label[for=in-shot]");btn.classList.add("busy");const aiDone=[];let aiSkip=0,aiErr="";
   try{
     for(let i=0;i<list.length;i++){
       const f=list[i];shots.push(URL.createObjectURL(f));drawShots();
       ocrMsg("正在辨識第 "+(i+1)+"／"+list.length+" 張截圖…",i/list.length);
+      if(aiKey()){$("#ocr-msg").innerHTML=typingHTML("AI 正在讀第 "+(i+1)+"／"+list.length+" 張截圖");
+        try{const v=await aiShot(f);if(v&&v.ok&&v.name&&v.text){aiDone.push(saveLocalAI(v,evFromAI(v,[],true)));}else aiSkip++;}catch(err){aiErr=err.message;break;}
+        continue;}
       const w=await getOcr(m=>{if(m.status==="recognizing text")ocrMsg("正在辨識第 "+(i+1)+"／"+list.length+" 張截圖…",(i+m.progress)/list.length);else if(/load|init/.test(m.status||""))ocrMsg("第一次使用，正在下載辨識資料…",m.progress||0);});
       const {data}=await w.recognize(f);
       const txt=String(data.text||"").replace(/([一-鿿])\s+(?=[一-鿿])/g,"$1").replace(/\n{3,}/g,"\n\n").trim();
       const ta=$("#in-url");ta.value=(ta.value.trim()?ta.value.trim()+"\n\n":"")+"【截圖"+(shots.length)+"文字】\n"+(txt||"（沒有辨識到文字）");
     }
+    if(aiKey()){shots.forEach(u=>URL.revokeObjectURL(u));shots=[];drawShots();const out=[];if(aiDone.length)out.push("已建檔（存在這台裝置，待查證）："+[...new Set(aiDone)].join("、"));if(aiSkip)out.push(aiSkip+" 張讀不到可收錄的事件");if(aiErr)out.push("AI 失敗："+aiErr);ocrMsg(out.join("；")||"沒有可收錄的內容");if(aiDone.length){toast("AI 已建檔 "+aiDone.length+" 筆");await window.__refresh();}return;}
     ocrMsg("辨識完成，文字已填入上方，請確認後選「存到這台裝置」或「送出回報」。");toast("截圖文字已辨識");
     if(!$("#a-name").value.trim()){const m=$("#in-url").value.match(/[一-鿿]{2,4}(?=(?:涉|遭|被|判|起訴|議員|立委|公司|企業|食品))/);if(m)$("#a-name").value=m[0];}
   }catch(err){ocrMsg("辨識失敗："+(err&&err.message||"未知錯誤")+"。可以改用 Claude 版讓 AI 讀圖，或手動輸入。");shake(btn);}
@@ -673,12 +682,36 @@ async function addShots(files){
 }
 $("#in-shot").addEventListener("change",e=>{addShots(e.target.files);e.target.value="";});
 $("#in-url").addEventListener("paste",e=>{const fs=[...(e.clipboardData&&e.clipboardData.files||[])];if(fs.length){e.preventDefault();addShots(fs);}});
+const SHOT_PROMPT="你是台灣事實查核整理員。附圖是一張新聞或公告截圖。只根據圖中看得到的文字，不要補充圖中沒有的事實。輸出 JSON：{ok:true/false（圖中是否有可收錄的具體事件：食安、司法、貪污、性犯罪、性騷擾、性別歧視、涉中相關的政府調查或處分、資安、詐騙）,name,party,aliases:[],category,tag,status,date:'YYYY-MM-DD 或 YYYY-MM 或 YYYY',related:[],summary,text,pub,url}。category 只能是："+CATS.join("、")+"；tag 只能是："+TAGS.join("、")+"；status 只能是 final(判決確定)/guilty(有罪未確定)/trial(起訴或審理中)/admin(行政處分)/civil(民事判賠)/warn(官方調查或告誡)/invest(調查中)/report(媒體報導)/affected(被波及的下游)/clear(無罪)。party：若對象是政治人物、民意代表或政黨黨工，填事件發生（犯案）當時所屬政黨，只能是"+PARTIES.join("、")+"之一，圖中沒寫就留空字串；name 為主要被報導對象；若同一事件有多個主要對象，只取最主要一個，其餘放 related。text 用中性語氣 1-3 句，說明發生什麼、由哪個機關認定。pub 為圖中顯示的媒體或機關名稱。url 只有圖中清楚顯示 https 網址時才填，否則空字串。";
+/* optional AI via the user's own Anthropic API key (stored only on this device) */
+const AKEY="bilei_ai_key",AMODEL="claude-haiku-5-5";
+const aiKey=()=>{try{return localStorage.getItem(AKEY)||"";}catch(_){return"";}};
+async function toB64(file){const bm=await createImageBitmap(file);const k=Math.min(1,1600/Math.max(bm.width,bm.height));const c=document.createElement("canvas");c.width=Math.round(bm.width*k);c.height=Math.round(bm.height*k);c.getContext("2d").drawImage(bm,0,0,c.width,c.height);return c.toDataURL("image/jpeg",.85).split(",")[1];}
+async function askAI(content){const r=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"x-api-key":aiKey(),"anthropic-version":"2023-06-01","content-type":"application/json","anthropic-dangerous-direct-browser-access":"true"},body:JSON.stringify({model:AMODEL,max_tokens:1500,messages:[{role:"user",content}]})});
+  const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(r.status===401?"API 金鑰無效":r.status===429?"使用太頻繁，稍後再試":(j.error&&j.error.message)||("HTTP "+r.status));
+  const t=(j.content||[]).map(x=>x.text||"").join("");return JSON.parse(t.replace(/^[^{]*/,"").replace(/[^}]*$/,""));}
+const known=()=>"\n已有名稱清單（若為同一對象請用完全相同名稱）："+entries.slice(0,400).map(e=>e.name).join("、");
+async function aiShot(file){return askAI([{type:"image",source:{type:"base64",media_type:"image/jpeg",data:await toB64(file)}},{type:"text",text:SHOT_PROMPT+known()}]);}
+async function aiText(body){const TP=SHOT_PROMPT.replace("附圖是一張新聞或公告截圖。只根據圖中看得到的文字，不要補充圖中沒有的事實。","下方是一則新聞或公告的內文。只根據內文，不要補充內文沒有的事實。").replace(/圖中/g,"內文");return askAI([{type:"text",text:TP+known()+"\n\n內文：\n"+body.slice(0,8000)}]);}
+function evFromAI(v,urls,isShot){const u=safeUrl(v.url);const src=(urls&&urls.length?urls:(u?[u]:[])).map(x=>({pub:String(v.pub||"使用者提供"),t:isShot?"使用者截圖":"使用者貼上內文",url:x,kind:/judicial/.test(x)?"court":/gov\.tw/.test(x)?"gov":"news"}));
+  return{date:/^\d{4}(-\d{2}){0,2}$/.test(v.date||"")?v.date:new Date().toISOString().slice(0,10),tag:TAGS.includes(v.tag)?v.tag:"其他",status:ST[v.status]?v.status:"report",text:String(v.text),...(PARTIES.includes(v.party)?{party:v.party}:{}),manual:true,sources:src.length?src:[{pub:String(v.pub||(isShot?"使用者截圖":"使用者貼上內文")),t:"本機紀錄，待查證",kind:"news"}]};}
+function saveLocalAI(v,ev){const L=getLocal();const n=norm(v.name);let e=L.find(x=>norm(x.name)===n);const now=new Date().toISOString();
+  if(e){e.events.push(ev);e.tags=[...new Set([...(e.tags||[]),ev.tag])];e.updated=now;}
+  else{e={id:"local-"+Date.now().toString(36)+Math.random().toString(36).slice(2,5),_local:true,name:String(v.name),aliases:Array.isArray(v.aliases)?v.aliases.map(String):[],category:CATS.includes(v.category)?v.category:"其他",tags:[ev.tag],related:Array.isArray(v.related)?v.related.map(String):[],summary:String(v.summary||ev.text).slice(0,160),origin:"manual",updated:now,events:[ev]};L.push(e);}
+  localStorage.setItem(LKEY,JSON.stringify(L));return e.name;}
+
 /* local (on-device) records */
 const LKEY="bilei_local";
 const getLocal=()=>{try{return JSON.parse(localStorage.getItem(LKEY)||"[]");}catch(_){return[];}};
 window.__removeLocal=async id=>{localStorage.setItem(LKEY,JSON.stringify(getLocal().filter(x=>x.id!==id)));toast("已刪除本機紀錄");await window.__refresh();};
 $("#in-local").addEventListener("click",async()=>{
   const raw=$("#in-url").value.trim(),name=$("#a-name").value.trim();
+  if(aiKey()&&raw.replace(/https:\/\/[^\s"'<>，。]+/g,"").trim().length>=40){const btn=$("#in-local");btn.classList.add("busy");$("#in-msg").innerHTML=typingHTML("AI 正在整理內文");
+    try{const urls=[...new Set(raw.match(/https:\/\/[^\s"'<>，。]+/g)||[])];const v=await aiText(raw.replace(/https:\/\/[^\s"'<>，。]+/g,"").trim());
+      if(v&&v.ok&&v.name&&v.text){if(name)v.name=name;const nm=saveLocalAI(v,evFromAI(v,urls,false));$("#in-url").value="";$("#a-name").value="";$("#in-msg").textContent="AI 已建檔「"+nm+"」（存在這台裝置，待查證）。";toast("已建檔「"+nm+"」");await window.__refresh();}
+      else $("#in-msg").textContent="內文裡找不到可收錄的具體事件。";}
+    catch(err){$("#in-msg").textContent="AI 失敗："+err.message;}finally{btn.classList.remove("busy");}return;}
+
   if(!name){$("#in-msg").textContent="請先填「對象名稱」，才能存成可搜尋的紀錄。";shake($("#a-name"));return;}
   if(!raw){$("#in-msg").textContent="請貼上網址、內文或上傳截圖。";shake($("#in-url"));return;}
   const urls=[...new Set(raw.match(/https:\/\/[^\s"'<>，。]+/g)||[])];
@@ -712,6 +745,11 @@ function drawLock(){const on=!!(()=>{try{return localStorage.getItem(PKEY)}catch
 $("#pv-form").addEventListener("submit",async e=>{e.preventDefault();const v=$("#pv-key").value.trim();if(!v){shake($("#pv-form"));return;}const btn=$("#pv-go");try{await busy(btn,async()=>{const a=await loadPrivate(v);if(!a)throw new Error("x");});localStorage.setItem(PKEY,v);$("#pv-key").value="";toast("已解鎖私人資料");drawLock();await window.__refresh();}catch(_){shake($("#pv-form"));toast("密語不正確");}});
 $("#pv-off").addEventListener("click",async()=>{try{localStorage.removeItem(PKEY);}catch(_){}drawLock();toast("已鎖上");await window.__refresh();});
 drawLock();
+function drawAK(){const k=aiKey();$("#ak-state").textContent=k?"已設定（…"+k.slice(-4)+"），截圖與內文會由 AI 整理。":"未設定，使用手機端文字辨識。";$("#ak-form").hidden=!!k;$("#ak-off").hidden=!k;}
+$("#ak-form").addEventListener("submit",async e=>{e.preventDefault();const v=$("#ak-key").value.trim();if(!/^sk-ant-/.test(v)){shake($("#ak-form"));toast("金鑰格式應以 sk-ant- 開頭");return;}localStorage.setItem(AKEY,v);try{await busy($("#ak-go"),()=>askAI([{type:"text",text:"只回覆 JSON：{\"ok\":true}"}]));toast("金鑰可用");}catch(err){localStorage.removeItem(AKEY);toast(err.message);shake($("#ak-form"));}$("#ak-key").value="";drawAK();});
+$("#ak-off").addEventListener("click",()=>{localStorage.removeItem(AKEY);drawAK();toast("已移除金鑰");});
+drawAK();
+
 window.__refresh=async()=>{
   try{
     const [r1,r2]=await Promise.all([fetch("data/entries.json",{cache:"no-cache"}),fetch("data/meta.json",{cache:"no-cache"}).catch(()=>null)]);
