@@ -384,7 +384,7 @@ const $=s=>document.querySelector(s);
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const norm=s=>String(s||"").toLowerCase().replace(/臺/g,"台").replace(/[\s·・\-_.,，、。()（）「」『』]/g,"");
 const safeUrl=u=>/^https:\/\//.test(String(u||""))?String(u):"";
-let EXT=[],dbEntries=[],dbLoaded=false,dataVer=0,listVer=-1;const mergeE=()=>{const ids=new Set(dbEntries.map(e=>e.id));entries=dbEntries.concat(EXT.filter(e=>!ids.has(e.id)));dataVer++;};
+let EXT=[],PRIV=[],dbEntries=[],dbLoaded=false,dataVer=0,listVer=-1;const mergeE=()=>{const ids=new Set(dbEntries.map(e=>e.id));entries=dbEntries.concat(EXT.filter(e=>!ids.has(e.id)),PRIV.filter(e=>!ids.has(e.id)));dataVer++;};
 let BRANDS={};fetchJSON("data/brands.json").then(b=>{BRANDS=b&&typeof b==="object"&&!Array.isArray(b)?b:{};dataVer++;if(entries.length){renderResults();}}).catch(()=>{});
 function fetchJSON(u){return fetch(u,{cache:"no-cache"}).then(r=>r.ok?r.json():null);}
 let entries=[],meta=null,db=null,canWrite=true,fCat="",fTag="",fParty="";
