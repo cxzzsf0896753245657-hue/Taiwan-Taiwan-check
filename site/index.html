@@ -198,6 +198,7 @@ main{max-width:960px;padding:0 16px 24px}
 @media(min-width:760px){.grp ul{columns:2 260px}.ev{grid-template-columns:6.5em minmax(0,1fr);gap:4px 16px}.ev .d{display:block;font-size:19px}.ev .d small{display:block}.brand{font-size:28px}}
 @media(max-width:380px){.sgrid{grid-template-columns:1fr 1fr}.sgrid .sbtn.main{grid-column:1/-1;min-height:96px}}
 
+/* (see search bar polish below) */
 /* ===== SOFT CARD THEME + MOTION (ref: oceanads 動態效果 24) ===== */
 :root{--bg:light-dark(#f3f1ed,#0d0d0d);--card:light-dark(#fff,#1a1a1a);--soft:light-dark(#f3f1ed,#232323);--line:light-dark(#e6e3dd,#2c2c2c);--sh:0 1px 2px rgba(0,0,0,.04),0 6px 20px rgba(0,0,0,.06);--ease:cubic-bezier(.2,.8,.2,1);--spring:cubic-bezier(.34,1.56,.64,1)}
 body{background:var(--bg)}
@@ -296,6 +297,22 @@ textarea#in-url{border-radius:14px}
   @keyframes pop2{from{transform:scale(.7)}}
 }
 @media(prefers-reduced-motion:reduce){.rp,.toast,.sheet,.scrim{transition:none;animation:none}}
+
+/* search bar polish */
+.q{border:1.5px solid var(--line);box-shadow:var(--sh);min-height:56px;align-items:center;padding:0 5px 0 0}
+.q:focus-within{border-color:var(--ink);box-shadow:var(--sh)}
+.q input{min-height:52px;font-size:17px;padding:0 6px 0 18px}
+.q input:focus,.q input:focus-visible{outline:none}
+.q input::placeholder{color:var(--mut);font-weight:500}
+.q .scanbtn{width:44px;height:44px;padding:0;justify-content:center;border-radius:999px;flex:none}
+.q button[type=submit]{height:44px;min-width:60px;margin:0 0 0 2px;padding:0 18px;font-size:16px;flex:none}
+.hintbar{margin-top:2px}
+.hint{gap:6px;font-size:13px}
+.hint button{font-size:14px;border:0;border-radius:999px;background:var(--card);box-shadow:0 1px 2px rgba(0,0,0,.06);padding:6px 12px;min-height:34px;margin:0;color:var(--ink)}
+.hint .hl{color:var(--mut);flex:none}
+.ftog{min-height:36px;padding:6px 12px}
+body.kb nav.tabbar{display:none}
+body.kb{padding-bottom:12px}
 </style>
 </head>
 <body>
@@ -308,10 +325,10 @@ textarea#in-url{border-radius:14px}
 <main>
   <section class="view" id="v-search">
     <form class="q" id="qf" role="search" style="display:flex;max-width:none">
-      <input id="q" type="search" placeholder="輸入產品、公司、人名…" aria-label="查詢名稱" autocomplete="off">
+      <input id="q" type="search" placeholder="搜尋產品、公司、人名" aria-label="查詢名稱" autocomplete="off">
       <button type="button" class="scanbtn" data-go="scan" aria-label="掃描條碼或拍照"><svg viewBox="0 0 24 24"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M7 9v6M10 9v6M13 9v6M17 9v6"/></svg></button><button type="submit">查</button>
     </form>
-    <div class="hintbar"><p class="hint">試試：<button type="button" data-try="味全">味全</button><button type="button" data-try="泰山">泰山</button><button type="button" data-try="小紅書">小紅書</button><button type="button" data-try="柯文哲">柯文哲</button><button type="button" data-try="苦茶油">苦茶油</button><button type="button" data-try="林鳳營">林鳳營</button></p><button type="button" class="ftog" id="ftog" aria-expanded="false" aria-controls="filters"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>篩選</button></div>
+    <div class="hintbar"><p class="hint"><span class="hl">試試</span><button type="button" data-try="味全">味全</button><button type="button" data-try="泰山">泰山</button><button type="button" data-try="小紅書">小紅書</button><button type="button" data-try="柯文哲">柯文哲</button><button type="button" data-try="苦茶油">苦茶油</button><button type="button" data-try="林鳳營">林鳳營</button></p><button type="button" class="ftog" id="ftog" aria-expanded="false" aria-controls="filters"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>篩選</button></div>
     <div class="filters" id="filters" hidden>
     <div class="flab">分類</div><div class="chips" id="fcat" aria-label="分類篩選"></div>
     <div class="flab">議題</div><div class="chips" id="ftag" aria-label="議題篩選"></div>
@@ -475,6 +492,8 @@ function renderList(){
 }
 
 /* ===== motion & feedback helpers ===== */
+const kbIn=e=>{if(e.target.matches("input:not([type=checkbox]):not([type=radio]):not([type=file]),textarea")&&matchMedia("(max-width:760px)").matches)document.body.classList.add("kb");};
+document.addEventListener("focusin",kbIn);document.addEventListener("focusout",()=>setTimeout(()=>{if(!document.activeElement||!document.activeElement.matches("input,textarea"))document.body.classList.remove("kb");},60));
 const RM=matchMedia("(prefers-reduced-motion: reduce)");
 function toast(t){let el=document.querySelector(".toast");if(!el){el=document.createElement("div");el.className="toast";el.setAttribute("role","status");document.body.append(el);}el.textContent=t;el.classList.add("on");clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove("on"),2600);}
 function shake(el){if(!el)return;el.classList.remove("shake");void el.offsetWidth;el.classList.add("shake");if(navigator.vibrate)navigator.vibrate(30);}
