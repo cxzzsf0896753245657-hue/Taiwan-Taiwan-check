@@ -454,6 +454,12 @@ document.querySelector("nav.tabbar").addEventListener("click",e=>{const b=e.targ
 $("#ftog").addEventListener("click",()=>{const f=$("#filters");f.hidden=false;const done=document.createElement("button");done.type="button";done.className="btn";done.style.width="100%";done.textContent="完成";done.onclick=()=>closeSheet();const sh=openSheet("篩選",f,()=>{f.hidden=true;$("#qf").after(f);$("#ftog").setAttribute("aria-expanded","false");const nF=[fCat,fTag,fParty].filter(Boolean).length;$("#ftog").lastChild.textContent=nF?"篩選・"+nF:"篩選";$("#ftog").classList.toggle("on",!!nF);});sh.append(done);$("#ftog").setAttribute("aria-expanded","true");});
 const setHH=()=>document.documentElement.style.setProperty("--hh",document.querySelector("header").offsetHeight+"px");setHH();addEventListener("resize",setHH);
 addEventListener("popstate",()=>{if(sheetClose){sheetCloseNow();const cb=afterSheet;afterSheet=null;if(cb)cb();return;}route();});
+/* Android 返回鍵：有上一層就回上一層；在首頁且有搜尋字先清空；再按一次才離開 APP */
+(()=>{const C=window.Capacitor,A=C&&C.Plugins&&C.Plugins.App;if(!A||!A.addListener)return;let armed=0;
+A.addListener("backButton",()=>{
+  if(sheetClose||depth()>0||(curView&&curView!=="search")){if(depth()>0||sheetClose)H.back();else go("search");return;}
+  const q=$("#q");if(q&&q.value){q.value="";try{renderResults();}catch(_){}scrollTo({top:0});return;}
+  if(Date.now()-armed<2000){A.exitApp();return;}armed=Date.now();toast("再按一次返回鍵離開");});})();
 
 /* filters */
 function chips(el,list,cur,set){el.innerHTML=['<button type="button" class="chip" data-x="" aria-pressed="'+(!cur)+'">全部</button>'].concat(list.map(c=>'<button type="button" class="chip" data-x="'+esc(c)+'" aria-pressed="'+(cur===c)+'">'+esc(c)+'</button>')).join("");el.onclick=e=>{const b=e.target.closest(".chip");if(!b)return;set(b.dataset.x);};}
