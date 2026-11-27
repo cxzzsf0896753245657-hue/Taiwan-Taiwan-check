@@ -1,0 +1,48 @@
+name: 每週自動更新（Gemini）
+
+# 每週日 18:50（台灣時間）自動執行，也可以在 GitHub「Actions → 每週自動更新 → Run workflow」手動執行。
+# 需要在 Settings → Secrets and variables → Actions 設定 GEMINI_API_KEY。沒有金鑰時會直接略過。
+on:
+  schedule:
+    - cron: "50 10 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: inbox
+  cancel-in-progress: false
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 搜尋新事件並查證
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+        run: python3 tools/weekly_update.py
+      - name: 存回 repo
+        id: commit
+        run: |
+          git config user.name "bilei-bot"
+          git config user.email "bilei-bot@users.noreply.github.com"
+          git add -A site/data
+          if git diff --cached --quiet; then echo "changed=0" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git commit -m "每週自動更新（Gemini）"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
+          echo "changed=1" >> "$GITHUB_OUTPUT"
+      - if: steps.commit.outputs.changed == '1'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: site
+          publish_branch: gh-pages
+          force_orphan: true
+          commit_message: 部署網站（每週更新）

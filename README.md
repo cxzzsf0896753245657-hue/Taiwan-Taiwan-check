@@ -72,3 +72,14 @@ base64 -w0 bilei.jks   # 複製輸出貼到 ANDROID_KEYSTORE_B64
    - 第一階段（免費、免金鑰）：讀連結標題摘要，依 `site/data/rules.json` 分類，寫進 `site/data/inbox.json`，所有裝置重新整理就看得到（標示待查證）。
    - 第二階段（設定 `GEMINI_API_KEY` 後）：解密原始資料，交給 Gemini 免費額度看圖、讀連結並用 Google 搜尋查證，覆蓋初判；修改前版本存在 `site/data/inbox_history.json`；完成後刪除 `inbox/` 的原始檔。
 3. 需要的 GitHub Secrets（Settings → Secrets and variables → Actions）：`BILEI_PASSPHRASE`（私人資料密語）、`GEMINI_API_KEY`（之後補上即可，沒有時只做第一階段）。可選的 Variable：`GEMINI_MODEL`（預設 gemini-2.5-flash）。
+
+## 每週自動更新（Gemini，免費）
+
+`.github/workflows/weekly.yml` 每週日 18:50（台灣時間）執行 `tools/weekly_update.py`，也能在 Actions 頁面手動執行（Run workflow）。需要 Secret `GEMINI_API_KEY`，沒有時直接略過。
+
+- **給 Gemini 的完整規格**在 `tools/weekly_prompt.md`（收錄標準、欄位格式、所有列舉值的定義、status 怎麼選、寫作規則、正反範例）。要調整收錄標準直接改這個檔。
+- **搜尋主題**在 `tools/weekly_topics.json`（食安、各黨民意代表、涉中、資安、詐騙、性騷擾、性犯罪、性別歧視、企業刑案、藝人），可自行增減。
+- **每週流程**：每個主題搜尋近 10 天新事件；另外輪流追蹤 10 件「起訴／審理中／有罪未確定／調查中」的既有案件有沒有新進度。
+- **程式把關**（不信任 AI 的回答）：欄位與列舉值必須合法、日期不能在未來；每個來源網址都會實際打開，讀不到或頁面沒提到對象就丟棄；與既有資料來源相同或同日同案同狀態的視為重複；性犯罪／性騷擾沒有官方文件或兩家媒體者不收；`final` 沒有官方或法院來源時降為 `guilty`。
+- **寫入方式**：結果寫進 `site/data/inbox.json`（stage `ai`，origin `weekly`），APP 與網站會合併顯示；沒有官方文件、也不到兩家媒體的標示「待查證」。不會修改 `entries.json`，原始資料不會被 AI 改動。被丟棄的候選與原因記在 `site/data/weekly_log.json`（保留最近 12 次）。
+- 環境變數可調：`WEEKLY_DAYS`（搜尋天數，預設 10）、`WEEKLY_TRACK`（每次追蹤件數，預設 10）、`GEMINI_MODEL`。
