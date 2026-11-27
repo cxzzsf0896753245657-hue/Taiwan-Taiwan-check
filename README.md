@@ -64,3 +64,11 @@ base64 -w0 bilei.jks   # 複製輸出貼到 ANDROID_KEYSTORE_B64
 ## 私人資料（site/data/private.enc）
 
 `private.enc` 是加密的私人案件資料（PBKDF2-SHA256 31 萬次 + AES-256-GCM）。網站與 APP 在「說明 → 私人資料」輸入密語後，才會在該裝置上解開並合併顯示。密語不在 repo 裡，沒有密語無法讀取內容。
+
+## APP 上傳與自動整理（免費）
+
+1. APP「新增」可以貼網址、文字或上傳截圖，按「上傳並整理」。原始資料（含截圖）用私人資料密語加密後存到 `inbox/*.enc`，另存一份關鍵字初判草稿 `inbox/*.json`（不含截圖）。
+2. `.github/workflows/inbox.yml` 會自動執行 `tools/process_inbox.py`：
+   - 第一階段（免費、免金鑰）：讀連結標題摘要，依 `site/data/rules.json` 分類，寫進 `site/data/inbox.json`，所有裝置重新整理就看得到（標示待查證）。
+   - 第二階段（設定 `GEMINI_API_KEY` 後）：解密原始資料，交給 Gemini 免費額度看圖、讀連結並用 Google 搜尋查證，覆蓋初判；修改前版本存在 `site/data/inbox_history.json`；完成後刪除 `inbox/` 的原始檔。
+3. 需要的 GitHub Secrets（Settings → Secrets and variables → Actions）：`BILEI_PASSPHRASE`（私人資料密語）、`GEMINI_API_KEY`（之後補上即可，沒有時只做第一階段）。可選的 Variable：`GEMINI_MODEL`（預設 gemini-2.5-flash）。

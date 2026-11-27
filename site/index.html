@@ -313,6 +313,16 @@ textarea#in-url{border-radius:14px}
 .ftog{min-height:36px;padding:6px 12px}
 body.kb nav.tabbar{display:none}
 body.kb{padding-bottom:12px}
+
+/* compact rows + detail */
+.res{margin-top:8px}
+.row-btn .why{color:var(--red);font-weight:700}
+.row-btn .st{flex:none;font-size:12px}
+.row-btn .chev{flex:none;width:18px;height:18px;fill:none;stroke:var(--mut);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;margin-left:-4px}
+.dtop{position:sticky;top:var(--hh);z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);margin:0 -16px;padding:8px 8px}
+.back{font:inherit;font-weight:700;font-size:16px;display:inline-flex;align-items:center;gap:2px;min-height:44px;padding:0 12px 0 4px;border:0;background:none;color:var(--ink);cursor:pointer;border-radius:999px}
+.back svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+#d-body .card{margin-top:4px}
 </style>
 </head>
 <body>
@@ -337,6 +347,10 @@ body.kb{padding-bottom:12px}
     <div id="results"><div class="sk"><div style="display:flex;gap:12px;align-items:center"><div class="l t"></div><div style="flex:1"><div class="l" style="width:55%"></div><div class="l" style="width:35%"></div></div></div><div class="l"></div><div class="l" style="width:80%"></div></div><div class="sk"><div style="display:flex;gap:12px;align-items:center"><div class="l t"></div><div style="flex:1"><div class="l" style="width:55%"></div><div class="l" style="width:35%"></div></div></div><div class="l"></div><div class="l" style="width:80%"></div></div><div class="sk"><div style="display:flex;gap:12px;align-items:center"><div class="l t"></div><div style="flex:1"><div class="l" style="width:55%"></div><div class="l" style="width:35%"></div></div></div><div class="l"></div><div class="l" style="width:80%"></div></div></div>
   </section>
 
+  <section class="view" id="v-detail" hidden>
+    <div class="dtop"><button type="button" class="back" id="d-back" aria-label="返回上一頁"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>返回</button></div>
+    <div id="d-body"></div>
+  </section>
   <section class="view" id="v-scan" hidden>
     <h2 class="dh" style="margin-top:12px">掃描產品</h2>
     <p class="meta">掃商品條碼或 QR code，或拍下包裝上的品牌、製造商，馬上查有沒有問題案件。</p>
@@ -364,10 +378,10 @@ body.kb{padding-bottom:12px}
       <label>對象名稱（選填）<input id="a-name" placeholder="例：某公司、某人"></label>
       <textarea id="in-url" aria-label="新聞網址、內文或截圖文字" placeholder="貼上新聞／公告網址或內文；也可以上傳截圖，手機會自動辨識圖中文字填進這裡"></textarea>
       <div class="thumbs" id="thumbs"></div>
-      <div class="btns"><label class="btn alt" for="in-shot">上傳截圖</label><input type="file" id="in-shot" accept="image/*" multiple hidden><button type="button" class="btn alt" id="in-local">存到這台裝置</button><button type="button" class="btn" id="in-go">送出回報</button></div>
+      <div class="btns"><label class="btn alt" for="in-shot">上傳截圖</label><input type="file" id="in-shot" accept="image/*" multiple hidden><button type="button" class="btn" id="in-up">上傳並整理</button><button type="button" id="in-local" hidden></button><button type="button" id="in-go" hidden></button></div>
       <p id="ocr-msg" class="meta" aria-live="polite"></p>
       <p id="in-msg" class="meta" aria-live="polite"></p>
-      <p class="meta">截圖會在手機上辨識文字（不上傳到任何伺服器，第一次使用需下載約 13MB 辨識資料）。「存到這台裝置」立刻加入你的搜尋結果，標示「本機紀錄·待查證」；「送出回報」會開啟 GitHub Issue（需登入 GitHub），排程查證後建檔或更正，原始內容一律保留在修訂紀錄。</p>
+      <p class="meta">可以貼網址、文字或上傳截圖（可多張）。上傳後先用關鍵字自動分類，約 1～2 分鐘後所有裝置都看得到；設定 Gemini 金鑰後，GitHub 會再自動查證、整理並修正分類，修改前的版本會保留。截圖與全文會加密上傳，整理完就刪除，其他人只看得到整理後的結果。</p>
     </div>
   </section>
 
@@ -389,11 +403,11 @@ body.kb{padding-bottom:12px}
     <p id="pv-state" class="meta"></p>
     <form id="pv-form" class="q" style="display:flex;max-width:none;position:static"><input id="pv-key" type="password" autocomplete="current-password" placeholder="輸入密語" aria-label="私人資料密語"><button type="submit" id="pv-go" class="btn" style="margin:5px;border-radius:999px">解鎖</button></form>
     <button type="button" id="pv-off" class="btn alt" hidden>鎖上（從這台裝置移除）</button>
-    <h2>AI 讀圖（選用）</h2>
-    <p>填入你自己的 Anthropic API 金鑰後，「新增」上傳的截圖或貼上的內文會由 AI 自動判斷對象、分類、議題與司法狀態並建檔（存在這台裝置，標示待查證）。金鑰只存在這台裝置，直接送到 Anthropic；費用依 API 用量計算（與 Claude 訂閱方案分開）。沒填金鑰時改用手機端文字辨識。</p>
-    <p id="ak-state" class="meta"></p>
-    <form id="ak-form" class="q" style="display:flex;max-width:none;position:static"><input id="ak-key" type="password" autocomplete="off" placeholder="sk-ant-…" aria-label="Anthropic API 金鑰"><button type="submit" id="ak-go" class="btn" style="margin:5px;border-radius:999px">儲存</button></form>
-    <button type="button" id="ak-off" class="btn alt" hidden>移除金鑰</button>
+    <h2>上傳設定</h2>
+    <p>「新增」的上傳會存進 GitHub 專案，所有裝置都看得到整理結果。每台要上傳的裝置設定一次：到 GitHub「Settings → Developer settings → Fine-grained tokens」建立權杖，Repository access 只選 Taiwan-Taiwan-check，Permissions 的 Contents 設為 Read and write。權杖只存在這台裝置。上傳前也要先在上方「私人資料」解鎖。</p>
+    <p id="tk-state" class="meta"></p>
+    <form id="tk-form" class="q" style="display:flex;max-width:none;position:static"><input id="tk-key" type="password" autocomplete="off" placeholder="github_pat_…" aria-label="GitHub 權杖"><button type="submit" id="tk-go" class="btn" style="margin:5px;border-radius:999px">儲存</button></form>
+    <button type="button" id="tk-off" class="btn alt" hidden>移除權杖</button>
     <h2>帳號方案</h2>
     <p>公開網站與 Android APP 由 GitHub 提供，跟 Claude 帳號方案無關，免費也能一直使用。本頁（Claude 版）在免費帳號也能開啟、查詢；貼截圖或內文的 AI 建檔會用到開啟者自己的 Claude 用量。定期自動更新與網址佇列需要付費方案的排程任務，回到免費帳號後會暫停，此時請改貼截圖或內文。</p>
     <h2>更正</h2>
@@ -419,14 +433,27 @@ function fetchJSON(u){return fetch(u,{cache:"no-cache"}).then(r=>r.ok?r.json():n
 let entries=[],meta=null,db=null,canWrite=true,fCat="",fTag="",fParty="";
 
 /* tabs */
-const views=["search","scan","list","add","about"];
+const views=["search","scan","list","add","about","detail"];
 let curView="";
-function show(v){if(/^q=/.test(v))v="search";if(!views.includes(v))v="search";if(v!=="scan")stopLive();if(v===curView)return;curView=v;for(const b of document.querySelectorAll("nav.tabbar button"))b.setAttribute("aria-selected",b.dataset.v===v);for(const x of views)$("#v-"+x).hidden=x!==v;if(v==="list")renderList();scrollTo({top:0});}
-function go(v){const h=v==="search"?"":"#"+v;if(location.hash!==h)window.history.replaceState(null,"",h||location.pathname+location.search);show(v);}
+function show(v){if(/^q=/.test(v))v="search";if(!views.includes(v))v="search";if(v!=="scan")stopLive();if(v===curView)return;curView=v;if(v!=="detail")for(const b of document.querySelectorAll("nav.tabbar button"))b.setAttribute("aria-selected",b.dataset.v===v);for(const x of views)$("#v-"+x).hidden=x!==v;if(v==="list")renderList();scrollTo({top:0});}
+const H=window.history;const depth=()=>(H.state&&H.state.d)||0;const urlFor=v=>v==="search"?location.pathname+location.search:"#"+v;
+function go(v){if(v===curView)return;
+  if(v==="search"){const d=depth();if(d>0){H.go(-d);return;}H.replaceState({v:"search",d:0},"",urlFor(v));show(v);return;}
+  if(depth()===0)H.pushState({v,d:1},"",urlFor(v));else H.replaceState({v,d:depth()},"",urlFor(v));show(v);}
+let dId="";
+function renderDetail(id){dId=id;const e=entries.find(x=>x.id===id);$("#d-body").innerHTML=e?card(e):'<p class="skeleton">'+(entries.length?"找不到這筆紀錄。":"正在讀取…")+'</p>';$("#d-body").querySelectorAll("details.evmore").forEach(d=>d.open=true);}
+function openDetail(id){H.pushState({v:"detail",id,d:depth()+1},"","#d="+encodeURIComponent(id));renderDetail(id);show("detail");scrollTo({top:0});}
+function route(){const st=H.state||{};const h=location.hash.slice(1);
+  if(st.v==="detail"||/^d=/.test(h)){const id=st.id||decodeURIComponent(h.slice(2));renderDetail(id);curView="";show("detail");return;}
+  if(/^q=/.test(h)){try{$("#q").value=decodeURIComponent(h.slice(2));}catch(_){}curView="";show("search");renderResults();return;}
+  show(st.v||h||"search");}
+function initRoute(){const h=location.hash.slice(1);if(!H.state){const v=/^d=/.test(h)?"detail":/^q=/.test(h)?"search":(views.includes(h)?h:"search");
+  if(v==="search"){H.replaceState({v:"search",d:0},"",location.href);}else{H.replaceState({v:"search",d:0},"",location.pathname+location.search);H.pushState({v,d:1,...(v==="detail"?{id:decodeURIComponent(h.slice(2))}:{})},"","#"+h);}}route();}
+$("#d-back").addEventListener("click",()=>{if(depth()>0)H.back();else go("search");});
 document.querySelector("nav.tabbar").addEventListener("click",e=>{const b=e.target.closest("button");if(b)go(b.dataset.v);});
-$("#ftog").addEventListener("click",()=>{const f=$("#filters");f.hidden=false;const done=document.createElement("button");done.type="button";done.className="btn";done.style.width="100%";done.textContent="完成";done.onclick=closeSheet;const sh=openSheet("篩選",f,()=>{f.hidden=true;$("#qf").after(f);$("#ftog").setAttribute("aria-expanded","false");const nF=[fCat,fTag,fParty].filter(Boolean).length;$("#ftog").lastChild.textContent=nF?"篩選・"+nF:"篩選";$("#ftog").classList.toggle("on",!!nF);});sh.append(done);$("#ftog").setAttribute("aria-expanded","true");});
+$("#ftog").addEventListener("click",()=>{const f=$("#filters");f.hidden=false;const done=document.createElement("button");done.type="button";done.className="btn";done.style.width="100%";done.textContent="完成";done.onclick=()=>closeSheet();const sh=openSheet("篩選",f,()=>{f.hidden=true;$("#qf").after(f);$("#ftog").setAttribute("aria-expanded","false");const nF=[fCat,fTag,fParty].filter(Boolean).length;$("#ftog").lastChild.textContent=nF?"篩選・"+nF:"篩選";$("#ftog").classList.toggle("on",!!nF);});sh.append(done);$("#ftog").setAttribute("aria-expanded","true");});
 const setHH=()=>document.documentElement.style.setProperty("--hh",document.querySelector("header").offsetHeight+"px");setHH();addEventListener("resize",setHH);
-addEventListener("hashchange",()=>{const h=location.hash.slice(1);if(/^q=/.test(h)){try{$("#q").value=decodeURIComponent(h.slice(2));}catch(_){}curView="";show("search");renderResults();}else show(h);});
+addEventListener("popstate",()=>{if(sheetClose){sheetCloseNow();const cb=afterSheet;afterSheet=null;if(cb)cb();return;}route();});
 
 /* filters */
 function chips(el,list,cur,set){el.innerHTML=['<button type="button" class="chip" data-x="" aria-pressed="'+(!cur)+'">全部</button>'].concat(list.map(c=>'<button type="button" class="chip" data-x="'+esc(c)+'" aria-pressed="'+(cur===c)+'">'+esc(c)+'</button>')).join("");el.onclick=e=>{const b=e.target.closest(".chip");if(!b)return;set(b.dataset.x);};}
@@ -451,6 +478,8 @@ function search(q){
 function srcList(list){return '<ul class="src">'+(list||[]).map(x=>{const u=safeUrl(x.url);const k=KIND[x.kind]?x.kind:"news";return '<li><span class="kind '+(k!=="news"?"gov":"")+'">'+KIND[k]+'</span>'+(u?'<a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(x.pub||"來源")+(x.t?"｜"+esc(x.t):"")+'</a>':esc(x.pub||"")+(x.t?"｜"+esc(x.t):""))+'</li>';}).join("")+'</ul>';}
 function brandBlock(e){const bs=BRANDS[e.id];if(!bs||!bs.length)return "";const srcs=[];const seen=new Set();for(const b of bs)if(b.src&&!seen.has(b.src.url)){seen.add(b.src.url);srcs.push(b.src);}return '<div class="brands"><b>旗下品牌／產品（'+bs.length+'）</b><div class="bl">'+bs.map(b=>'<button type="button" data-q="'+esc(b.name)+'">'+esc(b.name)+(b.kind?'<small>'+esc(b.kind)+'</small>':'')+'</button>').join("")+'</div><details><summary>品牌對照來源（'+srcs.length+'）</summary>'+srcList(srcs)+'</details></div>';}
 function evHTML(e,v){const st=ST[v.status]||ST.report;const d=String(v.date||"");return '<div class="ev"><div class="d num">'+esc(d.slice(0,4)||"—")+'<small>'+esc(d.slice(5)||"")+'</small></div><div><span class="st '+st[1]+'">'+esc(st[0])+'</span>'+(v.tag?' <span class="tag">'+esc(v.tag)+'</span>':"")+(v.case?' <span class="kind">'+esc(v.case)+'</span>':"")+(v.party?' <span class="tag pty">當時：'+esc(v.party)+'</span>':e.party?' <span class="tag pty" title="犯案當時政黨未逐案核實">所屬（未核實當時）：'+esc(e.party)+'</span>':"")+(v.manual?' <span class="kind">手動新增·待查證</span>':"")+(v.retracted?' <span class="kind">已撤回</span>':"")+(v.correction?' <span class="kind gov">已更正</span>':"")+'<p'+(v.retracted||v.correction?' class="orig"':"")+'>'+(v.retracted||v.correction?'<small>原始紀錄：</small>':"")+esc(v.text)+'</p>'+srcList(v.sources)+(v.correction?'<div class="corr"><p><b>更正（'+esc(String(v.correction.date||"").slice(0,10))+'）：</b>'+esc(v.correction.text)+'</p>'+srcList(v.correction.sources)+'</div>':"")+(v.retracted?'<div class="corr"><p><b>撤回原因：</b>'+esc(v.retracted.reason||"")+'</p>'+srcList(v.retracted.sources)+'</div>':"")+'</div></div>';}
+function row(e,why){const w=worst(e),st=ST[w]||ST.report;const sub=[e.category,...(e.tags||[]),...partiesOf(e)].filter(Boolean).join("・");
+  return '<button type="button" class="row-btn res" data-detail="'+esc(e.id)+'"><span class="tile t-'+w+'" aria-hidden="true">'+esc(String(e.name||"?").trim().charAt(0))+'</span><span class="rt"><b>'+esc(e.name)+'</b><small>'+esc(sub)+'</small>'+(why?'<small class="why">'+esc(why)+'</small>':'')+'</span><span class="st '+st[1]+'">'+esc(st[0])+'</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>';}
 function card(e,why){
   const w=worst(e),s=ST[w];
   const evs=(e.events||[]).slice().sort((a,b)=>String(b.date||"").localeCompare(String(a.date||"")));
@@ -460,12 +489,13 @@ function card(e,why){
   (e.summary?'<p class="summary">'+esc(e.summary)+'</p>':"")+
   ((e.related||[]).length?'<div class="rel">關聯：'+e.related.map(r=>'<button type="button" data-q="'+esc(r)+'">'+esc(r)+'</button>').join("")+'</div>':"")+
   brandBlock(e)+'<div style="margin-top:8px">'+evs.slice(0,3).map(v=>evHTML(e,v)).join("")+(evs.length>3?'<details class="evmore"><summary>展開其餘 '+(evs.length-3)+' 筆事件</summary>'+evs.slice(3).map(v=>evHTML(e,v)).join("")+'</details>':"")+'</div>'+
-  '<div class="foot"><span>'+esc({seed:"官方／新聞查證建檔",auto:"自動更新",manual:"使用者新增"}[e.origin]||"")+'</span><span>更新 '+esc(String(e.updated||"").slice(0,10))+'</span><button type="button" data-corr="'+esc(e.id)+'">補充／更正</button><button type="button" data-hist="'+esc(e.id)+'">修訂紀錄</button></div><div class="hist" id="h-'+esc(e.id)+'" hidden></div></article>';
+  '<div class="foot"><span>'+esc({seed:"官方／新聞查證建檔",auto:"自動更新",manual:"使用者新增",inbox:"APP 上傳整理"}[e.origin]||"")+'</span><span>更新 '+esc(String(e.updated||"").slice(0,10))+'</span><button type="button" data-corr="'+esc(e.id)+'">補充／更正</button><button type="button" data-hist="'+esc(e.id)+'">修訂紀錄</button></div><div class="hist" id="h-'+esc(e.id)+'" hidden></div></article>';
 }
 let RQ=[],RN=0;
 const IO="IntersectionObserver" in window?new IntersectionObserver(es=>{for(const x of es)if(x.isIntersecting){IO.unobserve(x.target);pump();}},{rootMargin:"800px"}):null;
-function pump(){const box=$("#results");const old=box.querySelector(".sentinel");if(old)old.remove();const end=Math.min(RQ.length,RN+12);let h="";for(;RN<end;RN++){const it=RQ[RN];h+=typeof it==="string"?it:card(it[0],it[1]);}const first=!box.querySelector(".card");box.insertAdjacentHTML("beforeend",h);if(first)[...box.querySelectorAll(".card")].slice(0,8).forEach((c,i)=>{c.classList.add("stag");c.style.animationDelay=(i*45)+"ms";});if(RN<RQ.length){box.insertAdjacentHTML("beforeend",'<button type="button" class="sentinel btn alt">顯示更多（還有 '+RQ.filter((x,i)=>i>=RN&&typeof x!=="string").length+' 筆）</button>');if(IO)IO.observe(box.querySelector(".sentinel"));}}
+function pump(){const box=$("#results");const old=box.querySelector(".sentinel");if(old)old.remove();const end=Math.min(RQ.length,RN+12);let h="";for(;RN<end;RN++){const it=RQ[RN];h+=typeof it==="string"?it:row(it[0],it[1]);}const first=!box.querySelector(".res");box.insertAdjacentHTML("beforeend",h);if(first)[...box.querySelectorAll(".res")].slice(0,10).forEach((c,i)=>{c.classList.add("stag");c.style.animationDelay=(i*45)+"ms";});if(RN<RQ.length){box.insertAdjacentHTML("beforeend",'<button type="button" class="sentinel btn alt">顯示更多（還有 '+RQ.filter((x,i)=>i>=RN&&typeof x!=="string").length+' 筆）</button>');if(IO)IO.observe(box.querySelector(".sentinel"));}}
 function renderResults(){
+  if(curView==="detail"&&dId)renderDetail(dId);
   const q=$("#q").value.trim(),r=search(q),box=$("#results");
   if(!entries.length){box.innerHTML='<p class="skeleton">'+(db?"資料庫目前沒有紀錄，可到「新增」加入第一筆。":"目前無法連上資料庫，請確認已登入後重新開啟。")+'</p>';return;}
   RQ=[];RN=0;
@@ -482,6 +512,7 @@ $("#qf").addEventListener("submit",e=>{e.preventDefault();if(!$("#q").value.trim
 $("#q").addEventListener("input",()=>{clearTimeout(window.__t);window.__t=setTimeout(renderResults,150);});
 document.addEventListener("click",e=>{
   if(e.target.closest(".sentinel")){pump();return;}
+  const dt=e.target.closest("[data-detail]");if(dt){openDetail(dt.dataset.detail);return;}
   const g=e.target.closest("[data-go]");if(g){go(g.dataset.go);return;}
   const t=e.target.closest("[data-try],[data-q],[data-fix],[data-open],[data-corr],[data-hist]");if(!t)return;
   if(t.dataset.try||t.dataset.q||t.dataset.open){$("#q").value=t.dataset.try||t.dataset.q||t.dataset.open;go("search");renderResults();scrollTo({top:0});}
@@ -495,7 +526,7 @@ function renderList(){
   if(listVer===dataVer)return;listVer=dataVer;
   $("#legend").innerHTML=Object.values(ST).map(s=>'<span><span class="st '+s[1]+'">'+esc(s[0])+'</span></span>').join("");
   const g={};for(const e of entries)(g[e.category||"其他"]=g[e.category||"其他"]||[]).push(e);
-  $("#groups").innerHTML=CATS.filter(c=>g[c]).map(c=>'<section class="grp"><h2><span class="num">'+g[c].length+'</span>'+esc(c)+'</h2><ul>'+g[c].sort((a,b)=>a.name.localeCompare(b.name,"zh-Hant")).map(e=>{const s=ST[worst(e)];const w2=worst(e);return '<li><button type="button" class="row-btn" data-open="'+esc(e.name)+'"><span class="tile t-'+w2+'" aria-hidden="true">'+esc(String(e.name||"?").trim().charAt(0))+'</span><span class="rt"><b>'+esc(e.name)+'</b><small>'+esc([...(e.tags||[]),...partiesOf(e)].join('・')||e.category||'')+'</small></span><span class="st '+s[1]+'">'+esc(s[0])+'</span></button></li>';}).join("")+'</ul></section>').join("")||'<p class="skeleton">尚無資料</p>';
+  $("#groups").innerHTML=CATS.filter(c=>g[c]).map(c=>'<section class="grp"><h2><span class="num">'+g[c].length+'</span>'+esc(c)+'</h2><ul>'+g[c].sort((a,b)=>a.name.localeCompare(b.name,"zh-Hant")).map(e=>{const s=ST[worst(e)];const w2=worst(e);return '<li><button type="button" class="row-btn" data-detail="'+esc(e.id)+'"><span class="tile t-'+w2+'" aria-hidden="true">'+esc(String(e.name||"?").trim().charAt(0))+'</span><span class="rt"><b>'+esc(e.name)+'</b><small>'+esc([...(e.tags||[]),...partiesOf(e)].join('・')||e.category||'')+'</small></span><span class="st '+s[1]+'">'+esc(s[0])+'</span></button></li>';}).join("")+'</ul></section>').join("")||'<p class="skeleton">尚無資料</p>';
 }
 
 /* ===== motion & feedback helpers ===== */
@@ -507,10 +538,12 @@ function shake(el){if(!el)return;el.classList.remove("shake");void el.offsetWidt
 async function busy(btn,fn){if(!btn)return fn();btn.classList.add("busy");try{const r=await fn();btn.classList.remove("busy");btn.classList.add("ok");setTimeout(()=>btn.classList.remove("ok"),900);return r;}catch(e){btn.classList.remove("busy");shake(btn);throw e;}}
 function typingHTML(t){return esc(t)+'<span class="typing" aria-hidden="true"><i></i><i></i><i></i></span>';}
 let sheetClose=null;
-function openSheet(title,content,onClose){closeSheet();const sc=document.createElement("div");sc.className="scrim";const sh=document.createElement("div");sh.className="sheet";sh.setAttribute("role","dialog");sh.setAttribute("aria-modal","true");sh.setAttribute("aria-label",title);sh.innerHTML='<div class="grab"></div><h4></h4>';sh.querySelector("h4").textContent=title;if(typeof content==="string")sh.insertAdjacentHTML("beforeend",content);else sh.append(content);document.body.append(sc,sh);requestAnimationFrame(()=>{sc.classList.add("on");sh.classList.add("on");});
+let afterSheet=null;
+function openSheet(title,content,onClose){const had=!!sheetClose;if(had)sheetCloseNow();if(had)H.replaceState({...(H.state||{}),sheet:1},"");else H.pushState({...(H.state||{}),sheet:1,d:depth()+1},"");const sc=document.createElement("div");sc.className="scrim";const sh=document.createElement("div");sh.className="sheet";sh.setAttribute("role","dialog");sh.setAttribute("aria-modal","true");sh.setAttribute("aria-label",title);sh.innerHTML='<div class="grab"></div><h4></h4>';sh.querySelector("h4").textContent=title;if(typeof content==="string")sh.insertAdjacentHTML("beforeend",content);else sh.append(content);document.body.append(sc,sh);requestAnimationFrame(()=>{sc.classList.add("on");sh.classList.add("on");});
   let y0=null;sh.addEventListener("touchstart",e=>{if(sh.scrollTop<=0)y0=e.touches[0].clientY;},{passive:true});sh.addEventListener("touchmove",e=>{if(y0!==null){const d=e.touches[0].clientY-y0;if(d>0)sh.style.transform="translateY("+d+"px)";}},{passive:true});sh.addEventListener("touchend",e=>{if(y0===null)return;const d=e.changedTouches[0].clientY-y0;y0=null;sh.style.transform="";if(d>90)closeSheet();});
-  sc.addEventListener("click",closeSheet);sheetClose=()=>{sc.classList.remove("on");sh.classList.remove("on");if(onClose)onClose();setTimeout(()=>{sc.remove();sh.remove();},RM.matches?0:380);sheetClose=null;};const f=sh.querySelector("button,a,input");if(f)f.focus({preventScroll:true});return sh;}
-function closeSheet(){if(sheetClose)sheetClose();}
+  sc.addEventListener("click",()=>closeSheet());sheetClose=()=>{sc.classList.remove("on");sh.classList.remove("on");if(onClose)onClose();setTimeout(()=>{sc.remove();sh.remove();},RM.matches?0:380);sheetClose=null;};const f=sh.querySelector("button,a,input");if(f)f.focus({preventScroll:true});return sh;}
+function sheetCloseNow(){if(sheetClose)sheetClose();}
+function closeSheet(cb){if(!sheetClose){if(typeof cb==="function")cb();return;}if(H.state&&H.state.sheet){afterSheet=typeof cb==="function"?cb:null;H.back();}else{sheetCloseNow();if(typeof cb==="function")cb();}}
 addEventListener("keydown",e=>{if(e.key==="Escape")closeSheet();});
 /* ripple */
 document.addEventListener("pointerdown",e=>{const b=e.target.closest(".btn,.sbtn,.row-btn,nav.tabbar button,.chip,.rel button,.brands .bl button,.sheet .act,.q button");if(!b||RM.matches)return;const r=b.getBoundingClientRect();const d=Math.max(r.width,r.height)*2.2;const sp=document.createElement("span");sp.className="rp";sp.style.cssText="width:"+d+"px;height:"+d+"px;left:"+(e.clientX-r.left-d/2)+"px;top:"+(e.clientY-r.top-d/2)+"px";if(getComputedStyle(b).position==="static")b.style.position="relative";b.style.overflow="hidden";b.append(sp);setTimeout(()=>sp.remove(),600);},{passive:true});
@@ -521,7 +554,7 @@ function cardActions(id){const e=entries.find(x=>x.id===id);if(!e)return;const b
     ["補充／更正",()=>{if(typeof setCorr==="function"){setCorr(e);go("add");}}],
     ["修訂紀錄",()=>{toggleHist(id);const c=document.querySelector('[data-card="'+CSS.escape(id)+'"]');if(c)c.scrollIntoView({behavior:"smooth",block:"center"});}]];
   if(e._local&&window.__removeLocal)acts.push(["刪除這筆本機紀錄",()=>window.__removeLocal(id)]);
-  for(const [l,f] of acts){const b=document.createElement("button");b.type="button";b.className="act";b.textContent=l;b.onclick=()=>{closeSheet();f();};box.append(b);}
+  for(const [l,f] of acts){const b=document.createElement("button");b.type="button";b.className="act";b.textContent=l;b.onclick=()=>closeSheet(f);box.append(b);}
   if(navigator.vibrate)navigator.vibrate(12);openSheet(e.name,box);}
 document.addEventListener("click",e=>{const m=e.target.closest("[data-more]");if(m){e.stopPropagation();cardActions(m.dataset.more);}},true);
 let lpT=null,lpEl=null,lpX=0,lpY=0;
@@ -561,7 +594,7 @@ function sNote(html){const p=document.createElement("div");p.className="sinfo";p
 function findAll(names){const sv=[fCat,fTag,fParty];fCat=fTag=fParty="";const seen=new Map();try{for(const nm of names){const q=String(nm||"").trim();if(q.length<2)continue;const r=search(q);for(const e of r.direct)if(!seen.has(e.id))seen.set(e.id,[e,"名稱符合："+q]);for(const [e,b] of r.brand)if(!seen.has(e.id))seen.set(e.id,[e,"旗下"+(b.kind||"品牌")+"："+b.name]);for(const e of r.related)if(!seen.has(e.id))seen.set(e.id,[e,"關聯："+q]);}}finally{[fCat,fTag,fParty]=sv;}return [...seen.values()];}
 function showHits(names,label,extra){
   const hits=(extra||[]).concat(findAll(names).filter(([e])=>!(extra||[]).some(([x])=>x.id===e.id)));const box=document.createElement("div");
-  box.innerHTML=hits.length?'<p class="verdict">'+esc(label)+'：找到 <span class="num" style="color:var(--red)">'+hits.length+'</span> 筆相關紀錄</p>'+hits.slice(0,12).map(([e,w])=>card(e,w)).join(""):'<p class="verdict clear">'+esc(label)+'：目前沒有收錄紀錄</p><p class="meta">查了：'+esc(names.filter(Boolean).join("、"))+'。沒有收錄不代表沒有問題。</p>';
+  box.innerHTML=hits.length?'<p class="verdict">'+esc(label)+'：找到 <span class="num" style="color:var(--red)">'+hits.length+'</span> 筆相關紀錄</p>'+hits.slice(0,20).map(([e,w])=>row(e,w)).join(""):'<p class="verdict clear">'+esc(label)+'：目前沒有收錄紀錄</p><p class="meta">查了：'+esc(names.filter(Boolean).join("、"))+'。沒有收錄不代表沒有問題。</p>';
   sOut().append(box);
 }
 function gs1Note(code){const p=code.length===13?code.slice(0,3):code.length===12?"0"+code.slice(0,2):"";if(p==="471")return"台灣 GS1 註冊條碼（代表廠商在台灣申請條碼，不等於產地）";if(/^69\d$/.test(p))return"中國 GS1 註冊條碼（代表廠商在中國申請條碼，不等於產地；請看包裝上的產地與製造商）";if(/^45\d|^49\d/.test(p))return"日本 GS1 註冊條碼";if(/^0\d\d|^1[0-3]\d/.test(p))return"美國／加拿大 GS1 註冊條碼";if(/^880/.test(p))return"韓國 GS1 註冊條碼";if(/^489/.test(p))return"香港 GS1 註冊條碼";return"";}
@@ -654,7 +687,7 @@ async function toggleHist(id){
 function setCorr(e){corr=e?{id:e.id,name:e.name}:null;$("#cbar").hidden=!corr;$("#ctext").textContent=corr?"更正／補充「"+corr.name+"」：貼上佐證網址，可另外寫一句說明哪裡有誤。":"";$(".dh").textContent=corr?"更正「"+corr.name+"」":"貼網址就能回報，系統自動查證建檔";if(corr)$("#a-name").value=corr.name;}
 $("#ccancel").addEventListener("click",()=>setCorr(null));
 /* screenshots -> on-device OCR (tesseract.js, chi_tra + eng) */
-let ocrW=null,shots=[];
+let ocrW=null,shots=[],shotFiles=[];
 function loadTess(){return window.Tesseract?Promise.resolve():new Promise((ok,no)=>{const sc=document.createElement("script");sc.src="vendor/tess/tesseract.min.js";sc.onload=ok;sc.onerror=no;document.head.append(sc);});}
 async function getOcr(onp){await loadTess();if(!ocrW)ocrW=await Tesseract.createWorker(["chi_tra","eng"],1,{workerPath:new URL("vendor/tess/worker.min.js",location.href).href,corePath:new URL("vendor/tess/core/",location.href).href,langPath:new URL("vendor/tess/lang",location.href).href,gzip:true,logger:m=>onp&&onp(m)});return ocrW;}
 function ocrMsg(t,p){const m=$("#ocr-msg");m.innerHTML="";m.append(t);if(p!=null){const b=document.createElement("div");b.className="prog";b.innerHTML="<i></i>";m.append(b);b.firstChild.style.width=Math.round(p*100)+"%";}}
@@ -664,7 +697,7 @@ async function addShots(files){
   const btn=$("label[for=in-shot]");btn.classList.add("busy");const aiDone=[];let aiSkip=0,aiErr="";
   try{
     for(let i=0;i<list.length;i++){
-      const f=list[i];shots.push(URL.createObjectURL(f));drawShots();
+      const f=list[i];shots.push(URL.createObjectURL(f));shotFiles.push(f);drawShots();
       ocrMsg("正在辨識第 "+(i+1)+"／"+list.length+" 張截圖…",i/list.length);
       if(aiKey()){$("#ocr-msg").innerHTML=typingHTML("AI 正在讀第 "+(i+1)+"／"+list.length+" 張截圖");
         try{const v=await aiShot(f);if(v&&v.ok&&v.name&&v.text){aiDone.push(saveLocalAI(v,evFromAI(v,[],true)));}else aiSkip++;}catch(err){aiErr=err.message;break;}
@@ -675,8 +708,7 @@ async function addShots(files){
       const ta=$("#in-url");ta.value=(ta.value.trim()?ta.value.trim()+"\n\n":"")+"【截圖"+(shots.length)+"文字】\n"+(txt||"（沒有辨識到文字）");
     }
     if(aiKey()){shots.forEach(u=>URL.revokeObjectURL(u));shots=[];drawShots();const out=[];if(aiDone.length)out.push("已建檔（存在這台裝置，待查證）："+[...new Set(aiDone)].join("、"));if(aiSkip)out.push(aiSkip+" 張讀不到可收錄的事件");if(aiErr)out.push("AI 失敗："+aiErr);ocrMsg(out.join("；")||"沒有可收錄的內容");if(aiDone.length){toast("AI 已建檔 "+aiDone.length+" 筆");await window.__refresh();}return;}
-    ocrMsg("辨識完成，文字已填入上方，請確認後選「存到這台裝置」或「送出回報」。");toast("截圖文字已辨識");
-    if(!$("#a-name").value.trim()){const m=$("#in-url").value.match(/[一-鿿]{2,4}(?=(?:涉|遭|被|判|起訴|議員|立委|公司|企業|食品))/);if(m)$("#a-name").value=m[0];}
+    ocrMsg("辨識完成，文字已填入上方。確認後按「上傳並整理」。");toast("截圖文字已辨識");
   }catch(err){ocrMsg("辨識失敗："+(err&&err.message||"未知錯誤")+"。可以改用 Claude 版讓 AI 讀圖，或手動輸入。");shake(btn);}
   finally{btn.classList.remove("busy");}
 }
@@ -723,6 +755,63 @@ $("#in-local").addEventListener("click",async()=>{
   $("#in-url").value="";$("#a-name").value="";shots.forEach(u=>URL.revokeObjectURL(u));shots=[];drawShots();ocrMsg("");
   $("#in-msg").textContent="已存到這台裝置：「"+name+"」，現在搜尋就找得到。";toast("已存到這台裝置");await window.__refresh();
 });
+/* ===== upload to GitHub inbox (free) ===== */
+const TKEY="bilei_gh_token",PENDKEY="bilei_pending";
+const ghTok=()=>{try{return localStorage.getItem(TKEY)||"";}catch(_){return"";}};
+let RULESC=null;async function getRules(){if(!RULESC)RULESC=await fetchJSON("data/rules.json");return RULESC;}
+function knownPairs(){const out=[];for(const e of entries){out.push([e.name,e.name]);for(const a of e.aliases||[])if(String(a).length>=2)out.push([a,e.name]);}return out.sort((a,b)=>b[0].length-a[0].length);}
+function classifyC(R,text,name){const t=text||"";const firstHit=(pairs,d)=>{for(const [v,p] of pairs)if(new RegExp(p).test(t))return v;return d;};
+  if(!name){const k=knownPairs().find(([a])=>t.includes(a));if(k)name=k[1];}
+  if(!name)for(const p of R.name_patterns){const m=t.match(new RegExp(p));if(m){name=m[1];break;}}
+  const party=R.parties.find(p=>t.includes(p))||null;
+  const d=t.match(/(20\d\d)[年\/\-.](\d{1,2})[月\/\-.](\d{1,2})/),roc=t.match(/(1[01]\d)年(\d{1,2})月(\d{1,2})日/);
+  const pad=x=>String(x).padStart(2,"0");
+  const date=d?d[1]+"-"+pad(d[2])+"-"+pad(d[3]):roc?(+roc[1]+1911)+"-"+pad(roc[2])+"-"+pad(roc[3]):new Date().toISOString().slice(0,10);
+  return{name:name||"",category:firstHit(R.categories,"其他"),tag:firstHit(R.tags,"其他"),status:firstHit(R.status,"report"),party,date};}
+function bytesToB64(u8){let s="";for(let i=0;i<u8.length;i+=0x8000)s+=String.fromCharCode.apply(null,u8.subarray(i,i+0x8000));return btoa(s);}
+const strToB64=s=>bytesToB64(new TextEncoder().encode(s));
+async function encryptJSON(obj,pass){const salt=crypto.getRandomValues(new Uint8Array(16)),iv=crypto.getRandomValues(new Uint8Array(12)),iter=310000;
+  const km=await crypto.subtle.importKey("raw",new TextEncoder().encode(pass),"PBKDF2",false,["deriveKey"]);
+  const k=await crypto.subtle.deriveKey({name:"PBKDF2",salt,iterations:iter,hash:"SHA-256"},km,{name:"AES-GCM",length:256},false,["encrypt"]);
+  const ct=new Uint8Array(await crypto.subtle.encrypt({name:"AES-GCM",iv},k,new TextEncoder().encode(JSON.stringify(obj))));
+  return{v:1,iter,salt:bytesToB64(salt),iv:bytesToB64(iv),ct:bytesToB64(ct)};}
+async function ghPut(path,b64,msg){const r=await fetch("https://api.github.com/repos/"+REPO+"/contents/"+path,{method:"PUT",headers:{Authorization:"Bearer "+ghTok(),Accept:"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28","Content-Type":"application/json"},body:JSON.stringify({message:msg,content:b64,branch:"main"})});
+  if(!r.ok){const j=await r.json().catch(()=>({}));throw new Error(r.status===401?"GitHub 權杖無效或過期":r.status===403||r.status===404?"權杖沒有這個專案的寫入權限":(j.message||"HTTP "+r.status));}}
+const getPending=()=>{try{return JSON.parse(localStorage.getItem(PENDKEY)||"[]");}catch(_){return[];}};
+function mergeInbox(list,items){for(const it of items){if(!it||it.stage==="rejected")continue;const n=norm(it.name);
+  let e=list.find(x=>norm(x.name)===n||(x.aliases||[]).some(a=>norm(a)===n));const ev=Object.assign({},it.event,{inbox:it.id});
+  if(e){if(!(e.events||[]).some(v=>v.inbox===it.id)){e.events=[...(e.events||[]),ev];e.tags=[...new Set([...(e.tags||[]),ev.tag])];if(String(it.created)>String(e.updated||""))e.updated=it.created;}}
+  else list.push({id:"ib-"+it.id,name:it.name,aliases:it.aliases||[],category:it.category||"其他",tags:[ev.tag],related:it.related||[],summary:it.summary||"",origin:"inbox",updated:it.created,events:[ev]});}}
+$("#in-up").addEventListener("click",async()=>{
+  const raw=$("#in-url").value.trim(),name=$("#a-name").value.trim(),btn=$("#in-up");
+  if(!raw&&!shotFiles.length){$("#in-msg").textContent="請貼上網址、文字，或上傳截圖。";shake($("#in-url"));return;}
+  const pass=(()=>{try{return localStorage.getItem(PKEY)||"";}catch(_){return"";}})();
+  if(!ghTok()||!pass){$("#in-msg").textContent="第一次使用請先到「說明 → 上傳設定」填入 GitHub 權杖"+(pass?"":"，並在「私人資料」輸入密語解鎖（用來加密上傳的原始資料）")+"。";shake(btn);return;}
+  btn.classList.add("busy");btn.disabled=true;
+  try{
+    const R=await getRules();const urls=[...new Set(raw.match(/https?:\/\/[^\s"'<>，。]+/g)||[])];
+    const body=raw.replace(/https?:\/\/[^\s"'<>，。]+/g,"").replace(/【截圖\d+文字】\n?/g,"").trim();
+    const c=classifyC(R,body,name);
+    const id=new Date().toISOString().replace(/\D/g,"").slice(0,14)+"-"+Math.random().toString(36).slice(2,7);const created=new Date().toISOString();
+    $("#in-msg").innerHTML=typingHTML("正在加密並上傳");
+    const images=[];for(const f of shotFiles)images.push(await toB64(f));
+    const enc=await encryptJSON({id,created,name,text:raw,urls,images},pass);
+    await ghPut("inbox/"+id+".enc",strToB64(JSON.stringify(enc)),"APP 上傳（加密原始資料）");
+    const excerpt=body.replace(/\s+/g," ").slice(0,200);
+    await ghPut("inbox/"+id+".json",strToB64(JSON.stringify({id,created,name:c.name||name,text:excerpt,urls,draft:c,images:images.length},null,1)),"APP 上傳："+(c.name||name||"待整理"));
+    const nm=c.name||name||("待整理："+(excerpt||urls[0]||"截圖").slice(0,14));
+    const item={id,created,stage:"pending",name:nm,aliases:[],category:c.category,related:[],summary:excerpt,
+      event:{date:c.date,tag:c.tag,status:c.status,text:excerpt||"（上傳的截圖／連結，整理中）",...(c.party&&/民意代表|政治人物/.test(c.category)?{party:c.party}:{}),manual:true,
+        sources:urls.length?urls.map(u=>({pub:(u.match(/\/\/([^\/]+)/)||[,"連結"])[1],t:"使用者提供連結",url:u,kind:/judicial/.test(u)?"court":/gov\.tw/.test(u)?"gov":"news"})):[{pub:"使用者上傳",t:"整理中，待查證",kind:"news"}]}};
+    const P=getPending();P.push(item);localStorage.setItem(PENDKEY,JSON.stringify(P));
+    $("#in-url").value="";$("#a-name").value="";shots.forEach(u=>URL.revokeObjectURL(u));shots=[];shotFiles=[];drawShots();ocrMsg("");
+    btn.classList.remove("busy");btn.classList.add("ok");setTimeout(()=>btn.classList.remove("ok"),900);
+    $("#in-msg").textContent="已上傳「"+nm+"」。先以關鍵字初步分類（"+c.tag+"／"+(ST[c.status]||ST.report)[0]+"），約 1～2 分鐘後所有裝置都看得到；有 Gemini 金鑰時會再自動查證整理。";
+    toast("已上傳");await window.__refresh();
+  }catch(err){btn.classList.remove("busy");shake(btn);$("#in-msg").textContent="上傳失敗："+err.message;}
+  finally{btn.disabled=false;}
+});
+
 $("#in-go").addEventListener("click",()=>{
   const raw=$("#in-url").value.trim(),name=$("#a-name").value.trim();
   const urls=[...new Set(raw.match(/https:\/\/[^\s"'<>，。]+/g)||[])];
@@ -738,17 +827,19 @@ $("#in-go").addEventListener("click",()=>{
 
 /* data */
 function drawMeta(){const m=$("#meta");const last=meta&&meta.lastAuto?String(meta.lastAuto).slice(0,10):"";m.innerHTML="";m.append((entries.length?"收錄 "+entries.length+" 個對象":"")+(last?"　更新："+last:""));const a=document.createElement("a");a.href="https://github.com/"+REPO+"/releases/latest/download/bilei.apk";a.textContent="　下載 Android APP";a.style.fontWeight="700";if(!/Android/i.test(navigator.userAgent)||window.Capacitor)a.hidden=!/Android/i.test(navigator.userAgent)||!!window.Capacitor;m.append(a);}
-drawFilters();show(location.hash.slice(1));
+drawFilters();initRoute();
 const PKEY="bilei_private_key";
 async function loadPrivate(pass){const r=await fetch("data/private.enc",{cache:"no-cache"});if(!r.ok)return null;const j=await r.json();const b=x=>Uint8Array.from(atob(x),c=>c.charCodeAt(0));const km=await crypto.subtle.importKey("raw",new TextEncoder().encode(pass),"PBKDF2",false,["deriveKey"]);const k=await crypto.subtle.deriveKey({name:"PBKDF2",salt:b(j.salt),iterations:j.iter,hash:"SHA-256"},km,{name:"AES-GCM",length:256},false,["decrypt"]);const pt=await crypto.subtle.decrypt({name:"AES-GCM",iv:b(j.iv)},k,b(j.ct));return JSON.parse(new TextDecoder().decode(pt));}
 function drawLock(){const on=!!(()=>{try{return localStorage.getItem(PKEY)}catch(_){return null}})();$("#pv-state").textContent=on?"已解鎖：私人案件會一起出現在搜尋與清單。":"未解鎖。";$("#pv-form").hidden=on;$("#pv-off").hidden=!on;}
 $("#pv-form").addEventListener("submit",async e=>{e.preventDefault();const v=$("#pv-key").value.trim();if(!v){shake($("#pv-form"));return;}const btn=$("#pv-go");try{await busy(btn,async()=>{const a=await loadPrivate(v);if(!a)throw new Error("x");});localStorage.setItem(PKEY,v);$("#pv-key").value="";toast("已解鎖私人資料");drawLock();await window.__refresh();}catch(_){shake($("#pv-form"));toast("密語不正確");}});
 $("#pv-off").addEventListener("click",async()=>{try{localStorage.removeItem(PKEY);}catch(_){}drawLock();toast("已鎖上");await window.__refresh();});
 drawLock();
-function drawAK(){const k=aiKey();$("#ak-state").textContent=k?"已設定（…"+k.slice(-4)+"），截圖與內文會由 AI 整理。":"未設定，使用手機端文字辨識。";$("#ak-form").hidden=!!k;$("#ak-off").hidden=!k;}
-$("#ak-form").addEventListener("submit",async e=>{e.preventDefault();const v=$("#ak-key").value.trim();if(!/^sk-ant-/.test(v)){shake($("#ak-form"));toast("金鑰格式應以 sk-ant- 開頭");return;}localStorage.setItem(AKEY,v);try{await busy($("#ak-go"),()=>askAI([{type:"text",text:"只回覆 JSON：{\"ok\":true}"}]));toast("金鑰可用");}catch(err){localStorage.removeItem(AKEY);toast(err.message);shake($("#ak-form"));}$("#ak-key").value="";drawAK();});
-$("#ak-off").addEventListener("click",()=>{localStorage.removeItem(AKEY);drawAK();toast("已移除金鑰");});
-drawAK();
+function drawTK(){const k=ghTok();$("#tk-state").textContent=k?"已設定（…"+k.slice(-4)+"），可以從「新增」上傳。":"未設定。";$("#tk-form").hidden=!!k;$("#tk-off").hidden=!k;}
+$("#tk-form").addEventListener("submit",async e=>{e.preventDefault();const v=$("#tk-key").value.trim();if(!/^(github_pat_|ghp_)/.test(v)){shake($("#tk-form"));toast("權杖應以 github_pat_ 開頭");return;}
+  try{await busy($("#tk-go"),async()=>{const r=await fetch("https://api.github.com/repos/"+REPO,{headers:{Authorization:"Bearer "+v,Accept:"application/vnd.github+json"}});const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(r.status===401?"權杖無效":"讀不到專案（"+r.status+"）");if(j.permissions&&!j.permissions.push)throw new Error("權杖沒有寫入權限");});
+    localStorage.setItem(TKEY,v);$("#tk-key").value="";toast("權杖可用");drawTK();}catch(err){toast(err.message);shake($("#tk-form"));}});
+$("#tk-off").addEventListener("click",()=>{localStorage.removeItem(TKEY);drawTK();toast("已移除權杖");});
+drawTK();
 
 window.__refresh=async()=>{
   try{
@@ -756,6 +847,7 @@ window.__refresh=async()=>{
     entries=r1.ok?await r1.json():[];try{const r3=await fetch("data/ext.json",{cache:"no-cache"});if(r3.ok){const ids=new Set(entries.map(x=>x.id));entries=entries.concat((await r3.json()).filter(x=>!ids.has(x.id)));}}catch(_){}
     try{const pk=localStorage.getItem(PKEY);if(pk){const a=await loadPrivate(pk);if(a){const ids=new Set(entries.map(x=>x.id));entries=entries.concat(a.filter(x=>!ids.has(x.id)));}}}catch(_){}
     try{const L=getLocal();if(L.length)entries=entries.concat(L);}catch(_){}
+    try{const ib=await fetchJSON("data/inbox.json");const items=(ib&&ib.items)||[];mergeInbox(entries,items);const have=new Set(items.map(x=>x.id));const P=getPending().filter(x=>!have.has(x.id)&&Date.now()-new Date(x.created)<3*864e5);localStorage.setItem(PENDKEY,JSON.stringify(P));mergeInbox(entries,P);}catch(_){}
     meta=r2&&r2.ok?await r2.json():null;
   }catch(err){entries=[];$("#results").innerHTML='<p class="skeleton">資料讀取失敗，請確認網路後重新整理。</p>';}
   db=true;dataVer++;drawMeta();renderResults();if(!$("#v-list").hidden)renderList();

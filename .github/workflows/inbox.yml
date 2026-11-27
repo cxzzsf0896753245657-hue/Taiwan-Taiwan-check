@@ -1,0 +1,52 @@
+name: 整理 APP 上傳（收件匣）
+
+# APP 上傳後自動執行；每 6 小時再跑一次，把還沒經過 AI 查證的草稿補做（例如之後才加上 Gemini 金鑰）。
+on:
+  push:
+    branches: [main]
+    paths: ["inbox/**"]
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: inbox
+  cancel-in-progress: false
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install cryptography
+      - name: 整理收件匣（關鍵字初判；有金鑰時由 Gemini 查證）
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          BILEI_PASSPHRASE: ${{ secrets.BILEI_PASSPHRASE }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+        run: python3 tools/process_inbox.py
+      - name: 存回 repo
+        id: commit
+        run: |
+          git config user.name "bilei-bot"
+          git config user.email "bilei-bot@users.noreply.github.com"
+          git add -A site/data inbox
+          if git diff --cached --quiet; then echo "changed=0" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git commit -m "整理 APP 上傳的資料"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
+          echo "changed=1" >> "$GITHUB_OUTPUT"
+      # 機器人 commit 不會觸發其他 workflow，所以在這裡直接部署網站
+      - if: steps.commit.outputs.changed == '1'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: site
+          publish_branch: gh-pages
+          force_orphan: true
+          commit_message: 部署網站（收件匣）
