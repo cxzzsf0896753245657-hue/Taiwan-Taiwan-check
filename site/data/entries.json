@@ -3971,5 +3971,849 @@
     ]
    }
   ]
+ },
+ {
+  "id": "p-xielj",
+  "name": "謝龍介",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "國民黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "國民黨",
+    "status": "trial",
+    "text": "北檢依傷害罪起訴，指2024年5月17日議場衝突中將民進黨立委邱志偉拽落致傷；案件尚在審理，無罪推定。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-wanghw",
+  "name": "王鴻薇",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "國民黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "國民黨",
+    "status": "trial",
+    "text": "北檢依傷害等罪起訴，涉2024年7月8日與民進黨立委林楚茵搶佔主席台互毆；雙方互告，王稱屬正當防衛，尚在審理。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-chenyz",
+  "name": "陳玉珍",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "國民黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "國民黨",
+    "status": "trial",
+    "text": "北檢依傷害等罪起訴，涉2024年12月6日議場衝突中環抱並摔倒民進黨立委林月琴；案件尚在審理，無罪推定。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-liaowx",
+  "name": "廖偉翔",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "國民黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "國民黨",
+    "status": "trial",
+    "text": "北檢依傷害罪起訴，涉2024年5月17日議場衝突推落民進黨立委邱志偉；案件尚在審理，無罪推定。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-qiuzj",
+  "name": "邱鎮軍",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "國民黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "國民黨",
+    "status": "trial",
+    "text": "北檢依傷害罪起訴，涉2024年5月17日議場衝突，邱志偉、沈伯洋均對其提告；案件尚在審理，無罪推定。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-huangjh",
+  "name": "黃健豪",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "國民黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "國民黨",
+    "status": "trial",
+    "text": "北檢依傷害罪起訴，涉2024年5月17日議場衝突推落民進黨立委邱志偉；案件尚在審理，無罪推定。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-huangren",
+  "name": "黃仁",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "國民黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "國民黨",
+    "status": "trial",
+    "text": "北檢依傷害罪起訴，涉2024年5月17日議場衝突推落民進黨立委郭國文致尾椎骨折；同案其他3人不起訴，黃仁案尚在審理。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-kejm",
+  "name": "柯建銘",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "民進黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "民進黨",
+    "status": "trial",
+    "text": "北檢依過失傷害罪起訴，涉2025年3月25日議場以拐杖敲桌，拐杖彈飛打中國民黨立委徐巧芯；案件尚在審理，無罪推定。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-linchy",
+  "name": "林楚茵",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "民進黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "民進黨",
+    "status": "trial",
+    "text": "北檢依傷害等罪起訴，涉2024年7月8日與國民黨立委王鴻薇搶佔主席台互毆；雙方互告，尚在審理。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-linsf",
+  "name": "林淑芬",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "民進黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "民進黨",
+    "status": "trial",
+    "text": "北檢依傷害罪起訴，涉2024年5月24日議場衝突，被指揮打當時民眾黨立委麥玉珍臉部；案件尚在審理，無罪推定。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-xiedl",
+  "name": "謝典霖",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [
+   "謝新隆",
+   "鄭汝芬"
+  ],
+  "tags": [
+   "貪污"
+  ],
+  "party": "國民黨",
+  "summary": "彰化縣議長。2026年因議會宴客案涉嫌投票行賄及詐取公款，遭羈押禁見（尚未判決）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-09-17",
+    "case": "議會宴客賄選案",
+    "tag": "貪污",
+    "party": "國民黨",
+    "status": "invest",
+    "text": "彰化地檢署認其涉犯選罷法投票行賄及貪污治罪條例等罪嫌重大，當庭逮捕，彰化地院裁定羈押禁見；台中高分院9月24日駁回抗告。本人與國民黨表示尊重司法並強調無罪推定。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "謝典霖涉賄遭聲押",
+      "url": "https://udn.com/news/story/6656/9760452",
+      "kind": "news"
+     },
+     {
+      "pub": "自由時報",
+      "t": "謝典霖等人遭聲押 彰化地院裁定羈押",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1771065",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "蘇震清兒媳涉賄選遭羈押禁見（含謝典霖延押）",
+      "url": "https://news.pts.org.tw/article/835328",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-xiexl",
+  "name": "謝新隆",
+  "category": "政治人物",
+  "aliases": [],
+  "related": [
+   "謝典霖",
+   "鄭汝芬"
+  ],
+  "tags": [
+   "貪污"
+  ],
+  "party": "國民黨",
+  "summary": "謝典霖之父。2026年因彰化縣議會宴客案涉嫌投票行賄遭羈押，55天後交保（尚未判決）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-09-17",
+    "case": "議會宴客賄選案",
+    "tag": "貪污",
+    "party": "國民黨",
+    "status": "invest",
+    "text": "涉選罷法投票行賄等罪嫌，彰化地院裁定羈押禁見；羈押55天後於11月10日以1000萬元交保，限制住居、出境出海8個月。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "謝典霖涉賄遭聲押",
+      "url": "https://udn.com/news/story/6656/9760452",
+      "kind": "news"
+     },
+     {
+      "pub": "自由時報",
+      "t": "謝典霖等人遭聲押 彰化地院裁定羈押",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1771065",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "蘇震清兒媳涉賄選遭羈押禁見（含謝新隆交保）",
+      "url": "https://news.pts.org.tw/article/835328",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-zhengrf",
+  "name": "鄭汝芬",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [
+   "謝典霖",
+   "謝新隆"
+  ],
+  "tags": [
+   "貪污"
+  ],
+  "party": "國民黨",
+  "summary": "前立法委員、謝典霖之母。2026年因彰化縣議會宴客案涉嫌投票行賄，以100萬元交保（尚未判決）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-09-17",
+    "case": "議會宴客賄選案",
+    "tag": "貪污",
+    "party": "國民黨",
+    "status": "invest",
+    "text": "彰化地檢署認其涉犯選罷法投票行賄罪嫌重大並聲請羈押，後以100萬元交保。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "謝典霖涉賄遭聲押",
+      "url": "https://udn.com/news/story/6656/9760452",
+      "kind": "news"
+     },
+     {
+      "pub": "自由時報",
+      "t": "謝典霖等人遭聲押 彰化地院裁定羈押",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1771065",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-huahang",
+  "name": "中華航空",
+  "category": "企業/品牌",
+  "aliases": [
+   "華航"
+  ],
+  "related": [],
+  "tags": [
+   "性別歧視"
+  ],
+  "summary": "航空公司。空服員懷孕後申請轉任地勤遭拒、被迫留職停薪，高雄市勞工局依性別工作平等法罰32萬元，行政法院判決維持處分。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-07-23",
+    "case": "懷孕歧視行政處分",
+    "tag": "性別歧視",
+    "status": "admin",
+    "text": "高雄市勞工局認定華航違反性別工作平等法，裁罰30萬元（另行為②罰2萬元）並公布名稱；高雄高等行政法院2025年12月判決先維持懷孕歧視部分，2026年7月23日上訴審駁回華航上訴、維持處分。華航稱疫情特殊期間、無違法故意，尊重判決。另該空服員民事請求獲賠45萬餘元。",
+    "sources": [
+     {
+      "pub": "司法院",
+      "t": "高雄高等行政法院115年度高上字第6號判決",
+      "url": "https://judgment.judicial.gov.tw/FILES/KSBA/115%2c%e9%ab%98%e4%b8%8a%2c6%2c20260723%2c1.pdf",
+      "kind": "court"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "空服員懷孕被迫留職停薪 華航涉歧視挨罰上訴失敗",
+      "url": "https://news.pts.org.tw/article/791193",
+      "kind": "news"
+     },
+     {
+      "pub": "鏡週刊",
+      "t": "資深空姐懷孕被逼留職 法官：就是歧視判罰30萬",
+      "url": "https://www.mirrormedia.mg/external/mirrordaily_40844",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-every8d",
+  "name": "互動資通（EVERY8D）",
+  "category": "App/科技",
+  "aliases": [
+   "EVERY8D",
+   "互動資通",
+   "Teamplus"
+  ],
+  "related": [],
+  "tags": [
+   "資安"
+  ],
+  "summary": "企業簡訊平台業者。2026年5月平台遭駭、疑用戶個資外洩，數發部依個資法裁罰公司及代表人各100萬元。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-07-22",
+    "case": "簡訊平台遭駭個資案",
+    "tag": "資安",
+    "status": "admin",
+    "text": "2026年5月底平台疑遭攻擊致服務中斷、個資疑似外洩，68個政府機關曾使用該平台。數發部認定違反個資法第27條第1項，7月22日依第48條第2項等規定裁處公司及代表人各100萬元（共200萬元）並令限期改正；9月公布。業者稱鑑識未發現大量未授權外洩。",
+    "sources": [
+     {
+      "pub": "自由時報",
+      "t": "EVERY8D疑個資外洩 裁罰出爐 公司、代表人各罰100萬元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5583521",
+      "kind": "news"
+     },
+     {
+      "pub": "科技島（Techbang）",
+      "t": "EVERY8D疑遭駭 數發部坦言應變有改善空間",
+      "url": "https://www.techbang.com/posts/129932-every8d-sms-platform-hacked-moda-response",
+      "kind": "news"
+     },
+     {
+      "pub": "工商時報",
+      "t": "簡訊代發平台EVERY8D疑似遭駭 數發部啟動行政檢查",
+      "url": "https://www.ctee.com.tw/news/20260530700602-430104",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-zengyf",
+  "name": "曾耀鋒",
+  "category": "企業人物",
+  "aliases": [
+   "曾國煒",
+   "im.B"
+  ],
+  "related": [
+   "張淑芬"
+  ],
+  "tags": [
+   "詐騙"
+  ],
+  "summary": "im.B不動產借貸媒合平台主嫌，吸金近90億元；最高法院2025年12月判13年定讞。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2025-12-30",
+    "case": "im.B吸金案",
+    "tag": "詐騙",
+    "status": "final",
+    "text": "最高法院依銀行法非法經營收受存款業務判曾耀鋒13年確定；女友張淑芬判9年6月確定；洗錢及犯罪所得沒收部分發回高等法院。一審判16年6月、二審維持。",
+    "sources": [
+     {
+      "pub": "司法院",
+      "t": "最高法院114年度台上字第4674號刑事判決",
+      "url": "https://judgment.judicial.gov.tw/FILES/TPSM/114%2c%e5%8f%b0%e4%b8%8a%2c4674%2c20251230%2c1.pdf",
+      "kind": "court"
+     },
+     {
+      "pub": "三立新聞",
+      "t": "Im.B吸金90億案！主嫌曾耀鋒判刑13年定讞",
+      "url": "https://www.setn.com/klist/552015",
+      "kind": "news"
+     },
+     {
+      "pub": "TVBS",
+      "t": "im.B吸金案最終判決曝",
+      "url": "https://news.tvbs.com.tw/news/searchresult/im.B/news",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-lianjing",
+  "name": "連淨綠色科技",
+  "category": "企業/品牌",
+  "aliases": [
+   "連淨",
+   "連淨苦茶油"
+  ],
+  "related": [
+   "棉花田",
+   "統一生機"
+  ],
+  "tags": [
+   "食安"
+  ],
+  "summary": "苦茶油業者。2026年7月自主通報苦茶油苯駢芘2.9μg/kg超標（標準2.0），新北市衛生局命暫停作業及販售。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-07-22",
+    "case": "苦茶油苯駢芘超標",
+    "tag": "食安",
+    "status": "admin",
+    "text": "業者自主通報並主動通知下游下架；該批共5024罐，其中939罐已售出（棉花田、統一生機）。新北市衛生局會同食藥署查廠，命暫停作業及停止販賣，待提交改善報告後方得恢復，並抽驗5件由食藥署檢驗。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "連淨自主通報苦茶油檢出苯駢芘含量超標 新北衛生局啟動下架",
+      "url": "https://udn.com/news/story/7323/9644773",
+      "kind": "news"
+     },
+     {
+      "pub": "自由時報",
+      "t": "連淨苦茶油苯駢芘 新北衛生局命停售",
+      "url": "https://news.ltn.com.tw/news/life/breakingnews/5514335",
+      "kind": "news"
+     },
+     {
+      "pub": "行政院",
+      "t": "苦茶油苯駢芘 查廠與抽驗說明",
+      "url": "https://www.ey.gov.tw/Page/88F151FFCE5C741E/c6e29df2-1879-4426-a2c4-cd6108eec526",
+      "kind": "gov"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-wenya",
+  "name": "文雅畜牧場",
+  "category": "企業/品牌",
+  "aliases": [
+   "文雅",
+   "鮮健蛋品"
+  ],
+  "related": [
+   "龍忠蛋行"
+  ],
+  "tags": [
+   "食安"
+  ],
+  "summary": "彰化蛋雞場。2025年11月雞蛋驗出芬普尼代謝物超標，移動管制期間仍出貨，負責人2026年5月遭起訴。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2025-11-04",
+    "case": "芬普尼蛋",
+    "tag": "食安",
+    "status": "admin",
+    "text": "食藥署與地方衛生局抽驗發現雞蛋芬普尼代謝物達0.03ppm（標準0.01ppm），要求同批下架回收；11月5日起移動管制，但11月9日仍出貨約4萬顆至台中龍忠蛋行，該批復驗0.05ppm超標。",
+    "sources": [
+     {
+      "pub": "衛福部食藥署",
+      "t": "食藥署嚴正要求追究蛋品非法流出責任",
+      "url": "https://mohw.gov.tw/cp-7172-84530-1.html",
+      "kind": "gov"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "芬普尼蛋熱門議題",
+      "url": "https://news.pts.org.tw/hotTopic/583",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2026-05-14",
+    "case": "芬普尼蛋起訴",
+    "tag": "食安",
+    "status": "trial",
+    "text": "彰化地檢署依食安法起訴文雅畜牧場陳姓負責人（製造、販賣殘留農藥超標雞蛋），龍忠蛋行林姓蛋商依詐欺取財起訴，並聲請沒收犯罪所得；蛋品流入9縣市。蛋行表示事前不知情。案件尚在審理。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "彰化養雞場違法用藥 芬普尼毒蛋銷到9縣市 檢方起訴雞農和蛋商2人",
+      "url": "https://udn.com/news/story/7321/9502349",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "芬普尼蛋流入9縣市 牧場負責人、蛋商被起訴",
+      "url": "https://news.pts.org.tw/article/808374",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-yuanzp",
+  "name": "袁昶平",
+  "category": "企業人物",
+  "aliases": [
+   "金錢豹創辦人",
+   "葳格國際學校創辦人"
+  ],
+  "related": [
+   "吳菀庭",
+   "葳格國際學校",
+   "金錢豹"
+  ],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "summary": "金錢豹酒店、葳格國際學校創辦人。涉掏空校產及公司資產、逃漏稅等案，2026年遭羈押後交保，檢方求刑7年（尚未判決）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-06-23",
+    "case": "葳格校產案",
+    "tag": "犯罪/司法",
+    "status": "trial",
+    "text": "台中地檢署認其與妻吳菀庭涉業務登載不實、公益侵占、業務侵占、背信及商業會計法等罪嫌重大，當庭逮捕並聲押獲准；袁於偵訊大致坦承，7月16日以2000萬元交保。後起訴，另涉教唆毆打工程包商及國泰洋酒逃漏稅案，檢方合併求刑7年；袁方反控他人涉背信。均未判決。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "涉掏空葳格校產 袁昶平夫妻遭聲押獲准",
+      "url": "https://udn.com/news/story/7321/9586761",
+      "kind": "news"
+     },
+     {
+      "pub": "ETtoday",
+      "t": "金錢豹袁昶平認罪獲准2000萬交保",
+      "url": "https://www.ettoday.net/news/20260716/3202614.htm",
+      "kind": "news"
+     },
+     {
+      "pub": "鏡週刊",
+      "t": "葳格創辦人袁昶平夫妻遭起訴 檢方求刑",
+      "url": "https://www.mirrormedia.mg/story/amp/20261026inv001",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-zhoumz",
+  "name": "周滿芝",
+  "category": "其他",
+  "aliases": [
+   "新住民關懷協會"
+  ],
+  "related": [],
+  "tags": [
+   "涉中"
+  ],
+  "summary": "新住民關懷協會相關人士。經法院認定參與中國統戰組織並於台灣推動統戰工作，最高法院2026年7月判8年定讞。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-07-22",
+    "case": "統戰工作案",
+    "tag": "涉中",
+    "status": "final",
+    "text": "一審高雄地院以證據不足判無罪；更審後高雄高分院依國安局函覆認定陸方組織實質受統戰部掌控，改判有罪；最高法院7月22日駁回上訴，8年徒刑確定。陸委會7月23日表示將廢止其台灣地區身分。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "周滿芝統戰案定讞 陸委會廢止台灣身分",
+      "url": "https://udn.com/news/story/7331/9646962",
+      "kind": "news"
+     }
+    ],
+    "manual": true
+   }
+  ]
  }
 ]
