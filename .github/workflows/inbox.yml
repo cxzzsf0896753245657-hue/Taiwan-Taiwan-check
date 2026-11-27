@@ -4,7 +4,7 @@ name: 整理 APP 上傳（收件匣）
 on:
   push:
     branches: [main]
-    paths: ["inbox/**"]
+    paths: ["inbox/**", "private_queue/**"]
   schedule:
     - cron: "17 */6 * * *"
   workflow_dispatch:
@@ -31,12 +31,16 @@ jobs:
           BILEI_PASSPHRASE: ${{ secrets.BILEI_PASSPHRASE }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
         run: python3 tools/process_inbox.py
+      - name: 私人投遞箱併入 private.enc
+        env:
+          BILEI_PASSPHRASE: ${{ secrets.BILEI_PASSPHRASE }}
+        run: python3 tools/private_queue.py merge
       - name: 存回 repo
         id: commit
         run: |
           git config user.name "bilei-bot"
           git config user.email "bilei-bot@users.noreply.github.com"
-          git add -A site/data inbox
+          git add -A site/data inbox private_queue
           if git diff --cached --quiet; then echo "changed=0" >> "$GITHUB_OUTPUT"; exit 0; fi
           git commit -m "整理 APP 上傳的資料"
           for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
