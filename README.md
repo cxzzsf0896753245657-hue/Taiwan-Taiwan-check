@@ -51,7 +51,7 @@ base64 -w0 bilei.jks   # 複製輸出貼到 ANDROID_KEYSTORE_B64
 
 ## 外部彙整資料（site/data/ext.json）
 
-`ext.json` 是從 council2026.taiwangogo.tw（時代力量管理、台灣前進製作）與 guilty.policy2026.workers.dev（匿名個人專案）匯入的 222 位 2026 年參選人司法紀錄。匯入規則：
+`ext.json` 是從 council2026.taiwangogo.tw（時代力量管理、台灣前進製作）、local2026.taiwangogo.tw（村里長、鄉鎮市民代表、鄉鎮市長）與 guilty.policy2026.workers.dev（匿名個人專案）匯入的 420 位 2026 年參選人司法紀錄。2026-11-27 起，來源不足或屬行政罰的紀錄也收錄，但標示「待查證」。匯入規則：
 
 - 只收附司法院裁判書連結，或至少兩家媒體報導的紀錄；只有臉書來源的不收。
 - 不收：家屬紀錄、行政罰、guilty 網站標示「待查證」的項目；「中配」身分不是犯罪，也不匯入。
