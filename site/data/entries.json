@@ -5564,5 +5564,694 @@
     "manual": true
    }
   ]
+ },
+ {
+  "id": "c-skintific",
+  "name": "SKINTIFIC",
+  "aliases": [
+   "蜚美",
+   "廣州蜚美網路"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "中國廣州品牌（母公司廣州蜚美網路技術），產品標示中國製，在東南亞行銷時淡化中國來源。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "中國廣州品牌（母公司廣州蜚美網路技術），產品標示中國製，在東南亞行銷時淡化中國來源。",
+    "sources": [
+     {
+      "pub": "TVBS新聞網",
+      "t": "兩年橫掃東南亞美妝市場的中國品牌",
+      "url": "https://news.tvbs.com.tw/china/3074291",
+      "kind": "news"
+     },
+     {
+      "pub": "南華早報 SCMP",
+      "t": "Are Chinese-made skincare brands downplaying their origins",
+      "url": "https://www.scmp.com/week-asia/lifestyle-culture/article/3261396/are-chinese-made-skincare-brands-downplaying-their-origins-appeal-southeast-asians",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-timephoria",
+  "name": "Timephoria（Time Phoria）",
+  "aliases": [
+   "time phoria",
+   "TIMEPHORIA"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "客服自述於香港成立、產品全數在中國製造；菲律賓行銷由 SKINTIFIC 員工代表發言，疑同集團。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "客服自述於香港成立、產品全數在中國製造；菲律賓行銷由 SKINTIFIC 員工代表發言，疑同集團。",
+    "sources": [
+     {
+      "pub": "Timephoria 客服問答整理",
+      "t": "Where does Time Phoria come from",
+      "url": "https://sites.google.com/view/csph-ekb/timephoria",
+      "kind": "news"
+     },
+     {
+      "pub": "Manila Bulletin",
+      "t": "Timephoria 品牌報導（SKINTIFIC 員工發言）",
+      "url": "https://mb.com.ph/2026/06/09/this-global-cosmetics-brand-believes-makeup-should-be-about-self-expression-not-perfection",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ],
+    "manual": true
+   }
+  ]
+ },
+ {
+  "id": "c-glad2glow",
+  "name": "glad2glow（G2G）",
+  "aliases": [
+   "Glad2Glow",
+   "G2G"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "以印尼品牌行銷（PT Suntone Wisdom Indonesia），但產品多為中國製造進口。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "以印尼品牌行銷（PT Suntone Wisdom Indonesia），但產品多為中國製造進口。",
+    "sources": [
+     {
+      "pub": "品牌公司資料整理",
+      "t": "PT Suntone Wisdom Indonesia / Glad2Glow",
+      "url": "https://sites.google.com/siswa.umk.edu.my/g2g/about",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ],
+    "manual": true
+   }
+  ]
+ },
+ {
+  "id": "c-millefee",
+  "name": "MilleFee（ミルフィー）",
+  "aliases": [
+   "Millefee",
+   "Maison de MilleFee"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "以日本品牌行銷，零售商商品資料標示產地為中國；貼文另稱其打亮產品抄襲 Dior（未查證）。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "以日本品牌行銷，零售商商品資料標示產地為中國；貼文另稱其打亮產品抄襲 Dior（未查證）。",
+    "sources": [
+     {
+      "pub": "YesStyle",
+      "t": "MilleFee 商品資料 Made in: China",
+      "url": "https://www.yesstyle.com/en/millefee-lady-flower/info.html/pid.1127543385",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ],
+    "manual": true
+   }
+  ]
+ },
+ {
+  "id": "c-mistine",
+  "name": "Mistine（蜜絲婷）",
+  "aliases": [
+   "蜜丝婷",
+   "Better Way"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "泰國品牌（Better Way 泰國），中國為主要成長市場並設有中泰合資公司（深圳）。貼文稱其為洗產地中國製，本站未查到在台販售品為中國製的證據。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "泰國品牌（Better Way 泰國），中國為主要成長市場並設有中泰合資公司（深圳）。貼文稱其為洗產地中國製，本站未查到在台販售品為中國製的證據。",
+    "sources": [
+     {
+      "pub": "China Daily",
+      "t": "Mistine embraces opportunities in Chinese market under BRI",
+      "url": "https://epaper.chinadaily.com.cn/a/202310/17/WS652de03ea310d4219e3a9524.html",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ],
+    "manual": true
+   }
+  ]
+ },
+ {
+  "id": "c-judydoll",
+  "name": "橘朵 Judydoll",
+  "aliases": [
+   "Judydoll",
+   "橘宜集團",
+   "Joy Group"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "中國品牌，上海橘宜化妝品（橘宜集團）旗下。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "中國品牌，上海橘宜化妝品（橘宜集團）旗下。",
+    "sources": [
+     {
+      "pub": "The Bamboo Works",
+      "t": "橘宜集團進軍土耳其",
+      "url": "https://thebambooworks.com/zh/tag/橘宜化妝品/",
+      "kind": "news"
+     },
+     {
+      "pub": "美人計",
+      "t": "10大熱銷中國淘寶彩妝",
+      "url": "https://www.beauty321.com/post/62581",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-joocyee",
+  "name": "酵色 JOOCYEE",
+  "aliases": [
+   "Joocyee",
+   "酵色"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "中國品牌，2019 年創立，橘宜集團旗下。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "中國品牌，2019 年創立，橘宜集團旗下。",
+    "sources": [
+     {
+      "pub": "The Bamboo Works",
+      "t": "橘宜集團旗下酵色",
+      "url": "https://thebambooworks.com/zh/tag/橘宜化妝品/",
+      "kind": "news"
+     },
+     {
+      "pub": "Shopee SG",
+      "t": "Best makeup brands China",
+      "url": "https://shopee.sg/blog/best-makeup-brands-china/",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-flowerknows",
+  "name": "花知曉 Flower Knows",
+  "aliases": [
+   "Flower Knows",
+   "花知晓",
+   "珀萊雅"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "中國品牌，2026 年由中國珀萊雅取得控股。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "中國品牌，2026 年由中國珀萊雅取得控股。",
+    "sources": [
+     {
+      "pub": "上海證券交易所／第一財經",
+      "t": "Proya gaining control of Flower Knows",
+      "url": "https://english.sse.com.cn/news/newsrelease/voice/c/c_20260525_10819574.shtml",
+      "kind": "news"
+     },
+     {
+      "pub": "美人計",
+      "t": "10大熱銷中國淘寶彩妝",
+      "url": "https://www.beauty321.com/post/62581",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-timage",
+  "name": "彩棠 TIMAGE",
+  "aliases": [
+   "TIMAGE",
+   "彩棠",
+   "珀萊雅"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "中國品牌，2019 年由珀萊雅收購。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "中國品牌，2019 年由珀萊雅收購。",
+    "sources": [
+     {
+      "pub": "網易",
+      "t": "珀萊雅 2019 年收購彩棠",
+      "url": "https://www.163.com/dy/article/HV3SCV8S0553657V.html",
+      "kind": "news"
+     },
+     {
+      "pub": "美人計",
+      "t": "10大熱銷中國淘寶彩妝",
+      "url": "https://www.beauty321.com/post/62581",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-perfectdiary",
+  "name": "完美日記 Perfect Diary",
+  "aliases": [
+   "Perfect Diary",
+   "逸仙",
+   "Yatsen",
+   "完美日记"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "中國品牌，廣州逸仙電子商務旗下。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "中國品牌，廣州逸仙電子商務旗下。",
+    "sources": [
+     {
+      "pub": "TechCrunch",
+      "t": "Yatsen (Perfect Diary) to buy Eve Lom",
+      "url": "https://techcrunch.com/?p=2120152",
+      "kind": "news"
+     },
+     {
+      "pub": "買購網",
+      "t": "完美日記（廣州逸仙電子商務）",
+      "url": "https://www.maigoo.com/best/46701.html",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-intoyou",
+  "name": "INTO YOU（心慕與你）",
+  "aliases": [
+   "心慕与你",
+   "心慕與你"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "中國彩妝品牌。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "中國彩妝品牌。",
+    "sources": [
+     {
+      "pub": "美人計",
+      "t": "10大熱銷中國淘寶彩妝",
+      "url": "https://www.beauty321.com/post/62581",
+      "kind": "news"
+     },
+     {
+      "pub": "買購網",
+      "t": "平價彩妝十大品牌",
+      "url": "https://www.maigoo.com/best/46701.html",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-pramy",
+  "name": "Pramy（柏瑞美）",
+  "aliases": [
+   "柏瑞美",
+   "PRAMY"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "貼文列為中國品牌；本站尚未找到第二個來源。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "貼文列為中國品牌；本站尚未找到第二個來源。",
+    "sources": [
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ],
+    "manual": true
+   }
+  ]
+ },
+ {
+  "id": "c-lilybyred",
+  "name": "lilybyred",
+  "aliases": [
+   "Lilybyred",
+   "丽丽百乐",
+   "DYD",
+   "歡禧集團"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "韓國品牌，2026 年 4 月中國杭州歡禧集團取得母公司 DYD 36% 股權成為最大股東。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "韓國品牌，2026 年 4 月中國杭州歡禧集團取得母公司 DYD 36% 股權成為最大股東。",
+    "sources": [
+     {
+      "pub": "Jing Daily",
+      "t": "Chinese firm buys controlling stake in Lilybyred",
+      "url": "https://jingdaily.com/intels/2026-04/06/chinese-firm-buys-controlling-stake-in-k-beauty-brand-lilybyred",
+      "kind": "news"
+     },
+     {
+      "pub": "CNPP",
+      "t": "lilybyred 杭州歡禧",
+      "url": "https://www.cnpp.cn/pinpai/4235749.html",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-za",
+  "name": "ZA（姬芮）",
+  "aliases": [
+   "Za",
+   "姬芮"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "資生堂 2022 年將中國市場的 ZA 姬芮出售給品牌管理公司 URUOI；URUOI 國籍與在台 ZA 是否受影響未查證。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "資生堂 2022 年將中國市場的 ZA 姬芮出售給品牌管理公司 URUOI；URUOI 國籍與在台 ZA 是否受影響未查證。",
+    "sources": [
+     {
+      "pub": "時事通信",
+      "t": "資生堂、中国の現地ブランド売却へ",
+      "url": "https://www.sbbit.jp/article/refers/78905",
+      "kind": "news"
+     },
+     {
+      "pub": "界面新聞",
+      "t": "資生堂出售Za姬芮和泊美",
+      "url": "https://m.jiemian.com/article/7008871.html",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ],
+    "manual": true
+   }
+  ]
+ },
+ {
+  "id": "c-3ce",
+  "name": "3CE",
+  "aliases": [
+   "3CE STYLENANDA",
+   "Stylenanda",
+   "三熹玉"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "其他"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "貼文稱 3CE 被中資收購，查證不符：母公司 Stylenanda 於 2018 年由法國萊雅集團 100% 收購。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "其他",
+    "status": "clear",
+    "text": "貼文稱 3CE 被中資收購，查證不符：母公司 Stylenanda 於 2018 年由法國萊雅集團 100% 收購。",
+    "sources": [
+     {
+      "pub": "WWD Japan",
+      "t": "ロレアルが「スタイルナンダ」買収",
+      "url": "https://www.wwdjapan.com/608842",
+      "kind": "news"
+     },
+     {
+      "pub": "Korea JoongAng Daily",
+      "t": "L'Oreal purchases 100% stake in Stylenanda",
+      "url": "https://www.koreajoongangdaily.com/business/loreal-purchases-100-stake-in-stylenanda/11362958",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
  }
 ]
