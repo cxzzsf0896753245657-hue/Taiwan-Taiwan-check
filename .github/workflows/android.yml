@@ -50,8 +50,10 @@ jobs:
           KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
         run: |
           chmod +x gradlew
-          if [ -n "$KEYSTORE_B64" ]; then
-            echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/bilei.jks"
+          # 固定簽章：repo 內的 app/bilei.jks（以密碼保護），密碼放在 secret ANDROID_KEYSTORE_PASSWORD。
+          # 簽章固定，之後的新版才能直接覆蓋安裝。
+          if [ -n "$KEYSTORE_B64" ]; then echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/bilei.jks"; else cp "$GITHUB_WORKSPACE/app/bilei.jks" "$RUNNER_TEMP/bilei.jks"; fi
+          if [ -n "$KEYSTORE_PASSWORD" ]; then
             ./gradlew assembleRelease --no-daemon \
               -Pandroid.injected.signing.store.file="$RUNNER_TEMP/bilei.jks" \
               -Pandroid.injected.signing.store.password="$KEYSTORE_PASSWORD" \
@@ -59,8 +61,7 @@ jobs:
               -Pandroid.injected.signing.key.password="$KEYSTORE_PASSWORD"
             cp app/build/outputs/apk/release/app-release.apk "$GITHUB_WORKSPACE/bilei.apk"
           else
-            ./gradlew assembleDebug --no-daemon
-            cp app/build/outputs/apk/debug/app-debug.apk "$GITHUB_WORKSPACE/bilei.apk"
+            echo "::error::缺少 secret ANDROID_KEYSTORE_PASSWORD，未簽章的版本無法覆蓋安裝，停止打包"; exit 1
           fi
       - name: 發佈到 Releases
         uses: softprops/action-gh-release@v2
