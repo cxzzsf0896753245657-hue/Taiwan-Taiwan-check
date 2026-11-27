@@ -1,6 +1,6 @@
 // 避雷查 service worker: always try the network first so new data and new
 // versions of the page appear right away; fall back to the cache when offline.
-const CACHE = "bilei-v1";
+const CACHE = "bilei-v2";
 const CORE = ["./", "index.html", "manifest.webmanifest", "data/entries.json", "icons/icon-192.png"];
 
 self.addEventListener("install", (e) => {
