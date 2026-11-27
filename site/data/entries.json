@@ -5531,5 +5531,38 @@
     ]
    }
   ]
+ },
+ {
+  "id": "c-linkkorea",
+  "name": "Link Korea（linkkorea_tw）",
+  "aliases": [
+   "LINK KOREA",
+   "linkkorea_tw"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "其他"
+  ],
+  "related": [],
+  "summary": "站長個人評價：認為其在 Threads 的言論品行不佳。無違法或裁罰認定，僅有使用者截圖，待查證。",
+  "origin": "manual",
+  "updated": "2026-11-27T14:34:51Z",
+  "events": [
+   {
+    "date": "2026-11-27",
+    "case": "社群言論爭議（站長個人評價）",
+    "tag": "其他",
+    "status": "report",
+    "text": "站長提供截圖：該帳號在 Threads 於他人留言「覺得『回家投票』非常白痴」下回覆「選你正解」，另在台灣高鐵貼文下留言質疑「每日約 2,500 人次有空位搭乘需求」一句並稱「藉口一堆」。站長認為其言論不當、品行不佳。本紀錄無違法或行政裁罰認定，亦無媒體報導，僅為站長個人評價與使用者截圖，待查證。",
+    "sources": [
+     {
+      "pub": "站長提供截圖",
+      "t": "Threads 留言截圖，本機紀錄，待查證",
+      "kind": "news"
+     }
+    ],
+    "manual": true
+   }
+  ]
  }
 ]
