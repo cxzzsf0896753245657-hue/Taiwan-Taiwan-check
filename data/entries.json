@@ -1,0 +1,6257 @@
+[
+ {
+  "id": "e-baolin",
+  "aliases": [
+   "寶林"
+  ],
+  "category": "企業/品牌",
+  "events": [
+   {
+    "date": "2024-03-29",
+    "sources": [
+     {
+      "kind": "gov",
+      "pub": "衛生福利部",
+      "t": "寶林茶室食品中毒案報告",
+      "url": "https://mohw.gov.tw/dl-88241-d43539cc-a5da-42e4-b807-b9550b9ecc21.html"
+     },
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "寶林茶室食物中毒案驗出米酵菌酸",
+      "url": "https://health.udn.com/health/story/6010/7858737"
+     }
+    ],
+    "status": "invest",
+    "tag": "食安",
+    "text": "衛福部確認患者與死者檢體驗出米酵菌酸，食藥署、疾管署與北市衛生局聯合稽查。"
+   },
+   {
+    "date": "2025",
+    "sources": [
+     {
+      "kind": "gov",
+      "pub": "監察院",
+      "t": "寶林茶室事件調查報告",
+      "url": "https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/68806"
+     }
+    ],
+    "status": "warn",
+    "tag": "食安",
+    "text": "監察院就35人中毒、6人死亡事件立案調查，檢討主管機關處理。"
+   }
+  ],
+  "name": "寶林茶室",
+  "origin": "seed",
+  "related": [
+   "遠東百貨信義A13",
+   "米酵菌酸",
+   "邦克列酸",
+   "炒粿條"
+  ],
+  "summary": "2024年3月台北信義區餐廳集體食物中毒，35人就醫、6人死亡，國內首見米酵菌酸（邦克列酸）中毒。",
+  "tags": [
+   "食安"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-baoxin",
+  "aliases": [
+   "保欣企業有限公司"
+  ],
+  "category": "企業/品牌",
+  "events": [
+   {
+    "date": "2024-02-26",
+    "sources": [
+     {
+      "kind": "gov",
+      "pub": "衛福部食藥署",
+      "t": "保欣企業辣椒粉檢出蘇丹色素",
+      "url": "https://mohw.gov.tw/cp-2704-77779-1.html"
+     }
+    ],
+    "status": "admin",
+    "tag": "食安",
+    "text": "4批辣椒粉原料檢出蘇丹色素三號，流向濟生等16家下游，下架封存21,234.5公斤；中國21家出口商暫停受理輸入查驗。"
+   },
+   {
+    "date": "2024-03-26",
+    "sources": [
+     {
+      "kind": "gov",
+      "pub": "衛福部食藥署",
+      "t": "辣椒粉蘇丹色素稽查進度",
+      "url": "https://mohw.gov.tw/cp-2704-78166-1.html"
+     }
+    ],
+    "status": "admin",
+    "tag": "食安",
+    "text": "全案累計抽驗617件，下架及封存辣椒粉與相關產品595,149.4公斤。"
+   }
+  ],
+  "name": "保欣企業",
+  "origin": "seed",
+  "related": [
+   "河南三禾藥業",
+   "蘇丹紅",
+   "蘇丹色素三號",
+   "辣椒粉",
+   "濟生",
+   "金安記食品廠"
+  ],
+  "summary": "2024年自中國河南三禾藥業輸入的辣椒粉檢出蘇丹色素三號，波及大量下游食品。",
+  "tags": [
+   "食安"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-binhan",
+  "aliases": [
+   "賓漢",
+   "陳哲雄"
+  ],
+  "category": "企業/品牌",
+  "events": [
+   {
+    "date": "2011-10-28",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "新頭殼",
+      "t": "黑心起雲劑案 賓漢夫婦判13年、10年",
+      "url": "https://newtalk.tw/news/view/2011-10-28/19032"
+     }
+    ],
+    "status": "guilty",
+    "tag": "食安",
+    "text": "板橋地院一審依詐欺等罪判負責人陳哲雄13年、妻王粉10年。"
+   }
+  ],
+  "name": "賓漢香料",
+  "origin": "seed",
+  "related": [
+   "起雲劑",
+   "塑化劑",
+   "DINP",
+   "統一企業",
+   "悅氏",
+   "昱伸香料"
+  ],
+  "summary": "2011年塑化劑案另一源頭：起雲劑違法添加DINP，賣給統一、津津、悅氏等下游。",
+  "tags": [
+   "食安"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-caizy",
+  "aliases": [],
+  "category": "政治人物",
+  "events": [
+   {
+    "date": "2026-08",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "鏡週刊（三立）",
+      "t": "蔡正元影射馬郁雯「陪睡」！性騷申訴成立",
+      "url": "https://www.mirrormedia.mg/external/setn_1883826"
+     },
+     {
+      "kind": "news",
+      "pub": "NOWnews",
+      "t": "新北市府認定蔡正元性騷擾",
+      "url": "https://www.nownews.com/news/6862903"
+     }
+    ],
+    "status": "admin",
+    "tag": "性騷擾",
+    "text": "2024年於臉書及政論節目以「陪睡」等語影射馬郁雯，新北市政府依《性騷擾防治法》認定性騷擾成立，可處1萬至10萬元罰鍰；蔡正元向警方否認影射。調查結果由節目主持人李正皓公布。"
+   }
+  ],
+  "name": "蔡正元",
+  "origin": "seed",
+  "party": "國民黨",
+  "related": [
+   "馬郁雯"
+  ],
+  "summary": "前國民黨立委。公開以「陪睡」等語影射台北市議員參選人馬郁雯，新北市政府認定性騷擾成立。",
+  "tags": [
+   "性騷擾"
+  ],
+  "updated": "2026-11-26T04:05:00Z"
+ },
+ {
+  "id": "e-chencm",
+  "aliases": [],
+  "category": "民意代表",
+  "events": [
+   {
+    "date": "2022-07-06",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "台灣英文新聞",
+      "t": "立法委員集體涉貪案一審宣判",
+      "url": "https://www.taiwannews.com.tw/ch/news/4589595"
+     }
+    ],
+    "status": "guilty",
+    "tag": "貪污",
+    "text": "台北地院一審判刑7年8月。"
+   },
+   {
+    "date": "2026-08-21",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "立委涉貪案二審陳超明徐永明改判無罪",
+      "url": "https://cna.com.tw/news/asoc/202608210038.aspx"
+     }
+    ],
+    "status": "clear",
+    "tag": "貪污",
+    "text": "高院認為聯繫經濟部與收受政治獻金是否具對價關係仍有疑問，改判無罪。"
+   },
+   {
+    "date": "2026-09",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "陳超明徐永明無罪 高檢署上訴三審",
+      "url": "https://udn.com/news/story/7321/9821911"
+     }
+    ],
+    "status": "trial",
+    "tag": "貪污",
+    "text": "高檢署認為二審證據取捨有理由不備等違法，對陳超明等5人提起三審上訴。"
+   }
+  ],
+  "name": "陳超明",
+  "origin": "seed",
+  "party": "國民黨",
+  "related": [
+   "SOGO案",
+   "李恒隆",
+   "梁文一"
+  ],
+  "summary": "立委。SOGO案一審有罪、二審改判無罪，檢方已上訴第三審，尚未確定。",
+  "tags": [
+   "貪污"
+  ],
+  "updated": "2026-11-26T04:05:00Z"
+ },
+ {
+  "id": "e-chenxs",
+  "aliases": [],
+  "category": "民意代表",
+  "events": [
+   {
+    "date": "2022-01",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "新頭殼",
+      "t": "陳雪生性騷擾成立賠8萬 向范雲道歉",
+      "url": "https://newtalk.tw/news/view/2022-01-28/703578"
+     },
+     {
+      "kind": "news",
+      "pub": "關鍵評論網",
+      "t": "陳雪生性騷擾判決理由",
+      "url": "https://www.thenewslens.com/article/185567"
+     }
+    ],
+    "status": "admin",
+    "tag": "性騷擾",
+    "text": "行政申訴認定性騷擾成立；北院一審簡易庭判賠8萬元，法院認定其「用肚子不會懷孕」等回應是以女性生理現象嘲諷、貶抑。陳雪生其後向范雲道歉。"
+   },
+   {
+    "date": "2023-06-06",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "公視新聞",
+      "t": "范雲控陳雪生性騷擾 台北地院判賠8萬確定",
+      "url": "https://news.pts.org.tw/article/640201"
+     },
+     {
+      "kind": "court",
+      "pub": "司法院裁判書",
+      "t": "台北地院111年度簡上字第90號",
+      "url": "https://judgment.judicial.gov.tw/FILES/TPDV/111%2c%e7%b0%a1%e4%b8%8a%2c90%2c20230606%2c1.pdf"
+     }
+    ],
+    "status": "civil",
+    "tag": "性騷擾",
+    "text": "台北地院二審駁回上訴，判賠范雲8萬元確定；另其告范雲加重誹謗，范雲無罪確定。"
+   }
+  ],
+  "name": "陳雪生",
+  "origin": "seed",
+  "party": "國民黨",
+  "related": [
+   "范雲",
+   "立法院"
+  ],
+  "summary": "立委。2020年在立法院以肚子碰觸立委范雲背部，並以女性生理現象嘲諷回應；行政申訴與民事判決均認定性騷擾成立，判賠確定。",
+  "tags": [
+   "性騷擾",
+   "性別歧視"
+  ],
+  "updated": "2026-11-26T04:05:00Z"
+ },
+ {
+  "id": "e-datong",
+  "aliases": [
+   "大統",
+   "高振利"
+  ],
+  "category": "企業/品牌",
+  "events": [
+   {
+    "date": "2015",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "關鍵評論網（中央社）",
+      "t": "大統長基非常上訴遭駁回",
+      "url": "https://www.thenewslens.com/article/32022"
+     }
+    ],
+    "status": "final",
+    "tag": "食安",
+    "text": "高振利依違反食品衛生管理法等罪判12年定讞，公司併科罰金3800萬元；檢察總長就18.5億不法所得提非常上訴遭駁回。"
+   },
+   {
+    "date": "2019",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "公視新聞",
+      "t": "大統黑心油案 一審判賠頂新7725萬",
+      "url": "https://news.pts.org.tw/article/456544"
+     }
+    ],
+    "status": "civil",
+    "tag": "食安",
+    "text": "彰化地院判大統長基賠償頂新7725萬元、味全6659萬元，認定頂新、味全不知混油。"
+   },
+   {
+    "date": "2025-03-19",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "鏡週刊",
+      "t": "台糖求償大統長基 更二審判賠",
+      "url": "https://www.mirrormedia.mg/story/20250320inv001"
+     }
+    ],
+    "status": "civil",
+    "tag": "食安",
+    "text": "台糖委託代工葡萄籽油遭違法添加銅葉綠素，台中高分院更二審判大統長基賠償台糖1251萬元，可上訴。"
+   }
+  ],
+  "name": "大統長基",
+  "origin": "seed",
+  "related": [
+   "銅葉綠素",
+   "頂新製油",
+   "味全食品",
+   "台糖"
+  ],
+  "summary": "2013年以棉籽油、銅葉綠素混充橄欖油、葡萄籽油，負責人高振利判刑定讞。",
+  "tags": [
+   "食安"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-deepseek",
+  "aliases": [
+   "深度求索",
+   "DeepSeek AI"
+  ],
+  "category": "App/科技",
+  "events": [
+   {
+    "date": "2025-01-31",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "自由時報",
+      "t": "DeepSeek危資安 數百企業、政府禁用",
+      "url": "https://ec.ltn.com.tw/article/paper/1689592/print"
+     }
+    ],
+    "status": "admin",
+    "tag": "資安",
+    "text": "數發部認定DeepSeek AI屬危害國家資通安全產品，公務機關不得下載或使用。"
+   },
+   {
+    "date": "2025-02-03",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "公務機關全面禁用DeepSeek AI服務",
+      "url": "https://cna.com.tw/news/aipl/202502030237.aspx"
+     }
+    ],
+    "status": "admin",
+    "tag": "資安",
+    "text": "行政院長卓榮泰宣布公務機關全面禁用DeepSeek AI服務。"
+   },
+   {
+    "date": "2025-02-20",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "自由時報",
+      "t": "數發部證實DeepSeek有嚴重資安漏洞",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4957369"
+     }
+    ],
+    "status": "warn",
+    "tag": "資安",
+    "text": "數發部公告DeepSeek有嚴重資安漏洞與價值偏頗，建議民眾不要使用（對民間無強制力）。"
+   }
+  ],
+  "name": "DeepSeek",
+  "origin": "seed",
+  "related": [
+   "深度求索"
+  ],
+  "summary": "中國AI服務，被數發部列為危害國家資通安全產品，公務機關全面禁用。",
+  "tags": [
+   "資安",
+   "涉中"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-fumao",
+  "aliases": [
+   "福懋",
+   "福懋油",
+   "張志賓"
+  ],
+  "category": "企業/品牌",
+  "events": [
+   {
+    "date": "2026-08-18",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社（PChome轉載）",
+      "t": "中聯油脂案起訴名單",
+      "url": "https://news.pchome.com.tw/society/cna/20260818/index-17870336750241418002.html"
+     }
+    ],
+    "status": "trial",
+    "tag": "食安",
+    "text": "台中地檢署起訴福懋總經理張志賓及福懋公司，指其未即時停止販賣、下架、回收及通報。"
+   }
+  ],
+  "name": "福懋油脂",
+  "origin": "seed",
+  "related": [
+   "中聯油脂",
+   "大豆沙拉油",
+   "苯駢芘"
+  ],
+  "summary": "中聯苯駢芘沙拉油的第一層下游，公司與總經理被起訴。",
+  "tags": [
+   "食安"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-fushou",
+  "aliases": [
+   "福壽",
+   "洪堯昆"
+  ],
+  "category": "企業/品牌",
+  "events": [
+   {
+    "date": "2026-08-18",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社（PChome轉載）",
+      "t": "中聯油脂案起訴名單",
+      "url": "https://news.pchome.com.tw/society/cna/20260818/index-17870336750241418002.html"
+     },
+     {
+      "kind": "news",
+      "pub": "公視新聞",
+      "t": "中聯油案起訴15人及4家法人",
+      "url": "https://news.pts.org.tw/article/823020"
+     }
+    ],
+    "status": "trial",
+    "tag": "食安",
+    "text": "台中地檢署依食安法等罪嫌起訴福壽董事長洪堯昆及福壽公司，指其知悉問題油品後未即時下架、回收、通報。"
+   }
+  ],
+  "name": "福壽實業",
+  "origin": "seed",
+  "related": [
+   "中聯油脂",
+   "大豆沙拉油",
+   "苯駢芘"
+  ],
+  "summary": "中聯苯駢芘沙拉油的第一層下游，公司與董事長被起訴。",
+  "tags": [
+   "食安"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-houpc",
+  "aliases": [],
+  "category": "藝人/公眾人物",
+  "events": [
+   {
+    "date": "2025-03-07",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "TVBS",
+      "t": "陸委會盯20藝人涉統一言論",
+      "url": "https://news.tvbs.com.tw/politics/2972461"
+     }
+    ],
+    "status": "report",
+    "tag": "涉中",
+    "text": "TVBS報導其與歐陽娜娜等人在微博轉發央視「台灣必歸」貼文，並列入陸委會調查名單。"
+   },
+   {
+    "date": "2025-08-29",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "查處唱和中共藝人 陸委會：調查完成口頭告誡",
+      "url": "https://www.cna.com.tw/news/acn/202508290255.aspx"
+     }
+    ],
+    "status": "warn",
+    "tag": "涉中",
+    "text": "陸委會、文化部完成對23名藝人調查並口頭告誡，無其他懲處。官方未公布完整名單。"
+   }
+  ],
+  "name": "侯佩岑",
+  "origin": "seed",
+  "related": [
+   "陸委會藝人調查",
+   "央視「台灣必歸」貼文"
+  ],
+  "summary": "藝人。媒體報導其於2025年兩會期間轉發央視「台灣必歸」貼文，列入陸委會調查名單。",
+  "tags": [
+   "涉中"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-huangqr",
+  "aliases": [],
+  "category": "政治人物",
+  "events": [
+   {
+    "date": "2025-09",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "共諜案4人判刑",
+      "url": "https://udn.com/news/story/6656/9030350"
+     }
+    ],
+    "status": "guilty",
+    "tag": "涉中",
+    "text": "台北地院一審依國家安全法、國家機密保護法等判10年；同案邱世元6年2月、何仁傑8年2月、吳尚雨4年。"
+   },
+   {
+    "date": "2026-06-25",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "前民進黨工涉共諜案二審",
+      "url": "https://www.cna.com.tw/news/asoc/202606260135.aspx"
+     }
+    ],
+    "status": "guilty",
+    "tag": "涉中",
+    "text": "高院二審改判黃取榮6年、邱世元5年、吳尚雨3年，何仁傑無罪。"
+   },
+   {
+    "date": "2026-10-29",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "前民進黨工涉共諜案 最高法院發回更審",
+      "url": "https://www.cna.com.tw/news/asoc/202610290293.aspx"
+     }
+    ],
+    "status": "trial",
+    "tag": "涉中",
+    "text": "最高法院撤銷二審有罪與無罪部分，發回高院更審。"
+   }
+  ],
+  "name": "黃取榮",
+  "origin": "seed",
+  "party": "民進黨",
+  "related": [
+   "共諜案",
+   "李余典",
+   "邱世元",
+   "吳尚雨",
+   "何仁傑",
+   "民進黨"
+  ],
+  "summary": "前民進黨黨工、新北市議員李余典前特助。被控受中共利誘，拉攏總統府、外交部人員提供機敏情資。",
+  "tags": [
+   "涉中",
+   "犯罪/司法"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "e-hzj",
+  "aliases": [],
+  "category": "藝人/公眾人物",
+  "events": [
+   {
+    "date": "2025",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "公視新聞",
+      "t": "黃子佼一審判8月",
+      "url": "https://news.pts.org.tw/article/727000"
+     }
+    ],
+    "status": "guilty",
+    "tag": "性犯罪",
+    "text": "台北地院依兒少性剝削防制條例無正當理由持有兒少性影像罪，一審判8月、併科罰金10萬元。"
+   },
+   {
+    "date": "2025-11-25",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "黃子佼二審獲緩刑",
+      "url": "https://udn.com/news/story/7321/9161057"
+     }
+    ],
+    "status": "guilty",
+    "tag": "性犯罪",
+    "text": "二審因與被害人和解，改依個資法判1年6月、緩刑4年，須服180小時義務勞務。"
+   },
+   {
+    "date": "2026-05-07",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "黃子佼賠錢換緩刑定讞",
+      "url": "https://udn.com/news/story/7317/9488099"
+     },
+     {
+      "kind": "news",
+      "pub": "公視新聞",
+      "t": "最高法院駁回上訴",
+      "url": "https://news.pts.org.tw/article/807212"
+     }
+    ],
+    "status": "final",
+    "tag": "性犯罪",
+    "text": "最高法院駁回雙方上訴，1年6月、緩刑4年定讞。"
+   }
+  ],
+  "name": "黃子佼",
+  "origin": "seed",
+  "related": [
+   "創意私房"
+  ],
+  "summary": "藝人／主持人。從「創意私房」論壇購買、持有兒少性影像，判刑確定（緩刑）。",
+  "tags": [
+   "性犯罪"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "e-jinanji",
+  "aliases": [
+   "金安記",
+   "香辣豬肉乾",
+   "香辣豬肉絲"
+  ],
+  "category": "食品/產品",
+  "events": [
+   {
+    "date": "2024-02-24",
+    "sources": [
+     {
+      "kind": "gov",
+      "pub": "台中市食安處（食藥署轉載）",
+      "t": "龍井區食品廠豬肉乾下架",
+      "url": "https://www.fda.gov.tw/TC/csmnewsContent.aspx?id=t622556&mid=267"
+     }
+    ],
+    "status": "affected",
+    "tag": "食安",
+    "text": "進貨的紅辣椒原料檢出蘇丹色素三號20 ppb，以其製成的香辣豬肉乾、香辣豬肉絲共6,739公斤下架停售，通知下游42家業者回收。"
+   }
+  ],
+  "name": "金安記食品廠",
+  "origin": "seed",
+  "related": [
+   "保欣企業",
+   "蘇丹紅",
+   "辣椒粉"
+  ],
+  "summary": "蘇丹紅辣椒粉事件的下游業者，相關肉乾產品下架回收。",
+  "tags": [
+   "食安"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-kowj",
+  "aliases": [
+   "柯 P",
+   "柯P"
+  ],
+  "category": "政治人物",
+  "events": [
+   {
+    "date": "2026-03-26",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "京華城案一審宣判 柯文哲遭重判17年",
+      "url": "https://udn.com/news/story/124199/9404794"
+     },
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "判決書391頁已可上網查詢",
+      "url": "https://udn.com/news/story/7315/9433567"
+     }
+    ],
+    "status": "guilty",
+    "tag": "貪污",
+    "text": "台北地院一審依違背職務收受賄賂、公益侵占、背信等4罪判應執行17年、褫奪公權6年；法院認定沈慶京透過人頭匯入民眾黨專戶210萬元為賄款。檢方與柯方均表示上訴。"
+   }
+  ],
+  "name": "柯文哲",
+  "origin": "seed",
+  "party": "民眾黨",
+  "related": [
+   "京華城",
+   "沈慶京",
+   "應曉薇",
+   "威京集團",
+   "李文宗",
+   "彭振聲",
+   "台灣民眾黨"
+  ],
+  "summary": "前台北市長、民眾黨前主席。京華城容積獎勵收賄、政治獻金公益侵占等案一審重判，本人否認並上訴。",
+  "tags": [
+   "貪污"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "e-liaogd",
+  "aliases": [],
+  "category": "民意代表",
+  "events": [
+   {
+    "date": "2022-07-06",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "台灣英文新聞",
+      "t": "立法委員集體涉貪案一審宣判",
+      "url": "https://www.taiwannews.com.tw/ch/news/4589595"
+     }
+    ],
+    "status": "guilty",
+    "tag": "貪污",
+    "text": "台北地院判刑8年6月、褫奪公權4年，沒收620萬元。"
+   },
+   {
+    "date": "2026-08-21",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "立委涉貪案二審",
+      "url": "https://cna.com.tw/news/asoc/202608210098.aspx"
+     }
+    ],
+    "status": "guilty",
+    "tag": "貪污",
+    "text": "二審駁回上訴，維持8年6月，可上訴。"
+   }
+  ],
+  "name": "廖國棟",
+  "origin": "seed",
+  "party": "國民黨",
+  "related": [
+   "SOGO案",
+   "太流公司",
+   "李恒隆",
+   "蘇震清",
+   "丁復華"
+  ],
+  "summary": "前立委。SOGO經營權案收賄。",
+  "tags": [
+   "貪污"
+  ],
+  "updated": "2026-11-26T04:05:00Z"
+ },
+ {
+  "id": "e-nono",
+  "aliases": [
+   "陳宣裕"
+  ],
+  "category": "藝人/公眾人物",
+  "events": [
+   {
+    "case": "案一",
+    "date": "2025-05-13",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "三立新聞",
+      "t": "NONO一審結果",
+      "url": "https://www.setn.com/klist/558139"
+     }
+    ],
+    "status": "guilty",
+    "tag": "性犯罪",
+    "text": "士林地院一審：被控對6名女子7次強制性交、猥褻，僅認定1次強制性交未遂，判2年6月，其餘6罪無罪。"
+   },
+   {
+    "case": "案一",
+    "date": "2026-04",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "NONO二審仍判2年半",
+      "url": "https://udn.com/news/story/7317/9459836"
+     },
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "高檢署不上訴",
+      "url": "https://udn.com/news/story/7317/9516210"
+     }
+    ],
+    "status": "guilty",
+    "tag": "性犯罪",
+    "text": "高等法院二審駁回上訴，維持2年6月；高檢署決定不上訴三審。"
+   },
+   {
+    "case": "案二",
+    "date": "2025-08-05",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "NONO案二起訴經過",
+      "url": "https://udn.com/news/story/7317/9459836"
+     }
+    ],
+    "status": "trial",
+    "tag": "性犯罪",
+    "text": "另2名告訴人二度再議後，士林地檢署依強制性交、強制猥褻罪起訴。"
+   },
+   {
+    "case": "案二",
+    "date": "2026-05-13",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "新頭殼（中央社）",
+      "t": "NONO被控性侵猥褻2女 一審無罪",
+      "url": "https://newtalk.tw/news/view/2026-05-13/1034949"
+     }
+    ],
+    "status": "clear",
+    "tag": "性犯罪",
+    "text": "士林地院認定罪嫌不足，一審判決無罪。"
+   },
+   {
+    "case": "案二",
+    "date": "2026-08-18",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "NONO涉性侵猥褻案一審無罪 高院首度開庭",
+      "url": "https://cna.com.tw/news/asoc/202608180055.aspx"
+     }
+    ],
+    "status": "trial",
+    "tag": "性犯罪",
+    "text": "檢方上訴，高等法院首度開庭，二審審理中。"
+   }
+  ],
+  "name": "NONO",
+  "origin": "seed",
+  "related": [
+   "憲憲家族",
+   "小紅老師",
+   "朱海君"
+  ],
+  "summary": "藝人。被控利用知名度對多名女子性侵、猥褻，兩案分別審理：案一判強制性交未遂2年6月；案二一審無罪、檢方上訴中。",
+  "tags": [
+   "性犯罪"
+  ],
+  "updated": "2026-11-26T03:55:00Z"
+ },
+ {
+  "id": "e-ouyang",
+  "aliases": [],
+  "category": "藝人/公眾人物",
+  "events": [
+   {
+    "date": "2025-03-07",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "世界日報",
+      "t": "陸委會畫紅線 鼓吹武統鎖定逾20藝人",
+      "url": "https://www.worldjournal.com/wj/story/121475/8743542"
+     }
+    ],
+    "status": "report",
+    "tag": "涉中",
+    "text": "世界日報報導其曾表態「祝賀祖國國慶」，且在中共軍演時轉發「台灣自古就是中國領土」等貼文，陸委會點名。"
+   },
+   {
+    "date": "2025-08-29",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "查處唱和中共藝人 陸委會：調查完成口頭告誡",
+      "url": "https://www.cna.com.tw/news/acn/202508290255.aspx"
+     },
+     {
+      "kind": "news",
+      "pub": "世界日報",
+      "t": "赴陸23藝人貼統戰文遭調查",
+      "url": "https://www.worldjournal.com/wj/story/121220/8972880"
+     }
+    ],
+    "status": "warn",
+    "tag": "涉中",
+    "text": "陸委會、文化部完成對23名藝人調查，認定客觀上與中共黨政軍有合作行為，給予口頭告誡，無其他懲處。官方未公布完整名單，媒體報導其在列。"
+   }
+  ],
+  "name": "歐陽娜娜",
+  "origin": "seed",
+  "related": [
+   "陸委會藝人調查",
+   "央視「台灣必歸」貼文"
+  ],
+  "summary": "赴陸發展藝人。媒體報導其曾轉發央視「台灣必歸」類貼文，並列入陸委會調查名單。",
+  "tags": [
+   "涉中"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-qiangguan",
+  "aliases": [
+   "強冠",
+   "葉文祥"
+  ],
+  "category": "企業/品牌",
+  "events": [
+   {
+    "date": "2014-09-11",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "三立新聞",
+      "t": "全統香豬油相關報導",
+      "url": "https://www.setn.com/klist/42394"
+     },
+     {
+      "kind": "news",
+      "pub": "風傳媒",
+      "t": "強冠相關報導",
+      "url": "https://www.storm.mg/keyword/強冠"
+     }
+    ],
+    "status": "admin",
+    "tag": "食安",
+    "text": "全統香豬油混入餿水油；食藥署因其他24款豬油也可能受香港飼料油污染，要求共25款下架並清查下游。"
+   },
+   {
+    "date": "2017-09-13",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "三立新聞",
+      "t": "葉文祥相關報導",
+      "url": "https://www.setn.com/klist/42265"
+     }
+    ],
+    "status": "final",
+    "tag": "食安",
+    "text": "葉文祥依285個詐欺、違反食安法等罪判22年、併科罰金1億2千萬元定讞，沒收犯罪所得8150萬餘元。"
+   }
+  ],
+  "name": "強冠企業",
+  "origin": "seed",
+  "related": [
+   "全統香豬油",
+   "味全食品",
+   "郭盈志",
+   "餿水油"
+  ],
+  "summary": "2014年向地下工廠購買餿水油製成「全統香豬油」，董事長葉文祥判刑22年定讞。",
+  "tags": [
+   "食安"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-shencj",
+  "aliases": [
+   "威京集團主席"
+  ],
+  "category": "企業人物",
+  "events": [
+   {
+    "date": "2026-03-26",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "柯文哲涉貪一審判17年",
+      "url": "https://udn.com/news/story/7315/9433567"
+     }
+    ],
+    "status": "guilty",
+    "tag": "貪污",
+    "text": "京華城案一審判刑10年、褫奪公權5年，可上訴。"
+   }
+  ],
+  "name": "沈慶京",
+  "origin": "seed",
+  "related": [
+   "威京集團",
+   "京華城",
+   "柯文哲",
+   "朱亞虎"
+  ],
+  "summary": "威京集團主席，京華城案被認定為行賄方。",
+  "tags": [
+   "貪污"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "e-suzq",
+  "aliases": [],
+  "category": "民意代表",
+  "events": [
+   {
+    "date": "2022-07-06",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "台灣英文新聞",
+      "t": "立法委員集體涉貪案一審宣判",
+      "url": "https://www.taiwannews.com.tw/ch/news/4589595"
+     }
+    ],
+    "status": "guilty",
+    "tag": "貪污",
+    "text": "台北地院依不違背職務收賄罪判10年、褫奪公權5年，沒收犯罪所得1580萬元。"
+   },
+   {
+    "date": "2026-08-21",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "立委涉貪案二審 蘇震清判10年、廖國棟判8年6月",
+      "url": "https://cna.com.tw/news/asoc/202608210098.aspx"
+     }
+    ],
+    "status": "guilty",
+    "tag": "貪污",
+    "text": "台灣高等法院二審駁回上訴，維持10年，可上訴。"
+   }
+  ],
+  "name": "蘇震清",
+  "origin": "seed",
+  "party": "無黨籍",
+  "partyNote": "一審宣判時為無黨籍立委（中央社）；部分媒體稱前民進黨立委",
+  "related": [
+   "SOGO案",
+   "太流公司",
+   "李恒隆",
+   "廖國棟",
+   "陳超明",
+   "徐永明"
+  ],
+  "summary": "前立委。SOGO經營權案收賄，號稱「史上最大立委收賄案」中刑度最重者。",
+  "tags": [
+   "貪污"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "e-taishan",
+  "aliases": [
+   "泰山"
+  ],
+  "category": "企業/品牌",
+  "events": [
+   {
+    "date": "2026-07-03",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "工商時報",
+      "t": "問題油事件 食藥署祭3措施",
+      "url": "https://www.ctee.com.tw/news/20260706700099-439901"
+     }
+    ],
+    "status": "admin",
+    "tag": "食安",
+    "text": "使用中聯問題沙拉油的第一層產品，食藥署要求於7月3日中午前全面下架。"
+   },
+   {
+    "date": "2026-08-18",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "公視新聞",
+      "t": "中聯油案起訴15人及4家法人",
+      "url": "https://news.pts.org.tw/article/823020"
+     },
+     {
+      "kind": "news",
+      "pub": "TVBS",
+      "t": "中聯致癌油案交保與抗告",
+      "url": "https://news.tvbs.com.tw/local/4050118"
+     }
+    ],
+    "status": "trial",
+    "tag": "食安",
+    "text": "檢方認定福壽、福懋、泰山相關主管知悉使用問題油品後未即時停售、下架、回收及通報，與公司一併起訴；泰山前後任總經理遭羈押。"
+   }
+  ],
+  "name": "泰山企業",
+  "origin": "seed",
+  "related": [
+   "中聯油脂",
+   "大豆沙拉油",
+   "苯駢芘",
+   "沈怡君",
+   "蔡國樑"
+  ],
+  "summary": "中聯苯駢芘沙拉油的第一層下游，產品下架；公司與高層被起訴，泰山董事長出庭否認犯罪。",
+  "tags": [
+   "食安"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-tcpp",
+  "aliases": [
+   "統促黨",
+   "張安樂",
+   "白狼"
+  ],
+  "category": "組織/政黨",
+  "events": [
+   {
+    "date": "2024",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "風傳媒",
+      "t": "統促黨遭聲請解散",
+      "url": "https://www.storm.mg/article/11152936"
+     }
+    ],
+    "status": "report",
+    "tag": "涉中",
+    "text": "據報導，調查局指該黨發言人涉接受中共資金，藉主持電台進行認知作戰；2025年高雄高分院判決指副秘書長溫瓏配合中國情治人員接觸軍官。"
+   },
+   {
+    "date": "2026-08-07",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "內政部今正式聲請解散統促黨",
+      "url": "https://udn.com/news/story/6656/9677093"
+     },
+     {
+      "kind": "news",
+      "pub": "自由時報",
+      "t": "統促黨違憲 內政部將聲請解散",
+      "url": "https://news.ltn.com.tw/topic/聲請解散"
+     }
+    ],
+    "status": "trial",
+    "tag": "涉中",
+    "text": "內政部正式向憲法法庭聲請解散；刑事局稱2010年起141名黨員涉98起組織犯罪案。張安樂反駁。憲法法庭審理中。"
+   }
+  ],
+  "name": "中華統一促進黨",
+  "origin": "seed",
+  "related": [
+   "張安樂",
+   "溫瓏",
+   "竹聯幫"
+  ],
+  "summary": "張安樂領導的政黨。內政部以配合中共在台發展組織、跨境鎮壓、實為犯罪組織等理由，首度向憲法法庭聲請解散政黨。",
+  "tags": [
+   "涉中",
+   "犯罪/司法"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "e-tinghsin",
+  "aliases": [
+   "頂新",
+   "頂新集團",
+   "頂新製油實業",
+   "魏應充"
+  ],
+  "category": "企業/品牌",
+  "events": [
+   {
+    "date": "2018-04-27",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "頂新油品案逆轉 二審判魏應充15年",
+      "url": "https://www.cna.com.tw/news/firstnews/201804275003.aspx"
+     },
+     {
+      "kind": "news",
+      "pub": "公視新聞",
+      "t": "混油案二審逆轉",
+      "url": "https://news.pts.org.tw/article/392453"
+     }
+    ],
+    "status": "guilty",
+    "tag": "食安",
+    "text": "一審無罪後，台中高分院二審改判魏應充15年，頂新公司罰金2億5千萬元。"
+   },
+   {
+    "date": "2019-11-07",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "魏應充遭判5年9個月定讞",
+      "url": "https://www.cna.com.tw/news/asoc/201911070153.aspx"
+     }
+    ],
+    "status": "final",
+    "tag": "食安",
+    "text": "最高法院駁回26罪上訴確定，魏應充7罪合計5年9月定讞，另45罪發回更審。"
+   },
+   {
+    "date": "2023-01-19",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社（彰化地檢署說明）",
+      "t": "魏應充繳清頂新劣油案1.7億罰金",
+      "url": "https://www.cna.com.tw/news/asoc/202301190252.aspx"
+     },
+     {
+      "kind": "court",
+      "pub": "司法院裁判書",
+      "t": "台中高分院111年度上訴字第520號",
+      "url": "https://judgment.judicial.gov.tw/FILES/TCHM/111%2c%e4%b8%8a%e8%a8%b4%2c520%2c20221220%2c1.pdf"
+     }
+    ],
+    "status": "final",
+    "tag": "食安",
+    "text": "台中高分院裁定魏應充應執行8年6月（不得易科部分），頂新公司罰金1億200萬元、犯罪所得7467萬餘元；魏繳清約1.7億元後免再入監。"
+   }
+  ],
+  "name": "頂新製油",
+  "origin": "seed",
+  "related": [
+   "味全食品",
+   "正義油品",
+   "越南大幸福公司",
+   "康師傅"
+  ],
+  "summary": "2014年爆發自越南大幸福公司進口飼料用油、精製成食用油販售案；前董事長魏應充與頂新公司依食安法判刑確定。",
+  "tags": [
+   "食安"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-wangxl",
+  "aliases": [],
+  "category": "藝人/公眾人物",
+  "events": [
+   {
+    "date": "2025-03",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "世界日報",
+      "t": "陸委會畫紅線 鼓吹武統鎖定逾20藝人",
+      "url": "https://www.worldjournal.com/wj/story/121475/8743542"
+     }
+    ],
+    "status": "report",
+    "tag": "涉中",
+    "text": "世界日報報導其在微博轉發央視發文及「台灣必歸」圖卡。官方未公布調查名單，此為媒體報導。"
+   }
+  ],
+  "name": "王心凌",
+  "origin": "seed",
+  "related": [
+   "陸委會藝人調查",
+   "央視「台灣必歸」貼文"
+  ],
+  "summary": "歌手。媒體報導其曾在微博轉發央視貼文。",
+  "tags": [
+   "涉中"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-weichuan",
+  "aliases": [
+   "味全",
+   "味全公司"
+  ],
+  "category": "企業/品牌",
+  "events": [
+   {
+    "date": "2013-10-16",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "食力 foodNEXT",
+      "t": "味全混油案整理",
+      "url": "https://www.foodnext.net/news/newsnow/paper/5739596956"
+     }
+    ],
+    "status": "report",
+    "tag": "食安",
+    "text": "大統長基混油案後，味全委託頂新代工的健康廚房橄欖油、葡萄籽油及98配方調合油等21款產品涉案，味全與魏應充等13人被起訴。"
+   },
+   {
+    "date": "2017-04",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "三立新聞",
+      "t": "混油案相關報導",
+      "url": "https://www.setn.com/klist/89879"
+     }
+    ],
+    "status": "final",
+    "tag": "食安",
+    "text": "「味全混油案」魏應充涉詐欺取財6111萬餘元，判刑2年定讞。"
+   },
+   {
+    "date": "2017-12-27",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "強冠劣油案味全求償 供料商判賠1.2億",
+      "url": "https://www.cna.com.tw/news/asoc/201712270237.aspx"
+     }
+    ],
+    "status": "affected",
+    "tag": "食安",
+    "text": "強冠劣油案中味全為受害下游，高雄高分院判供料商郭盈志等連帶賠償味全1億2136萬元。"
+   }
+  ],
+  "name": "味全食品",
+  "origin": "seed",
+  "related": [
+   "頂新製油",
+   "魏應充",
+   "健康廚房",
+   "98配方調合油",
+   "大統長基",
+   "強冠企業"
+  ],
+  "summary": "頂新集團旗下。2013年健康廚房等21款油品因大統長基混油案涉案，前董事長魏應充「味全混油案」詐欺罪判刑確定；在強冠、大統案中亦為受害下游並獲判賠。",
+  "tags": [
+   "食安"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-wukr",
+  "aliases": [],
+  "category": "藝人/公眾人物",
+  "events": [
+   {
+    "date": "2025-03",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "世界日報",
+      "t": "陸委會畫紅線 鼓吹武統鎖定逾20藝人",
+      "url": "https://www.worldjournal.com/wj/story/121475/8743542"
+     }
+    ],
+    "status": "report",
+    "tag": "涉中",
+    "text": "世界日報報導其曾轉發「台灣必歸」圖卡。官方未公布調查名單，此為媒體報導。"
+   }
+  ],
+  "name": "吳慷仁",
+  "origin": "seed",
+  "related": [
+   "壹心娛樂",
+   "陸委會藝人調查"
+  ],
+  "summary": "演員。加入中國經紀公司壹心娛樂後，媒體報導其曾轉發「台灣必歸」類圖卡。",
+  "tags": [
+   "涉中"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-xhs",
+  "aliases": [
+   "Xiaohongshu",
+   "RED",
+   "行吟信息科技"
+  ],
+  "category": "App/科技",
+  "events": [
+   {
+    "date": "2025-12-04",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "小紅書涉1706件詐欺案 內政部命令暫行封鎖1年",
+      "url": "https://cna.com.tw/news/asoc/202512040238.aspx"
+     },
+     {
+      "kind": "news",
+      "pub": "數位時代",
+      "t": "內政部宣布小紅書在台封鎖一年",
+      "url": "https://www.bnext.com.tw/article/85407/interior-ministry-cracks-down-on-xiaohongshu-involved-in-1706-fraud-cases-in-a-year"
+     }
+    ],
+    "status": "admin",
+    "tag": "詐騙",
+    "text": "內政部依《詐欺犯罪危害防制條例》第42條發布停止解析及限制接取命令一年；2024年起涉詐1706件、財損逾2.4億元，且未在台設法律代表人。"
+   },
+   {
+    "date": "2026-11",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "自由時報",
+      "t": "小紅書停止解析將再延一年",
+      "url": "https://news.ltn.com.tw/news/society/breakingnews/5640352"
+     }
+    ],
+    "status": "admin",
+    "tag": "詐騙",
+    "text": "停止解析近一年後涉詐案件數降77.2%；因業者仍未回應，內政部預計12月3日起再停止解析一年。"
+   }
+  ],
+  "name": "小紅書",
+  "origin": "seed",
+  "related": [
+   "行吟信息科技"
+  ],
+  "summary": "中國社群App。國安局資安檢測15項全不合格，涉詐案件多，內政部對其實施停止解析一年。",
+  "tags": [
+   "詐騙",
+   "資安",
+   "涉中"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-xuym",
+  "aliases": [],
+  "category": "民意代表",
+  "events": [
+   {
+    "date": "2022-07-06",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "台灣英文新聞",
+      "t": "立法委員集體涉貪案一審宣判",
+      "url": "https://www.taiwannews.com.tw/ch/news/4589595"
+     }
+    ],
+    "status": "guilty",
+    "tag": "貪污",
+    "text": "依不違背職務期約賄賂罪一審判刑7年4月。"
+   },
+   {
+    "date": "2026-08-21",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "立委涉貪案二審陳超明徐永明改判無罪",
+      "url": "https://cna.com.tw/news/asoc/202608210038.aspx"
+     }
+    ],
+    "status": "clear",
+    "tag": "貪污",
+    "text": "高院二審認定罪證不足，改判無罪。"
+   },
+   {
+    "date": "2026-09",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "高檢署上訴三審",
+      "url": "https://udn.com/news/story/7321/9821911"
+     }
+    ],
+    "status": "trial",
+    "tag": "貪污",
+    "text": "高檢署提起三審上訴。"
+   }
+  ],
+  "name": "徐永明",
+  "origin": "seed",
+  "party": "時代力量",
+  "related": [
+   "SOGO案",
+   "李恒隆",
+   "吳世昌",
+   "時代力量"
+  ],
+  "summary": "前立委、時代力量前主席。SOGO案一審有罪、二審改判無罪，檢方已上訴，尚未確定。",
+  "tags": [
+   "貪污"
+  ],
+  "updated": "2026-11-26T04:05:00Z"
+ },
+ {
+  "id": "e-yingxw",
+  "aliases": [],
+  "category": "民意代表",
+  "events": [
+   {
+    "date": "2026-03-26",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "京華城案一審宣判",
+      "url": "https://udn.com/news/story/124199/9404794"
+     }
+    ],
+    "status": "guilty",
+    "tag": "貪污",
+    "text": "京華城案一審判刑15年6月，可上訴。"
+   }
+  ],
+  "name": "應曉薇",
+  "origin": "seed",
+  "party": "國民黨",
+  "related": [
+   "京華城",
+   "柯文哲",
+   "沈慶京",
+   "台北市議會"
+  ],
+  "summary": "台北市議員，京華城案同案被告。",
+  "tags": [
+   "貪污"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "e-yuanchun",
+  "aliases": [
+   "源春",
+   "源春製油"
+  ],
+  "category": "企業/品牌",
+  "events": [
+   {
+    "date": "2026-07-29",
+    "sources": [
+     {
+      "kind": "gov",
+      "pub": "衛生福利部",
+      "t": "苦茶油苯駢芘不符規定處理情形",
+      "url": "https://mohw.gov.tw/cp-2704-87300-1.html"
+     },
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "嘉義源春製油廠停工 苦茶油全面預防性下架",
+      "url": "https://udn.com/news/story/124940/9664936"
+     }
+    ],
+    "status": "admin",
+    "tag": "食安",
+    "text": "8批苦茶油檢出苯駢芘超標，源頭皆為源春；含在地金花小菓、高仰三、庭茂苦茶油共6批及國際機能食品委製780瓶，嘉義縣衛生局令停工並全面預防性下架。"
+   },
+   {
+    "date": "2026-07-30",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "嘉檢火速分案偵辦",
+      "url": "https://udn.com/news/story/124940/9664927"
+     },
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "永豐餘：追究不實指控",
+      "url": "https://udn.com/news/story/7266/9664599"
+     }
+    ],
+    "status": "invest",
+    "tag": "食安",
+    "text": "嘉義地檢署分案偵辦，指揮調查局追查苦茶籽原料來源；源春稱原料由永豐餘提供，永豐餘否認並表示將追究。"
+   }
+  ],
+  "name": "源春製油廠",
+  "origin": "seed",
+  "related": [
+   "苦茶油",
+   "苯駢芘",
+   "永豐餘生技",
+   "威加",
+   "國際機能食品",
+   "在地金花小菓苦茶油",
+   "高仰三苦茶油",
+   "庭茂苦茶油",
+   "亞世家"
+  ],
+  "summary": "2026年嘉義梅山苦茶油代工廠，多批苦茶油苯駢芘超標。永豐餘生技、國際機能食品為委託方，永豐餘否認提供原料；原料來源仍在偵查。",
+  "tags": [
+   "食安"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-yushen",
+  "aliases": [
+   "昱伸",
+   "賴俊傑"
+  ],
+  "category": "企業/品牌",
+  "events": [
+   {
+    "date": "2011-05-23",
+    "sources": [
+     {
+      "kind": "gov",
+      "pub": "衛生福利部",
+      "t": "昱伸起雲劑含塑化劑DEHP下架回收",
+      "url": "https://www.mohw.gov.tw/cp-2704-25395-1.html"
+     },
+     {
+      "kind": "gov",
+      "pub": "衛生福利部",
+      "t": "起雲劑檢出DEHP追查",
+      "url": "https://www.mohw.gov.tw/cp-2704-25401-1.html"
+     }
+    ],
+    "status": "admin",
+    "tag": "食安",
+    "text": "衛生署食藥局查獲昱伸起雲劑含塑化劑DEHP，所有使用其起雲劑的食品全面下架回收。"
+   },
+   {
+    "date": "2014-08-13",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "卡優新聞網",
+      "t": "昱伸塑毒案 判賠統一1.3億定讞",
+      "url": "https://www.cardu.com.tw/news/detail.php?ns_pk=23492&nt_pk=6"
+     }
+    ],
+    "status": "civil",
+    "tag": "食安",
+    "text": "最高法院判昱伸賠償下游統一企業1.3億餘元定讞。"
+   },
+   {
+    "date": "2018",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "公視新聞",
+      "t": "塑化劑風暴團體訴訟 判賠395萬定讞",
+      "url": "https://news.pts.org.tw/article/401855"
+     }
+    ],
+    "status": "final",
+    "tag": "食安",
+    "text": "消基會團體訴訟定讞，37家下游廠商須賠償395萬元；判決指賴俊傑、簡玲媛自1996年起向金童公司購買塑化劑調製起雲劑。"
+   }
+  ],
+  "name": "昱伸香料",
+  "origin": "seed",
+  "related": [
+   "起雲劑",
+   "塑化劑",
+   "DEHP",
+   "統一企業",
+   "賓漢香料",
+   "金童公司"
+  ],
+  "summary": "2011年塑化劑風暴源頭之一：在起雲劑中惡意添加DEHP，流入果汁、運動飲料、益生菌等產品。",
+  "tags": [
+   "食安"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-zhangsh",
+  "aliases": [],
+  "category": "藝人/公眾人物",
+  "events": [
+   {
+    "date": "2025-03",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "世界日報",
+      "t": "陸委會畫紅線 鼓吹武統鎖定逾20藝人",
+      "url": "https://www.worldjournal.com/wj/story/121475/8743542"
+     }
+    ],
+    "status": "report",
+    "tag": "涉中",
+    "text": "世界日報報導其與侯佩岑、吳慷仁、王心凌等人轉發「台灣必歸」圖卡。官方未公布調查名單，此為媒體報導。"
+   }
+  ],
+  "name": "張韶涵",
+  "origin": "seed",
+  "related": [
+   "陸委會藝人調查",
+   "央視「台灣必歸」貼文"
+  ],
+  "summary": "藝人。媒體報導其曾轉發「台灣必歸」類圖卡。",
+  "tags": [
+   "涉中"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-zhengyi",
+  "aliases": [
+   "正義",
+   "正義豬油"
+  ],
+  "category": "企業/品牌",
+  "events": [
+   {
+    "date": "2014-10-09",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "三立新聞",
+      "t": "全統香豬油／正義相關報導",
+      "url": "https://www.setn.com/klist/42394"
+     }
+    ],
+    "status": "report",
+    "tag": "食安",
+    "text": "正義油品被查出混攙飼料用油，多家餐飲與飯店業者曾使用其產品。"
+   },
+   {
+    "date": "2016-06-17",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "三立新聞",
+      "t": "劣油相關報導",
+      "url": "https://www.setn.com/klist/42727"
+     }
+    ],
+    "status": "guilty",
+    "tag": "食安",
+    "text": "將飼料用油賣給正義的鑫好企業負責人吳容合，台南地院一審判6年6月。"
+   },
+   {
+    "date": "2016-06-15",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "三立新聞",
+      "t": "劣油相關報導",
+      "url": "https://www.setn.com/klist/42727"
+     }
+    ],
+    "status": "civil",
+    "tag": "食安",
+    "text": "消保會代5314名師生提團體訴訟，高雄地院判正義賠償936萬9千元（一審）。"
+   }
+  ],
+  "name": "正義油品",
+  "origin": "seed",
+  "related": [
+   "頂新製油",
+   "鑫好企業",
+   "吳容合"
+  ],
+  "summary": "頂新集團旗下豬油品牌，2014年被查出混攙飼料油。",
+  "tags": [
+   "食安"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "e-zhonglian",
+  "aliases": [
+   "中聯",
+   "中聯油脂公司",
+   "1246",
+   "蔡清松"
+  ],
+  "category": "企業/品牌",
+  "events": [
+   {
+    "date": "2026-07-01",
+    "sources": [
+     {
+      "kind": "gov",
+      "pub": "衛福部食藥署",
+      "t": "大豆沙拉油檢驗異常 啟動下架回收",
+      "url": "https://www.fda.gov.tw/tc/newsContent.aspx?cid=4&id=t634379"
+     }
+    ],
+    "status": "admin",
+    "tag": "食安",
+    "text": "大豆沙拉油自主檢驗檢出苯駢芘超標，食藥署會同台中市食安處查核中聯、福懋、福壽，命中聯停止作業並下架回收。"
+   },
+   {
+    "date": "2026-07-05",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "工商時報",
+      "t": "問題油事件 食藥署祭3措施",
+      "url": "https://www.ctee.com.tw/news/20260706700099-439901"
+     },
+     {
+      "kind": "news",
+      "pub": "經濟日報",
+      "t": "更新360家業者及產品",
+      "url": "https://money.udn.com/money/story/7307/9610385"
+     }
+    ],
+    "status": "admin",
+    "tag": "食安",
+    "text": "食藥署公布受影響第二層下游257家（後更新至360家）；調和油及含問題油20%以上之加工品須預防性下架。"
+   },
+   {
+    "date": "2026-08-18",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "中聯油脂涉放寬進料標準致苯駢芘超標 中檢起訴15人",
+      "url": "https://www.cna.com.tw/news/asoc/202608180151.aspx"
+     },
+     {
+      "kind": "news",
+      "pub": "公視新聞",
+      "t": "中聯油案檢方偵查終結",
+      "url": "https://news.pts.org.tw/article/823020"
+     }
+    ],
+    "status": "trial",
+    "tag": "食安",
+    "text": "台中地檢署起訴中聯董事長蔡清松等15人及中聯、福壽、福懋、泰山4家公司；指中聯將黃豆熱損粒進料標準由0.5%放寬至5%，7批約8478公噸沙拉油超標，聲請沒收不法所得8億8731萬元。"
+   },
+   {
+    "date": "2026-11-13",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "自由時報",
+      "t": "中聯、泰山4高層交保 高分院撤銷發回",
+      "url": "https://news.ltn.com.tw/news/Taichung/breakingnews/5639441"
+     }
+    ],
+    "status": "trial",
+    "tag": "食安",
+    "text": "台中高分院撤銷中聯總經理、廠長及泰山前後任總經理共4人的交保裁定，發回台中地院重裁；案件審理中。"
+   }
+  ],
+  "name": "中聯油脂",
+  "origin": "seed",
+  "related": [
+   "泰山企業",
+   "福壽實業",
+   "福懋油脂",
+   "大豆沙拉油",
+   "苯駢芘",
+   "聯華",
+   "廣達香",
+   "老協珍",
+   "台灣卜蜂",
+   "晶華酒店",
+   "貴族世家",
+   "路易莎",
+   "爭鮮"
+  ],
+  "summary": "2026年大豆沙拉油苯駢芘超標，經泰山、福壽、福懋流向數百家下游。聯華、廣達香、老協珍、台灣卜蜂、晶華酒店、貴族世家、路易莎、爭鮮等為食藥署公布的「受影響下游業者」，不代表其為責任方。",
+  "tags": [
+   "食安"
+  ],
+  "updated": "2026-11-26T03:40:00Z"
+ },
+ {
+  "id": "p-chenop",
+  "aliases": [],
+  "category": "民意代表",
+  "events": [
+   {
+    "date": "2026-04-14",
+    "party": "民進黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "公視新聞",
+      "t": "陳歐珀涉貪一審判16年",
+      "url": "https://news.pts.org.tw/article/803571"
+     },
+     {
+      "kind": "news",
+      "pub": "TVBS",
+      "t": "陳歐珀一審遭判16年 民進黨送廉政會",
+      "url": "https://news.tvbs.com.tw/politics/3177593"
+     }
+    ],
+    "status": "guilty",
+    "tag": "貪污",
+    "text": "台北地院依不違背職務收受賄賂及不正利益、利用職務機會詐取財物等罪合併執行16年、褫奪公權6年；妻徐慧諭判4年6月。可上訴。"
+   }
+  ],
+  "name": "陳歐珀",
+  "origin": "seed",
+  "party": "民進黨",
+  "related": [
+   "徐慧諭",
+   "聯興國際物流",
+   "商港法",
+   "UBER案",
+   "洪英正"
+  ],
+  "summary": "民進黨前立委。收受物流、租車業者賄款並詐領助理費，不法所得逾800萬元，一審判16年。",
+  "tags": [
+   "貪污"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "p-chensb",
+  "aliases": [
+   "阿扁"
+  ],
+  "category": "政治人物",
+  "events": [
+   {
+    "date": "2010-11-11",
+    "party": "民進黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "新頭殼",
+      "t": "龍潭購地弊案三審定讞",
+      "url": "https://newtalk.tw/news/view/2010-11-11/9669"
+     }
+    ],
+    "status": "final",
+    "tag": "貪污",
+    "text": "龍潭購地案三審定讞，陳水扁與吳淑珍各判11年、併科1.5億元；陳敏薰買官案各判8年。"
+   },
+   {
+    "date": "2012-12-20",
+    "party": "民進黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "ETtoday",
+      "t": "二次金改貪污案 陳水扁判10年定讞",
+      "url": "https://www.ettoday.net/news/20121220/142546.htm"
+     }
+    ],
+    "status": "final",
+    "tag": "貪污",
+    "text": "二次金改元大併復華部分，最高法院以「實質影響力」判貪污10年確定。"
+   },
+   {
+    "case": "陳敏薰案洗錢",
+    "date": "2026",
+    "party": "民進黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "陳水扁被控洗錢 最高院判免訴確定",
+      "url": "https://udn.com/news/story/7321/9531578"
+     }
+    ],
+    "status": "clear",
+    "tag": "貪污",
+    "text": "陳敏薰買官案中被控洗錢部分，法院認定追訴權時效已消滅，最高法院判免訴確定（非無罪認定）。"
+   }
+  ],
+  "name": "陳水扁",
+  "origin": "seed",
+  "party": "民進黨",
+  "related": [
+   "吳淑珍",
+   "龍潭購地案",
+   "陳敏薰",
+   "二次金改",
+   "元大併復華",
+   "陳致中"
+  ],
+  "summary": "前總統。龍潭購地、陳敏薰買官、二次金改元大併復華等貪污案判刑定讞。",
+  "tags": [
+   "貪污"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "p-chenyj",
+  "aliases": [],
+  "category": "民意代表",
+  "events": [
+   {
+    "date": "2026-01-12",
+    "party": "民進黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "陳怡君涉賄遭判刑 民進黨：廉政會開會最重除名",
+      "url": "https://www.cna.com.tw/news/aipl/202601120183.aspx"
+     },
+     {
+      "pub": "司法院裁判書系統",
+      "t": "臺灣士林地方法院114年度訴字第629號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=SLDM%2C114%2C%E8%A8%B4%2C629%2C20260112%2C2",
+      "kind": "court"
+     }
+    ],
+    "status": "guilty",
+    "tag": "貪污",
+    "text": "士林地院依貪污等罪判應執行7年10月、褫奪公權5年；檢方認為量刑過輕上訴，民進黨送廉政會。"
+   }
+  ],
+  "name": "陳怡君",
+  "origin": "seed",
+  "party": "民進黨",
+  "related": [
+   "台北市議會"
+  ],
+  "summary": "民進黨台北市議員。詐領助理費及收賄，一審判7年10月。",
+  "tags": [
+   "貪污"
+  ],
+  "updated": "2026-11-26T04:55:56Z"
+ },
+ {
+  "id": "p-gaoha",
+  "aliases": [],
+  "category": "政治人物",
+  "events": [
+   {
+    "date": "2024",
+    "party": "民眾黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "高虹安助理費案二審",
+      "url": "https://www.cna.com.tw/news/asoc/202512160179.aspx"
+     }
+    ],
+    "status": "guilty",
+    "tag": "貪污",
+    "text": "一審依利用職務機會詐取財物罪判7年4月、褫奪公權4年。"
+   },
+   {
+    "date": "2025-12-16",
+    "party": "民眾黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "高虹安二審",
+      "url": "https://www.cna.com.tw/news/asoc/202512160179.aspx"
+     }
+    ],
+    "status": "clear",
+    "tag": "貪污",
+    "text": "高院認定助理費性質為「實質補助，彈性勻用」，貪污部分改判無罪。"
+   },
+   {
+    "case": "偽造文書",
+    "date": "2025-12-16",
+    "party": "民眾黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "台灣英文新聞（中央社）",
+      "t": "高虹安二審改判",
+      "url": "https://taiwannews.com.tw/zh/news/6265702"
+     },
+     {
+      "pub": "司法院裁判書系統",
+      "t": "臺灣高等法院113年度矚上重訴字第36號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPHM%2C113%2C%E7%9F%9A%E4%B8%8A%E9%87%8D%E8%A8%B4%2C36%2C20251216%2C4",
+      "kind": "court"
+     }
+    ],
+    "status": "guilty",
+    "tag": "犯罪/司法",
+    "text": "向立法院申報不實，依使公務員登載不實罪判6月，得易科罰金；高檢署研議上訴。"
+   },
+   {
+    "date": "2025-07-31",
+    "case": "臺灣高等法院113年度上訴字第5670號",
+    "tag": "犯罪/司法",
+    "status": "guilty",
+    "text": "刑法第169條第1項誣告罪；有期徒刑6月。審級：終局未確認（二審 2025-07-31 判決得上訴第三審；最高法院查無，上訴與否本輪未取得）。〔彙整自 council2026.taiwangogo.tw（時代力量管理、台灣前進製作）〕",
+    "sources": [
+     {
+      "pub": "司法院裁判書系統",
+      "t": "臺灣高等法院113年度上訴字第5670號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPHM%2C113%2C%E4%B8%8A%E8%A8%B4%2C5670%2C20250731%2C1",
+      "kind": "court"
+     },
+     {
+      "pub": "中央社",
+      "t": "2025-07-31",
+      "url": "https://www.cna.com.tw/news/asoc/202507310146.aspx",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2026-04-16",
+    "case": "智慧財產及商業法院113年度刑智上易字第49號",
+    "tag": "犯罪/司法",
+    "status": "trial",
+    "text": "被訴著作權法第91條第1項、第92條、第93條第1項第1款罪嫌（自訴罪名，法院未認定）；尚未判決。審級：未確定（一審自訴不受理，二審 2026-04-16 撤銷原判決發回臺灣臺北地方法院，更審中）。〔彙整自 council2026.taiwangogo.tw（時代力量管理、台灣前進製作）〕",
+    "sources": [
+     {
+      "pub": "司法院裁判書系統",
+      "t": "智慧財產及商業法院113年度刑智上易字第49號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=IPCM%2C113%2C%E5%88%91%E6%99%BA%E4%B8%8A%E6%98%93%2C49%2C20260416%2C1",
+      "kind": "court"
+     },
+     {
+      "pub": "TVBS",
+      "t": "2026-04-16",
+      "url": "https://news.tvbs.com.tw/local/3179266",
+      "kind": "news"
+     },
+     {
+      "pub": "聯合報",
+      "t": "2026-04-17",
+      "url": "https://udn.com/news/story/7321/9446987",
+      "kind": "news"
+     }
+    ]
+   }
+  ],
+  "name": "高虹安",
+  "origin": "seed",
+  "party": "民眾黨",
+  "related": [
+   "新竹市政府",
+   "黃惠玟",
+   "陳奐宇",
+   "王郁文"
+  ],
+  "summary": "新竹市長。立委（民眾黨籍）任內助理費案：一審依貪污判7年4月，二審改判貪污無罪、偽造文書判6月。",
+  "tags": [
+   "貪污",
+   "犯罪/司法"
+  ],
+  "updated": "2026-11-26T04:55:56Z"
+ },
+ {
+  "id": "p-gaojsm",
+  "aliases": [],
+  "category": "民意代表",
+  "events": [
+   {
+    "date": "2026",
+    "party": "無黨籍",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "自由時報",
+      "t": "從貪污到互毆 本屆國會已22名立委涉案",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1767957"
+     }
+    ],
+    "status": "trial",
+    "tag": "貪污",
+    "text": "北檢依貪污及詐欺取財等罪起訴，求刑12年6月。"
+   }
+  ],
+  "name": "高金素梅",
+  "origin": "seed",
+  "party": "無黨籍",
+  "related": [
+   "中製快篩試劑"
+  ],
+  "summary": "無黨籍立委。被控詐領助理費逾787萬元，並於疫情期間違法輸入中製快篩試劑，已起訴。",
+  "tags": [
+   "貪污",
+   "犯罪/司法"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "p-hlujr",
+  "aliases": [],
+  "category": "政治人物",
+  "events": [
+   {
+    "date": "2025-04-25",
+    "party": "國民黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "TVBS",
+      "t": "黃呂錦茹遭裁定羈押禁見",
+      "url": "https://news.tvbs.com.tw/politics/2850717"
+     }
+    ],
+    "status": "trial",
+    "tag": "犯罪/司法",
+    "text": "台北地院以其涉行使偽造私文書、非法利用個資罪嫌重大，裁定羈押禁見。"
+   },
+   {
+    "date": "2025-08-01",
+    "party": "國民黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "關鍵評論網",
+      "t": "黃呂錦茹認罪 千萬交保",
+      "url": "https://www.thenewslens.com/article/256644"
+     }
+    ],
+    "status": "trial",
+    "tag": "犯罪/司法",
+    "text": "起訴指其為罷免吳思瑤、吳沛憶，於2天內以抄寫黨員名冊等方式偽造5211份提議書，偽造比率過9成；開庭時認罪，以1000萬元交保。"
+   }
+  ],
+  "name": "黃呂錦茹",
+  "origin": "seed",
+  "party": "國民黨",
+  "related": [
+   "國民黨台北市黨部",
+   "初文卿",
+   "姚富文",
+   "罷免連署偽造",
+   "吳思瑤",
+   "吳沛憶"
+  ],
+  "summary": "前國民黨台北市黨部主委。被控指示偽造5211份罷免提議書，依偽造文書、個資法起訴，已認罪。",
+  "tags": [
+   "犯罪/司法"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "p-kmttc",
+  "aliases": [
+   "陳劍鋒",
+   "伍康龍"
+  ],
+  "category": "組織/政黨",
+  "events": [
+   {
+    "date": "2026-03-06",
+    "party": "國民黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "國民黨偽造連署案台中34黨工遭判刑",
+      "url": "https://udn.com/news/story/6656/9363508"
+     },
+     {
+      "kind": "news",
+      "pub": "鏡週刊",
+      "t": "國民黨中市黨部「幽靈連署」判決出爐",
+      "url": "https://www.mirrormedia.mg/story/20260306edi044"
+     }
+    ],
+    "status": "guilty",
+    "tag": "犯罪/司法",
+    "text": "台中地院依違反個資法等罪判34人均有罪，32人緩刑；偽造4258份名冊罷免蔡其昌、何欣純。國民黨質疑量刑失衡。"
+   }
+  ],
+  "name": "國民黨台中市黨部",
+  "origin": "seed",
+  "party": "國民黨",
+  "related": [
+   "罷免連署偽造",
+   "蔡其昌",
+   "何欣純"
+  ],
+  "summary": "國民黨台中市黨部書記長陳劍鋒、第一組長伍康龍等34名黨工，以抄寫黨員名冊方式偽造罷免連署，一審全數有罪。",
+  "tags": [
+   "犯罪/司法"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "p-linmc",
+  "aliases": [],
+  "category": "政治人物",
+  "events": [
+   {
+    "date": "2026-07-14",
+    "party": "國民黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "涉偽造罷免連署 國民黨宜蘭主委林明昌判刑1年半",
+      "url": "https://www.cna.com.tw/news/asoc/202607140247.aspx"
+     },
+     {
+      "kind": "news",
+      "pub": "自由時報",
+      "t": "偽造立委陳俊宇罷免連署",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1762674"
+     }
+    ],
+    "status": "guilty",
+    "tag": "犯罪/司法",
+    "text": "宜蘭地院一審判1年6月，因否認犯行未獲緩刑；其餘黨工判6月至1年不等、均緩刑。林明昌表示上訴。"
+   }
+  ],
+  "name": "林明昌",
+  "origin": "seed",
+  "party": "國民黨",
+  "related": [
+   "國民黨宜蘭縣黨部",
+   "俞凌傑",
+   "陳堅豐",
+   "罷免連署偽造",
+   "陳俊宇"
+  ],
+  "summary": "國民黨政策會副執行長、前宜蘭縣黨部主委。偽造罷免立委陳俊宇提議書，一審判1年6月。",
+  "tags": [
+   "犯罪/司法"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "p-linmr",
+  "aliases": [],
+  "category": "民意代表",
+  "events": [
+   {
+    "date": "2026-11-13",
+    "party": "民進黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "自由時報",
+      "t": "躲過貪污！5連霸議員林銘仁浮報助理費",
+      "url": "https://news.ltn.com.tw/news/society/breakingnews/5639848"
+     },
+     {
+      "kind": "news",
+      "pub": "知新聞",
+      "t": "民進黨5連霸議員涉詐助理費 偽造文書判1年",
+      "url": "https://www.knews.com.tw/news/652B54235443F6F79E233FE37C32F365"
+     }
+    ],
+    "status": "guilty",
+    "tag": "犯罪/司法",
+    "text": "新北地院認定款項用於服務處與私聘助理、未中飽私囊，不構成貪污；依使公務員登載不實罪合併判1年，得易科罰金。可上訴。"
+   }
+  ],
+  "name": "林銘仁",
+  "origin": "seed",
+  "party": "民進黨",
+  "related": [
+   "新北市議會"
+  ],
+  "summary": "民進黨新北市議員。被控溢領助理費681萬餘元；一審貪污不成立，偽造文書罪判1年得易科罰金。",
+  "tags": [
+   "犯罪/司法"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "p-linth",
+  "aliases": [],
+  "category": "民意代表",
+  "events": [
+   {
+    "date": "2026",
+    "party": "民進黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "自由時報",
+      "t": "從貪污到互毆 本屆國會已22名立委涉案",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1767957"
+     },
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "林岱樺涉詐逾1400萬助理費 雄檢起訴10人",
+      "url": "https://www.cna.com.tw/news/aipl/202601120183.aspx"
+     }
+    ],
+    "status": "trial",
+    "tag": "貪污",
+    "text": "雄檢依貪污等罪嫌起訴林岱樺等10人，全案審理中。"
+   }
+  ],
+  "name": "林岱樺",
+  "origin": "seed",
+  "party": "民進黨",
+  "related": [],
+  "summary": "民進黨立委。被控以人頭助理、浮報加班費詐領近1500萬元，並涉背信、公益侵占，已被起訴。",
+  "tags": [
+   "貪污"
+  ],
+  "updated": "2026-11-26T04:10:00Z"
+ },
+ {
+  "id": "p-linyj",
+  "aliases": [],
+  "category": "民意代表",
+  "events": [
+   {
+    "date": "2026-07-02",
+    "party": "民進黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "立委林宜瑾涉詐助理費 一審判刑7年",
+      "url": "https://www.cna.com.tw/news/asoc/202607020179.aspx"
+     },
+     {
+      "kind": "news",
+      "pub": "自由時報",
+      "t": "詐千萬助理費 立委林宜瑾重判七年",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1761163"
+     }
+    ],
+    "status": "guilty",
+    "tag": "貪污",
+    "text": "台南地院認定犯行橫跨6屆任期、非一時失慮，依利用職務機會詐取財物6罪合併判7年、褫奪公權4年；她表示上訴。"
+   }
+  ],
+  "name": "林宜瑾",
+  "origin": "seed",
+  "party": "民進黨",
+  "related": [
+   "台南市議會"
+  ],
+  "summary": "民進黨籍立委。議員及立委任內以人頭助理等方式詐領助理費1412萬餘元，認罪並繳回，一審判7年。",
+  "tags": [
+   "貪污"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "p-linys",
+  "aliases": [],
+  "category": "民意代表",
+  "events": [
+   {
+    "case": "財產來源不明",
+    "date": "2018-08-22",
+    "party": "國民黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "公視新聞",
+      "t": "林益世「財產來源不明罪」判刑2年定讞",
+      "url": "https://news.pts.org.tw/article/403931"
+     },
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "林益世案最高法院判決",
+      "url": "https://www.cna.com.tw/news/firstnews/201808220168.aspx"
+     }
+    ],
+    "status": "final",
+    "tag": "貪污",
+    "text": "最高法院就財產來源不明罪判刑2年、併科罰金1580萬元定讞；索賄8300萬元與洗錢部分無罪確定。"
+   },
+   {
+    "case": "收賄6300萬",
+    "date": "2024-04-16",
+    "party": "國民黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "林益世涉貪聲請法官迴避 最高法院駁回確定",
+      "url": "https://www.cna.com.tw/news/asoc/202404160077.aspx"
+     }
+    ],
+    "status": "trial",
+    "tag": "貪污",
+    "text": "收賄6300萬元部分：一審判5年6月、二審依貪污判刑12年、更一審判4年10月，最高法院二度發回，更二審審理中。"
+   }
+  ],
+  "name": "林益世",
+  "origin": "seed",
+  "party": "國民黨",
+  "related": [
+   "地勇公司",
+   "陳啟祥",
+   "中鋼",
+   "中聯公司",
+   "行政院秘書長"
+  ],
+  "summary": "前國民黨立委、前行政院秘書長。被控立委任內收受地勇公司6300萬元；財產來源不明罪判刑確定，收賄部分仍在更審。",
+  "tags": [
+   "貪污"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "p-ranlx",
+  "aliases": [],
+  "category": "民意代表",
+  "events": [
+   {
+    "date": "2026-07",
+    "party": "國民黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "東森新聞",
+      "t": "前中市議員冉齡軒詐助理費 判刑4年確定",
+      "url": "https://news.ebc.net.tw/news/politics/561467"
+     }
+    ],
+    "status": "final",
+    "tag": "貪污",
+    "text": "一、二審均依貪污罪判4年，最高法院駁回上訴定讞；另以公款做法會、打掃私人佛堂。"
+   }
+  ],
+  "name": "冉齡軒",
+  "origin": "seed",
+  "party": "國民黨",
+  "related": [
+   "台中市議會"
+  ],
+  "summary": "國民黨籍前台中市議員。詐領助理費逾148萬元，判刑4年確定。",
+  "tags": [
+   "貪污"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "p-yankh",
+  "aliases": [],
+  "category": "民意代表",
+  "events": [
+   {
+    "date": "2025-09",
+    "party": "國民黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "顏寬恒貪污判7年10月",
+      "url": "https://udn.com/news/story/7321/9491844"
+     }
+    ],
+    "status": "guilty",
+    "tag": "貪污",
+    "text": "一、二審均依共同利用職務上機會詐取財物罪判7年10月、褫奪公權3年；豪宅假買賣偽造文書判6月得易科部分已確定。"
+   },
+   {
+    "date": "2026-05-28",
+    "party": "國民黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "自由時報",
+      "t": "顏寬恒涉貪案 發回更審",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1756721"
+     }
+    ],
+    "status": "trial",
+    "tag": "貪污",
+    "text": "最高法院認為「人頭助理」認定仍有疑義，撤銷二審判決發回台中高分院更審。"
+   }
+  ],
+  "name": "顏寬恒",
+  "origin": "seed",
+  "party": "國民黨",
+  "related": [
+   "林進福",
+   "沙鹿莊園",
+   "顏清標",
+   "鎮瀾宮"
+  ],
+  "summary": "國民黨立委。被控以人頭助理詐領助理費108萬餘元；一、二審有罪，最高法院發回更審。",
+  "tags": [
+   "貪污"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "p-zengly",
+  "aliases": [],
+  "category": "民意代表",
+  "events": [
+   {
+    "date": "2025-08-11",
+    "party": "國民黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "關鍵評論網",
+      "t": "曾麗燕二審維持12年",
+      "url": "https://www.thenewslens.com/article/257048"
+     },
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "曾麗燕涉詐助理費 二審仍判12年",
+      "url": "https://udn.com/news/story/7321/8932496"
+     }
+    ],
+    "status": "guilty",
+    "tag": "貪污",
+    "text": "高雄高分院二審維持12年、褫奪公權6年，不法所得1053萬餘元沒收；本人否認詐領。"
+   },
+   {
+    "date": "2026-09-08",
+    "party": "國民黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中央社",
+      "t": "曾麗燕涉詐助理費案 雄檢查偽證起訴7人",
+      "url": "https://cna.com.tw/news/asoc/202609080253.aspx"
+     }
+    ],
+    "status": "trial",
+    "tag": "犯罪/司法",
+    "text": "雄檢以其助理等6人在審理中為使其脫罪而偽證，起訴7人（曾麗燕本人非此案被告）。"
+   }
+  ],
+  "name": "曾麗燕",
+  "origin": "seed",
+  "party": "國民黨",
+  "related": [
+   "高雄市議會",
+   "林宏宗",
+   "曾麗鴻",
+   "曹雪禎"
+  ],
+  "summary": "國民黨籍高雄市前議長。以人頭助理、低薪高報詐領助理費約1330萬元，一、二審均判刑12年，三審中。",
+  "tags": [
+   "貪污"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "p-zhengtc",
+  "aliases": [],
+  "category": "民意代表",
+  "events": [
+   {
+    "date": "2026",
+    "party": "國民黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "自由時報",
+      "t": "從貪污到互毆 本屆國會已22名立委涉案",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1767957"
+     }
+    ],
+    "status": "trial",
+    "tag": "貪污",
+    "text": "北檢指其長期受9名業者供養並協助施壓行政機關，依貪污等罪起訴。"
+   }
+  ],
+  "name": "鄭天財",
+  "origin": "seed",
+  "party": "國民黨",
+  "related": [],
+  "summary": "國民黨立委。被控收賄711萬元，檢方起訴求刑10年以上。",
+  "tags": [
+   "貪污"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "p-zhengwc",
+  "aliases": [],
+  "category": "政治人物",
+  "events": [
+   {
+    "date": "2024-08-27",
+    "party": "民進黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "聯合新聞網",
+      "t": "鄭文燦貪污案又換法官",
+      "url": "https://udn.com/news/story/7321/8983918"
+     },
+     {
+      "kind": "news",
+      "pub": "TVBS",
+      "t": "鄭文燦涉貪首度出庭",
+      "url": "https://news.tvbs.com.tw/local/2723267"
+     }
+    ],
+    "status": "trial",
+    "tag": "貪污",
+    "text": "桃園地檢署偵結起訴，指其就華亞科園區擴大開發案收賄500萬元；鄭文燦否認犯罪。"
+   },
+   {
+    "date": "2026-04-14",
+    "party": "民進黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "鏡週刊",
+      "t": "鄭文燦案汙點證人翻供",
+      "url": "https://www.mirrormedia.mg/story/amp/20260426inv008"
+     }
+    ],
+    "status": "trial",
+    "tag": "貪污",
+    "text": "首度實質審理；關鍵汙點證人廖力廷當庭改稱500萬元為政治獻金，辯方認為無對價關係，仍在審理中。"
+   }
+  ],
+  "name": "鄭文燦",
+  "origin": "seed",
+  "party": "民進黨",
+  "related": [
+   "華亞科技園區",
+   "林口工五",
+   "廖俊松",
+   "廖力廷",
+   "桃園市政府",
+   "海基會"
+  ],
+  "summary": "前桃園市長、海基會前董事長。被控市長任內收賄500萬元，已起訴，本人否認，桃園地院審理中。",
+  "tags": [
+   "貪污"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "p-zhuangzk",
+  "aliases": [],
+  "category": "政治人物",
+  "events": [
+   {
+    "date": "2026-07-10",
+    "party": "國民黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "中時新聞網",
+      "t": "台南罷免綠委偽造連署案 國民黨副主委判2年緩刑5年",
+      "url": "https://www.chinatimes.com/realtimenews/20260710003216-260407"
+     },
+     {
+      "kind": "news",
+      "pub": "自由時報",
+      "t": "偽造罷免連署 國民黨台南黨部副主委等11人判刑",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1762188"
+     }
+    ],
+    "status": "guilty",
+    "tag": "犯罪/司法",
+    "text": "台南地院依個資法等罪判2年、緩刑5年，繳公庫60萬元；同案共11人均有罪獲緩刑。"
+   }
+  ],
+  "name": "莊占魁",
+  "origin": "seed",
+  "party": "國民黨",
+  "related": [
+   "國民黨台南市黨部",
+   "罷免連署偽造",
+   "林俊憲",
+   "王定宇"
+  ],
+  "summary": "國民黨台南市黨部副主委。盜用黨員個資偽造罷免提議書，一審判2年、緩刑5年。",
+  "tags": [
+   "犯罪/司法"
+  ],
+  "updated": "2026-11-26T04:26:27Z"
+ },
+ {
+  "id": "p-zhuzy",
+  "aliases": [],
+  "category": "民意代表",
+  "events": [
+   {
+    "date": "2026-10",
+    "party": "國民黨",
+    "sources": [
+     {
+      "kind": "news",
+      "pub": "民視新聞",
+      "t": "國民黨議員涉貪遭重判8年",
+      "url": "https://www.ftvnews.com.tw/news/detail/2026A16W0245"
+     },
+     {
+      "kind": "news",
+      "pub": "Yahoo新聞",
+      "t": "桃園選情震撼彈",
+      "url": "https://tw.news.yahoo.com/%E5%9C%8B%E6%B0%91%E9%BB%A8%E7%BE%8E%E5%A5%B3%E8%AD%B0%E5%93%A1%E5%87%BA%E4%BA%8B%E4%BA%86-%E6%A1%83%E5%9C%92%E9%81%B8%E6%83%85%E9%9C%87%E6%92%BC%E5%BD%88-%E5%A5%B9-%E7%AB%9F%E6%B6%89%E8%B2%AA%E9%81%AD%E9%87%8D%E5%88%A48%E5%B9%B4-032158081.html"
+     },
+     {
+      "pub": "司法院裁判書系統",
+      "t": "臺灣桃園地方法院113年度矚訴字第2號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TYDM%2C113%2C%E7%9F%9A%E8%A8%B4%2C2%2C20261015%2C1",
+      "kind": "court"
+     }
+    ],
+    "status": "guilty",
+    "tag": "貪污",
+    "text": "桃園地院依利用職務機會詐取財物罪判8年、褫奪公權5年；其母、妹各判4年6月。"
+   }
+  ],
+  "name": "朱珍瑤",
+  "origin": "seed",
+  "party": "國民黨",
+  "related": [
+   "桃園市議會"
+  ],
+  "summary": "國民黨桃園市議員。以掛名人頭助理詐領助理費17萬餘元，一審判8年。",
+  "tags": [
+   "貪污"
+  ],
+  "updated": "2026-11-26T04:55:56Z"
+ },
+ {
+  "id": "c-zhujian",
+  "name": "築間餐飲集團",
+  "aliases": [
+   "築間",
+   "築間幸福鍋物"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "性騷擾"
+  ],
+  "related": [
+   "築間幸福鍋物",
+   "燒肉Smile",
+   "有之和牛"
+  ],
+  "summary": "鍋物連鎖集團。2022年台北市勞動局認定公司處理員工性騷擾申訴未採有效糾正措施，依性別工作平等法罰10萬元。",
+  "origin": "auto",
+  "updated": "2026-11-26T09:35:00Z",
+  "events": [
+   {
+    "date": "2022-08",
+    "case": "勞動局行政處分",
+    "tag": "性騷擾",
+    "status": "admin",
+    "text": "前女助理指控集團策略長陳姓男子在職場性騷擾。台北市勞動局認定公司未採取立即有效的糾正及補救措施，並在懲處通知刪除「性騷擾」字樣，依性別工作平等法罰公司10萬元。",
+    "sources": [
+     {
+      "pub": "風傳媒",
+      "t": "築間餐飲集團高層「遭爆趁機騷擾女助理」 官司結果出爐！（2023-04-15）",
+      "url": "https://www.storm.mg/article/4776162",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2023-04",
+    "case": "高層個人刑事告訴",
+    "tag": "性騷擾",
+    "status": "clear",
+    "text": "刑事部分：台北地檢署以僅有女方單一指述、無其他佐證為由不起訴，高檢署駁回再議，刑事未成案。此結果只涉及個人刑責，不影響勞動局對公司的行政處分。",
+    "sources": [
+     {
+      "pub": "風傳媒",
+      "t": "築間餐飲集團高層「遭爆趁機騷擾女助理」 官司結果出爐！（2023-04-15）",
+      "url": "https://www.storm.mg/article/4776162",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-aierli",
+  "name": "愛爾麗醫美集團",
+  "category": "企業/品牌",
+  "aliases": [
+   "愛爾麗",
+   "愛爾麗診所",
+   "愛爾麗醫美",
+   "愛麗爾",
+   "愛爾麗集團"
+  ],
+  "related": [
+   "常如山",
+   "光澤診所",
+   "消基會團體訴訟"
+  ],
+  "summary": "連鎖醫美集團。2026年5月爆發診間偽裝偵煙器針孔偷拍案，新北地檢起訴總裁常如山等7人（7家分店、99名被害人含未成年）；多地衛生局勒令分店停業6個月並重罰。",
+  "tags": [
+   "性犯罪"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T10:45:00Z",
+  "events": [
+   {
+    "date": "2026-05-07",
+    "case": "針孔偷拍刑事案",
+    "tag": "性犯罪",
+    "status": "invest",
+    "text": "顧客在板橋分店發現偽裝成偵煙器的針孔鏡頭後報警。新北檢警5月6日搜索4家分店，拘提總裁常如山、張姓特助、謝姓設備廠商；新北地院7日深夜裁定3人羈押禁見（妨害性隱私、妨害秘密、兒少性剝削防制條例等罪嫌）。",
+    "sources": [
+     {
+      "pub": "台灣英文新聞（中央社）",
+      "t": "愛爾麗3人羈押禁見",
+      "url": "https://www.taiwannews.com.tw/zh/news/6357862",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "愛爾麗創辦人常如山遭羈押禁見 逾千消費者組自救會",
+      "url": "https://news.pts.org.tw/article/807323",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2026-05-15",
+    "case": "衛生局行政處分",
+    "tag": "性犯罪",
+    "status": "admin",
+    "text": "高雄博愛、新興2家分店5月11日起停業6個月；新北市衛生局依醫療法第108條，新莊、永和、林口3家各罰50萬元並停業6個月；台北市大安店、南京店停業6個月並處罰鍰。",
+    "sources": [
+     {
+      "pub": "今周刊",
+      "t": "愛爾麗針孔偷拍：多縣市勒令停業",
+      "url": "https://www.businesstoday.com.tw/article/category/183027/post/202605070008/",
+      "kind": "news"
+     },
+     {
+      "pub": "台灣英文新聞",
+      "t": "新北愛爾麗3診所罰50萬停業半年",
+      "url": "https://www.taiwannews.com.tw/zh/news/6363193",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2026-06-25",
+    "case": "針孔偷拍刑事案",
+    "tag": "性犯罪",
+    "status": "trial",
+    "text": "新北地檢署偵結起訴總裁常如山、總經理劉貞華等7人：台北、新北、台中共7家分店診間裝設仿偵煙器的偽裝監視器，偷拍病患長達6年，掌握99名被害人（含未成年）；常如山求刑14年。起訴後中南部分店仍有待查部分。",
+    "sources": [
+     {
+      "pub": "公視新聞",
+      "t": "愛爾麗針孔偷拍案偵結起訴7人",
+      "url": "https://news.pts.org.tw/hotTopic/655",
+      "kind": "news"
+     },
+     {
+      "pub": "聯合新聞網",
+      "t": "還有中南部分店待查 愛爾麗偷拍案恐有未爆彈",
+      "url": "https://udn.com/news/story/7315/9589117",
+      "kind": "news"
+     },
+     {
+      "pub": "聯合新聞網",
+      "t": "消基會：檢方掌握99名被害人",
+      "url": "https://udn.com/news/story/6656/9753700",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2026-06-26",
+    "case": "衛生局行政處分",
+    "tag": "性犯罪",
+    "status": "admin",
+    "text": "台中市衛生局對崇德愛爾麗診所罰50萬元，並命7月15日起停業6個月；指集團高層涉嫌指示事先拆除隱匿性攝影設備。",
+    "sources": [
+     {
+      "pub": "自由時報",
+      "t": "台中崇德愛爾麗罰50萬停業半年",
+      "url": "https://news.ltn.com.tw/news/life/breakingnews/5485081",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2026-09-14",
+    "case": "消費者求償",
+    "tag": "性犯罪",
+    "status": "report",
+    "text": "消基會正式啟動團體訴訟，截至9月13日已有133名消費者登記；先前自救會成員逾千人。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "愛爾麗診所針孔偷拍上百人受害 消基會宣布啟動團體訴訟",
+      "url": "https://udn.com/news/story/6656/9753700",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-changrs",
+  "name": "常如山",
+  "category": "企業人物",
+  "aliases": [
+   "愛爾麗總裁",
+   "愛爾麗創辦人"
+  ],
+  "related": [
+   "愛爾麗醫美集團"
+  ],
+  "summary": "愛爾麗醫美集團創辦人、總裁。2026年針孔偷拍案遭羈押禁見，後遭起訴、求刑14年。",
+  "tags": [
+   "性犯罪"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T10:45:00Z",
+  "events": [
+   {
+    "date": "2026-05-07",
+    "case": "愛爾麗偷拍案",
+    "tag": "性犯罪",
+    "status": "invest",
+    "text": "新北地院認有逃亡及勾串、滅證之虞，裁定羈押禁見。",
+    "sources": [
+     {
+      "pub": "台灣英文新聞（中央社）",
+      "t": "愛爾麗3人羈押禁見",
+      "url": "https://www.taiwannews.com.tw/zh/news/6357862",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2026-06-25",
+    "case": "愛爾麗偷拍案",
+    "tag": "性犯罪",
+    "status": "trial",
+    "text": "新北地檢署依無故攝錄性影像、兒少性剝削防制條例等罪起訴，求刑14年。",
+    "sources": [
+     {
+      "pub": "公視新聞",
+      "t": "愛爾麗針孔偷拍案偵結 總裁常如山遭求刑14年",
+      "url": "https://news.pts.org.tw/hotTopic/655",
+      "kind": "news"
+     },
+     {
+      "pub": "自由時報",
+      "t": "新北地檢起訴愛爾麗總裁常如山等人",
+      "url": "https://news.ltn.com.tw/news/life/breakingnews/5485081",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-guangze",
+  "name": "光澤醫美集團",
+  "category": "企業/品牌",
+  "aliases": [
+   "光澤診所",
+   "光澤",
+   "光澤醫美"
+  ],
+  "related": [
+   "王朝輝",
+   "愛爾麗醫美集團"
+  ],
+  "summary": "醫美連鎖。愛爾麗案後被發現雙北8家分店裝偽裝監視器偷拍，受害逾300人（4名未成年）；新北地檢起訴9人，負責人王朝輝出境後遭通緝。",
+  "tags": [
+   "性犯罪"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T10:45:00Z",
+  "events": [
+   {
+    "date": "2026-05-11",
+    "case": "針孔偷拍刑事案",
+    "tag": "性犯罪",
+    "status": "invest",
+    "text": "民眾5月5日在板橋中山店發現偽裝監視器報警，檢警8日搜索5家分店；營運協理陳姓、資訊主管唐姓疑指示員工拆除監視器，遭羈押禁見。負責人王朝輝案發前已出境至中國。",
+    "sources": [
+     {
+      "pub": "新頭殼（中央社）",
+      "t": "光澤負責人王朝輝案發前出境 新北檢籲返國",
+      "url": "https://newtalk.tw/news/view/2026-05-11/1034475",
+      "kind": "news"
+     },
+     {
+      "pub": "聯合新聞網",
+      "t": "光澤診所偷拍案：2人羈押禁見",
+      "url": "https://udn.com/news/story/124864/9492878",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2026-05-26",
+    "case": "衛生局行政處分",
+    "tag": "性犯罪",
+    "status": "admin",
+    "text": "台北市忠孝店、三民店，新北市板橋2家分店，均依醫療法第108條各罰50萬元並停業6個月。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "北市光澤診所罰50萬停業6個月",
+      "url": "https://udn.com/news/story/7317/9520016",
+      "kind": "news"
+     },
+     {
+      "pub": "工商時報",
+      "t": "光澤診所板橋2店重罰停業 再發聲明致歉",
+      "url": "https://www.ctee.com.tw/news/20260526701920-431401",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2026-08-28",
+    "case": "針孔偷拍刑事案",
+    "tag": "性犯罪",
+    "status": "trial",
+    "text": "新北地檢署起訴光澤集團人員與廠商共9人：2020年起至2026年3月，在雙北8家分店診間、雷射室等處裝設偽裝型監視器，被害人逾300人（含4名未成年）；營運協理求刑16年以上、資訊主管求刑14年以上；負責人王朝輝通緝中。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "光澤診所偷拍受害逾300人 檢起訴9人",
+      "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-wangzh",
+  "name": "王朝輝",
+  "category": "企業人物",
+  "aliases": [
+   "光澤診所負責人",
+   "光澤醫美負責人"
+  ],
+  "related": [
+   "光澤醫美集團"
+  ],
+  "summary": "光澤醫美集團創辦人、負責人（醫師）。集團偷拍案案發前出境，新北地檢署發布通緝。",
+  "tags": [
+   "性犯罪"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T10:45:00Z",
+  "events": [
+   {
+    "date": "2026-07-02",
+    "case": "光澤偷拍案",
+    "tag": "性犯罪",
+    "status": "invest",
+    "text": "案發前出境至中國未歸，經呼籲返國未到案，新北地檢署發布通緝；8月起訴同案9人時仍在通緝中。",
+    "sources": [
+     {
+      "pub": "公視新聞",
+      "t": "光澤涉偷拍負責人未到案 新北檢發通緝令",
+      "url": "https://news.pts.org.tw/hotTopic/655",
+      "kind": "news"
+     },
+     {
+      "pub": "中央社",
+      "t": "光澤診所偷拍案起訴9人 王朝輝通緝",
+      "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-guangsheng",
+  "name": "光聖診所",
+  "category": "企業/品牌",
+  "aliases": [
+   "光聖",
+   "光聖醫美"
+  ],
+  "related": [
+   "愛爾麗醫美集團"
+  ],
+  "summary": "衛福部長證實其所屬醫美診所在稽查中被發現裝設針孔設備（愛爾麗案後全台稽查）。",
+  "tags": [
+   "性犯罪"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T10:45:00Z",
+  "events": [
+   {
+    "date": "2026-05",
+    "case": "醫美針孔稽查",
+    "tag": "性犯罪",
+    "status": "warn",
+    "text": "衛福部長石崇良在立法院表示，各縣市衛生局稽查發現愛爾麗、光聖、聖宜、研醫明共4家醫美集團所屬診所裝設針孔設備，分布7至8個縣市，持續盤查中。是否偷拍、是否起訴，需看後續司法結果。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "醫美診所針孔偷拍非單一事件 衛福部遭指管理鬆散",
+      "url": "https://udn.com/news/story/124864/9494989",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-shengyi",
+  "name": "聖宜診所",
+  "category": "企業/品牌",
+  "aliases": [
+   "聖宜",
+   "聖宜醫美"
+  ],
+  "related": [
+   "愛爾麗醫美集團"
+  ],
+  "summary": "衛福部長證實其所屬醫美診所在稽查中被發現裝設針孔設備（愛爾麗案後全台稽查）。",
+  "tags": [
+   "性犯罪"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T10:45:00Z",
+  "events": [
+   {
+    "date": "2026-05",
+    "case": "醫美針孔稽查",
+    "tag": "性犯罪",
+    "status": "warn",
+    "text": "衛福部長石崇良在立法院表示，各縣市衛生局稽查發現愛爾麗、光聖、聖宜、研醫明共4家醫美集團所屬診所裝設針孔設備，分布7至8個縣市，持續盤查中。是否偷拍、是否起訴，需看後續司法結果。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "醫美診所針孔偷拍非單一事件 衛福部遭指管理鬆散",
+      "url": "https://udn.com/news/story/124864/9494989",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-yanyiming",
+  "name": "研醫明診所",
+  "category": "企業/品牌",
+  "aliases": [
+   "研醫明"
+  ],
+  "related": [
+   "愛爾麗醫美集團"
+  ],
+  "summary": "衛福部長證實其所屬醫美診所在稽查中被發現裝設針孔設備（愛爾麗案後全台稽查）。",
+  "tags": [
+   "性犯罪"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T10:45:00Z",
+  "events": [
+   {
+    "date": "2026-05",
+    "case": "醫美針孔稽查",
+    "tag": "性犯罪",
+    "status": "warn",
+    "text": "衛福部長石崇良在立法院表示，各縣市衛生局稽查發現愛爾麗、光聖、聖宜、研醫明共4家醫美集團所屬診所裝設針孔設備，分布7至8個縣市，持續盤查中。是否偷拍、是否起訴，需看後續司法結果。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "醫美診所針孔偷拍非單一事件 衛福部遭指管理鬆散",
+      "url": "https://udn.com/news/story/124864/9494989",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-lefei",
+  "name": "樂菲時尚診所",
+  "category": "企業/品牌",
+  "aliases": [
+   "樂菲",
+   "樂菲時尚"
+  ],
+  "related": [
+   "愛爾麗醫美集團"
+  ],
+  "summary": "新北市衛生局稽查發現裝設「偵煙型監視器」，移送地檢署偵辦。",
+  "tags": [
+   "性犯罪"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T10:45:00Z",
+  "events": [
+   {
+    "date": "2026-05-15",
+    "case": "醫美針孔稽查",
+    "tag": "性犯罪",
+    "status": "invest",
+    "text": "新北市反針孔稽查專案查獲診所裝設偵煙器外觀的監視器，移送地檢署偵辦。",
+    "sources": [
+     {
+      "pub": "台灣英文新聞",
+      "t": "新北再揪醫美診所裝設偵煙型監視器 樂菲時尚診所移送偵辦",
+      "url": "https://www.taiwannews.com.tw/zh/news/6363193",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "o-cysf",
+  "name": "創意私房論壇",
+  "category": "組織/政黨",
+  "aliases": [
+   "創意私房",
+   "小圈子",
+   "台版N號房",
+   "老馬"
+  ],
+  "related": [
+   "黃子佼",
+   "SCP",
+   "OAT"
+  ],
+  "summary": "販售偷拍、未成年性影像的付費論壇，2012年由綽號「老馬」的中國籍經營者創立。2021年起多波查獲，會員、幹部、帳房、上傳者陸續判刑；老馬仍在逃。",
+  "tags": [
+   "性犯罪"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T10:45:00Z",
+  "events": [
+   {
+    "date": "2012",
+    "case": "論壇經營",
+    "tag": "性犯罪",
+    "status": "report",
+    "text": "綽號「老馬」的中國籍經營者創立，內容為偷拍與非法性影像（含未成年），會員分級收費，雇用台灣人擔任帳房、影片提供者。",
+    "sources": [
+     {
+      "pub": "TVBS新聞",
+      "t": "創意私房懶人包：會員名單、價目表曝光",
+      "url": "https://news.tvbs.com.tw/local/2452531",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2021",
+    "case": "2021查獲案",
+    "tag": "性犯罪",
+    "status": "guilty",
+    "text": "台北檢警查獲：論壇有20萬餘部影像、會員近5000人，不法獲利約3000萬元；擔任帳務管理的林姓國小教師、前屏東縣劉姓員警等工作人員判刑2至6年，另1名被告因與未成年少女性交易並偷拍判17年。經營者老馬仍逍遙法外。",
+    "sources": [
+     {
+      "pub": "關鍵評論網",
+      "t": "創意私房多位共犯遭查獲，但主要經營者仍逍遙法外",
+      "url": "https://www.thenewslens.com/article/141900",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2024-07",
+    "case": "2024收網",
+    "tag": "性犯罪",
+    "status": "invest",
+    "text": "檢警發出400張搜索票大收網，查獲負責人左右手，連同前幹部另立的Telegram群組共抓331人（含買家、幣商）。",
+    "sources": [
+     {
+      "pub": "三立新聞網",
+      "t": "創意私房前幹部另創群組 警扣多個針孔",
+      "url": "https://www.setn.com/klist/421756",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2025",
+    "case": "台中幹部帳房案",
+    "tag": "性犯罪",
+    "status": "trial",
+    "text": "台中地檢署依兒少性剝削防制條例起訴5人：許姓「浮水印師」至少替257部影像加浮水印、張姓帳房提供帳戶收會費（不法所得77萬餘元），戴姓、黃姓男子偷拍上傳；查出26名會員購買。",
+    "sources": [
+     {
+      "pub": "世界日報（聯合報系）",
+      "t": "創意私房發起人旗下幹部、帳房通通再遭起訴",
+      "url": "https://www.worldjournal.com/wj/story/121475/8868738",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2025-05-07",
+    "case": "北市黃姓員警案",
+    "tag": "性犯罪",
+    "status": "guilty",
+    "text": "台北市黃姓員警（已免職）在派出所廁所裝針孔偷拍女同事，並為創意私房會員購買兒少性影像，遭起訴；二審判13年4月。",
+    "sources": [
+     {
+      "pub": "風傳媒（中央社）",
+      "t": "北市警偷鑰匙裝針孔，還是創意私房會員",
+      "url": "https://www.storm.mg/keyword/創意私房",
+      "kind": "news"
+     },
+     {
+      "pub": "TVBS新聞",
+      "t": "北市前狼警是創意私房會員 二審重判13年4月",
+      "url": "https://news.tvbs.com.tw/news/searchresult/%E5%89%B5%E6%84%8F%E7%A7%81%E6%88%BF/news",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2025-05-29",
+    "case": "陳姓補教老師案",
+    "tag": "性犯罪",
+    "status": "guilty",
+    "text": "創意私房會員、陳姓補習班及國小代課教師，2014至2023年間偷拍、猥褻學生與同事30多人（25名少女），並以AI合成性影像散布；一、二審均判12年，民事一審判賠6人200萬元。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "創意私房會員狼師9年偷拍30多人 仍判12年",
+      "url": "https://udn.com/news/story/7317/9183883",
+      "kind": "news"
+     },
+     {
+      "pub": "聯合新聞網",
+      "t": "狼師判12年要先賠償6人200萬",
+      "url": "https://udn.com/news/story/7317/9545295",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2025-08-27",
+    "case": "SCP／OAT群組案",
+    "tag": "性犯罪",
+    "status": "guilty",
+    "text": "相關的SCP、OAT群組：黃、廖、張、李姓男子在小吃店、公園女廁、桌遊店偷拍並販售，被害人863名（含20名未成年）；台中地院一審判黃15年、廖16年、張6年4月、李2年4月。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "逾800女受害！4男偷拍販售性影像 最重判16年",
+      "url": "https://udn.com/news/story/7317/8967647",
+      "kind": "news"
+     },
+     {
+      "pub": "關鍵評論網",
+      "t": "中檢偵辦SCP、OAT社群與創意私房買家",
+      "url": "https://www.thenewslens.com/article/244623",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "e-qinwei",
+  "name": "秦偉",
+  "category": "藝人/公眾人物",
+  "aliases": [],
+  "related": [],
+  "summary": "藝人、主持人。性侵3名女子，合併應執行7年8月確定，服刑中。",
+  "tags": [
+   "性犯罪"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T11:00:00Z",
+  "events": [
+   {
+    "date": "2020-12-10",
+    "case": "性侵案",
+    "tag": "性犯罪",
+    "status": "final",
+    "text": "女造型師案經最高法院駁回上訴，判4年定讞；另有女編劇、女粉絲案，共3案有罪各判4年、2案無罪，2021年2月合併應執行7年8月確定，2020年4月入監；多次申請假釋遭駁回。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "司法院裁判書系統",
+      "t": "最高法院109年度台上字第4488號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPSM%2c109%2c%e5%8f%b0%e4%b8%8a%2c4488%2c20201210%2c1&ot=in",
+      "kind": "court"
+     },
+     {
+      "pub": "中央社",
+      "t": "秦偉性侵造型師案 判刑4年定讞",
+      "url": "https://www.cna.com.tw/news/firstnews/202012105005.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "ETtoday",
+      "t": "秦偉7度申請假釋仍駁回",
+      "url": "https://www.ettoday.net/news/20260518/3167633.htm",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "e-yousheng",
+  "name": "王宥勝",
+  "category": "藝人/公眾人物",
+  "aliases": [
+   "宥勝"
+  ],
+  "related": [],
+  "summary": "藝人，藝名宥勝。強制猥褻前員工，判8月、緩刑5年確定，並向公庫支付200萬元。",
+  "tags": [
+   "性犯罪"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T11:00:00Z",
+  "events": [
+   {
+    "date": "2023-11-08",
+    "case": "強制猥褻案",
+    "tag": "性犯罪",
+    "status": "trial",
+    "text": "2023年6月遭前員工公開指控；台北地檢署依強制猥褻罪起訴。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "宥勝涉對女子強吻摸胸 北檢強制猥褻罪起訴",
+      "url": "https://www.cna.com.tw/news/asoc/202311080048.aspx",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2024-12-31",
+    "case": "強制猥褻案",
+    "tag": "性犯罪",
+    "status": "final",
+    "text": "一審（台北地院112年度侵訴字第106號）判8月；二審駁回上訴、改宣告緩刑5年，須向公庫支付200萬元，無人上訴確定，2025年2月繳清。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "司法院裁判書系統",
+      "t": "臺北地院112年度侵訴字第106號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPDM%2c112%2c%e4%be%b5%e8%a8%b4%2c106%2c20240524%2c2&ot=in",
+      "kind": "court"
+     },
+     {
+      "pub": "司法院裁判書系統",
+      "t": "臺灣高等法院113年度侵上訴字第152號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPHM%2c113%2c%e4%be%b5%e4%b8%8a%e8%a8%b4%2c152%2c20241231%2c1&ot=in",
+      "kind": "court"
+     },
+     {
+      "pub": "中央社",
+      "t": "宥勝猥褻女子案獲判緩刑確定 繳清200萬元",
+      "url": "https://www.cna.com.tw/news/asoc/202502270110.aspx",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "e-zhangzj",
+  "name": "張作驥",
+  "category": "藝人/公眾人物",
+  "aliases": [
+   "電影導演張作驥"
+  ],
+  "related": [],
+  "summary": "電影導演。2013年趁合作女子酒醉強制性交，判3年10月確定，民事判賠200萬元；2017年假釋。",
+  "tags": [
+   "性犯罪"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T11:00:00Z",
+  "events": [
+   {
+    "date": "2015-03-11",
+    "case": "強制性交案",
+    "tag": "性犯罪",
+    "status": "final",
+    "text": "一審（台北地院102年度侵訴字第80號）判3年10月，二審駁回，最高法院104年度台上字第597號駁回上訴定讞；2015年4月入監，2017年8月假釋。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "司法院裁判書系統",
+      "t": "最高法院104年度台上字第597號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPSM%2c104%2c%e5%8f%b0%e4%b8%8a%2c597%2c20150311&ot=in",
+      "kind": "court"
+     },
+     {
+      "pub": "中央社",
+      "t": "被控性侵女編劇 張作驥判刑確定",
+      "url": "https://www.cna.com.tw/news/firstnews/201503115010.aspx",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2015-05-14",
+    "case": "民事賠償",
+    "tag": "性犯罪",
+    "status": "civil",
+    "text": "台北地院103年度訴字第2920號判賠被害人200萬元。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "司法院裁判書系統",
+      "t": "臺北地院103年度訴字第2920號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPDV%2c103%2c%e8%a8%b4%2c2920%2c20150514%2c1&ot=in",
+      "kind": "court"
+     },
+     {
+      "pub": "中央社",
+      "t": "張作驥性侵女編劇 判賠2百萬",
+      "url": "https://www.cna.com.tw/news/asoc/201505140102.aspx",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-gaoqj",
+  "name": "高群荐",
+  "category": "政治人物",
+  "aliases": [
+   "臺北市市場處前副處長"
+  ],
+  "related": [
+   "臺北市市場處"
+  ],
+  "summary": "臺北市市場處前副處長。尾牙利用權勢猥褻女下屬，遭免職，一審判7月（可上訴）。",
+  "tags": [
+   "性犯罪",
+   "性騷擾"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T11:00:00Z",
+  "events": [
+   {
+    "date": "2024-11-21",
+    "case": "利用權勢猥褻案",
+    "tag": "性騷擾",
+    "status": "admin",
+    "text": "市場處認定性騷擾成立，市府核定記兩大過免職。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "三立新聞網",
+      "t": "前北市市場處副處長 仗勢猥褻女職員遭訴",
+      "url": "https://www.mirrormedia.mg/external/amp/setn_1579997",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2026-09-24",
+    "case": "利用權勢猥褻案",
+    "tag": "性犯罪",
+    "status": "guilty",
+    "text": "台北地院113年度侵易字第4號依利用權勢猥褻罪判有期徒刑7月，可上訴。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "司法院裁判書系統",
+      "t": "臺北地院113年度侵易字第4號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPDM%2c113%2c%e4%be%b5%e6%98%93%2c4%2c20260924%2c1&ot=in",
+      "kind": "court"
+     },
+     {
+      "pub": "聯合報",
+      "t": "北市市場處前副處長高群荐判刑7月",
+      "url": "https://udn.com/news/story/7317/9785910",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-lisx",
+  "name": "李勝雄",
+  "category": "政治人物",
+  "aliases": [
+   "南澳鄉長"
+  ],
+  "related": [
+   "宜蘭縣南澳鄉公所",
+   "林志雷"
+  ],
+  "summary": "宜蘭縣南澳鄉鄉長。對女性下屬性騷擾，遭監察院彈劾，懲戒法院罰款25萬元確定。",
+  "tags": [
+   "性騷擾"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T11:00:00Z",
+  "events": [
+   {
+    "date": "2025-05-16",
+    "case": "性騷擾懲戒案",
+    "tag": "性騷擾",
+    "status": "admin",
+    "text": "宜蘭縣府申評會認定性騷擾成立；監察院通過彈劾，移送懲戒法院，並糾正南澳鄉公所。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "監察院",
+      "t": "南澳鄉長李勝雄對所屬員工性騷擾 彈劾案",
+      "url": "https://www.cy.gov.tw/News_Content.aspx?n=124&sms=8912&s=34049",
+      "kind": "gov"
+     }
+    ]
+   },
+   {
+    "date": "2026-03-30",
+    "case": "性騷擾懲戒案",
+    "tag": "性騷擾",
+    "status": "final",
+    "text": "懲戒法院114年度澄字第8號判罰款25萬元，115年度澄上字第2號駁回上訴定讞。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "司法院裁判書系統",
+      "t": "懲戒法院115年度澄上字第2號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPPP%2c115%2c%e6%be%84%e4%b8%8a%2c2%2c20260330%2c1&ot=in",
+      "kind": "court"
+     },
+     {
+      "pub": "中央社",
+      "t": "宜蘭南澳鄉長李勝雄涉性騷 懲戒法院判罰25萬元確定",
+      "url": "https://www.cna.com.tw/news/asoc/202604080039.aspx",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-linzl",
+  "name": "林志雷",
+  "category": "政治人物",
+  "aliases": [
+   "前宜蘭縣原住民事務所所長",
+   "前南澳鄉公所農政課長"
+  ],
+  "related": [
+   "宜蘭縣南澳鄉公所",
+   "李勝雄"
+  ],
+  "summary": "前南澳鄉公所課長、前宜蘭縣原民所所長。強行環抱女同事，強制罪6月確定，性騷擾成立。",
+  "tags": [
+   "性騷擾"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T11:00:00Z",
+  "events": [
+   {
+    "date": "2024-05-27",
+    "case": "性騷擾申訴",
+    "tag": "性騷擾",
+    "status": "admin",
+    "text": "宜蘭縣府申評會決議性騷擾成立、申誡2次；2025年2月被拔除所長職務；台北高等行政法院駁回其撤銷處分之訴。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "自由時報",
+      "t": "拔官！宜蘭原民所長林志雷涉性騷調職",
+      "url": "https://news.ltn.com.tw/news/politics/breakingnews/4961588",
+      "kind": "news"
+     },
+     {
+      "pub": "司法院裁判書系統",
+      "t": "臺北高等行政法院114年度訴字第536號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPBA%2c114%2c%e8%a8%b4%2c536%2c20251218%2c1&ot=in",
+      "kind": "court"
+     }
+    ]
+   },
+   {
+    "date": "2026-04-07",
+    "case": "強制罪",
+    "tag": "性騷擾",
+    "status": "final",
+    "text": "宜蘭地院113年度原侵訴字第5號依強制罪判6月；高等法院114年度原侵上訴字第11號駁回上訴。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "司法院裁判書系統",
+      "t": "宜蘭地院113年度原侵訴字第5號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=ILDM%2c113%2c%e5%8e%9f%e4%be%b5%e8%a8%b4%2c5%2c20250213%2c1&ot=in",
+      "kind": "court"
+     },
+     {
+      "pub": "司法院裁判書系統",
+      "t": "高等法院114年度原侵上訴字第11號",
+      "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPHM%2c114%2c%e5%8e%9f%e4%be%b5%e4%b8%8a%e8%a8%b4%2c11%2c20260407%2c1&ot=in",
+      "kind": "court"
+     },
+     {
+      "pub": "監察院",
+      "t": "糾正南澳鄉公所",
+      "url": "https://www.cy.gov.tw/News_Content.aspx?n=796&s=34149",
+      "kind": "gov"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-xiecm",
+  "name": "謝春敏",
+  "category": "民意代表",
+  "aliases": [
+   "鵝鑾里長"
+  ],
+  "related": [
+   "屏東縣恆春鎮鵝鑾里"
+  ],
+  "summary": "屏東縣恆春鎮鵝鑾里里長（2026年參選連任）。對3名男童性騷擾，一審判10月（可上訴）。",
+  "tags": [
+   "性騷擾"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T11:00:00Z",
+  "events": [
+   {
+    "date": "2026-09-18",
+    "case": "性騷擾案",
+    "tag": "性騷擾",
+    "status": "guilty",
+    "text": "屏東地院依性騷擾防治法判10月、得易科罰金：2022年至2025年1月間對3名男童13次觸碰，另2名男童未遂；可上訴。〔線索來自 metawilo.com（台灣罪犯圖鑑），內容依所附判決與新聞核對〕",
+    "sources": [
+     {
+      "pub": "自由時報",
+      "t": "屏縣里長摸男童遭判刑10月",
+      "url": "https://news.ltn.com.tw/news/Pingtung/breakingnews/5578531",
+      "kind": "news"
+     },
+     {
+      "pub": "聯合報",
+      "t": "屏東里長觸碰3男童13次 法官判刑10月",
+      "url": "https://udn.com/news/story/7321/9763706",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-wantwant",
+  "name": "旺旺集團",
+  "category": "企業/品牌",
+  "aliases": [
+   "旺旺",
+   "中國旺旺",
+   "旺中集團",
+   "旺旺中時",
+   "宜蘭食品"
+  ],
+  "related": [
+   "蔡衍明",
+   "中國時報",
+   "中天電視",
+   "中視"
+  ],
+  "summary": "米果、乳飲料起家的食品集團，董事長蔡衍明；2008年起家族入主中時媒體集團。香港上市的中國旺旺歷年財報列有中國政府補助；旗下中天新聞台2020年遭NCC不予換照。",
+  "tags": [
+   "涉中",
+   "其他"
+  ],
+  "origin": "auto",
+  "updated": "2026-11-26T11:20:00Z",
+  "events": [
+   {
+    "date": "2019-04-22",
+    "case": "中國政府補助",
+    "tag": "涉中",
+    "status": "report",
+    "text": "港交所公布的中國旺旺2017/2018年財報，「其他所得」列有中國政府補助4.77億人民幣；媒體統計自2007年起幾乎每年領取。陸委會表示台商在陸受補貼不違反兩岸條例，但若以補貼介入台灣媒體經營會密切關注；旺旺聲明補助是各地招商獎勵、並稱遭抹紅。",
+    "sources": [
+     {
+      "pub": "公視新聞",
+      "t": "旺旺傳中國補助 最新年報收4.77億人民幣",
+      "url": "https://news.pts.org.tw/article/429749",
+      "kind": "news"
+     },
+     {
+      "pub": "台灣英文新聞",
+      "t": "旺旺中國15個月領中國政府補助6.24億人民幣",
+      "url": "https://www.taiwannews.com.tw/zh/news/3686080",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2020-11-18",
+    "case": "中天新聞台換照",
+    "tag": "其他",
+    "status": "admin",
+    "text": "NCC委員會議7:0決議中天新聞台不予換照，理由為違規紀錄嚴重（2年半違規25次、罰1153萬元）與內控機制失靈，並認定大股東蔡衍明直接、間接介入新聞製播；中天表示將提起法律救濟。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "NCC不予換照理由",
+      "url": "https://www.cna.com.tw/news/firstnews/202011185006.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "中天新聞台換照審查 七委員全數同意不予換照",
+      "url": "https://news.pts.org.tw/article/500555",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-xielj",
+  "name": "謝龍介",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "國民黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "國民黨",
+    "status": "trial",
+    "text": "北檢依傷害罪起訴，指2024年5月17日議場衝突中將民進黨立委邱志偉拽落致傷；案件尚在審理，無罪推定。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-wanghw",
+  "name": "王鴻薇",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "國民黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "國民黨",
+    "status": "trial",
+    "text": "北檢依傷害等罪起訴，涉2024年7月8日與民進黨立委林楚茵搶佔主席台互毆；雙方互告，王稱屬正當防衛，尚在審理。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-chenyz",
+  "name": "陳玉珍",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "國民黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "國民黨",
+    "status": "trial",
+    "text": "北檢依傷害等罪起訴，涉2024年12月6日議場衝突中環抱並摔倒民進黨立委林月琴；案件尚在審理，無罪推定。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-liaowx",
+  "name": "廖偉翔",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "國民黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "國民黨",
+    "status": "trial",
+    "text": "北檢依傷害罪起訴，涉2024年5月17日議場衝突推落民進黨立委邱志偉；案件尚在審理，無罪推定。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-qiuzj",
+  "name": "邱鎮軍",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "國民黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "國民黨",
+    "status": "trial",
+    "text": "北檢依傷害罪起訴，涉2024年5月17日議場衝突，邱志偉、沈伯洋均對其提告；案件尚在審理，無罪推定。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-huangjh",
+  "name": "黃健豪",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "國民黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "國民黨",
+    "status": "trial",
+    "text": "北檢依傷害罪起訴，涉2024年5月17日議場衝突推落民進黨立委邱志偉；案件尚在審理，無罪推定。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-huangren",
+  "name": "黃仁",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "國民黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "國民黨",
+    "status": "trial",
+    "text": "北檢依傷害罪起訴，涉2024年5月17日議場衝突推落民進黨立委郭國文致尾椎骨折；同案其他3人不起訴，黃仁案尚在審理。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-kejm",
+  "name": "柯建銘",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "民進黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "民進黨",
+    "status": "trial",
+    "text": "北檢依過失傷害罪起訴，涉2025年3月25日議場以拐杖敲桌，拐杖彈飛打中國民黨立委徐巧芯；案件尚在審理，無罪推定。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-linchy",
+  "name": "林楚茵",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "民進黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "民進黨",
+    "status": "trial",
+    "text": "北檢依傷害等罪起訴，涉2024年7月8日與國民黨立委王鴻薇搶佔主席台互毆；雙方互告，尚在審理。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-linsf",
+  "name": "林淑芬",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "party": "民進黨",
+  "summary": "立法委員。2024至2025年立法院議事衝突，台北地檢署2026年2月依傷害罪等起訴（尚未判決，互有提告）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "立法院肢體衝突傷害案",
+    "tag": "犯罪/司法",
+    "party": "民進黨",
+    "status": "trial",
+    "text": "北檢依傷害罪起訴，涉2024年5月24日議場衝突，被指揮打當時民眾黨立委麥玉珍臉部；案件尚在審理，無罪推定。",
+    "sources": [
+     {
+      "pub": "中央社",
+      "t": "北檢偵結 起訴10名立委",
+      "url": "https://www.cna.com.tw/news/asoc/202602120058.aspx",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "立委議場內肢體衝突互告 北檢依傷害等罪起訴10人",
+      "url": "https://news.pts.org.tw/article/795174",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-xiedl",
+  "name": "謝典霖",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [
+   "謝新隆",
+   "鄭汝芬"
+  ],
+  "tags": [
+   "貪污"
+  ],
+  "party": "國民黨",
+  "summary": "彰化縣議長。2026年因議會宴客案涉嫌投票行賄及詐取公款，遭羈押禁見（尚未判決）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-09-17",
+    "case": "議會宴客賄選案",
+    "tag": "貪污",
+    "party": "國民黨",
+    "status": "invest",
+    "text": "彰化地檢署認其涉犯選罷法投票行賄及貪污治罪條例等罪嫌重大，當庭逮捕，彰化地院裁定羈押禁見；台中高分院9月24日駁回抗告。本人與國民黨表示尊重司法並強調無罪推定。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "謝典霖涉賄遭聲押",
+      "url": "https://udn.com/news/story/6656/9760452",
+      "kind": "news"
+     },
+     {
+      "pub": "自由時報",
+      "t": "謝典霖等人遭聲押 彰化地院裁定羈押",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1771065",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "蘇震清兒媳涉賄選遭羈押禁見（含謝典霖延押）",
+      "url": "https://news.pts.org.tw/article/835328",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-xiexl",
+  "name": "謝新隆",
+  "category": "政治人物",
+  "aliases": [],
+  "related": [
+   "謝典霖",
+   "鄭汝芬"
+  ],
+  "tags": [
+   "貪污"
+  ],
+  "party": "國民黨",
+  "summary": "謝典霖之父。2026年因彰化縣議會宴客案涉嫌投票行賄遭羈押，55天後交保（尚未判決）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-09-17",
+    "case": "議會宴客賄選案",
+    "tag": "貪污",
+    "party": "國民黨",
+    "status": "invest",
+    "text": "涉選罷法投票行賄等罪嫌，彰化地院裁定羈押禁見；羈押55天後於11月10日以1000萬元交保，限制住居、出境出海8個月。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "謝典霖涉賄遭聲押",
+      "url": "https://udn.com/news/story/6656/9760452",
+      "kind": "news"
+     },
+     {
+      "pub": "自由時報",
+      "t": "謝典霖等人遭聲押 彰化地院裁定羈押",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1771065",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "蘇震清兒媳涉賄選遭羈押禁見（含謝新隆交保）",
+      "url": "https://news.pts.org.tw/article/835328",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-zhengrf",
+  "name": "鄭汝芬",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [
+   "謝典霖",
+   "謝新隆"
+  ],
+  "tags": [
+   "貪污"
+  ],
+  "party": "國民黨",
+  "summary": "前立法委員、謝典霖之母。2026年因彰化縣議會宴客案涉嫌投票行賄，以100萬元交保（尚未判決）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-09-17",
+    "case": "議會宴客賄選案",
+    "tag": "貪污",
+    "party": "國民黨",
+    "status": "invest",
+    "text": "彰化地檢署認其涉犯選罷法投票行賄罪嫌重大並聲請羈押，後以100萬元交保。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "謝典霖涉賄遭聲押",
+      "url": "https://udn.com/news/story/6656/9760452",
+      "kind": "news"
+     },
+     {
+      "pub": "自由時報",
+      "t": "謝典霖等人遭聲押 彰化地院裁定羈押",
+      "url": "https://news.ltn.com.tw/news/politics/paper/1771065",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-huahang",
+  "name": "中華航空",
+  "category": "企業/品牌",
+  "aliases": [
+   "華航"
+  ],
+  "related": [],
+  "tags": [
+   "性別歧視"
+  ],
+  "summary": "航空公司。空服員懷孕後申請轉任地勤遭拒、被迫留職停薪，高雄市勞工局依性別工作平等法罰32萬元，行政法院判決維持處分。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-07-23",
+    "case": "懷孕歧視行政處分",
+    "tag": "性別歧視",
+    "status": "admin",
+    "text": "高雄市勞工局認定華航違反性別工作平等法，裁罰30萬元（另行為②罰2萬元）並公布名稱；高雄高等行政法院2025年12月判決先維持懷孕歧視部分，2026年7月23日上訴審駁回華航上訴、維持處分。華航稱疫情特殊期間、無違法故意，尊重判決。另該空服員民事請求獲賠45萬餘元。",
+    "sources": [
+     {
+      "pub": "司法院",
+      "t": "高雄高等行政法院115年度高上字第6號判決",
+      "url": "https://judgment.judicial.gov.tw/FILES/KSBA/115%2c%e9%ab%98%e4%b8%8a%2c6%2c20260723%2c1.pdf",
+      "kind": "court"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "空服員懷孕被迫留職停薪 華航涉歧視挨罰上訴失敗",
+      "url": "https://news.pts.org.tw/article/791193",
+      "kind": "news"
+     },
+     {
+      "pub": "鏡週刊",
+      "t": "資深空姐懷孕被逼留職 法官：就是歧視判罰30萬",
+      "url": "https://www.mirrormedia.mg/external/mirrordaily_40844",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-every8d",
+  "name": "互動資通（EVERY8D）",
+  "category": "App/科技",
+  "aliases": [
+   "EVERY8D",
+   "互動資通",
+   "Teamplus"
+  ],
+  "related": [],
+  "tags": [
+   "資安"
+  ],
+  "summary": "企業簡訊平台業者。2026年5月平台遭駭、疑用戶個資外洩，數發部依個資法裁罰公司及代表人各100萬元。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-07-22",
+    "case": "簡訊平台遭駭個資案",
+    "tag": "資安",
+    "status": "admin",
+    "text": "2026年5月底平台疑遭攻擊致服務中斷、個資疑似外洩，68個政府機關曾使用該平台。數發部認定違反個資法第27條第1項，7月22日依第48條第2項等規定裁處公司及代表人各100萬元（共200萬元）並令限期改正；9月公布。業者稱鑑識未發現大量未授權外洩。",
+    "sources": [
+     {
+      "pub": "自由時報",
+      "t": "EVERY8D疑個資外洩 裁罰出爐 公司、代表人各罰100萬元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5583521",
+      "kind": "news"
+     },
+     {
+      "pub": "科技島（Techbang）",
+      "t": "EVERY8D疑遭駭 數發部坦言應變有改善空間",
+      "url": "https://www.techbang.com/posts/129932-every8d-sms-platform-hacked-moda-response",
+      "kind": "news"
+     },
+     {
+      "pub": "工商時報",
+      "t": "簡訊代發平台EVERY8D疑似遭駭 數發部啟動行政檢查",
+      "url": "https://www.ctee.com.tw/news/20260530700602-430104",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-zengyf",
+  "name": "曾耀鋒",
+  "category": "企業人物",
+  "aliases": [
+   "曾國煒",
+   "im.B"
+  ],
+  "related": [
+   "張淑芬"
+  ],
+  "tags": [
+   "詐騙"
+  ],
+  "summary": "im.B不動產借貸媒合平台主嫌，吸金近90億元；最高法院2025年12月判13年定讞。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2025-12-30",
+    "case": "im.B吸金案",
+    "tag": "詐騙",
+    "status": "final",
+    "text": "最高法院依銀行法非法經營收受存款業務判曾耀鋒13年確定；女友張淑芬判9年6月確定；洗錢及犯罪所得沒收部分發回高等法院。一審判16年6月、二審維持。",
+    "sources": [
+     {
+      "pub": "司法院",
+      "t": "最高法院114年度台上字第4674號刑事判決",
+      "url": "https://judgment.judicial.gov.tw/FILES/TPSM/114%2c%e5%8f%b0%e4%b8%8a%2c4674%2c20251230%2c1.pdf",
+      "kind": "court"
+     },
+     {
+      "pub": "三立新聞",
+      "t": "Im.B吸金90億案！主嫌曾耀鋒判刑13年定讞",
+      "url": "https://www.setn.com/klist/552015",
+      "kind": "news"
+     },
+     {
+      "pub": "TVBS",
+      "t": "im.B吸金案最終判決曝",
+      "url": "https://news.tvbs.com.tw/news/searchresult/im.B/news",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-lianjing",
+  "name": "連淨綠色科技",
+  "category": "企業/品牌",
+  "aliases": [
+   "連淨",
+   "連淨苦茶油"
+  ],
+  "related": [
+   "棉花田",
+   "統一生機"
+  ],
+  "tags": [
+   "食安"
+  ],
+  "summary": "苦茶油業者。2026年7月自主通報苦茶油苯駢芘2.9μg/kg超標（標準2.0），新北市衛生局命暫停作業及販售。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-07-22",
+    "case": "苦茶油苯駢芘超標",
+    "tag": "食安",
+    "status": "admin",
+    "text": "業者自主通報並主動通知下游下架；該批共5024罐，其中939罐已售出（棉花田、統一生機）。新北市衛生局會同食藥署查廠，命暫停作業及停止販賣，待提交改善報告後方得恢復，並抽驗5件由食藥署檢驗。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "連淨自主通報苦茶油檢出苯駢芘含量超標 新北衛生局啟動下架",
+      "url": "https://udn.com/news/story/7323/9644773",
+      "kind": "news"
+     },
+     {
+      "pub": "自由時報",
+      "t": "連淨苦茶油苯駢芘 新北衛生局命停售",
+      "url": "https://news.ltn.com.tw/news/life/breakingnews/5514335",
+      "kind": "news"
+     },
+     {
+      "pub": "行政院",
+      "t": "苦茶油苯駢芘 查廠與抽驗說明",
+      "url": "https://www.ey.gov.tw/Page/88F151FFCE5C741E/c6e29df2-1879-4426-a2c4-cd6108eec526",
+      "kind": "gov"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-wenya",
+  "name": "文雅畜牧場",
+  "category": "企業/品牌",
+  "aliases": [
+   "文雅",
+   "鮮健蛋品"
+  ],
+  "related": [
+   "龍忠蛋行"
+  ],
+  "tags": [
+   "食安"
+  ],
+  "summary": "彰化蛋雞場。2025年11月雞蛋驗出芬普尼代謝物超標，移動管制期間仍出貨，負責人2026年5月遭起訴。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2025-11-04",
+    "case": "芬普尼蛋",
+    "tag": "食安",
+    "status": "admin",
+    "text": "食藥署與地方衛生局抽驗發現雞蛋芬普尼代謝物達0.03ppm（標準0.01ppm），要求同批下架回收；11月5日起移動管制，但11月9日仍出貨約4萬顆至台中龍忠蛋行，該批復驗0.05ppm超標。",
+    "sources": [
+     {
+      "pub": "衛福部食藥署",
+      "t": "食藥署嚴正要求追究蛋品非法流出責任",
+      "url": "https://mohw.gov.tw/cp-7172-84530-1.html",
+      "kind": "gov"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "芬普尼蛋熱門議題",
+      "url": "https://news.pts.org.tw/hotTopic/583",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2026-05-14",
+    "case": "芬普尼蛋起訴",
+    "tag": "食安",
+    "status": "trial",
+    "text": "彰化地檢署依食安法起訴文雅畜牧場陳姓負責人（製造、販賣殘留農藥超標雞蛋），龍忠蛋行林姓蛋商依詐欺取財起訴，並聲請沒收犯罪所得；蛋品流入9縣市。蛋行表示事前不知情。案件尚在審理。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "彰化養雞場違法用藥 芬普尼毒蛋銷到9縣市 檢方起訴雞農和蛋商2人",
+      "url": "https://udn.com/news/story/7321/9502349",
+      "kind": "news"
+     },
+     {
+      "pub": "公視新聞",
+      "t": "芬普尼蛋流入9縣市 牧場負責人、蛋商被起訴",
+      "url": "https://news.pts.org.tw/article/808374",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-yuanzp",
+  "name": "袁昶平",
+  "category": "企業人物",
+  "aliases": [
+   "金錢豹創辦人",
+   "葳格國際學校創辦人"
+  ],
+  "related": [
+   "吳菀庭",
+   "葳格國際學校",
+   "金錢豹"
+  ],
+  "tags": [
+   "犯罪/司法"
+  ],
+  "summary": "金錢豹酒店、葳格國際學校創辦人。涉掏空校產及公司資產、逃漏稅等案，2026年遭羈押後交保，檢方求刑7年（尚未判決）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-06-23",
+    "case": "葳格校產案",
+    "tag": "犯罪/司法",
+    "status": "trial",
+    "text": "台中地檢署認其與妻吳菀庭涉業務登載不實、公益侵占、業務侵占、背信及商業會計法等罪嫌重大，當庭逮捕並聲押獲准；袁於偵訊大致坦承，7月16日以2000萬元交保。後起訴，另涉教唆毆打工程包商及國泰洋酒逃漏稅案，檢方合併求刑7年；袁方反控他人涉背信。均未判決。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "涉掏空葳格校產 袁昶平夫妻遭聲押獲准",
+      "url": "https://udn.com/news/story/7321/9586761",
+      "kind": "news"
+     },
+     {
+      "pub": "ETtoday",
+      "t": "金錢豹袁昶平認罪獲准2000萬交保",
+      "url": "https://www.ettoday.net/news/20260716/3202614.htm",
+      "kind": "news"
+     },
+     {
+      "pub": "鏡週刊",
+      "t": "葳格創辦人袁昶平夫妻遭起訴 檢方求刑",
+      "url": "https://www.mirrormedia.mg/story/amp/20261026inv001",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-zhoumz",
+  "name": "周滿芝",
+  "category": "其他",
+  "aliases": [
+   "新住民關懷協會"
+  ],
+  "related": [],
+  "tags": [
+   "涉中"
+  ],
+  "summary": "新住民關懷協會相關人士。經法院認定參與中國統戰組織並於台灣推動統戰工作，最高法院2026年7月判8年定讞。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:51:08Z",
+  "events": [
+   {
+    "date": "2026-07-22",
+    "case": "統戰工作案",
+    "tag": "涉中",
+    "status": "final",
+    "text": "一審高雄地院以證據不足判無罪；更審後高雄高分院依國安局函覆認定陸方組織實質受統戰部掌控，改判有罪；最高法院7月22日駁回上訴，8年徒刑確定。陸委會7月23日表示將廢止其台灣地區身分。",
+    "sources": [
+     {
+      "pub": "聯合新聞網",
+      "t": "周滿芝統戰案定讞 陸委會廢止台灣身分",
+      "url": "https://udn.com/news/story/7331/9646962",
+      "kind": "news"
+     }
+    ],
+    "manual": true
+   }
+  ]
+ },
+ {
+  "id": "c-quanfu",
+  "name": "全氟密封工業",
+  "category": "企業/品牌",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "性別歧視"
+  ],
+  "summary": "公司因員工懷孕而終止勞動契約，台中市政府依性別平等工作法罰30萬元並公布名稱，行政法院判決駁回公司訴訟。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:56:05Z",
+  "events": [
+   {
+    "date": "2026-05-07",
+    "case": "懷孕歧視行政處分",
+    "tag": "性別歧視",
+    "status": "admin",
+    "text": "員工到職後告知懷孕，數日內遭公司終止契約；台中市勞工局認定違反性別平等工作法，罰30萬元並公布名稱。臺中高等行政法院以114年度訴字第345號判決駁回公司之訴。判決勘驗錄音，主管曾說「不會用懷孕6個月的人」等語。",
+    "sources": [
+     {
+      "pub": "司法院",
+      "t": "臺中高等行政法院114年度訴字第345號判決",
+      "url": "https://judgment.judicial.gov.tw/FILES/TCBA/114%2c%e8%a8%b4%2c345%2c20260507%2c1.pdf",
+      "kind": "court"
+     },
+     {
+      "pub": "ETtoday",
+      "t": "孕婦到職遭解僱 法院勘驗錄音認定歧視",
+      "url": "https://www.ettoday.net/news/20260518/3168054.htm",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-yitai",
+  "name": "億泰電線電纜",
+  "category": "企業/品牌",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "性別歧視"
+  ],
+  "summary": "桃園市政府認定公司違反性別平等工作法第11條第1項，罰30萬元並公布名稱，行政法院駁回公司之訴。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:56:05Z",
+  "events": [
+   {
+    "date": "2025-11-12",
+    "case": "性別平等工作法行政處分",
+    "tag": "性別歧視",
+    "status": "admin",
+    "text": "桃園市政府依性別平等工作法第38條之1裁處30萬元並公布名稱；公司主張係因員工不能勝任而依勞基法終止契約。臺北高等行政法院113年度地訴字第301號判決駁回公司之訴。",
+    "sources": [
+     {
+      "pub": "司法院",
+      "t": "臺北高等行政法院113年度地訴字第301號判決",
+      "url": "https://judgment.judicial.gov.tw/FILES/TPTA/113%2c%e5%9c%b0%e8%a8%b4%2c301%2c20251112%2c1.pdf",
+      "kind": "court"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-taipower",
+  "name": "台灣電力公司",
+  "category": "企業/品牌",
+  "aliases": [
+   "台電"
+  ],
+  "related": [],
+  "tags": [
+   "性騷擾"
+  ],
+  "summary": "台中市勞工局認定其知悉性騷擾情事後未採取立即有效之糾正及補救措施，依性別平等工作法罰10萬元（行政救濟中）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:56:05Z",
+  "events": [
+   {
+    "date": "2024-11-12",
+    "case": "性騷擾處置未盡法定義務",
+    "tag": "性騷擾",
+    "status": "admin",
+    "text": "臺中市政府勞工局認定雇主知悉性騷擾情形未採取立即有效之糾正及補救措施，違反性別平等工作法第13條第2項，罰鍰10萬元；名單備註「行政救濟中」。",
+    "sources": [
+     {
+      "pub": "臺中市政府勞工局",
+      "t": "114年11月公布違反性別工作平等法事業單位名單",
+      "url": "https://www.labor.taichung.gov.tw/media/1334021/%E8%87%BA%E4%B8%AD%E5%B8%82%E6%94%BF%E5%BA%9C%E5%8B%9E%E5%B7%A5%E5%B1%80114%E5%B9%B4%E5%BA%A611%E6%9C%88%E4%BB%BD%E5%85%AC%E5%B8%83%E5%85%A8%E5%B9%B4%E5%BA%A6%E9%81%95%E5%8F%8D%E6%80%A7%E5%88%A5%E5%B7%A5%E4%BD%9C%E5%B9%B3%E7%AD%89%E6%B3%95%E4%BA%8B%E6%A5%AD%E5%96%AE%E4%BD%8D%E5%90%8D%E5%96%AE%E4%B8%80%E8%A6%BD%E8%A1%A8-113111-1141031-%E5%85%B134%E5%AE%B6.pdf",
+      "kind": "gov"
+     },
+     {
+      "pub": "臺中市政府勞工局",
+      "t": "114年9月公布違反性別工作平等法事業單位名單",
+      "url": "https://laborepaper.taichung.gov.tw/media/1301992/%E8%87%BA%E4%B8%AD%E5%B8%82%E6%94%BF%E5%BA%9C%E5%8B%9E%E5%B7%A5%E5%B1%80114%E5%B9%B4%E5%BA%A69%E6%9C%88%E4%BB%BD%E5%85%AC%E5%B8%83%E5%85%A8%E5%B9%B4%E5%BA%A6%E9%81%95%E5%8F%8D%E6%80%A7%E5%88%A5%E5%B7%A5%E4%BD%9C%E5%B9%B3%E7%AD%89%E6%B3%95%E4%BA%8B%E6%A5%AD%E5%96%AE%E4%BD%8D%E5%90%8D%E5%96%AE%E4%B8%80%E8%A6%BD%E8%A1%A8-113%E5%B9%B49%E6%9C%88%E8%B5%B7%E8%87%B3114%E5%B9%B48%E6%9C%88%E6%AD%A2.pdf",
+      "kind": "gov"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-xinwu",
+  "name": "新武股份有限公司",
+  "category": "企業/品牌",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "性別歧視"
+  ],
+  "summary": "台中市勞工局認定其福利措施具性別歧視且未盡性騷擾防治義務，依性別平等工作法罰32萬元。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:56:05Z",
+  "events": [
+   {
+    "date": "2024-12-03",
+    "case": "福利措施性別歧視",
+    "tag": "性別歧視",
+    "status": "admin",
+    "text": "違反性別平等工作法第9條（福利措施不得因性別差別待遇）及第13條第1項第2款（未盡性騷擾防治義務），罰鍰32萬元並公布名稱。",
+    "sources": [
+     {
+      "pub": "臺中市政府勞工局",
+      "t": "114年11月公布違反性別工作平等法事業單位名單",
+      "url": "https://www.labor.taichung.gov.tw/media/1334021/%E8%87%BA%E4%B8%AD%E5%B8%82%E6%94%BF%E5%BA%9C%E5%8B%9E%E5%B7%A5%E5%B1%80114%E5%B9%B4%E5%BA%A611%E6%9C%88%E4%BB%BD%E5%85%AC%E5%B8%83%E5%85%A8%E5%B9%B4%E5%BA%A6%E9%81%95%E5%8F%8D%E6%80%A7%E5%88%A5%E5%B7%A5%E4%BD%9C%E5%B9%B3%E7%AD%89%E6%B3%95%E4%BA%8B%E6%A5%AD%E5%96%AE%E4%BD%8D%E5%90%8D%E5%96%AE%E4%B8%80%E8%A6%BD%E8%A1%A8-113111-1141031-%E5%85%B134%E5%AE%B6.pdf",
+      "kind": "gov"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-xinti",
+  "name": "昕鈦企業",
+  "category": "企業/品牌",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "性別歧視"
+  ],
+  "summary": "台中市勞工局認定其招募時涉及性別歧視，依性別平等工作法罰30萬元。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:56:05Z",
+  "events": [
+   {
+    "date": "2024-09-20",
+    "case": "招募性別歧視",
+    "tag": "性別歧視",
+    "status": "admin",
+    "text": "違反性別平等工作法第7條（招募不得因性別差別待遇），罰鍰30萬元並公布名稱。",
+    "sources": [
+     {
+      "pub": "臺中市政府勞工局",
+      "t": "114年9月公布違反性別工作平等法事業單位名單",
+      "url": "https://laborepaper.taichung.gov.tw/media/1301992/%E8%87%BA%E4%B8%AD%E5%B8%82%E6%94%BF%E5%BA%9C%E5%8B%9E%E5%B7%A5%E5%B1%80114%E5%B9%B4%E5%BA%A69%E6%9C%88%E4%BB%BD%E5%85%AC%E5%B8%83%E5%85%A8%E5%B9%B4%E5%BA%A6%E9%81%95%E5%8F%8D%E6%80%A7%E5%88%A5%E5%B7%A5%E4%BD%9C%E5%B9%B3%E7%AD%89%E6%B3%95%E4%BA%8B%E6%A5%AD%E5%96%AE%E4%BD%8D%E5%90%8D%E5%96%AE%E4%B8%80%E8%A6%BD%E8%A1%A8-113%E5%B9%B49%E6%9C%88%E8%B5%B7%E8%87%B3114%E5%B9%B48%E6%9C%88%E6%AD%A2.pdf",
+      "kind": "gov"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-liulei",
+  "name": "六磊實業",
+  "category": "企業/品牌",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "性別歧視"
+  ],
+  "summary": "台中市勞工局認定其因員工懷孕而資遣，依性別平等工作法罰30萬元（行政救濟中）。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:56:05Z",
+  "events": [
+   {
+    "date": "2025-02-13",
+    "case": "懷孕歧視行政處分",
+    "tag": "性別歧視",
+    "status": "admin",
+    "text": "違反性別平等工作法第11條第1項（因受僱者懷孕予以資遣），罰鍰30萬元並公布名稱；名單備註「行政救濟中」。",
+    "sources": [
+     {
+      "pub": "臺中市政府勞工局",
+      "t": "114年11月公布違反性別工作平等法事業單位名單",
+      "url": "https://www.labor.taichung.gov.tw/media/1334021/%E8%87%BA%E4%B8%AD%E5%B8%82%E6%94%BF%E5%BA%9C%E5%8B%9E%E5%B7%A5%E5%B1%80114%E5%B9%B4%E5%BA%A611%E6%9C%88%E4%BB%BD%E5%85%AC%E5%B8%83%E5%85%A8%E5%B9%B4%E5%BA%A6%E9%81%95%E5%8F%8D%E6%80%A7%E5%88%A5%E5%B7%A5%E4%BD%9C%E5%B9%B3%E7%AD%89%E6%B3%95%E4%BA%8B%E6%A5%AD%E5%96%AE%E4%BD%8D%E5%90%8D%E5%96%AE%E4%B8%80%E8%A6%BD%E8%A1%A8-113111-1141031-%E5%85%B134%E5%AE%B6.pdf",
+      "kind": "gov"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-tcbank",
+  "name": "臺中商業銀行",
+  "category": "企業/品牌",
+  "aliases": [
+   "台中銀",
+   "台中商銀"
+  ],
+  "related": [],
+  "tags": [
+   "詐騙"
+  ],
+  "summary": "金管會認定其10家分行開戶、客戶審查及帳戶監控等洗錢防制內控缺失，罰3200萬元，為銀行業單一裁罰最高紀錄。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:56:05Z",
+  "events": [
+   {
+    "date": "2026-05-12",
+    "case": "洗錢防制內控缺失裁罰",
+    "tag": "詐騙",
+    "status": "admin",
+    "text": "金管會認定台中銀10家分行自2024年4月起辦理21家企業戶開戶，認識客戶、持續審查、交易監控及疑似洗錢申報均有缺失，違反銀行法內控規定，罰3200萬元，並要求聘外部機構全面檢視。另台中地檢署調查，有商號負責人拉攏該行6名經理襄理開設帳戶，替詐團與博弈洗錢逾36億元（案件另進行中，未判決）。",
+    "sources": [
+     {
+      "pub": "經濟日報",
+      "t": "台中銀行員涉詐 罰3,200萬 金融業史上最重罰單",
+      "url": "https://money.udn.com/money/story/5613/9498648",
+      "kind": "news"
+     },
+     {
+      "pub": "ETtoday",
+      "t": "史上最大罰單 台中銀內鬼助詐團洗錢 金管會重懲3200萬",
+      "url": "https://finance.ettoday.net/news/3164693",
+      "kind": "news"
+     },
+     {
+      "pub": "金管會",
+      "t": "重大裁罰案件公布",
+      "url": "https://www.fsc.gov.tw/ch/home.jsp?id=131",
+      "kind": "gov"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-rongqi",
+  "name": "融琦國際（蒙特樂橄欖油）",
+  "category": "食品/產品",
+  "aliases": [
+   "融琦",
+   "源樂國際",
+   "蒙特樂",
+   "黃月雪",
+   "李尚融"
+  ],
+  "related": [
+   "源樂國際"
+  ],
+  "tags": [
+   "食安"
+  ],
+  "summary": "以芥花油混充橄欖油並標示「義大利100% PURE橄欖油」，北市衛生局罰400萬元，2026年7月檢方起訴負責人等4人並求刑5年以上。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:56:05Z",
+  "events": [
+   {
+    "date": "2026-01-29",
+    "case": "蒙特樂橄欖油混油案",
+    "tag": "食安",
+    "status": "admin",
+    "text": "北市衛生局1月20日會同調查局查獲混充設備，依食安法標示不實罰融琦公司400萬元，累計下架3202瓶並通報17縣市。2026年7月14日台北地檢署依食安法及詐欺罪起訴融琦負責人黃月雪、源樂負責人李尚融等4人，指不法獲利約3760萬元，求刑5年以上；尚未判決。",
+    "sources": [
+     {
+      "pub": "臺北市政府衛生局（食藥署轉載）",
+      "t": "衛生局說明配合檢調查獲融琦公司混充橄欖油案並重罰400萬元",
+      "url": "https://www.fda.gov.tw/tc/csmnewsContent.aspx?id=t624065&mid=267",
+      "kind": "gov"
+     },
+     {
+      "pub": "康健雜誌",
+      "t": "蒙特樂橄欖油造假案偵結 求刑5年",
+      "url": "https://www.commonhealth.com.tw/article/93577",
+      "kind": "news"
+     },
+     {
+      "pub": "食力 foodNEXT",
+      "t": "蒙特樂橄欖油混充案起訴",
+      "url": "https://www.foodnext.net/news/newssafe/paper/6731182952",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-qiuhl",
+  "name": "邱翰林",
+  "category": "其他",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "涉中"
+  ],
+  "summary": "與同案軍人涉遭中國吸收、刺探並交付軍事機密，2026年4月高院判有罪。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:56:05Z",
+  "events": [
+   {
+    "date": "2026-04-15",
+    "case": "退役／現役軍人洩密案",
+    "tag": "涉中",
+    "status": "guilty",
+    "text": "高等法院2026年4月15日依國安法等罪判處8年6月（可上訴）；最高法院7月1日撤銷此人部分、發回高院更審，尚未確定。 為退役軍官，配偶楊千慧同案。",
+    "sources": [
+     {
+      "pub": "關鍵評論網",
+      "t": "高院判6名現退役軍人刺探交付軍事機密有罪",
+      "url": "https://www.thenewslens.com/article/266667",
+      "kind": "news"
+     },
+     {
+      "pub": "新頭殼（中央社）",
+      "t": "最高院判決：王文豪、譚俊明、呂芳契定讞，3人發回",
+      "url": "https://newtalk.tw/news/view/2026-07-02/1044799",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-yangqh",
+  "name": "楊千慧",
+  "category": "其他",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "涉中"
+  ],
+  "summary": "與同案軍人涉遭中國吸收、刺探並交付軍事機密，2026年4月高院判有罪。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:56:05Z",
+  "events": [
+   {
+    "date": "2026-04-15",
+    "case": "退役／現役軍人洩密案",
+    "tag": "涉中",
+    "status": "guilty",
+    "text": "高等法院2026年4月15日依國安法等罪判處8年（可上訴）；最高法院7月1日撤銷此人部分、發回高院更審，尚未確定。 為邱翰林配偶，被認定協助交付資料。",
+    "sources": [
+     {
+      "pub": "關鍵評論網",
+      "t": "高院判6名現退役軍人刺探交付軍事機密有罪",
+      "url": "https://www.thenewslens.com/article/266667",
+      "kind": "news"
+     },
+     {
+      "pub": "新頭殼（中央社）",
+      "t": "最高院判決：王文豪、譚俊明、呂芳契定讞，3人發回",
+      "url": "https://newtalk.tw/news/view/2026-07-02/1044799",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-yangbz",
+  "name": "楊博智",
+  "category": "其他",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "涉中"
+  ],
+  "summary": "與同案軍人涉遭中國吸收、刺探並交付軍事機密，2026年4月高院判有罪。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:56:05Z",
+  "events": [
+   {
+    "date": "2026-04-15",
+    "case": "退役／現役軍人洩密案",
+    "tag": "涉中",
+    "status": "guilty",
+    "text": "高等法院2026年4月15日依國安法等罪判處陸海空軍刑法職務洩漏機密罪4年6月（可上訴）；最高法院7月1日撤銷此人部分、發回高院更審，尚未確定。 案發時為現役軍人。",
+    "sources": [
+     {
+      "pub": "關鍵評論網",
+      "t": "高院判6名現退役軍人刺探交付軍事機密有罪",
+      "url": "https://www.thenewslens.com/article/266667",
+      "kind": "news"
+     },
+     {
+      "pub": "新頭殼（中央社）",
+      "t": "最高院判決：王文豪、譚俊明、呂芳契定讞，3人發回",
+      "url": "https://newtalk.tw/news/view/2026-07-02/1044799",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-tanjm",
+  "name": "譚俊明",
+  "category": "其他",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "涉中"
+  ],
+  "summary": "與同案軍人涉遭中國吸收、刺探並交付軍事機密，2026年4月高院判有罪。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:56:05Z",
+  "events": [
+   {
+    "date": "2026-07-01",
+    "case": "退役／現役軍人洩密案",
+    "tag": "涉中",
+    "status": "final",
+    "text": "高等法院2026年4月15日依國安法等罪判處7年2月（可上訴）；最高法院7月1日駁回上訴，全案確定。 為退役軍官。",
+    "sources": [
+     {
+      "pub": "關鍵評論網",
+      "t": "高院判6名現退役軍人刺探交付軍事機密有罪",
+      "url": "https://www.thenewslens.com/article/266667",
+      "kind": "news"
+     },
+     {
+      "pub": "新頭殼（中央社）",
+      "t": "最高院判決：王文豪、譚俊明、呂芳契定讞，3人發回",
+      "url": "https://newtalk.tw/news/view/2026-07-02/1044799",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-wangwh",
+  "name": "王文豪",
+  "category": "其他",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "涉中"
+  ],
+  "summary": "與同案軍人涉遭中國吸收、刺探並交付軍事機密，2026年4月高院判有罪。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:56:05Z",
+  "events": [
+   {
+    "date": "2026-07-01",
+    "case": "退役／現役軍人洩密案",
+    "tag": "涉中",
+    "status": "final",
+    "text": "高等法院2026年4月15日依國安法等罪判處7年（可上訴）；最高法院7月1日駁回上訴，全案確定。 為退役軍官。",
+    "sources": [
+     {
+      "pub": "關鍵評論網",
+      "t": "高院判6名現退役軍人刺探交付軍事機密有罪",
+      "url": "https://www.thenewslens.com/article/266667",
+      "kind": "news"
+     },
+     {
+      "pub": "新頭殼（中央社）",
+      "t": "最高院判決：王文豪、譚俊明、呂芳契定讞，3人發回",
+      "url": "https://newtalk.tw/news/view/2026-07-02/1044799",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-lvfq",
+  "name": "呂芳契",
+  "category": "其他",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "涉中"
+  ],
+  "summary": "與同案軍人涉遭中國吸收、刺探並交付軍事機密，2026年4月高院判有罪。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:56:05Z",
+  "events": [
+   {
+    "date": "2026-07-01",
+    "case": "退役／現役軍人洩密案",
+    "tag": "涉中",
+    "status": "final",
+    "text": "高等法院2026年4月15日依國安法等罪判處6年（可上訴）；最高法院7月1日駁回上訴，全案確定。 案發時為現役軍人。",
+    "sources": [
+     {
+      "pub": "關鍵評論網",
+      "t": "高院判6名現退役軍人刺探交付軍事機密有罪",
+      "url": "https://www.thenewslens.com/article/266667",
+      "kind": "news"
+     },
+     {
+      "pub": "新頭殼（中央社）",
+      "t": "最高院判決：王文豪、譚俊明、呂芳契定讞，3人發回",
+      "url": "https://newtalk.tw/news/view/2026-07-02/1044799",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-zangyx",
+  "name": "臧幼俠",
+  "category": "其他",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "涉中"
+  ],
+  "summary": "退役少將。2024年出席香港統戰活動，國防部依兩岸條例剝奪75%月退俸5年並追繳逾1600萬元，行政法院判決維持。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:56:05Z",
+  "events": [
+   {
+    "date": "2026-08-17",
+    "case": "月退俸處分行政訴訟",
+    "tag": "涉中",
+    "status": "admin",
+    "text": "國防部依兩岸條例剝奪其75%月退休俸5年並追繳溢領逾1600萬元；臺北高等行政法院駁回其行政訴訟、維持處分，報導稱他尚未表態是否上訴。",
+    "sources": [
+     {
+      "pub": "公視新聞",
+      "t": "臧幼俠敗訴 國防部月退俸處分獲維持",
+      "url": "https://news.pts.org.tw/article/823018",
+      "kind": "news"
+     }
+    ],
+    "manual": true
+   }
+  ]
+ },
+ {
+  "id": "p-zhangyd",
+  "name": "張應當",
+  "category": "其他",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "性騷擾"
+  ],
+  "summary": "台中市前公共運輸及捷運工程處處長。市府調查認定職場性騷擾屬實，記二大過免職並依法罰30萬元；監察院2026年2月彈劾。",
+  "origin": "auto",
+  "updated": "2026-11-27T13:56:05Z",
+  "events": [
+   {
+    "date": "2026-02-12",
+    "case": "職場性騷擾及霸凌案",
+    "tag": "性騷擾",
+    "status": "admin",
+    "text": "台中市政府調查性騷擾屬實，免職、不得領退休金，並依性別平等工作法罰30萬元；監察院通過對其及督導不周之交通局長的彈劾案並移送懲戒，尚待懲戒法院審理。",
+    "sources": [
+     {
+      "pub": "自由時報",
+      "t": "中市前公捷處長涉性騷 交通局長也被彈劾",
+      "url": "https://news.ltn.com.tw/amp/news/life/paper/1743773",
+      "kind": "news"
+     }
+    ],
+    "manual": true
+   }
+  ]
+ },
+ {
+  "id": "p-baipr",
+  "name": "白珮茹",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "貪污"
+  ],
+  "party": "國民黨",
+  "summary": "新北市議員。涉2009至2011年以人頭助理詐領助理費63萬元，士林地檢署2026年9月起訴、求刑8年6月（尚未判決）。",
+  "origin": "auto",
+  "updated": "2026-11-27T14:05:44Z",
+  "events": [
+   {
+    "date": "2026-09-29",
+    "case": "助理費案",
+    "tag": "貪污",
+    "party": "國民黨",
+    "status": "trial",
+    "text": "士林地檢署依貪污治罪條例（利用職務上機會詐取財物）及刑法使公務員登載不實罪嫌起訴，指其於2009至2011年間申報人頭助理詐領補助費63萬元，具體求刑8年6月；人頭助理認罪獲緩起訴。白珮茹表示尊重司法、會在法庭說明。尚在審理，無罪推定。",
+    "sources": [
+     {
+      "pub": "自由時報",
+      "t": "國民黨新北議員白珮茹涉用人頭詐助理費63萬元被起訴",
+      "url": "https://news.ltn.com.tw/amp/news/politics/breakingnews/5589208",
+      "kind": "news"
+     },
+     {
+      "pub": "三立新聞",
+      "t": "5連霸議員白珮茹涉詐助理費 檢方求刑8年6月",
+      "url": "https://www.setn.com/ampnews/1914436",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-coupang",
+  "name": "酷澎（Coupang）",
+  "category": "App/科技",
+  "aliases": [
+   "酷澎台灣",
+   "Coupang",
+   "酷澎股份有限公司"
+  ],
+  "related": [],
+  "tags": [
+   "資安"
+  ],
+  "summary": "電商平台。2025年韓國個資外洩事件確認波及逾20萬台灣用戶，數產署行政檢查中；韓國主管機關另重罰母公司。",
+  "origin": "auto",
+  "updated": "2026-11-27T14:05:44Z",
+  "events": [
+   {
+    "date": "2026-02-24",
+    "case": "個資外洩事件",
+    "tag": "資安",
+    "status": "invest",
+    "text": "酷澎台灣2月23日向數產署通報，第三方鑑識證實有台灣用戶資料遭非法讀取；數產署確認20萬4,552名台灣用戶的姓名、電郵、電話、配送地址及近5筆訂單紀錄受影響，2月25日行政檢查，若違反個資法將依法裁處。業者稱無財務、密碼或證件資料被接觸。此前酷澎台灣數次表示無證據影響台灣用戶。",
+    "sources": [
+     {
+      "pub": "經濟日報／聯合新聞網",
+      "t": "酷澎個資外洩影響台灣逾20萬用戶 數產署25日將行政檢查",
+      "url": "https://udn.com/news/story/7240/9343156",
+      "kind": "news"
+     },
+     {
+      "pub": "數位時代（Business Next）",
+      "t": "酷澎終於承認資安燒到台灣",
+      "url": "https://www.bnext.com.tw/article/90150/coupang-data-breach-impact-on-taiwan-market",
+      "kind": "news"
+     },
+     {
+      "pub": "工商時報（旺得富）",
+      "t": "數產署說明酷澎臺灣個資事件經過",
+      "url": "https://wantrich.chinatimes.com/news/20260226900433-420501",
+      "kind": "news"
+     }
+    ]
+   },
+   {
+    "date": "2026-06-10",
+    "case": "韓國裁罰",
+    "tag": "資安",
+    "status": "admin",
+    "text": "韓國個人資訊保護委員會審議後，對洩漏3,750萬人個資並擅自蒐集會員網路活動紀錄的酷澎韓國處以逾6,246億韓元罰款（創韓國紀錄）。台灣部分另依個資法調查，尚無裁罰結果。",
+    "sources": [
+     {
+      "pub": "科技新報",
+      "t": "韓國酷澎洩漏3,750萬人個資 遭罰逾138億元",
+      "url": "https://technews.tw/?p=1571342",
+      "kind": "news"
+     },
+     {
+      "pub": "台灣英文新聞",
+      "t": "酷澎遭韓國個資委裁罰",
+      "url": "https://www.taiwannews.com.tw/zh/news/6381854",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p-lizx",
+  "name": "李貞秀",
+  "category": "民意代表",
+  "aliases": [],
+  "related": [],
+  "tags": [
+   "涉中"
+  ],
+  "party": "民眾黨",
+  "summary": "民眾黨不分區立委、陸配出身。國籍法要求放棄中國國籍，其稱申請遭拒，內政部要求提出書面佐證；屬資格爭議，非違法認定。",
+  "origin": "auto",
+  "updated": "2026-11-27T14:05:44Z",
+  "events": [
+   {
+    "date": "2026-02-03",
+    "case": "雙重國籍爭議",
+    "tag": "涉中",
+    "party": "民眾黨",
+    "status": "report",
+    "text": "2026年2月3日宣誓就職。內政部依國籍法第20條認為民選公職人員不得具雙重國籍，要求其提出放棄中國國籍的書面佐證；李貞秀出示赴湖南申請被拒的文件，稱唯一效忠中華民國。3月立法院長韓國瑜裁定在事實查明及司法判決前，其立委身分與職權應予尊重。此為資格爭議，尚無機關認定違法。",
+    "sources": [
+     {
+      "pub": "鏡週刊",
+      "t": "立委李貞秀稱放棄中國籍遭拒 內政部：須提出具體書面佐證",
+      "url": "https://www.mirrormedia.mg/story/20260203edi089",
+      "kind": "news"
+     },
+     {
+      "pub": "聯合新聞網",
+      "t": "陸配李貞秀遞補立委 內政部：若1年內未放棄中國籍應由立院解職",
+      "url": "https://udn.com/news/story/6656/9302526",
+      "kind": "news"
+     },
+     {
+      "pub": "TVBS",
+      "t": "朝野協商無共識 韓國瑜：李貞秀立委職權應予尊重",
+      "url": "https://news.tvbs.com.tw/politics/3150069",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-linkkorea",
+  "name": "Link Korea（linkkorea_tw）",
+  "aliases": [
+   "LINK KOREA",
+   "linkkorea_tw"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "其他"
+  ],
+  "related": [],
+  "summary": "站長個人評價：認為其在 Threads 的言論品行不佳。無違法或裁罰認定，僅有使用者截圖，待查證。",
+  "origin": "manual",
+  "updated": "2026-11-27T14:34:51Z",
+  "events": [
+   {
+    "date": "2026-11-27",
+    "case": "社群言論爭議（站長個人評價）",
+    "tag": "其他",
+    "status": "report",
+    "text": "站長提供截圖：該帳號在 Threads 於他人留言「覺得『回家投票』非常白痴」下回覆「選你正解」，另在台灣高鐵貼文下留言質疑「每日約 2,500 人次有空位搭乘需求」一句並稱「藉口一堆」。站長認為其言論不當、品行不佳。本紀錄無違法或行政裁罰認定，亦無媒體報導，僅為站長個人評價與使用者截圖，待查證。",
+    "sources": [
+     {
+      "pub": "站長提供截圖",
+      "t": "Threads 留言截圖，本機紀錄，待查證",
+      "kind": "news"
+     }
+    ],
+    "manual": true
+   }
+  ]
+ },
+ {
+  "id": "c-skintific",
+  "name": "SKINTIFIC",
+  "aliases": [
+   "蜚美",
+   "廣州蜚美網路"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "中國廣州品牌（母公司廣州蜚美網路技術），產品標示中國製，在東南亞行銷時淡化中國來源。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "中國廣州品牌（母公司廣州蜚美網路技術），產品標示中國製，在東南亞行銷時淡化中國來源。",
+    "sources": [
+     {
+      "pub": "TVBS新聞網",
+      "t": "兩年橫掃東南亞美妝市場的中國品牌",
+      "url": "https://news.tvbs.com.tw/china/3074291",
+      "kind": "news"
+     },
+     {
+      "pub": "南華早報 SCMP",
+      "t": "Are Chinese-made skincare brands downplaying their origins",
+      "url": "https://www.scmp.com/week-asia/lifestyle-culture/article/3261396/are-chinese-made-skincare-brands-downplaying-their-origins-appeal-southeast-asians",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-timephoria",
+  "name": "Timephoria（Time Phoria）",
+  "aliases": [
+   "time phoria",
+   "TIMEPHORIA"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "客服自述於香港成立、產品全數在中國製造；菲律賓行銷由 SKINTIFIC 員工代表發言，疑同集團。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "客服自述於香港成立、產品全數在中國製造；菲律賓行銷由 SKINTIFIC 員工代表發言，疑同集團。",
+    "sources": [
+     {
+      "pub": "Timephoria 客服問答整理",
+      "t": "Where does Time Phoria come from",
+      "url": "https://sites.google.com/view/csph-ekb/timephoria",
+      "kind": "news"
+     },
+     {
+      "pub": "Manila Bulletin",
+      "t": "Timephoria 品牌報導（SKINTIFIC 員工發言）",
+      "url": "https://mb.com.ph/2026/06/09/this-global-cosmetics-brand-believes-makeup-should-be-about-self-expression-not-perfection",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ],
+    "manual": true
+   }
+  ]
+ },
+ {
+  "id": "c-glad2glow",
+  "name": "glad2glow（G2G）",
+  "aliases": [
+   "Glad2Glow",
+   "G2G"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "以印尼品牌行銷（PT Suntone Wisdom Indonesia），但產品多為中國製造進口。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "以印尼品牌行銷（PT Suntone Wisdom Indonesia），但產品多為中國製造進口。",
+    "sources": [
+     {
+      "pub": "品牌公司資料整理",
+      "t": "PT Suntone Wisdom Indonesia / Glad2Glow",
+      "url": "https://sites.google.com/siswa.umk.edu.my/g2g/about",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ],
+    "manual": true
+   }
+  ]
+ },
+ {
+  "id": "c-millefee",
+  "name": "MilleFee（ミルフィー）",
+  "aliases": [
+   "Millefee",
+   "Maison de MilleFee"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "以日本品牌行銷，零售商商品資料標示產地為中國；貼文另稱其打亮產品抄襲 Dior（未查證）。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "以日本品牌行銷，零售商商品資料標示產地為中國；貼文另稱其打亮產品抄襲 Dior（未查證）。",
+    "sources": [
+     {
+      "pub": "YesStyle",
+      "t": "MilleFee 商品資料 Made in: China",
+      "url": "https://www.yesstyle.com/en/millefee-lady-flower/info.html/pid.1127543385",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ],
+    "manual": true
+   }
+  ]
+ },
+ {
+  "id": "c-mistine",
+  "name": "Mistine（蜜絲婷）",
+  "aliases": [
+   "蜜丝婷",
+   "Better Way"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "泰國品牌（Better Way 泰國），中國為主要成長市場並設有中泰合資公司（深圳）。貼文稱其為洗產地中國製，本站未查到在台販售品為中國製的證據。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "泰國品牌（Better Way 泰國），中國為主要成長市場並設有中泰合資公司（深圳）。貼文稱其為洗產地中國製，本站未查到在台販售品為中國製的證據。",
+    "sources": [
+     {
+      "pub": "China Daily",
+      "t": "Mistine embraces opportunities in Chinese market under BRI",
+      "url": "https://epaper.chinadaily.com.cn/a/202310/17/WS652de03ea310d4219e3a9524.html",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ],
+    "manual": true
+   }
+  ]
+ },
+ {
+  "id": "c-judydoll",
+  "name": "橘朵 Judydoll",
+  "aliases": [
+   "Judydoll",
+   "橘宜集團",
+   "Joy Group"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "中國品牌，上海橘宜化妝品（橘宜集團）旗下。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "中國品牌，上海橘宜化妝品（橘宜集團）旗下。",
+    "sources": [
+     {
+      "pub": "The Bamboo Works",
+      "t": "橘宜集團進軍土耳其",
+      "url": "https://thebambooworks.com/zh/tag/橘宜化妝品/",
+      "kind": "news"
+     },
+     {
+      "pub": "美人計",
+      "t": "10大熱銷中國淘寶彩妝",
+      "url": "https://www.beauty321.com/post/62581",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-joocyee",
+  "name": "酵色 JOOCYEE",
+  "aliases": [
+   "Joocyee",
+   "酵色"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "中國品牌，2019 年創立，橘宜集團旗下。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "中國品牌，2019 年創立，橘宜集團旗下。",
+    "sources": [
+     {
+      "pub": "The Bamboo Works",
+      "t": "橘宜集團旗下酵色",
+      "url": "https://thebambooworks.com/zh/tag/橘宜化妝品/",
+      "kind": "news"
+     },
+     {
+      "pub": "Shopee SG",
+      "t": "Best makeup brands China",
+      "url": "https://shopee.sg/blog/best-makeup-brands-china/",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-flowerknows",
+  "name": "花知曉 Flower Knows",
+  "aliases": [
+   "Flower Knows",
+   "花知晓",
+   "珀萊雅"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "中國品牌，2026 年由中國珀萊雅取得控股。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "中國品牌，2026 年由中國珀萊雅取得控股。",
+    "sources": [
+     {
+      "pub": "上海證券交易所／第一財經",
+      "t": "Proya gaining control of Flower Knows",
+      "url": "https://english.sse.com.cn/news/newsrelease/voice/c/c_20260525_10819574.shtml",
+      "kind": "news"
+     },
+     {
+      "pub": "美人計",
+      "t": "10大熱銷中國淘寶彩妝",
+      "url": "https://www.beauty321.com/post/62581",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-timage",
+  "name": "彩棠 TIMAGE",
+  "aliases": [
+   "TIMAGE",
+   "彩棠",
+   "珀萊雅"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "中國品牌，2019 年由珀萊雅收購。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "中國品牌，2019 年由珀萊雅收購。",
+    "sources": [
+     {
+      "pub": "網易",
+      "t": "珀萊雅 2019 年收購彩棠",
+      "url": "https://www.163.com/dy/article/HV3SCV8S0553657V.html",
+      "kind": "news"
+     },
+     {
+      "pub": "美人計",
+      "t": "10大熱銷中國淘寶彩妝",
+      "url": "https://www.beauty321.com/post/62581",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-perfectdiary",
+  "name": "完美日記 Perfect Diary",
+  "aliases": [
+   "Perfect Diary",
+   "逸仙",
+   "Yatsen",
+   "完美日记"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "中國品牌，廣州逸仙電子商務旗下。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "中國品牌，廣州逸仙電子商務旗下。",
+    "sources": [
+     {
+      "pub": "TechCrunch",
+      "t": "Yatsen (Perfect Diary) to buy Eve Lom",
+      "url": "https://techcrunch.com/?p=2120152",
+      "kind": "news"
+     },
+     {
+      "pub": "買購網",
+      "t": "完美日記（廣州逸仙電子商務）",
+      "url": "https://www.maigoo.com/best/46701.html",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-intoyou",
+  "name": "INTO YOU（心慕與你）",
+  "aliases": [
+   "心慕与你",
+   "心慕與你"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "中國彩妝品牌。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "中國彩妝品牌。",
+    "sources": [
+     {
+      "pub": "美人計",
+      "t": "10大熱銷中國淘寶彩妝",
+      "url": "https://www.beauty321.com/post/62581",
+      "kind": "news"
+     },
+     {
+      "pub": "買購網",
+      "t": "平價彩妝十大品牌",
+      "url": "https://www.maigoo.com/best/46701.html",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-pramy",
+  "name": "Pramy（柏瑞美）",
+  "aliases": [
+   "柏瑞美",
+   "PRAMY"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "貼文列為中國品牌；本站尚未找到第二個來源。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "貼文列為中國品牌；本站尚未找到第二個來源。",
+    "sources": [
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ],
+    "manual": true
+   }
+  ]
+ },
+ {
+  "id": "c-lilybyred",
+  "name": "lilybyred",
+  "aliases": [
+   "Lilybyred",
+   "丽丽百乐",
+   "DYD",
+   "歡禧集團"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "韓國品牌，2026 年 4 月中國杭州歡禧集團取得母公司 DYD 36% 股權成為最大股東。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "韓國品牌，2026 年 4 月中國杭州歡禧集團取得母公司 DYD 36% 股權成為最大股東。",
+    "sources": [
+     {
+      "pub": "Jing Daily",
+      "t": "Chinese firm buys controlling stake in Lilybyred",
+      "url": "https://jingdaily.com/intels/2026-04/06/chinese-firm-buys-controlling-stake-in-k-beauty-brand-lilybyred",
+      "kind": "news"
+     },
+     {
+      "pub": "CNPP",
+      "t": "lilybyred 杭州歡禧",
+      "url": "https://www.cnpp.cn/pinpai/4235749.html",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "c-za",
+  "name": "ZA（姬芮）",
+  "aliases": [
+   "Za",
+   "姬芮"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "涉中"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "資生堂 2022 年將中國市場的 ZA 姬芮出售給品牌管理公司 URUOI；URUOI 國籍與在台 ZA 是否受影響未查證。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "涉中",
+    "status": "report",
+    "text": "資生堂 2022 年將中國市場的 ZA 姬芮出售給品牌管理公司 URUOI；URUOI 國籍與在台 ZA 是否受影響未查證。",
+    "sources": [
+     {
+      "pub": "時事通信",
+      "t": "資生堂、中国の現地ブランド売却へ",
+      "url": "https://www.sbbit.jp/article/refers/78905",
+      "kind": "news"
+     },
+     {
+      "pub": "界面新聞",
+      "t": "資生堂出售Za姬芮和泊美",
+      "url": "https://m.jiemian.com/article/7008871.html",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ],
+    "manual": true
+   }
+  ]
+ },
+ {
+  "id": "c-3ce",
+  "name": "3CE",
+  "aliases": [
+   "3CE STYLENANDA",
+   "Stylenanda",
+   "三熹玉"
+  ],
+  "category": "企業/品牌",
+  "tags": [
+   "其他"
+  ],
+  "related": [
+   "中國製／中資彩妝"
+  ],
+  "summary": "貼文稱 3CE 被中資收購，查證不符：母公司 Stylenanda 於 2018 年由法國萊雅集團 100% 收購。",
+  "origin": "manual",
+  "updated": "2026-11-27T16:44:07Z",
+  "events": [
+   {
+    "date": "2026-11-28",
+    "case": "品牌產地／資本來源",
+    "tag": "其他",
+    "status": "clear",
+    "text": "貼文稱 3CE 被中資收購，查證不符：母公司 Stylenanda 於 2018 年由法國萊雅集團 100% 收購。",
+    "sources": [
+     {
+      "pub": "WWD Japan",
+      "t": "ロレアルが「スタイルナンダ」買収",
+      "url": "https://www.wwdjapan.com/608842",
+      "kind": "news"
+     },
+     {
+      "pub": "Korea JoongAng Daily",
+      "t": "L'Oreal purchases 100% stake in Stylenanda",
+      "url": "https://www.koreajoongangdaily.com/business/loreal-purchases-100-stake-in-stylenanda/11362958",
+      "kind": "news"
+     },
+     {
+      "pub": "Threads @beauty_68_86",
+      "t": "那些洗產地的中國製彩妝（2026-11-28）",
+      "url": "https://www.threads.com/@beauty_68_86/post/DgP6OrCga6c",
+      "kind": "news"
+     }
+    ]
+   }
+  ]
+ }
+]

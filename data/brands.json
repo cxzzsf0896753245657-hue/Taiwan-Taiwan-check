@@ -1,0 +1,2352 @@
+{
+ "e-weichuan": [
+  {
+   "name": "林鳳營",
+   "kind": "品牌",
+   "note": "鮮乳",
+   "src": {
+    "pub": "味全官網",
+    "t": "品牌頁：林鳳營",
+    "url": "https://www.weichuan.com.tw/tw/product/brand/74cfd0d9-ae05-4d35-96b2-b48a04dbb960",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "每日C",
+   "kind": "品牌",
+   "note": "果汁",
+   "src": {
+    "pub": "味全官網",
+    "t": "品牌頁：每日C",
+    "url": "https://www.weichuan.com.tw/tw/product",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "味全優酪乳",
+   "kind": "產品",
+   "src": {
+    "pub": "關鍵評論網",
+    "t": "林鳳營鮮乳換新包裝重返市場",
+    "kind": "news",
+    "url": "https://www.thenewslens.com/article/21625"
+   }
+  },
+  {
+   "name": "大醇豆",
+   "kind": "品牌",
+   "note": "豆漿",
+   "src": {
+    "pub": "味全官網",
+    "t": "品牌頁：大醇豆",
+    "url": "https://www.weichuan.com.tw/tw/product/brand/76cf46aa-183c-47e3-ab41-d1705c5313e3",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "貝納頌",
+   "kind": "品牌",
+   "note": "咖啡",
+   "src": {
+    "pub": "味全官網",
+    "t": "品牌頁：貝納頌",
+    "url": "https://www.weichuan.com.tw/tw/product/brand/515efb20-4d71-4f54-a362-4b274a07ecb5",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "大絕韻",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "木崗雞蛋",
+   "kind": "品牌",
+   "src": {
+    "pub": "味全官網",
+    "t": "品牌頁：木崗雞蛋",
+    "url": "https://www.weichuan.com.tw/tw/product/brand/215a18b4-a2b3-4a1b-a64c-95a58de3d2c9",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "自然果力",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "ABLS優酪乳",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "味全天然水",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "味全雞蛋布丁",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "醇奶布丁",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "廚易料理醬",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "味全高鮮",
+   "kind": "品牌",
+   "src": {
+    "pub": "味全官網",
+    "t": "品牌頁：味全高鮮",
+    "url": "https://www.weichuan.com.tw/tw/product/brand/40f8c269-3f86-446b-962b-df4d643d997f",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "味全調味乳",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "台灣搵醬",
+   "kind": "品牌",
+   "src": {
+    "pub": "味全官網",
+    "t": "品牌頁：台灣搵醬",
+    "url": "https://www.weichuan.com.tw/tw/product/brand/4dda84b8-eb40-45ed-bd71-afe885d9d7a9",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "味全烤肉醬",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "味全甘醇油膏",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "味全香菇素蠔油",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "味全優格",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "鮮Soup",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "味全鮮乳",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "味全醬油",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "味全嚴選",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "原榨果汁",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "健康廚房",
+   "kind": "品牌",
+   "src": {
+    "pub": "味全官網",
+    "t": "品牌頁：健康廚房",
+    "url": "https://www.weichuan.com.tw/tw/product",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "涼爽茶",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "淬釀醬油",
+   "kind": "品牌",
+   "src": {
+    "pub": "味全官網",
+    "t": "品牌頁：淬釀醬油",
+    "url": "https://www.weichuan.com.tw/tw/product/brand/39b35da8-a4fd-46bc-b16c-09dc8db75254",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "荷頓奶粉",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "Apas礦質水",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "LCA506",
+   "kind": "品牌",
+   "src": {
+    "pub": "味全官網",
+    "t": "品牌頁：LCA506",
+    "url": "https://www.weichuan.com.tw/tw/product/brand/3afe0792-cdc8-4c9c-9915-c9d6e22e8e20",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "VOSSI",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "36法郎",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "味全肉鬆",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "味小寶",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "純品上豚",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "Jagabee加卡比",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "UCC咖啡（合資）",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "王德傳茶莊（2014持股）",
+   "kind": "品牌",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "味全乳飲品",
+   "kind": "品牌",
+   "src": {
+    "pub": "味全官網",
+    "t": "品牌頁：味全乳飲品",
+    "url": "https://www.weichuan.com.tw/tw/product/brand/11b46ba0-2f4b-478f-b764-1780cb9ded0c",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "味全超優質",
+   "kind": "品牌",
+   "src": {
+    "pub": "味全官網",
+    "t": "品牌頁：味全超優質",
+    "url": "https://www.weichuan.com.tw/tw/product/brand/7e1b3818-0687-45a1-8b51-5a044b801875",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "簡單點",
+   "kind": "品牌",
+   "src": {
+    "pub": "味全官網",
+    "t": "品牌頁：簡單點",
+    "url": "https://www.weichuan.com.tw/tw/product/brand/31a1f9b5-1ed8-41d2-a33a-b72146011b1b",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "味全高鮮味精（業務用）",
+   "kind": "品牌",
+   "src": {
+    "pub": "味全官網",
+    "t": "品牌頁：味全高鮮味精（業務用）",
+    "url": "https://www.weichuan.com.tw/tw/product/service/sales",
+    "kind": "news"
+   }
+  }
+ ],
+ "e-tinghsin": [
+  {
+   "name": "味全",
+   "kind": "子公司",
+   "note": "1998 年由頂新入主",
+   "src": {
+    "pub": "今周刊",
+    "t": "頂新集團：旗下品牌康師傅、味全等",
+    "kind": "news",
+    "url": "https://www.businesstoday.com.tw/article/category/154768/post/201311070020/"
+   }
+  },
+  {
+   "name": "康師傅",
+   "kind": "品牌",
+   "note": "泡麵、飲料（中國）",
+   "src": {
+    "pub": "今周刊",
+    "t": "頂新集團：旗下品牌康師傅、味全等",
+    "kind": "news",
+    "url": "https://www.businesstoday.com.tw/article/category/154768/post/201311070020/"
+   }
+  },
+  {
+   "name": "德克士",
+   "kind": "品牌",
+   "note": "炸雞連鎖（中國）",
+   "src": {
+    "pub": "今周刊",
+    "t": "頂新德克士、康師傅私房牛肉麵",
+    "kind": "news",
+    "url": "https://www.businesstoday.com.tw/article/category/80393/post/200711220016/"
+   }
+  },
+  {
+   "name": "康師傅私房牛肉麵",
+   "kind": "品牌",
+   "note": "餐廳（中國）",
+   "src": {
+    "pub": "今周刊",
+    "t": "頂新德克士、康師傅私房牛肉麵",
+    "kind": "news",
+    "url": "https://www.businesstoday.com.tw/article/category/80393/post/200711220016/"
+   }
+  },
+  {
+   "name": "林鳳營",
+   "kind": "品牌",
+   "note": "經由味全",
+   "src": {
+    "pub": "關鍵評論網",
+    "t": "林鳳營鮮乳換新包裝重返市場",
+    "kind": "news",
+    "url": "https://www.thenewslens.com/article/21625"
+   }
+  },
+  {
+   "name": "每日C",
+   "kind": "品牌",
+   "note": "經由味全",
+   "src": {
+    "pub": "關鍵評論網",
+    "t": "林鳳營鮮乳換新包裝重返市場",
+    "kind": "news",
+    "url": "https://www.thenewslens.com/article/21625"
+   }
+  },
+  {
+   "name": "正義油品",
+   "kind": "子公司",
+   "src": {
+    "pub": "kikinote（2014 彙整）",
+    "t": "頂新、味全其下所有產品介紹",
+    "url": "https://kikinote.net/44355",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "順胜實業",
+   "kind": "關係企業",
+   "src": {
+    "pub": "kikinote（2014 彙整）",
+    "t": "頂新、味全其下所有產品介紹",
+    "url": "https://kikinote.net/44355",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "林鳳營牧場",
+   "kind": "關係企業",
+   "src": {
+    "pub": "kikinote（2014 彙整）",
+    "t": "頂新、味全其下所有產品介紹",
+    "url": "https://kikinote.net/44355",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "木崗雞蛋",
+   "kind": "品牌",
+   "src": {
+    "pub": "kikinote（2014 彙整）",
+    "t": "頂新、味全其下所有產品介紹",
+    "url": "https://kikinote.net/44355",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "應宏INHON",
+   "kind": "關係企業",
+   "src": {
+    "pub": "kikinote（2014 彙整）",
+    "t": "頂新、味全其下所有產品介紹",
+    "url": "https://kikinote.net/44355",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "高士特Gusto",
+   "kind": "品牌",
+   "src": {
+    "pub": "kikinote（2014 彙整）",
+    "t": "頂新、味全其下所有產品介紹",
+    "url": "https://kikinote.net/44355",
+    "kind": "news"
+   }
+  }
+ ],
+ "e-taishan": [
+  {
+   "name": "泰山不飽和大豆沙拉油",
+   "kind": "產品",
+   "note": "列入受影響批號名單",
+   "src": {
+    "pub": "臺南市衛生局",
+    "t": "中聯油脂公司大豆沙拉油下游業者及其產品名單",
+    "url": "https://health.tainan.gov.tw/warehouse/F812BC5D-EF07-48A1-A901-2A055B4A549B/F_1782983814560e.pdf",
+    "kind": "gov"
+   }
+  },
+  {
+   "name": "金酥耐炸油",
+   "kind": "產品",
+   "note": "列入受影響批號名單",
+   "src": {
+    "pub": "臺南市衛生局",
+    "t": "中聯油脂公司大豆沙拉油下游業者及其產品名單",
+    "url": "https://health.tainan.gov.tw/warehouse/F812BC5D-EF07-48A1-A901-2A055B4A549B/F_1782983814560e.pdf",
+    "kind": "gov"
+   }
+  },
+  {
+   "name": "泰山沙拉油（18L、環保鐵桶）",
+   "kind": "產品",
+   "note": "列入受影響批號名單",
+   "src": {
+    "pub": "臺南市衛生局",
+    "t": "中聯油脂公司大豆沙拉油下游業者及其產品名單",
+    "url": "https://health.tainan.gov.tw/warehouse/F812BC5D-EF07-48A1-A901-2A055B4A549B/F_1782983814560e.pdf",
+    "kind": "gov"
+   }
+  },
+  {
+   "name": "泰山精選蔬菜油",
+   "kind": "產品",
+   "note": "列入受影響批號名單",
+   "src": {
+    "pub": "臺南市衛生局",
+    "t": "中聯油脂公司大豆沙拉油下游業者及其產品名單",
+    "url": "https://health.tainan.gov.tw/warehouse/F812BC5D-EF07-48A1-A901-2A055B4A549B/F_1782983814560e.pdf",
+    "kind": "gov"
+   }
+  },
+  {
+   "name": "泰山好理調合油",
+   "kind": "產品",
+   "note": "列入受影響批號名單",
+   "src": {
+    "pub": "臺南市衛生局",
+    "t": "中聯油脂公司大豆沙拉油下游業者及其產品名單",
+    "url": "https://health.tainan.gov.tw/warehouse/F812BC5D-EF07-48A1-A901-2A055B4A549B/F_1782983814560e.pdf",
+    "kind": "gov"
+   }
+  }
+ ],
+ "e-fushou": [
+  {
+   "name": "福壽大豆沙拉油",
+   "kind": "產品",
+   "note": "列入受影響批號名單",
+   "src": {
+    "pub": "臺南市衛生局",
+    "t": "中聯油脂公司大豆沙拉油下游業者及其產品名單",
+    "url": "https://health.tainan.gov.tw/warehouse/F812BC5D-EF07-48A1-A901-2A055B4A549B/F_1782983814560e.pdf",
+    "kind": "gov"
+   }
+  },
+  {
+   "name": "福壽健味香油",
+   "kind": "產品",
+   "note": "列入受影響批號名單",
+   "src": {
+    "pub": "臺南市衛生局",
+    "t": "中聯油脂公司大豆沙拉油下游業者及其產品名單",
+    "url": "https://health.tainan.gov.tw/warehouse/F812BC5D-EF07-48A1-A901-2A055B4A549B/F_1782983814560e.pdf",
+    "kind": "gov"
+   }
+  },
+  {
+   "name": "福壽好味香油",
+   "kind": "產品",
+   "note": "列入受影響批號名單",
+   "src": {
+    "pub": "臺南市衛生局",
+    "t": "中聯油脂公司大豆沙拉油下游業者及其產品名單",
+    "url": "https://health.tainan.gov.tw/warehouse/F812BC5D-EF07-48A1-A901-2A055B4A549B/F_1782983814560e.pdf",
+    "kind": "gov"
+   }
+  },
+  {
+   "name": "青果多酚精華調合油（僅外銷）",
+   "kind": "產品",
+   "note": "列入受影響批號名單",
+   "src": {
+    "pub": "臺南市衛生局",
+    "t": "中聯油脂公司大豆沙拉油下游業者及其產品名單",
+    "url": "https://health.tainan.gov.tw/warehouse/F812BC5D-EF07-48A1-A901-2A055B4A549B/F_1782983814560e.pdf",
+    "kind": "gov"
+   }
+  }
+ ],
+ "e-fumao": [
+  {
+   "name": "益康大豆沙拉油",
+   "kind": "產品",
+   "note": "列入受影響批號名單",
+   "src": {
+    "pub": "臺南市衛生局",
+    "t": "中聯油脂公司大豆沙拉油下游業者及其產品名單",
+    "url": "https://health.tainan.gov.tw/warehouse/F812BC5D-EF07-48A1-A901-2A055B4A549B/F_1782983814560e.pdf",
+    "kind": "gov"
+   }
+  },
+  {
+   "name": "益康烹調油",
+   "kind": "產品",
+   "note": "列入受影響批號名單",
+   "src": {
+    "pub": "臺南市衛生局",
+    "t": "中聯油脂公司大豆沙拉油下游業者及其產品名單",
+    "url": "https://health.tainan.gov.tw/warehouse/F812BC5D-EF07-48A1-A901-2A055B4A549B/F_1782983814560e.pdf",
+    "kind": "gov"
+   }
+  },
+  {
+   "name": "一級黃豆油",
+   "kind": "產品",
+   "note": "列入受影響批號名單",
+   "src": {
+    "pub": "臺南市衛生局",
+    "t": "中聯油脂公司大豆沙拉油下游業者及其產品名單",
+    "url": "https://health.tainan.gov.tw/warehouse/F812BC5D-EF07-48A1-A901-2A055B4A549B/F_1782983814560e.pdf",
+    "kind": "gov"
+   }
+  }
+ ],
+ "c-zhujian": [
+  {
+   "name": "築間幸福鍋物",
+   "kind": "品牌",
+   "src": {
+    "pub": "工商時報（旺得富）",
+    "t": "築間旗下七大品牌獲金饌獎（2025-10）",
+    "kind": "news",
+    "url": "https://wantrich.chinatimes.com/news/20251017900544-420101"
+   }
+  },
+  {
+   "name": "燒肉Smile",
+   "kind": "品牌",
+   "note": "焼肉スマイル",
+   "src": {
+    "pub": "工商時報（旺得富）",
+    "t": "築間旗下七大品牌獲金饌獎（2025-10）",
+    "kind": "news",
+    "url": "https://wantrich.chinatimes.com/news/20251017900544-420101"
+   }
+  },
+  {
+   "name": "本格和牛燒肉放題",
+   "kind": "品牌",
+   "src": {
+    "pub": "工商時報（旺得富）",
+    "t": "築間旗下七大品牌獲金饌獎（2025-10）",
+    "kind": "news",
+    "url": "https://wantrich.chinatimes.com/news/20251017900544-420101"
+   }
+  },
+  {
+   "name": "有之和牛鍋物放題",
+   "kind": "品牌",
+   "src": {
+    "pub": "工商時報（旺得富）",
+    "t": "築間旗下七大品牌獲金饌獎（2025-10）",
+    "kind": "news",
+    "url": "https://wantrich.chinatimes.com/news/20251017900544-420101"
+   }
+  },
+  {
+   "name": "絵馬別邸",
+   "kind": "品牌",
+   "note": "繪馬別邸",
+   "src": {
+    "pub": "工商時報（旺得富）",
+    "t": "築間旗下七大品牌獲金饌獎（2025-10）",
+    "kind": "news",
+    "url": "https://wantrich.chinatimes.com/news/20251017900544-420101"
+   }
+  },
+  {
+   "name": "朴庶韓國烤肉",
+   "kind": "品牌",
+   "src": {
+    "pub": "工商時報（旺得富）",
+    "t": "築間旗下七大品牌獲金饌獎（2025-10）",
+    "kind": "news",
+    "url": "https://wantrich.chinatimes.com/news/20251017900544-420101"
+   }
+  },
+  {
+   "name": "築間燒肉本命",
+   "kind": "品牌",
+   "src": {
+    "pub": "工商時報（旺得富）",
+    "t": "築間旗下七大品牌獲金饌獎（2025-10）",
+    "kind": "news",
+    "url": "https://wantrich.chinatimes.com/news/20251017900544-420101"
+   }
+  },
+  {
+   "name": "築間酸菜魚",
+   "kind": "品牌",
+   "src": {
+    "pub": "Beauty美人圈",
+    "t": "築間 11 大品牌全攻略（2024-08）",
+    "kind": "news",
+    "url": "https://www.beauty321.com/amp/post/63220"
+   }
+  },
+  {
+   "name": "紫木槿韓國烤肉",
+   "kind": "品牌",
+   "src": {
+    "pub": "Beauty美人圈",
+    "t": "築間 11 大品牌全攻略（2024-08）",
+    "kind": "news",
+    "url": "https://www.beauty321.com/amp/post/63220"
+   }
+  },
+  {
+   "name": "築間麻辣火鍋",
+   "kind": "品牌",
+   "src": {
+    "pub": "Beauty美人圈",
+    "t": "築間 11 大品牌全攻略（2024-08）",
+    "kind": "news",
+    "url": "https://www.beauty321.com/amp/post/63220"
+   }
+  }
+ ],
+ "c-aierli": [
+  {
+   "name": "南京愛爾麗診所",
+   "kind": "分店",
+   "note": "台北市中山區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "愛爾麗診所（大安）",
+   "kind": "分店",
+   "note": "台北市大安區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "林口愛爾麗診所",
+   "kind": "分店",
+   "note": "新北市林口區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "永和愛爾麗診所",
+   "kind": "分店",
+   "note": "新北市永和區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "新莊愛爾麗診所",
+   "kind": "分店",
+   "note": "新北市新莊區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "博愛愛爾麗診所",
+   "kind": "分店",
+   "note": "高雄市左營區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "愛爾麗診所（新興）",
+   "kind": "分店",
+   "note": "高雄市新興區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "板橋愛爾麗診所",
+   "kind": "分店",
+   "note": "新北市板橋區｜事件起點，遭罰50萬、停業6個月",
+   "src": {
+    "pub": "公視新聞",
+    "t": "涉偷拍停業醫美診所+3 全台遭罰醫療機構名單",
+    "url": "https://news.pts.org.tw/article/811632",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "愛爾麗台中2家分店",
+   "kind": "分店",
+   "note": "台中市衛生局查獲裝設監視設備（店名未公布於所查報導）",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "台中市衛生局公布涉案診所",
+    "url": "https://udn.com/news/story/7321/9504742",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "研醫明診所",
+   "kind": "承接店面",
+   "note": "台南連鎖，承接愛爾麗診所店面；天花板發現偽裝煙霧偵測器，遭罰50萬、停業6個月",
+   "src": {
+    "pub": "公視新聞",
+    "t": "涉偷拍停業醫美診所+3 全台遭罰醫療機構名單",
+    "url": "https://news.pts.org.tw/article/811632",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "愛爾麗全台分店",
+   "kind": "說明",
+   "note": "檢警稱全台18家分店皆查出同類偽裝型攝影機",
+   "src": {
+    "pub": "NOWnews",
+    "t": "愛爾麗全台18間分店搜出針孔鏡頭 宣布全面退費",
+    "url": "https://www.nownews.com/news/6826229",
+    "kind": "news"
+   }
+  }
+ ],
+ "c-guangze": [
+  {
+   "name": "光澤診所板橋中山店",
+   "kind": "分店",
+   "note": "新北市板橋區｜起訴書列入",
+   "src": {
+    "pub": "中央社",
+    "t": "光澤診所偷拍受害逾300人 檢起訴9人",
+    "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤診所板橋館前店",
+   "kind": "分店",
+   "note": "新北市板橋區｜起訴書列入",
+   "src": {
+    "pub": "中央社",
+    "t": "光澤診所偷拍受害逾300人 檢起訴9人",
+    "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤診所三重正義店",
+   "kind": "分店",
+   "note": "新北市三重區｜起訴書列入",
+   "src": {
+    "pub": "中央社",
+    "t": "光澤診所偷拍受害逾300人 檢起訴9人",
+    "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤診所三峽北大店",
+   "kind": "分店",
+   "note": "新北市三峽區｜起訴書列入",
+   "src": {
+    "pub": "中央社",
+    "t": "光澤診所偷拍受害逾300人 檢起訴9人",
+    "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤診所新莊幸福店",
+   "kind": "分店",
+   "note": "新北市新莊區｜起訴書列入",
+   "src": {
+    "pub": "中央社",
+    "t": "光澤診所偷拍受害逾300人 檢起訴9人",
+    "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤診所台北忠孝店",
+   "kind": "分店",
+   "note": "台北市大安區｜起訴書列入；遭罰50萬、停業6個月",
+   "src": {
+    "pub": "中央社",
+    "t": "光澤診所偷拍受害逾300人 檢起訴9人",
+    "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤診所台北三民店",
+   "kind": "分店",
+   "note": "台北市松山區｜起訴書列入；遭罰50萬、停業6個月",
+   "src": {
+    "pub": "中央社",
+    "t": "光澤診所偷拍受害逾300人 檢起訴9人",
+    "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤診所台北古亭店",
+   "kind": "分店",
+   "note": "台北市｜起訴書列入",
+   "src": {
+    "pub": "中央社",
+    "t": "光澤診所偷拍受害逾300人 檢起訴9人",
+    "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤診所（台中南屯）",
+   "kind": "分店",
+   "note": "台中市南屯區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤診所（高雄三民）",
+   "kind": "分店",
+   "note": "高雄市三民區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤醫美集團全台據點",
+   "kind": "說明",
+   "note": "新北地檢署稱王朝輝2005年創辦，旗下橫跨中西醫、岩盤浴等事業、全台共48家分店；起訴書僅列雙北8家分店竊錄（早期報導曾稱14家診所，數字以地檢署為準）",
+   "src": {
+    "pub": "中央社",
+    "t": "光澤診所偷拍受害逾300人 檢起訴9人",
+    "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+    "kind": "news"
+   }
+  }
+ ],
+ "e-zhengyi": [
+  {
+   "name": "維力清香油",
+   "kind": "產品",
+   "src": {
+    "pub": "三立新聞網（高雄市政府公布）",
+    "t": "頂新正義68油品下架清單",
+    "url": "https://www.setn.com/news/43137",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "正義清香油",
+   "kind": "產品",
+   "src": {
+    "pub": "三立新聞網（高雄市政府公布）",
+    "t": "頂新正義68油品下架清單",
+    "url": "https://www.setn.com/news/43137",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "維力香豬油",
+   "kind": "產品",
+   "src": {
+    "pub": "三立新聞網（高雄市政府公布）",
+    "t": "頂新正義68油品下架清單",
+    "url": "https://www.setn.com/news/43137",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "正義香豬油",
+   "kind": "產品",
+   "src": {
+    "pub": "三立新聞網（高雄市政府公布）",
+    "t": "頂新正義68油品下架清單",
+    "url": "https://www.setn.com/news/43137",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "寶素齋",
+   "kind": "產品",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "寶素齋Super12",
+   "kind": "產品",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "維力醇香油",
+   "kind": "產品",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "正義酥油",
+   "kind": "產品",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "香香雪白乳化油",
+   "kind": "產品",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "千層起酥瑪琪琳",
+   "kind": "產品",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "巴特博士奶油",
+   "kind": "產品",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "正義精製健康耐炸油",
+   "kind": "產品",
+   "src": {
+    "pub": "PTT 網友彙整（2014，現況以官網為準）",
+    "t": "頂新魏家的產品有哪些（頂新集團抵制懶人包）",
+    "url": "https://disp.cc/b/163-86UK",
+    "kind": "news"
+   }
+  }
+ ],
+ "c-wantwant": [
+  {
+   "name": "旺旺仙貝",
+   "kind": "產品",
+   "src": {
+    "pub": "工商時報",
+    "t": "旺旺集團宜蘭食品經典產品（2025）",
+    "url": "https://www.ctee.com.tw/news/20250327701247-431401",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "雪月雪餅",
+   "kind": "產品",
+   "src": {
+    "pub": "工商時報",
+    "t": "旺旺集團宜蘭食品經典產品（2025）",
+    "url": "https://www.ctee.com.tw/news/20250327701247-431401",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "旺仔小饅頭",
+   "kind": "產品",
+   "src": {
+    "pub": "工商時報",
+    "t": "旺旺集團宜蘭食品經典產品（2025）",
+    "url": "https://www.ctee.com.tw/news/20250327701247-431401",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "旺仔牛奶糖",
+   "kind": "產品",
+   "src": {
+    "pub": "工商時報",
+    "t": "旺旺集團宜蘭食品經典產品（2025）",
+    "url": "https://www.ctee.com.tw/news/20250327701247-431401",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "旺仔牛奶",
+   "kind": "產品",
+   "src": {
+    "pub": "中時新聞網",
+    "t": "旺旺宜蘭食品：旺仔牛奶、旺旺仙貝",
+    "url": "https://www.chinatimes.com/cn/search/%E6%97%BA%E4%BB%94",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "宜蘭食品",
+   "kind": "子公司",
+   "src": {
+    "pub": "工商時報",
+    "t": "旺旺集團宜蘭食品經典產品（2025）",
+    "url": "https://www.ctee.com.tw/news/20250327701247-431401",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "中國時報",
+   "kind": "媒體",
+   "src": {
+    "pub": "今周刊",
+    "t": "中國時報確定花落旺旺集團蔡氏家族（2008）",
+    "url": "https://www.businesstoday.com.tw/article/category/183016/post/200811060007/",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "工商時報",
+   "kind": "媒體",
+   "src": {
+    "pub": "今周刊",
+    "t": "中國時報確定花落旺旺集團蔡氏家族（2008）",
+    "url": "https://www.businesstoday.com.tw/article/category/183016/post/200811060007/",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "中天電視",
+   "kind": "媒體",
+   "src": {
+    "pub": "今周刊",
+    "t": "中國時報確定花落旺旺集團蔡氏家族（2008）",
+    "url": "https://www.businesstoday.com.tw/article/category/183016/post/200811060007/",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "中視",
+   "kind": "媒體",
+   "src": {
+    "pub": "今周刊",
+    "t": "中國時報確定花落旺旺集團蔡氏家族（2008）",
+    "url": "https://www.businesstoday.com.tw/article/category/183016/post/200811060007/",
+    "kind": "news"
+   }
+  }
+ ],
+ "p-changrs": [
+  {
+   "name": "南京愛爾麗診所",
+   "kind": "分店",
+   "note": "台北市中山區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "愛爾麗診所（大安）",
+   "kind": "分店",
+   "note": "台北市大安區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "林口愛爾麗診所",
+   "kind": "分店",
+   "note": "新北市林口區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "永和愛爾麗診所",
+   "kind": "分店",
+   "note": "新北市永和區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "新莊愛爾麗診所",
+   "kind": "分店",
+   "note": "新北市新莊區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "博愛愛爾麗診所",
+   "kind": "分店",
+   "note": "高雄市左營區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "愛爾麗診所（新興）",
+   "kind": "分店",
+   "note": "高雄市新興區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "板橋愛爾麗診所",
+   "kind": "分店",
+   "note": "新北市板橋區｜事件起點，遭罰50萬、停業6個月",
+   "src": {
+    "pub": "公視新聞",
+    "t": "涉偷拍停業醫美診所+3 全台遭罰醫療機構名單",
+    "url": "https://news.pts.org.tw/article/811632",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "愛爾麗台中2家分店",
+   "kind": "分店",
+   "note": "台中市衛生局查獲裝設監視設備（店名未公布於所查報導）",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "台中市衛生局公布涉案診所",
+    "url": "https://udn.com/news/story/7321/9504742",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "研醫明診所",
+   "kind": "承接店面",
+   "note": "台南連鎖，承接愛爾麗診所店面；天花板發現偽裝煙霧偵測器，遭罰50萬、停業6個月",
+   "src": {
+    "pub": "公視新聞",
+    "t": "涉偷拍停業醫美診所+3 全台遭罰醫療機構名單",
+    "url": "https://news.pts.org.tw/article/811632",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "愛爾麗全台分店",
+   "kind": "說明",
+   "note": "檢警稱全台18家分店皆查出同類偽裝型攝影機",
+   "src": {
+    "pub": "NOWnews",
+    "t": "愛爾麗全台18間分店搜出針孔鏡頭 宣布全面退費",
+    "url": "https://www.nownews.com/news/6826229",
+    "kind": "news"
+   }
+  }
+ ],
+ "p-wangzh": [
+  {
+   "name": "光澤診所板橋中山店",
+   "kind": "分店",
+   "note": "新北市板橋區｜起訴書列入",
+   "src": {
+    "pub": "中央社",
+    "t": "光澤診所偷拍受害逾300人 檢起訴9人",
+    "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤診所板橋館前店",
+   "kind": "分店",
+   "note": "新北市板橋區｜起訴書列入",
+   "src": {
+    "pub": "中央社",
+    "t": "光澤診所偷拍受害逾300人 檢起訴9人",
+    "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤診所三重正義店",
+   "kind": "分店",
+   "note": "新北市三重區｜起訴書列入",
+   "src": {
+    "pub": "中央社",
+    "t": "光澤診所偷拍受害逾300人 檢起訴9人",
+    "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤診所三峽北大店",
+   "kind": "分店",
+   "note": "新北市三峽區｜起訴書列入",
+   "src": {
+    "pub": "中央社",
+    "t": "光澤診所偷拍受害逾300人 檢起訴9人",
+    "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤診所新莊幸福店",
+   "kind": "分店",
+   "note": "新北市新莊區｜起訴書列入",
+   "src": {
+    "pub": "中央社",
+    "t": "光澤診所偷拍受害逾300人 檢起訴9人",
+    "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤診所台北忠孝店",
+   "kind": "分店",
+   "note": "台北市大安區｜起訴書列入；遭罰50萬、停業6個月",
+   "src": {
+    "pub": "中央社",
+    "t": "光澤診所偷拍受害逾300人 檢起訴9人",
+    "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤診所台北三民店",
+   "kind": "分店",
+   "note": "台北市松山區｜起訴書列入；遭罰50萬、停業6個月",
+   "src": {
+    "pub": "中央社",
+    "t": "光澤診所偷拍受害逾300人 檢起訴9人",
+    "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤診所台北古亭店",
+   "kind": "分店",
+   "note": "台北市｜起訴書列入",
+   "src": {
+    "pub": "中央社",
+    "t": "光澤診所偷拍受害逾300人 檢起訴9人",
+    "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤診所（台中南屯）",
+   "kind": "分店",
+   "note": "台中市南屯區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤診所（高雄三民）",
+   "kind": "分店",
+   "note": "高雄市三民區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "光澤醫美集團全台據點",
+   "kind": "說明",
+   "note": "新北地檢署稱王朝輝2005年創辦，旗下橫跨中西醫、岩盤浴等事業、全台共48家分店；起訴書僅列雙北8家分店竊錄（早期報導曾稱14家診所，數字以地檢署為準）",
+   "src": {
+    "pub": "中央社",
+    "t": "光澤診所偷拍受害逾300人 檢起訴9人",
+    "url": "https://cna.com.tw/news/asoc/202608280190.aspx",
+    "kind": "news"
+   }
+  }
+ ],
+ "c-shengyi": [
+  {
+   "name": "聖宜診所站前店",
+   "kind": "分店",
+   "note": "台北市中正區｜警方搜索，監視影像已被刪除，負責人被送辦",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "警確認非針孔！聖宜診所站前店捲偷拍風波",
+    "url": "https://udn.com/news/story/124864/9492485",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "聖宜診所忠孝館",
+   "kind": "分店",
+   "note": "台北市｜消費者指控診間裝監視器未告知",
+   "src": {
+    "pub": "公視新聞",
+    "t": "聖宜診所站前館、忠孝館消費者控訴",
+    "url": "https://news.pts.org.tw/article/807566",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "聖宜時尚診所（台中西區）",
+   "kind": "分店",
+   "note": "台中市西區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "聖宜診所（台中西區）",
+   "kind": "分店",
+   "note": "台中市西區｜遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "衛福部首波公布17家醫美診所偷拍裁罰名單",
+    "url": "https://udn.com/news/story/7266/9538655",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "聖宜全台分店",
+   "kind": "說明",
+   "note": "立委質詢時稱聖宜全國有7家連鎖店；是否皆涉案以官方認定為準",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "醫美診所針孔偷拍非單一事件",
+    "url": "https://udn.com/news/story/124864/9494989",
+    "kind": "news"
+   }
+  }
+ ],
+ "p-yuanzp": [
+  {
+   "name": "金錢豹酒店（市政店）",
+   "kind": "酒店",
+   "note": "台中｜2023年逃漏稅案相關",
+   "src": {
+    "pub": "鏡週刊",
+    "t": "酒店教父嗆檢調遭收押內幕（2023）",
+    "url": "https://www.mirrormedia.mg/story/20230503inv005",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "金錢豹酒店（汶南店）",
+   "kind": "酒店",
+   "note": "台中｜2023年逃漏稅案相關",
+   "src": {
+    "pub": "鏡週刊",
+    "t": "酒店教父嗆檢調遭收押內幕（2023）",
+    "url": "https://www.mirrormedia.mg/story/20230503inv005",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "金悅富理容KTV",
+   "kind": "酒店",
+   "note": "2023年逃漏稅案相關；2026年校產案搜索「金悅富公司」",
+   "src": {
+    "pub": "鏡週刊",
+    "t": "酒店教父嗆檢調遭收押內幕（2023）",
+    "url": "https://www.mirrormedia.mg/story/20230503inv005",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "麗都理容KTV",
+   "kind": "酒店",
+   "note": "2023年逃漏稅案相關",
+   "src": {
+    "pub": "鏡週刊",
+    "t": "酒店教父嗆檢調遭收押內幕（2023）",
+    "url": "https://www.mirrormedia.mg/story/20230503inv005",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "寶麗金餐飲集團",
+   "kind": "餐飲集團",
+   "note": "2026年6月檢方搜索，涉侵占公司資產案",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "袁昶平夫妻遭羈押 搜索寶麗金餐飲集團、金悅富公司",
+    "url": "https://udn.com/news/story/7321/9586761",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "葳格國際學校",
+   "kind": "學校",
+   "note": "台中｜2026年檢方搜索，涉掏空校產案",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "涉掏空校產 袁昶平夫妻遭聲押",
+    "url": "https://udn.com/news/story/7321/9586040",
+    "kind": "news"
+   }
+  }
+ ],
+ "c-rongqi": [
+  {
+   "name": "蒙特樂橄欖油",
+   "kind": "品牌",
+   "note": "融琦國際販售之混充產品，累計下架3,202瓶",
+   "src": {
+    "pub": "衛生局（食藥署轉載）",
+    "t": "衛生局說明查獲融琦公司混充橄欖油案",
+    "url": "https://www.fda.gov.tw/tc/csmnewsContent.aspx?id=t624065&mid=267",
+    "kind": "gov"
+   }
+  },
+  {
+   "name": "源樂國際",
+   "kind": "關係公司",
+   "note": "負責人為融琦負責人之子，同案起訴",
+   "src": {
+    "pub": "康健雜誌",
+    "t": "蒙特樂橄欖油造假案偵結",
+    "url": "https://www.commonhealth.com.tw/article/93577",
+    "kind": "news"
+   }
+  }
+ ],
+ "c-every8d": [
+  {
+   "name": "EVERY8D",
+   "kind": "平台",
+   "note": "企業簡訊代發平台",
+   "src": {
+    "pub": "自由時報",
+    "t": "EVERY8D疑個資外洩 裁罰出爐",
+    "url": "https://ec.ltn.com.tw/article/breakingnews/5583521",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "Teamplus",
+   "kind": "品牌",
+   "note": "互動資通旗下",
+   "src": {
+    "pub": "工商時報",
+    "t": "簡訊代發平台EVERY8D疑似遭駭",
+    "url": "https://www.ctee.com.tw/news/20260530700602-430104",
+    "kind": "news"
+   }
+  }
+ ],
+ "c-yanyiming": [
+  {
+   "name": "研醫明診所（台南中西區）",
+   "kind": "分店",
+   "note": "承接愛爾麗店面；美容室偵煙器內查獲偽裝攝影機，院長30萬、店長5萬元交保；遭罰50萬、停業6個月",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "台南研醫明診所天花板藏鏡頭",
+    "url": "https://udn.com/news/story/124864/9494024",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "研醫明醫美診所（台南永康區）",
+   "kind": "分店",
+   "note": "台南市衛生局稽查未發現違規錄影設備",
+   "src": {
+    "pub": "自由時報",
+    "t": "台南市府擴大醫美稽查",
+    "url": "https://news.ltn.com.tw/news/Tainan/breakingnews/5431798",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "吳家明眼科研醫明診所",
+   "kind": "分店",
+   "note": "高雄｜稽查未發現針孔，診療室與診間有監視器，主機已攜回調查",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "台南研醫明診所天花板藏鏡頭",
+    "url": "https://udn.com/news/story/124864/9494024",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "研醫明（屏東市仁愛路）",
+   "kind": "分店",
+   "note": "連續2天未營業，衛生局籲負責人聯繫配合查察（報導另稱屏東視康診所）",
+   "src": {
+    "pub": "自由時報",
+    "t": "研醫明屏東分店2天沒開",
+    "url": "https://news.ltn.com.tw/news/society/breakingnews/5433303",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "研醫明全國登記分店",
+   "kind": "說明",
+   "note": "台南市衛生局稱全國登記5家分店",
+   "src": {
+    "pub": "ETtoday",
+    "t": "台南衛生局擴大稽查 研醫明查獲可疑攝影設備",
+    "url": "https://www.ettoday.net/news/20260510/3163355.htm",
+    "kind": "news"
+   }
+  }
+ ],
+ "e-yuanchun": [
+  {
+   "name": "在地金花小菓苦茶油",
+   "kind": "品牌",
+   "note": "永豐餘生技品牌，向威加下單；檢出苯駢芘2.9μg/kg",
+   "src": {
+    "pub": "新頭殼",
+    "t": "苦茶油苯駢芘 源頭皆為源春製油廠",
+    "url": "https://newtalk.tw/news/view/2026-08-01/1050703",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "高仰三苦茶油",
+   "kind": "品牌",
+   "note": "威加公司販售；抽驗2批各檢出2.4、2.6μg/kg",
+   "src": {
+    "pub": "新頭殼",
+    "t": "苦茶油苯駢芘 源頭皆為源春製油廠",
+    "url": "https://newtalk.tw/news/view/2026-08-01/1050703",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "庭茂苦茶油",
+   "kind": "品牌",
+   "note": "廷茂農業生技品牌；與上列同批原料",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "4品牌8批次 問題苦茶油來自源春製油廠",
+    "url": "https://udn.com/news/story/124940/9665252",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "台灣苦茶油（國際機能食品）",
+   "kind": "品牌",
+   "note": "委託源春製造500ml，共780瓶，檢出2.6μg/kg",
+   "src": {
+    "pub": "新頭殼",
+    "t": "苦茶油苯駢芘 源頭皆為源春製油廠",
+    "url": "https://newtalk.tw/news/view/2026-08-01/1050703",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "威加國際",
+   "kind": "委託方",
+   "note": "委託源春代工並提供苦茶籽原料（源春說法；永豐餘否認提供原料）",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "4品牌8批次 問題苦茶油來自源春製油廠",
+    "url": "https://udn.com/news/story/124940/9665252",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "亞世家企業",
+   "kind": "分裝廠",
+   "note": "雲林｜負責分裝、貼標",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "4品牌8批次 問題苦茶油來自源春製油廠",
+    "url": "https://udn.com/news/story/124940/9665252",
+    "kind": "news"
+   }
+  }
+ ],
+ "c-lianjing": [
+  {
+   "name": "有機苦茶油250mL（棉花田生機園地）",
+   "kind": "通路產品",
+   "note": "批號26V224XW01",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "連淨自主通報苦茶油檢出苯駢芘含量超標",
+    "url": "https://udn.com/news/story/7323/9644773",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "統一生機初榨苦茶油250mL",
+   "kind": "通路產品",
+   "note": "批號26S624XW01，統一生機健康有機超市販售",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "連淨自主通報苦茶油檢出苯駢芘含量超標",
+    "url": "https://udn.com/news/story/7323/9644773",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "棉花田生機園地",
+   "kind": "通路",
+   "note": "北市衛生局要求總公司及門市強制下架",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "北市衛生局急查棉花田總公司、11門市",
+    "url": "https://udn.com/news/story/7323/9645829",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "連淨商城",
+   "kind": "自營通路",
+   "note": "退換貨資訊網站",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "連淨自主通報苦茶油檢出苯駢芘含量超標",
+    "url": "https://udn.com/news/story/7323/9644773",
+    "kind": "news"
+   }
+  }
+ ],
+ "c-wenya": [
+  {
+   "name": "鮮健蛋品洗選蛋",
+   "kind": "品牌",
+   "note": "11月4日抽驗檢出芬普尼代謝物0.03ppm",
+   "src": {
+    "pub": "公視新聞",
+    "t": "芬普尼蛋熱門議題",
+    "url": "https://news.pts.org.tw/hotTopic/583",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "龍忠蛋行",
+   "kind": "下游蛋商",
+   "note": "台中｜11月9日收到管制期間出貨的約4萬顆蛋，復驗0.05ppm；負責人被起訴，稱事前不知情",
+   "src": {
+    "pub": "衛福部食藥署",
+    "t": "食藥署要求追究蛋品非法流出責任",
+    "url": "https://mohw.gov.tw/cp-7172-84530-1.html",
+    "kind": "gov"
+   }
+  }
+ ],
+ "e-zhonglian": [
+  {
+   "name": "福壽實業",
+   "kind": "一層下游",
+   "note": "大豆沙拉油出貨對象；公司與董事長被起訴",
+   "src": {
+    "pub": "公視新聞",
+    "t": "中聯油案起訴15人及4家法人",
+    "url": "https://news.pts.org.tw/article/823020",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "福懋油脂",
+   "kind": "一層下游",
+   "note": "出貨對象；公司與總經理被起訴",
+   "src": {
+    "pub": "公視新聞",
+    "t": "中聯油案起訴15人及4家法人",
+    "url": "https://news.pts.org.tw/article/823020",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "泰山企業",
+   "kind": "一層下游",
+   "note": "出貨對象；前後任總經理遭羈押、公司被起訴",
+   "src": {
+    "pub": "公視新聞",
+    "t": "中聯油案起訴15人及4家法人",
+    "url": "https://news.pts.org.tw/article/823020",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "南僑油脂",
+   "kind": "說明",
+   "note": "5月13日檢驗發現異常後未第一時間通報地方衛生機關（食藥署說明，由地方裁處）",
+   "src": {
+    "pub": "自由時報",
+    "t": "食藥署3度說明中聯油脂案",
+    "url": "https://news.ltn.com.tw/news/Taipei/breakingnews/5496975",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "燒瓶子（沙茶醬）",
+   "kind": "受影響下游",
+   "note": "第三層以下，曾進貨或使用；為受影響者，非違規認定",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "台中食安處公布問題油第三層下游業者",
+    "url": "https://udn.com/news/story/124940/9618134",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "台塑餐飲美食調理公司",
+   "kind": "受影響下游",
+   "note": "麻辣鍋底醬、麻辣臭豆腐金滑菇；為受影響者，非違規認定",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "台中食安處公布問題油第三層下游業者",
+    "url": "https://udn.com/news/story/124940/9618134",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "捷順國際食品",
+   "kind": "受影響下游",
+   "note": "香辣油包、麻醬醬包；為受影響者，非違規認定",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "台中食安處公布問題油第三層下游業者",
+    "url": "https://udn.com/news/story/124940/9618134",
+    "kind": "news"
+   }
+  }
+ ],
+ "e-shencj": [
+  {
+   "name": "威京集團",
+   "kind": "集團",
+   "note": "沈慶京任主席",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "京華城土地標售涉非常規交易 沈慶京複訊",
+    "url": "https://udn.com/news/story/7321/9169338",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "中石化（中國石油化學工業開發）",
+   "kind": "集團公司",
+   "note": "中石化前後任董事長等人另案交保；非常規交易案已起訴",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "京華城土地標售涉非常規交易 沈慶京複訊",
+    "url": "https://udn.com/news/story/7321/9169338",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "鼎越開發",
+   "kind": "子公司",
+   "note": "中石化100%轉投資；以372億元標得京華城土地",
+   "src": {
+    "pub": "鏡週刊",
+    "t": "京華廣場開發與威京集團（2023）",
+    "url": "https://www.mirrormedia.mg/story/20230130fin005",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "京華城公司",
+   "kind": "關係企業",
+   "note": "京華城購物中心地主",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "京華城土地標售涉非常規交易 沈慶京複訊",
+    "url": "https://udn.com/news/story/7321/9169338",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "京華廣場",
+   "kind": "開發案",
+   "note": "土地由鼎越取得；因京華城案遭法院查扣停工",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "京華城土地標售涉非常規交易 沈慶京複訊",
+    "url": "https://udn.com/news/story/7321/9169338",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "陶朱隱園",
+   "kind": "建案",
+   "note": "威京建設的信義區豪宅",
+   "src": {
+    "pub": "NOWnews",
+    "t": "京華城弊案 威京集團搜索",
+    "url": "https://www.nownews.com/news/6508915",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "中工雲宇宙AI園區",
+   "kind": "開發案",
+   "note": "新北土城工業區",
+   "src": {
+    "pub": "NOWnews",
+    "t": "京華城弊案 威京集團搜索",
+    "url": "https://www.nownews.com/news/6508915",
+    "kind": "news"
+   }
+  }
+ ],
+ "e-baolin": [
+  {
+   "name": "寶林茶室信義遠百A13店",
+   "kind": "分店",
+   "note": "事發店；檢方起訴負責人等5人",
+   "src": {
+    "pub": "臺北地檢署新聞稿",
+    "t": "寶林茶室A13店食物中毒案偵結",
+    "url": "https://zh.wikisource.org/wiki/1140121%E8%87%BA%E5%8C%97%E5%9C%B0%E6%AA%A2%E5%81%B5%E7%B5%90%E5%AF%B6%E6%9E%97%E8%8C%B6%E5%AE%A4A13%E5%BA%97%E9%A3%9F%E7%89%A9%E4%B8%AD%E6%AF%92%E6%A1%88%E4%BB%B6%E6%96%B0%E8%81%9E%E7%A8%BF",
+    "kind": "gov"
+   }
+  },
+  {
+   "name": "寶林茶室饒河店",
+   "kind": "分店",
+   "note": "有個案曾在此用餐；檢方對此部分不起訴",
+   "src": {
+    "pub": "風傳媒",
+    "t": "寶林3分店都被衛生局稽查過",
+    "url": "https://www.storm.mg/lifestyle/5071855",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "寶林茶室台北車站店",
+   "kind": "分店",
+   "note": "2023年稽查有缺失、責令改善",
+   "src": {
+    "pub": "風傳媒",
+    "t": "寶林3分店都被衛生局稽查過",
+    "url": "https://www.storm.mg/lifestyle/5071855",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "馬來西亞風味蔬食酒館",
+   "kind": "旗下餐廳",
+   "note": "寶林漏報此店，北市研擬重罰",
+   "src": {
+    "pub": "公視新聞",
+    "t": "寶林漏報旗下餐廳、產險保單過期",
+    "url": "https://news.pts.org.tw/article/687593",
+    "kind": "news"
+   }
+  }
+ ],
+ "e-qiangguan": [
+  {
+   "name": "全統香豬油",
+   "kind": "產品",
+   "note": "混入餿水油；另24項豬油一併下架",
+   "src": {
+    "pub": "高雄市衛生局",
+    "t": "強冠公司製造之25項豬油油品一律下架",
+    "url": "https://www.hlc.moj.gov.tw/53445/53490/53501/53503/257424",
+    "kind": "gov"
+   }
+  },
+  {
+   "name": "盛香珍",
+   "kind": "受影響下游",
+   "note": "2014年曾使用全統香豬油；為受影響者",
+   "src": {
+    "pub": "衛生福利部食藥署（早安健康轉載）",
+    "t": "全統香豬油235家使用廠商明細",
+    "url": "https://edh.tw/articles/4kyTjZG",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "味王",
+   "kind": "受影響下游",
+   "note": "2014年曾使用全統香豬油；為受影響者",
+   "src": {
+    "pub": "衛生福利部食藥署（早安健康轉載）",
+    "t": "全統香豬油235家使用廠商明細",
+    "url": "https://edh.tw/articles/4kyTjZG",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "台糖",
+   "kind": "受影響下游",
+   "note": "2014年曾使用全統香豬油；為受影響者",
+   "src": {
+    "pub": "衛生福利部食藥署（早安健康轉載）",
+    "t": "全統香豬油235家使用廠商明細",
+    "url": "https://edh.tw/articles/4kyTjZG",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "美而美",
+   "kind": "受影響下游",
+   "note": "2014年曾使用全統香豬油；為受影響者",
+   "src": {
+    "pub": "衛生福利部食藥署（早安健康轉載）",
+    "t": "全統香豬油235家使用廠商明細",
+    "url": "https://edh.tw/articles/4kyTjZG",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "五花馬",
+   "kind": "受影響下游",
+   "note": "2014年曾使用全統香豬油；為受影響者",
+   "src": {
+    "pub": "衛生福利部食藥署（早安健康轉載）",
+    "t": "全統香豬油235家使用廠商明細",
+    "url": "https://edh.tw/articles/4kyTjZG",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "玉珍齋",
+   "kind": "受影響下游",
+   "note": "2014年曾使用全統香豬油；為受影響者",
+   "src": {
+    "pub": "衛生福利部食藥署（早安健康轉載）",
+    "t": "全統香豬油235家使用廠商明細",
+    "url": "https://edh.tw/articles/4kyTjZG",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "奇美",
+   "kind": "受影響下游",
+   "note": "2014年曾使用全統香豬油；為受影響者",
+   "src": {
+    "pub": "衛生福利部食藥署（早安健康轉載）",
+    "t": "全統香豬油235家使用廠商明細",
+    "url": "https://edh.tw/articles/4kyTjZG",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "好帝一（牛頭牌）",
+   "kind": "受影響下游",
+   "note": "2014年曾使用全統香豬油；為受影響者",
+   "src": {
+    "pub": "衛生福利部食藥署（早安健康轉載）",
+    "t": "全統香豬油235家使用廠商明細",
+    "url": "https://edh.tw/articles/4kyTjZG",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "基隆李鵠",
+   "kind": "受影響下游",
+   "note": "2014年曾使用全統香豬油；為受影響者",
+   "src": {
+    "pub": "衛生福利部食藥署（早安健康轉載）",
+    "t": "全統香豬油235家使用廠商明細",
+    "url": "https://edh.tw/articles/4kyTjZG",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "美食達人（85度C）",
+   "kind": "受影響下游",
+   "note": "2014年曾使用全統香豬油；為受影響者",
+   "src": {
+    "pub": "衛生福利部食藥署（早安健康轉載）",
+    "t": "全統香豬油235家使用廠商明細",
+    "url": "https://edh.tw/articles/4kyTjZG",
+    "kind": "news"
+   }
+  }
+ ],
+ "p-zengyf": [
+  {
+   "name": "im.B 不動產借貸媒合平台",
+   "kind": "平台",
+   "note": "2015年起經營，吸金近90億元",
+   "src": {
+    "pub": "中央社",
+    "t": "im.B主嫌等31人起訴",
+    "url": "https://www.cna.com.tw/news/afe/202408010185.aspx",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "台灣金隆科技",
+   "kind": "公司",
+   "note": "父親曾明祥掛名負責人",
+   "src": {
+    "pub": "中央社",
+    "t": "im.B主嫌等31人起訴",
+    "url": "https://www.cna.com.tw/news/afe/202408010185.aspx",
+    "kind": "news"
+   }
+  }
+ ],
+ "c-coupang": [
+  {
+   "name": "海通商貿（酷澎在台配送子公司）",
+   "kind": "子公司",
+   "note": "負責「火箭速配」，從酷澎物流中心配送台灣在地商品；據韓國先驅報報導",
+   "src": {
+    "pub": "INSIDE",
+    "t": "酷澎在台成立首間海外子公司",
+    "url": "https://www.inside.com.tw/article/35170-coupang-ups-tw-investment",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "桃園物流中心（3座，另租用第三方倉儲）",
+   "kind": "據點",
+   "note": "2024 年前後在桃園一帶啟用 3 座物流中心，加計第三方租用倉儲大型設施至少 6 座（媒體推估）",
+   "src": {
+    "pub": "數位時代",
+    "t": "酷澎6大倉速配台灣",
+    "url": "https://www.bnext.com.tw/article/83376/coupang-delivery",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "火箭速配／火箭跨境",
+   "kind": "服務",
+   "note": "2022 年 10 月推出；2023 年底止在台總投資額約新台幣 85.3 億元",
+   "src": {
+    "pub": "經濟日報（104 轉載）",
+    "t": "韓商酷澎加碼投資台灣",
+    "url": "https://blog.104.com.tw/?p=163912",
+    "kind": "news"
+   }
+  }
+ ],
+ "c-guangsheng": [
+  {
+   "name": "光聖診所（全國連鎖約 14 家）",
+   "kind": "說明",
+   "note": "立委林淑芬質詢時指光聖為全國擁有 14 家連鎖的醫美診所；各分院名稱本站尚未查得公開名單",
+   "src": {
+    "pub": "聯合新聞網",
+    "t": "醫美診所針孔偷拍非單一事件",
+    "url": "https://udn.com/news/story/124864/9494989",
+    "kind": "news"
+   }
+  }
+ ],
+ "c-taipower": [
+  {
+   "name": "澎湖綠電股份有限公司（持股 45%）",
+   "kind": "轉投資",
+   "note": "2022 年台電依股權比例 45% 投資，與天方科技、天力新能合資開發澎湖風力與太陽光電；此為關係事業，與性別平等法裁罰無關",
+   "src": {
+    "pub": "立法院",
+    "t": "台灣電力公司112年度營業預算評估報告",
+    "url": "https://www.ly.gov.tw/Pages/Detail.aspx?nodeid=45948&pid=224915",
+    "kind": "gov"
+   }
+  }
+ ],
+ "c-yitai": [
+  {
+   "name": "中壢廠（生產據點）",
+   "kind": "廠區",
+   "note": "公司登記於台北，電線電纜生產廠在桃園中壢；另規劃於毗鄰農地增建新廠生產 25kV 中壓線纜。是否為違規事件所涉單位報導未載明",
+   "src": {
+    "pub": "工商時報",
+    "t": "亞力、億泰擴廠 搶食台電大單",
+    "url": "https://www.ctee.com.tw/news/20251222700186-430503",
+    "kind": "news"
+   }
+  }
+ ],
+ "e-datong": [
+  {
+   "name": "頂新製油（屏東廠）",
+   "kind": "下游買家",
+   "note": "向大統購入混油；屏東地院一審沒收 2007–2013 年不法所得近 8 億元，另罰 800 萬元。此為該公司自身裁判，非大統名下事業",
+   "src": {
+    "pub": "三立新聞網",
+    "t": "大統相關報導",
+    "url": "https://www.setn.com/klist/1353",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "味全",
+   "kind": "下游買家",
+   "note": "委託頂新向大統買入混油，前董事長魏應充二審判刑 2 年定讞。受牽連業者，非大統名下事業",
+   "src": {
+    "pub": "風傳媒",
+    "t": "味全混大統油早知情",
+    "url": "https://www.storm.mg/keyword/大統",
+    "kind": "news"
+   }
+  },
+  {
+   "name": "台糖（葡萄籽油委託代工）",
+   "kind": "受害委託方",
+   "note": "2007–2013 年委託大統代工，因添加銅葉綠素向大統求償，二審改判大統賠 1191 萬元",
+   "src": {
+    "pub": "三立新聞網",
+    "t": "劣油案大逆轉 台糖獲賠1191萬元",
+    "url": "https://www.setn.com/klist/1353",
+    "kind": "news"
+   }
+  }
+ ]
+}
